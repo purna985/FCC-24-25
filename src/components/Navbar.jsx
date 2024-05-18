@@ -2,9 +2,9 @@ import Logo from '../assets/fcc logo high res.png'
 
 function Navbar() {
   return (
-    <nav className="fixed w-full h-[20vh] bg-black">
-      <div>
-        <img src={Logo} alt="FCC Logo" />
+    <nav className="fixed w-full h-[10vh] flex justify-between px-[2vw]">
+      <div className=" h-full">
+        <img src={Logo} alt="FCC Logo" className="h-full" />
       </div>
       <ul>
         <li><a href="/">Home</a></li>
