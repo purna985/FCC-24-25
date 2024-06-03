@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 
 import image1 from '../assets/images/horizon-about/1.svg'
 import image2 from '../assets/images/horizon-about/2.svg'
@@ -44,7 +43,6 @@ function Horizon() {
 
   return (
     <div className='text-white font-roboto'>
-      <Navbar />
 
       {/* Landing part Horizon */}
       <div className='h-auto px-6 py-12 my-12 text-center  '>
@@ -55,7 +53,7 @@ function Horizon() {
           <p className='w-full font-normal text-vw-10 md:text-vw-10 md-1:text-6xl md-1:leading-normal'>HORIZON 24'</p>
         </div>
         <div className="gap-2 flex justify-center py-8 md-1:py-2">
-          <button className="bg-custom-butt-bg rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block
+          <button className="bg-custom-butt-bg hover:bg-custom-butt-bg-hover rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block
           font-normal ">TODAY'S SCHEDULE </button>
         </div>
       </div>
