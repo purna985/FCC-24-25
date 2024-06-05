@@ -62,7 +62,7 @@ function Horizon() {
       <div className="mt-10p ml-auto mr-auto w-full h-auto flex flex-col items-center p-1p 
         justify-center bg-custom-grad-1">
         <div className='m-auto w-90p my-4'>
-          <div class="md-1:hidden w-full flex items-baseline h-50p text-vw-7 pt-2p pl-2p text-left leading-100p
+          <div className="md-1:hidden w-full flex items-baseline h-50p text-vw-7 pt-2p pl-2p text-left leading-100p
             font-medium">
             About,
             <br></br>
@@ -71,7 +71,7 @@ function Horizon() {
           <div className='md-2:hidden flex justify-center w-full items-baseline h-50p text-vw-7 pt-2p pl-2p pb-4'>
             About the Event
           </div>
-          <div class="w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p 
+          <div className="w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p 
             md-1:text-vw-5 md-1:text-center">Horizon 2024, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
             and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
             Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
@@ -120,7 +120,7 @@ function Horizon() {
       {/* Sponsers */}
       <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
         <div className='flex items-center justify-center'>
-          <p className='text-center mb-4 text-7xl md-1:text-5xl'>Sponsers</p>
+          <p className='text-center mb-4 text-7xl md-1:text-5xl'>Sponsors</p>
         </div>
         <div className='flex w-full gap-3p animate-scroll-1'>
           <div className='flex basis-1/5 md-1:flex md-1:basis-1/4 gap-3p'>
@@ -134,4 +134,4 @@ function Horizon() {
   )
 }
 
-export default Horizon
+export default Horizon  
