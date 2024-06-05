@@ -7,7 +7,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins' , "sans-serif"]
+        'ikaros': ['"Ikaros Sans"', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
+      fontWeight: {
+        light: 200,
+        normal: 400,
+      },
+      lineHeight: {
+        normal: 'normal', // Add this line to include normal line height
       },
     },
   },
