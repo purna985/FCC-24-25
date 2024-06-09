@@ -2,46 +2,39 @@ function Home() {
   return (
     <>
       <div className="w-full h-auto lg:pt-[3%] lg:pl-[4%] pt-0 mb-[10%] overflow-x-hidden ">
-        <div className="container-fluid  maincard flex w-full justify-center items-end">
-          <div className="subcard flex w-full h-full justify-between items-center">
-            <div className="titlecard font-ikaros  w-1/2 h-full justify-between items-center">
+        <div className="flex w-full justify-center items-end">
+          <div className="flex md:flex-row flex-col w-full h-full justify-between items-center">
+            <div className="font-ikaros  md-1:w-auto lg:w-1/2 w-full text-center self-center h-full justify-between items-center">
               <div className="titles">
                 <p
-                  className="  text-body-light w-3/4 fcc-main-heading text-[#1270ed] text-[5.5rem] leading-normal">Finance
+                  className="text-[#1270ed] text-[5.5rem] md-1:text-[3.8rem] sm:text-[2.5rem] leading-100p md:text-start text-center">Finance
                   and Consulting Club</p>
                 <p
-                  className="  text-body-light lh-1 mb-3 iith-main-heading font-ikaros font-light text-[2.5rem] leading-normal">IIT
+                  className="font-ikaros font-light sm:text-[1.5rem] text-[2.5rem] leading-normal text-start md-1:text-center">IIT
                   Hyderabad</p>
               </div>
               <div
-                className="btn btn-primary btn-lg horizon-button w-1/2 text-[1rem] font-montserrat text-[#d9e9f1] bg-[##172eff] rounded-[1.5625rem]"
-                style={{
-                  border: "2px solid rgba(176, 174, 174, 0.6)",
-                  boxShadow: "0px 0px 10px 2px rgba(112, 110, 110, 0.6)"
-                }}>
-                Horizon 24' <img src="src/assets/Double Alt Arrow Right.png" height="60" alt=""/>
+                className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-4/6 mt-20 text-[2.2rem] text-white bg-[#172eff] rounded-[1.5625rem] flex justify-center items-center"
+                >
+                Horizon 24' <img src="src/assets/Double Alt Arrow Right.png" height={"30"} alt=""/>
               </div>
             </div>
             <div className="cardbox w-full sm:w-[45%] h-full flex justify-center self-end mx-auto">
-              <div className="horizon-card m-auto p-[5%] sm:px-[20px] sm:pt-0 sm:pb-[20px] flex flex-col items-center justify-center font-ikaros w-[90%] h-full max-w-[420px] min-w-[300px] sm:min-w-[400px] h-[17rem] rounded-[2rem] border border-solid border-[#ffffff41] backdrop-blur-[36px]" style={{background:'background: linear-gradient(\n' +
-                  '    180deg,\n' +
-                  '    rgba(142, 141, 141, 0.5) -36.57%,\n' +
-                  '    rgba(217, 217, 217, 0) 141.73%\n' +
-                  '  );'}}>
-                <div className="heading h-full flex items-center justify-between">
-                  <div className="fs-4 text-[#acababad]">FCC, IIT Hyderabad</div>
+              <div className="horizon-card m-auto p-[2%] sm:px-[20px] sm:pt-0 sm:pb-[20px] flex flex-col items-stretch justify-between font-ikaros w-[90%] max-w-[420px] min-w-[300px] sm:min-w-[400px] h-[17rem] rounded-[2rem] border border-solid border-[#ffffff41] backdrop-blur-[36px] bg-white">
+                <div className="heading h-fit w-full flex items-center justify-between">
+                  <div className="fs-4 text-[#acababad] text-3xl ">FCC, IIT Hyderabad</div>
                   <img className="horizon-logo " src="src/assets/HoRiZoN-logo-second-draft.png" alt="" width="60"
                        height="50"/>
                 </div>
-                <div className="horizon-title w-full flex items-center justify-between">
-                  <h1 className="text-[10vw] sm:text-[4rem] bg-clip-text" style={{background: "linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%)"}}>Horizon</h1>
+                <div className="horizon-title h-fit w-fit flex items-center justify-between">
+                  <div className="text-[4vw] sm:text-[4rem] bg-clip-text text-transparent bg-horizonText">Horizon</div>
                 </div>
-                <div className="timer w-100">
+                <div className="timer h-fit w-full">
                   <div className="countdown-container flex justify-between w-full p-[2%]">
-                    <div className="days fs-4"><span id="days"> 00</span> <br/><span>days</span></div>
-                    <div className="hours fs-4"><span id="hours"> 00</span> <br/><span>hrs</span></div>
-                    <div className="minutes fs-4"><span id="minutes"> 00</span><br/> <span>min</span></div>
-                    <div className="seconds fs-4"><span id="seconds"> 00</span> <br/><span>sec</span></div>
+                    <div className="days font-roboto text-[#acababad]"><span id="days"> 00</span> <br/><span>days</span></div>
+                    <div className="hours font-roboto text-[#acababad]"><span id="hours"> 00</span> <br/><span>hrs</span></div>
+                    <div className="minutes font-roboto text-[#acababad]"><span id="minutes"> 00</span><br/> <span>min</span></div>
+                    <div className="seconds font-roboto text-[#acababad]"><span id="seconds"> 00</span> <br/><span>sec</span></div>
                   </div>
                 </div>
               </div>
@@ -90,14 +83,14 @@ function Home() {
         <div className="absolute top-[-30px] right-[-50px] bg-white w-1/4 h-1/4 rounded-[100%] blur-[200px]"></div>
         <div className="absolute bottom-[-30px] left-0 bg-white w-1/4 h-1/4 rounded-[100%] blur-[200px]"></div>
         <div
-          className="hidden md:flex items-baseline h-1/2 md:w-[90%] w-[80%] leading-[100%] text-left self-center font-ikaros font-medium md:text-[7vw] text-[8vw] pt-[2%] pl-[2%]  tracking-[200%]">So,<br/> Who
+          className="hidden md:flex items-baseline h-1/2 md:w-[90%] w-[80%] leading-[100%] text-left self-center font-rosario font-medium md:text-[7vw] text-[8vw] pt-[2%] pl-[2%]  tracking-[200%]">So,<br/> Who
           are we?
         </div>
         <div
-          className="md:hidden flex md:items-baseline items-center justify-center h-1/2 md:w-[90%] w-[80%] leading-[100%] text-left self-center font-ikaros font-medium md:text-[7vw] text-[8vw] pt-[2%] pl-[2%]  tracking-[200%]">
+          className="md:hidden flex md:items-baseline items-center justify-center h-1/2 md:w-[90%] w-[80%] leading-[100%] text-left self-center rosar font-medium md:text-[7vw] text-[8vw] pt-[2%] pl-[2%]  tracking-[200%]">
           <p>So, Who are we?</p></div>
         <div
-          className="md:w-[90%] w-[70%] h-auto text-[f2f2f2] md:text-[2.75vw] text-[5vw] font-ikaros font-light leading-normal p-[2%] md:text-left text-center tracking-[200%]">The
+          className="md:w-[90%] w-[70%] h-auto text-[f2f2f2] md:text-[2.75vw] text-[5vw] font-roboto font-light leading-normal p-[2%] md:text-left text-center tracking-[200%]">The
           Finance and Consulting Club at IIT Hyderabad is a student-led organization
           fostering finance and consulting interests. At FCC IITH, students are driven by their passion for finance,
           consulting, product management and continual progress. Their dedicated team plans a variety of events, such
@@ -108,7 +101,7 @@ function Home() {
       </div>
 
 
-      <div className="h-auto w-full relative font-ikaros flex flex-col items-center justify-center  py-4 my-4 container-fluid" id="what-we-do">
+      <div className="h-auto w-full relative font-rosario flex flex-col items-center justify-center  py-4 my-4 container-fluid" id="what-we-do">
 
         <div className="absolute top-[-30px] right-[-50px] bg-[#345bd8] h-[26%] w-[45%] rounded-[100%] blur-[300px]"></div>
         <div className="what-heading text-[3rem] md:text-[6.9vw] w-[85%] leading-[100%] md:pt-[3%] md:pb-[2%] p-[2%] md:text-start text-center">

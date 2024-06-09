@@ -17,6 +17,7 @@ export default {
       },
       backgroundImage:{
         'custom-grad-1':'linear-gradient(to bottom,rgba(15, 70, 147, 0.9),rgba(15, 72, 147, 0.6))',
+        'horizonText':'linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%)',
       },
       fontFamily: {
         ikaros: ['"Ikaros Sans"', 'sans-serif'],
@@ -24,6 +25,7 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
         poppins: ['Poppins' , "sans-serif"],
+        rosario: ['Rosario', 'sans-serif'],
       },
       fontWeight: {
         light: 200,
