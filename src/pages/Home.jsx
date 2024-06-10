@@ -106,20 +106,20 @@ function Home() {
       <div className="h-auto w-full relative font-rosario flex flex-col items-center justify-center  py-4 my-4 container-fluid" id="what-we-do">
 
         <div className="absolute top-[-30px] right-[-50px] bg-[#345bd8] h-[26%] w-[45%] rounded-[100%] blur-[300px]"></div>
-        <div className="what-heading text-[3rem] md:text-[6.9vw] w-[85%] leading-[100%] md:pt-[3%] md:pb-[2%] p-[2%] md:text-start text-center">
+        <div className="what-heading md:w-[95%] w-[90%] text-[3rem] md:text-[6.9vw] leading-[100%] md:pt-[3%] md:pb-[2%] p-[2%] md:text-start text-center">
           <p className="md:w-2/5 w-full">
             What Do We Do?
           </p>
         </div>
         <div className="what-cards md:w-[95%] w-[90%] h-auto flex md:justify-center md:flex-wrap md:flex-row flex-col justify-between items-center md:gap-0 gap-[30px]">
-          <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto" id="card1">
-            <img src="src/assets/finance.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="110%" height="110%" alt=""/>
+          <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto p-8" id="card1">
+            <img src="src/assets/finance.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt=""/>
           </div>
-          <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto" id="card2">
-            <img src="src/assets/consulting.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="110%" height="110%" alt=""/>
+          <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto p-8" id="card2">
+            <img src="src/assets/consulting.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt=""/>
           </div>
-          <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto" id="card3">
-            <img src="src/assets/prodman.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="110%" height="110%" alt=""/>
+          <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto p-8" id="card3">
+            <img src="src/assets/prodman.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt=""/>
           </div>
         </div>
       </div>

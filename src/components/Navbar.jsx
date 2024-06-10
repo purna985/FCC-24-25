@@ -44,7 +44,7 @@ function Navbar() {
 
         <ul className=" navlinks w-[35rem] hidden lg:flex justify-between items-center ">
           <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a></li>
-          <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horidzon</a></li>
+          <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a></li>
           <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}>Schedule</a></li>
           <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/sponsors" ? " text-blue-300" : " text-white hover:text-blue-300")}>Sponsors</a></li>
           <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/teams" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a></li>
