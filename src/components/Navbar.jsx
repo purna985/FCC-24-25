@@ -31,8 +31,8 @@ function Navbar() {
 
 
   return (
-    <div className="container-fluid header flex py-10 px-10">
-      <header className="flex w-full h-auto overflow-hidden items-center justify-between">
+    <div className="container-fluid header flex  justify-center p-10">
+      <header className="flex w-[95%] h-auto overflow-hidden items-center justify-between">
         <div className="wlogo w-[20rem]" >
           <a href="index.html" className="inline-flex link-body-emphasis text-decoration-none items-center justify-evenly">
             <img  src="src/assets/fcc logo high res.png" alt="FCC" width="70" height="70"/>
@@ -42,12 +42,12 @@ function Navbar() {
 
 
 
-        <ul className=" navlinks w-[35rem] hidden lg:flex justify-between items-center ">
-          <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a></li>
-          <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a></li>
-          <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}>Schedule</a></li>
-          <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/sponsors" ? " text-blue-300" : " text-white hover:text-blue-300")}>Sponsors</a></li>
-          <li><a href="" className={"nav-link w-[50rem] fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/teams" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a></li>
+        <ul className=" navlinks w-[30rem] text-xl hidden lg:flex justify-between items-center ">
+          <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a></li>
+          <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a></li>
+          <li><a href="" className={"nav-link fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}>Schedule</a></li>
+          <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/sponsors" ? " text-blue-300" : " text-white hover:text-blue-300")}>Sponsors</a></li>
+          <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/teams" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a></li>
         </ul>
 
 
@@ -61,7 +61,7 @@ function Navbar() {
 
         <div className="fixed top-0 w-screen h-screen bg-black z-10 lg:hidden flex flex-col overflow-hidden left-[100%]" ref={menuRef}>
           <div className="flex justify-end bg-transparent w-full h-[20%] items-center p-[5%] cursor-pointer" onClick={() => {changeState(false)}}>
-            <div>close</div>
+            <div>X</div>
           </div>
           <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
             <a href="" className={"text-5xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a>
