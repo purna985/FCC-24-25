@@ -20,7 +20,9 @@ function Home() {
               </div>
             </div>
             <div className="cardbox w-full sm:w-[45%] h-full flex justify-center self-end mx-auto">
-              <div className="horizon-card m-auto p-[2%] sm:px-[20px] sm:pt-0 sm:pb-[20px] flex flex-col items-stretch justify-between font-ikaros w-[90%] max-w-[420px] min-w-[300px] sm:min-w-[400px] h-[17rem] rounded-[2rem] border border-solid border-[#ffffff41] backdrop-blur-[36px] bg-white">
+              <div className="horizon-card m-auto p-6 sm:px-[20px] sm:pt-0 sm:pb-[20px] flex flex-col items-stretch justify-between font-ikaros w-[90%] max-w-[420px] min-w-[300px] sm:min-w-[400px] h-[17rem] rounded-[2rem] border border-solid border-[#ffffff41] bg-gray-500 " 
+                style={{background:"linear-gradient(180deg, rgba(142, 141, 141, 0.5) -36.57%, rgba(217, 217, 217, 0) 141.73%)",backdropFilter:"blur(36px)" }}
+              >
                 <div className="heading h-fit w-full flex items-center justify-between">
                   <div className="fs-4 text-[#acababad] text-3xl ">FCC, IIT Hyderabad</div>
                   <img className="horizon-logo " src="src/assets/HoRiZoN-logo-second-draft.png" alt="" width="60"
