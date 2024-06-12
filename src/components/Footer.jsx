@@ -6,7 +6,7 @@ function Footer() {
       <footer className="flex flex-wrap pt-[4%] px-[4%] pb-[2%]" style={{backgroundColor: "rgb(15, 70, 144)"}}>
         <div className="w-full md:w-1/5 flex-col flex justify-between py-7">
           <a href="index.html" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <img src="src/assets/Group 31.svg" width="60%" height="60%" alt=""/>
+            <img src="../assets/home/Group%2031.svg" width="60%" height="60%" alt=""/>
           </a>
           <p className="">© 2024 Copyright: FCC IIT Hyderabad</p>
         </div>
@@ -58,7 +58,7 @@ function Footer() {
           <ul className="flex flex-col gap-1">
             <li className="nav-item mb-2"><p className="nav-link p-0 text-white" >IIT Hyderabad, Sangareddy,
               Telangana, India - 502285</p></li>
-            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light"><img src="src/assets/messgae 1.svg"
+            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light"><img src="../assets/home/messgae%201.svg"
                                                                                             alt=""/> fcc@gymkhana.iith.ac.in</a>
             </li>
             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-light"></a></li>

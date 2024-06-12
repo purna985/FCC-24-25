@@ -1,49 +1,25 @@
-import {useEffect, useState} from "react";
+import image1 from "src/assets/horizon-about/1.svg"
+import image2 from "src/assets/horizon-about/2.svg"
+import image3 from "src/assets/horizon-about/3.svg"
+import image4 from "src/assets/horizon-about/4.svg"
 
 
-import Logo from '../assets/fcc logo high res.png'
+import psimg1 from "src/assets/images/pastspeakers/akhilsharma.svg"
+import psimg2 from "src/assets/images/pastspeakers/gauravmahindra.svg"
+import psimg3 from "src/assets/images/pastspeakers/rishabhjain.svg"
+import psimg4 from "src/assets/images/pastspeakers/subbaperepa.svg"
 
-function Navbar() {
-  const [pageState, setPageState] = useState(localStorage.getItem('pageState'))
-
-  if (localStorage.getItem('pageState') !== window.location.pathname) {
-    localStorage.setItem('pageState', window.location.pathname)
-  }
-
-  useEffect(() => {
-    localStorage.setItem('pageState', pageState);
-  }, [pageState]);
-
-  const togglePage = (page) => {
-    setPageState(page)
-  }
-
-
-  return (
-    <nav className="w-full h-[12vh] flex justify-between px-[4vw] z-50">
-      <div className=" h-full grid items-center">
-        <img src={Logo} alt="FCC Logo" className="h-[3.5vw]"/>
-      </div>
-      <ul className="links flex justify-between items-center gap-[2vw] text-[1vw] font-ikaros font-normal">
-        <li><a onClick={() => togglePage("Home")}
-               className={(pageState === "/" ? "text-blue-300 hover:text-blue-300" : "text-white hover:text-blue-300")}
-               href="/">Home</a></li>
-        <li><a onClick={() => togglePage("Horizon")}
-               className={(pageState === "/horizon" ? "text-blue-300 hover:text-blue-300" : "text-white hover:text-blue-300")}
-               href="/horizon">Horizon</a></li>
-        <li><a onClick={() => togglePage("Schedule")}
-               className={(pageState === "/schedule" ? "text-blue-300 hover:text-blue-300" : "text-white hover:text-blue-300")}
-               href="/schedule">Schedule</a></li>
-        <li><a onClick={() => togglePage("Sponsors")}
-               className={(pageState === "/sponsors" ? "text-blue-300 hover:text-blue-300" : "text-white hover:text-blue-300")}
-               href="/sponsors">Sponsors</a></li>
-        <li><a onClick={() => togglePage("Team")}
-               className={(pageState === "/team" ? "text-blue-300 hover:text-blue-300" : "text-white hover:text-blue-300")}
-               href="/team">Team</a></li>
-      </ul>
-
-    </nav>
-  )
-}
-
-export default Navbar;
+import simg1 from "src/assets/images/sponsors/abhibus-min.png"
+import simg2 from "src/assets/images/sponsors/decathalon-min.png"
+import simg3 from "src/assets/images/sponsors/easemytrip-min.png"
+import simg4 from "src/assets/images/sponsors/edufabrica-min.png"
+import simg5 from "src/assets/images/sponsors/elearnmarkets-min.png"
+import simg6 from "src/assets/images/sponsors/finlarics-min.png"
+import simg7 from "src/assets/images/sponsors/grabon-min.png"
+import simg8 from "src/assets/images/sponsors/monster-min.png"
+import simg9 from "src/assets/images/sponsors/plum-min.png"
+import simg10 from "src/assets/images/sponsors/preplounge-min.png"
+import simg11 from "src/assets/images/sponsors/product-min.png"
+import simg12 from "src/assets/images/sponsors/sid farm-min.png"
+import simg13 from "src/assets/images/sponsors/startupnews-min.png"
+import simg14 from "src/assets/images/sponsors/stockgro-min.png"

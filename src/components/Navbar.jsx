@@ -43,8 +43,8 @@ function Navbar() {
 
 
         <ul className=" navlinks w-[30rem] text-xl hidden lg:flex justify-between items-center ">
-          <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a></li>
-          <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a></li>
+          <li><a href="/" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a></li>
+          <li><a href="/horizon" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a></li>
           <li><a href="" className={"nav-link fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}>Schedule</a></li>
           <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/sponsors" ? " text-blue-300" : " text-white hover:text-blue-300")}>Sponsors</a></li>
           <li><a href="" className={"nav-link  fs-5 head-navlink font-montserrat cursor-pointer px-3 fw-light " + (location.pathname === "/teams" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a></li>
@@ -64,8 +64,8 @@ function Navbar() {
             <div>X</div>
           </div>
           <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
-            <a href="" className={"text-5xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a>
-            <a href="" className={"text-5xl font-montserrat font-light" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a>
+            <a href="/" className={"text-5xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a>
+            <a href="/horizon" className={"text-5xl font-montserrat font-light" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a>
             <a href="" className={"text-5xl font-montserrat font-light" + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}>Schedule</a>
             <a href="" className={"text-5xl font-montserrat font-light" + (location.pathname === "/sponsors" ? " text-blue-300" : " text-white hover:text-blue-300")}>Sponsors</a>
             <a href="" className={"text-5xl font-montserrat font-light" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a>
