@@ -1,5 +1,8 @@
 import React from 'react'
 
+import bg1 from '../assets/images/background/glowblocksmall.png'
+import bg2 from '../assets/images/background/rupeeblur.svg'
+
 import image1 from '../assets/images/horizon-about/1.svg'
 import image2 from '../assets/images/horizon-about/2.svg'
 import image3 from '../assets/images/horizon-about/3.svg'
@@ -43,17 +46,23 @@ function Horizon() {
 
   return (
     <div className='text-white font-roboto'>
+      {/* BACKGROUND ELEMENTS */}
+      <img className='absolute left-20p -z-10 align-middle md-3:left-0 md-3:top-1/2 md-3:blur-sm ' src={bg1} alt="bg1" />
+      <img className='fixed left-vw-30 -z-10 align-middle' src={bg2} alt="bg2" height={50} width={50}/>
+      <img className='fixed top-vh-50 right-vw-20 rotate-60-deg -z-10 align-middle' src={bg2} alt="bg3" height={70} width={70}/>
+      <img className='fixed right-vw-15 rotate-20-deg -z-20 align-middle' src={bg2} alt="bg3" height={40} width={40}/>
+      <div className='w-vw-60 h-vh-60 absolute top-20p -left-10 rounded-full bg-custom-blur-bg blur-blur-250 -z-one'></div>
 
       {/* Landing part Horizon */}
       <div className='h-auto px-6 py-12 my-12 text-center  '>
-        <p className='text-vw-2.3 font-normal text-dark-blue pb-6 md-1:pb-4 md-1:text-xl'>
+        <p className='text-vw-2.3 font-normal font-rosario text-dark-blue pb-6 md-1:pb-4 md-1:text-xl'>
           FCC IIT-HYDERABAD Presents
         </p>
         <div className='mx-auto w-full flex-col gap-0 m-6 md-1:mb-6 mt-0'>
           <p className='w-full font-normal text-vw-10 md:text-vw-10 md-1:text-6xl md-1:leading-normal'>HORIZON 24'</p>
         </div>
         <div className="gap-2 flex justify-center py-8 md-1:py-2">
-          <button className="bg-custom-butt-bg hover:bg-custom-butt-bg-hover rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block
+          <button className="font-rosario bg-custom-butt-bg hover:bg-custom-butt-bg-hover rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block
           font-normal ">TODAY'S SCHEDULE </button>
         </div>
       </div>
@@ -62,13 +71,13 @@ function Horizon() {
       <div className="mt-10p ml-auto mr-auto w-full h-auto flex flex-col items-center p-1p 
         justify-center bg-custom-grad-1">
         <div className='m-auto w-90p my-4'>
-          <div className="md-1:hidden w-full flex items-baseline h-50p text-vw-7 pt-2p pl-2p text-left leading-100p
+          <div className="font-rosario md-1:hidden w-full flex items-baseline h-50p text-vw-7 pt-2p pl-2p text-left leading-100p
             font-medium">
             About,
             <br></br>
             the Event
           </div>
-          <div className='md-2:hidden flex justify-center w-full items-baseline h-50p text-vw-7 pt-2p pl-2p pb-4'>
+          <div className='font-rosario md-2:hidden flex justify-center w-full items-baseline h-50p text-vw-7 pt-2p pl-2p pb-4'>
             About the Event
           </div>
           <div className="w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p 
@@ -85,12 +94,12 @@ function Horizon() {
             </div>
           </div>
 
-          <div className='md-1:hidden flex items-baseline h-1/2 leading-100p text-left font-medium text-vw-7 pt-2p pl-2p'>
+          <div className='font-rosario md-1:hidden flex items-baseline h-1/2 leading-100p text-left font-medium text-vw-7 pt-2p pl-2p'>
             Our Vision
             <br></br>
             for 2024
           </div>
-          <div className='md-2:hidden flex items-baseline h-1/2 leading-100p justify-center font-medium text-vw-7 pt-2p pl-2p md-1:pb-4'>
+          <div className='font-rosario md-2:hidden flex items-baseline h-1/2 leading-100p justify-center font-medium text-vw-7 pt-2p pl-2p md-1:pb-4'>
               Our Vision for 2024
           </div>
 
@@ -106,7 +115,7 @@ function Horizon() {
       {/* Past Speakers */}
       <div className='flex flex-col h-auto w-full items-center justify-center my-6'>
         <div className='flex items-center justify-center w-90p my-6'>
-          <p className='mt-0 mb-4 text-7xl md-1:text-5xl md-1:w-full md-1:text-center'>Past Speakers</p>
+          <p className='font-rosario mt-0 mb-4 text-7xl md-1:text-5xl md-1:w-full md-1:text-center'>Past Speakers</p>
         </div>
         <div className='px-12 my-6 flex justify-content-evenly w-full'>
           <div className='flex justify-evenly flex-wrap md-1:gap-3'>
@@ -120,7 +129,7 @@ function Horizon() {
       {/* Sponsers */}
       <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
         <div className='flex items-center justify-center'>
-          <p className='text-center mb-4 text-7xl md-1:text-5xl'>Sponsors</p>
+          <p className='font-rosario text-center mb-5 text-7xl md-1:text-5xl'>Sponsors</p>
         </div>
         <div className='flex w-full gap-3p animate-scroll-1'>
           <div className='flex basis-1/5 md-1:flex md-1:basis-1/4 gap-3p'>
