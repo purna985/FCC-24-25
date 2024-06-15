@@ -14,13 +14,18 @@ export default {
         'custom-bg' : 'rgba(0, 0, 0, 1)',
         'custom-butt-bg':'#0d6efd',
         'custom-butt-bg-hover':'#0b5ed7',
+        'custom-blur-bg':'rgba(126, 71, 241, 0.4)'
       },
       backgroundImage:{
         'custom-grad-1':'linear-gradient(to bottom,rgba(15, 70, 147, 0.9),rgba(15, 72, 147, 0.6))',
       },
+      blur:{
+        'blur-250' : '250px',
+      },
       fontFamily:{
         montserrat: ['Montserrat', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        rosario: ['Rosario', 'sans-serif'],
         poppins: ['Poppins' , "sans-serif"],
       },
       fontSize:{
@@ -36,12 +41,27 @@ export default {
         '2p' : '2%',
         '3p' : '3%',
         '10p': '10%',
+        '20p': '20%',
         '23p': '23%',
         '45p': '45%',
         '50p': '50%',
         '70p': '70%',
         '90p': '90%',
+        'vw-15' : '15vw',
+        'vw-20' : '20vw',
+        'vw-30' : '30vw',
+        'vw-60' : '60vw',
+        'vh-50' : '50vh',
+        'vh-60' : '60vh',
       },
+      rotate:{
+        '20-deg' : '20deg',
+        '60-deg' : '60deg',
+      },
+      zIndex:{
+        'one' : '1',
+      },
+      
       lineHeight:{
         '100p': '100%',
       },
@@ -55,7 +75,8 @@ export default {
         }
       },
       screens:{
-        'sm' : { 'max': '420px' },
+        'sm'   : {'max': '420px'},
+        'md-3' : {'max': '1000px'},
         'md-1' : {'max': '800px'},
         'md-2' : {'min': '800px'},
       },
