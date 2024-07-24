@@ -9,12 +9,17 @@ export default {
       colors:{
         'dark-blue' :'#1270ed',
         'custom-white':'#f2f2f2',
+        'custom-blue' :'rgba(18, 112, 237, 1)',
+        'custom-gradient-1' : 'rgba(18, 109, 237, 0.9)',
+        'custom-gradient-2' : 'rgba(18, 112, 237, 0.6)',
       },
       backgroundColor:{
-        'custom-bg' : 'rgba(0, 0, 0, 1)',
+        'custom-bg' : 'rgba(30, 30, 30, 1)',
         'custom-butt-bg':'#0d6efd',
         'custom-butt-bg-hover':'#0b5ed7',
-        'custom-blur-bg':'rgba(126, 71, 241, 0.4)'
+        'custom-blur-bg':'rgba(126, 71, 241, 0.4)',
+        'custom-blue' :'rgba(18, 112, 237, 1)',
+        'custom-bg2' : '#0C4393',
       },
       backgroundImage:{
         'custom-grad-1':'linear-gradient(to bottom,rgba(15, 70, 147, 0.9),rgba(15, 72, 147, 0.6))',
@@ -84,4 +89,3 @@ export default {
   },
   plugins: [],
 }
-
