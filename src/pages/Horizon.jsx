@@ -1,17 +1,17 @@
 import React from 'react'
+import Speakers from '../components/Speakers'
 
-import bg1 from '../assets/images/background/glowblocksmall.png'
-import bg2 from '../assets/images/background/rupeeblur.svg'
+import image1 from '../assets/images/horizon-about/p1.png'
+import image2 from '../assets/images/horizon-about/p2.png'
+import image3 from '../assets/images/horizon-about/p3.png'
+import image4 from '../assets/images/horizon-about/p4.png'
 
-import image1 from '../assets/images/horizon-about/1.svg'
-import image2 from '../assets/images/horizon-about/2.svg'
-import image3 from '../assets/images/horizon-about/3.svg'
-import image4 from '../assets/images/horizon-about/4.svg'
 
 import psimg1 from '../assets/images/pastspeakers/akhilsharma.svg'
 import psimg2 from '../assets/images/pastspeakers/gauravmahindra.svg'
 import psimg3 from '../assets/images/pastspeakers/rishabhjain.svg'
 import psimg4 from '../assets/images/pastspeakers/subbaperepa.svg'
+
 
 import simg1 from '../assets/images/sponsors/abhibus-min.png'
 import simg2 from '../assets/images/sponsors/decathalon-min.png'
@@ -28,15 +28,14 @@ import simg12 from '../assets/images/sponsors/sid farm-min.png'
 import simg13 from '../assets/images/sponsors/startupnews-min.png'
 import simg14 from '../assets/images/sponsors/stockgro-min.png'
 
+
 function Horizon() {
 
   const images = [
     { img_id: image1 }, { img_id: image2 }, { img_id: image3 }, { img_id: image4 }
   ];
 
-  const ps_images = [
-    { img_id: psimg1 }, { img_id: psimg2 }, { img_id: psimg3 }, { img_id: psimg4 }
-  ];
+
 
   const s_images = [
     { img_id: simg1 }, { img_id: simg2 }, { img_id: simg3 }, { img_id: simg4 }, { img_id: simg5 },
@@ -46,30 +45,23 @@ function Horizon() {
 
   return (
     <div className='text-white font-roboto'>
-      {/* BACKGROUND ELEMENTS */}
-      <img className='absolute left-20p -z-10 align-middle md-3:left-0 md-3:top-1/2 md-3:blur-sm ' src={bg1} alt="bg1" />
-      <img className='fixed left-vw-30 -z-10 align-middle' src={bg2} alt="bg2" height={50} width={50}/>
-      <img className='fixed top-vh-50 right-vw-20 rotate-60-deg -z-10 align-middle' src={bg2} alt="bg3" height={70} width={70}/>
-      <img className='fixed right-vw-15 rotate-20-deg -z-20 align-middle' src={bg2} alt="bg3" height={40} width={40}/>
-      <div className='w-vw-60 h-vh-60 absolute top-20p -left-10 rounded-full bg-custom-blur-bg blur-blur-250 -z-one'></div>
-
       {/* Landing part Horizon */}
       <div className='h-auto px-6 py-12 my-12 text-center  '>
-        <p className='text-vw-2.3 font-normal font-rosario text-dark-blue pb-6 md-1:pb-4 md-1:text-xl'>
+        <p className='text-vw-2.3 font-light font-rosario text-white pb-6 md-1:pb-4 md-1:text-xl'>
           FCC IIT-HYDERABAD Presents
         </p>
         <div className='mx-auto w-full flex-col gap-0 m-6 md-1:mb-6 mt-0'>
-          <p className='w-full font-normal text-vw-10 md:text-vw-10 md-1:text-6xl md-1:leading-normal'>HORIZON 24'</p>
+          <p className='w-full font-normal text-vw-10 text-custom-blue md:text-vw-10 md-1:text-6xl md-1:leading-normal'>HORIZON 25'</p>
         </div>
         <div className="gap-2 flex justify-center py-8 md-1:py-2">
-          <button className="font-rosario bg-custom-butt-bg hover:bg-custom-butt-bg-hover rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block
-          font-normal ">TODAY'S SCHEDULE </button>
+          <button className="font-rosario bg-custom-blue font-bold rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block">
+            TODAY'S SCHEDULE </button>
         </div>
       </div>
 
       {/* About the Event */}
       <div className="mt-10p ml-auto mr-auto w-full h-auto flex flex-col items-center p-1p 
-        justify-center bg-custom-grad-1">
+        justify-center bg-gradient-to-r from-custom-gradient-2 to-custom-gradient-1">
         <div className='m-auto w-90p my-4'>
           <div className="font-rosario md-1:hidden w-full flex items-baseline h-50p text-vw-7 pt-2p pl-2p text-left leading-100p
             font-medium">
@@ -87,7 +79,7 @@ function Horizon() {
           </div>
 
           <div className='w-full h-auto flex justify-evenly items-center flex-wrap my-4'>
-            <div className='w-full flex flex-wrap justify-center'>
+            <div className='w-full flex flex-wrap justify-between'>
               {images.map((image, index) => (
                 <img className='md-1:w-1/2 md-2:w-23p' key={index} src={image.img_id} alt={`Image ${index + 1}`} />
               ))}
@@ -113,18 +105,8 @@ function Horizon() {
       </div>
       
       {/* Past Speakers */}
-      <div className='flex flex-col h-auto w-full items-center justify-center my-6'>
-        <div className='flex items-center justify-center w-90p my-6'>
-          <p className='font-rosario mt-0 mb-4 text-7xl md-1:text-5xl md-1:w-full md-1:text-center'>Past Speakers</p>
-        </div>
-        <div className='px-12 my-6 flex justify-content-evenly w-full'>
-          <div className='flex justify-evenly flex-wrap md-1:gap-3'>
-            {ps_images.map((image,index)=>(
-              <img className='w-23p h-auto md-1:w-2/5 md-1:flex-wrap ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
-            ))}
-          </div>
-        </div>
-      </div>
+      
+      <Speakers/>
 
       {/* Sponsers */}
       <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
@@ -144,3 +126,4 @@ function Horizon() {
 }
 
 export default Horizon  
+
