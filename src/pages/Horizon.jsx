@@ -53,11 +53,15 @@ function Horizon() {
         <div className='mx-auto w-full flex-col gap-0 m-6 md-1:mb-6 mt-0'>
           <p className='w-full font-normal text-vw-10 text-custom-blue md:text-vw-10 md-1:text-6xl md-1:leading-normal'>HORIZON 25'</p>
         </div>
-        <div className="gap-2 flex justify-center py-8 md-1:py-2">
+
+        {/* Schedule Button */}
+        {/* <div className="gap-2 flex justify-center py-8 md-1:py-2">
           <button className="font-rosario bg-custom-blue font-bold rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block">
             TODAY'S SCHEDULE </button>
-        </div>
+        </div> */}
+
       </div>
+
 
       {/* About the Event */}
       <div className="mt-10p ml-auto mr-auto w-full h-auto flex flex-col items-center p-1p 
@@ -73,7 +77,7 @@ function Horizon() {
             About the Event
           </div>
           <div className="w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p 
-            md-1:text-vw-5 md-1:text-center">Horizon 2024, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
+            md-1:text-vw-5 md-1:text-center">Horizon 2025, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
             and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
             Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
           </div>
@@ -89,15 +93,15 @@ function Horizon() {
           <div className='font-rosario md-1:hidden flex items-baseline h-1/2 leading-100p text-left font-medium text-vw-7 pt-2p pl-2p'>
             Our Vision
             <br></br>
-            for 2024
+            for 2025
           </div>
           <div className='font-rosario md-2:hidden flex items-baseline h-1/2 leading-100p justify-center font-medium text-vw-7 pt-2p pl-2p md-1:pb-4'>
-              Our Vision for 2024
+              Our Vision for 2025
           </div>
 
           <div className='w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p
               md-1:text-vw-5 md-1:text-center'>
-            In 2023-24,  Horizon aims to expand its influence to students community by inviting industry, academia, and government experts to share insights on Finance, Consulting,
+            In 2024-25,  Horizon aims to expand its influence to students community by inviting industry, academia, and government experts to share insights on Finance, Consulting,
             and Product Management.
             <p className='mt-0 mb-4'>We will introduce new competitions and workshops solidifying its status as the go-to platform for Finance, Consulting, and Product Management enthusiasts.</p>
           </div>
