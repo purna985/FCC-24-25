@@ -21,9 +21,9 @@ function Navbar() {
 
 
   return (
-    <nav className="fixed w-full h-[12vh] flex justify-between px-[4vw] z-50 bg-[#ffffff12]">
+    <nav className=" w-full flex justify-between px-[4vw] z-50">
       <div className=" h-full grid items-center">
-        <img src={Logo} alt="FCC Logo" className="h-[3.5vw]" />
+        <img src={Logo} alt="FCC Logo" className="w-[4rem] " />
       </div>
       <ul className="links flex justify-between items-center gap-[2vw] text-[1vw] font-poppins font-light">
         <li><a onClick={() => togglePage("Home")}

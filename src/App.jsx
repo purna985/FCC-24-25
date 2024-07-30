@@ -5,6 +5,7 @@ import Home from './pages/Home'
 
 
 import Navbar from './components/Navbar';
+import Schedule from "./pages/Schedule";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
     </>
   )
