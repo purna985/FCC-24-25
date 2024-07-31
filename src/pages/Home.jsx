@@ -11,14 +11,14 @@ function Home() {
             <div className="font-ikaros  md-1:w-auto lg:w-1/2 w-full text-center self-center h-full justify-between items-center">
               <div className="titles">
                 <p
-                  className="text-[#1270ed] text-[6rem] md-1:text-[4rem] sm:text-[2.5rem] leading-100p md:text-start text-center">Finance
+                  className="text-[#1270ed] text-[5.5rem] md-1:text-[4rem] sm:text-[2.5rem] leading-100p md:text-start text-center">Finance
                   and Consulting Club</p>
                 <p
                   className="font-ikaros font-light sm:text-[1.5rem] text-[2.5rem] leading-normal text-start md-1:text-center">IIT
                   Hyderabad</p>
               </div>
               <Link to='/horizon'
-                className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-4/6 mt-20 text-[2.2rem] text-white bg-[#172eff] rounded-[1.5625rem] flex justify-center items-center"
+                className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-1/2 mt-20 text-[2.2rem] text-white bg-[#172eff] rounded-[1.5625rem] flex justify-center items-center"
               >
                 Horizon 25&apos; <img src="src/assets/home/Double Alt Arrow Right.png" height={"30"} alt="" />
               </Link>
