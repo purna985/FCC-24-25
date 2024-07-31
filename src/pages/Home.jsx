@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 function Home() {
   return (
     <div className=" overflow-x-hidden ">
@@ -16,14 +17,14 @@ function Home() {
                   className="font-ikaros font-light sm:text-[1.5rem] text-[2.5rem] leading-normal text-start md-1:text-center">IIT
                   Hyderabad</p>
               </div>
-              <div
+              <Link to='/horizon'
                 className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-4/6 mt-20 text-[2.2rem] text-white bg-[#172eff] rounded-[1.5625rem] flex justify-center items-center"
               >
-                Horizon 24' <img src="src/assets/home/Double Alt Arrow Right.png" height={"30"} alt="" />
-              </div>
+                Horizon 25&apos; <img src="src/assets/home/Double Alt Arrow Right.png" height={"30"} alt="" />
+              </Link>
             </div>
 
-            <div className="cardbox w-full sm:w-[45%] h-full flex justify-center self-end mx-auto">
+            {/* <div className="cardbox w-full sm:w-[45%] h-full flex justify-center self-end mx-auto">
               <div className="horizon-card m-auto p-6 sm:px-[20px] sm:pt-0 sm:pb-[20px] flex flex-col items-stretch justify-between font-ikaros w-[90%] max-w-[420px] min-w-[300px] sm:min-w-[400px] h-[17rem] rounded-[2rem] border border-solid border-[#ffffff41] bg-gray-500 "
                 style={{ background: "linear-gradient(180deg, rgba(142, 141, 141, 0.5) -36.57%, rgba(217, 217, 217, 0) 141.73%)", backdropFilter: "blur(36px)" }}
               >
@@ -44,7 +45,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             
           </div>
         </div>
