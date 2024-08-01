@@ -21,7 +21,7 @@ function Navbar() {
 
 
   return (
-    <nav className="sticky w-full h-[12vh] flex justify-between px-[4vw] z-50 bg-transparent">
+    <nav className="sticky w-full h-[12vh] flex justify-between px-[4vw] z-50 bg-transparent ">
       <div className=" h-full grid items-center">
         <img src={Logo} alt="FCC Logo" className="h-[3.5vw]" />
       </div>

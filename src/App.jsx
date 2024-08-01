@@ -9,10 +9,12 @@ import Schedule from "./pages/Schedule";
 function App() {
 
   return (
-    <div className="" >
+    <div className="bg-black" >
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/horizon" element={<Horizon />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
     </div>
   )

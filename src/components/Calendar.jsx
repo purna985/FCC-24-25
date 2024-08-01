@@ -27,7 +27,7 @@ const ReactCalendar = () => {
   };
 
   return (
-    <div className="w-[80%] mx-auto flex flex-col items-center mt-6 " >
+    <div className="w-[80%] mx-auto flex flex-col items-center mt-6 min-h-screen" >
       <Calendar
         className="react-calendar"
         onChange={handleDateChange}

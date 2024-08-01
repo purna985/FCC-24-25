@@ -44,7 +44,7 @@ function Horizon() {
   ]
 
   return (
-    <div className='text-white font-roboto'>
+    <div className='text-white font-roboto bg-black'>
       {/* Landing part Horizon */}
       <div className='h-auto px-6 py-12 my-12 text-center  '>
         <p className='text-vw-2.3 font-light font-rosario text-white pb-6 md-1:pb-4 md-1:text-xl'>
