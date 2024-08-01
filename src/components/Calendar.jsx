@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Calendar from "react-calendar";
 import axios from "axios";
+import '../styles/calendar.css'
 
 const ReactCalendar = () => {
   const [date, setDate] = useState(new Date());
@@ -27,14 +28,16 @@ const ReactCalendar = () => {
   };
 
   return (
-    <div className="w-[80%] mx-auto flex flex-col items-center mt-6 min-h-screen" >
+    <div className="w-full mx-auto flex flex-col items-center mt-6 min-h-screen" >
+      <h1 className="w-[80%] text-2xl md:text-5xl text-center text-wrap mt-5 font-medium" >No Events Scheduled Currently. Please Stay Tuned...</h1>
       <Calendar
-        className="react-calendar"
+        className="react-calendar md:w-1/2 flex flex-col flex-wrap border-none p-5 mt-6 bg-[#3E3E3A] shadow-md shadow-black text-white"
         onChange={handleDateChange}
         value={date}
       />
       <p className="date">{date.toDateString()}</p>
       {showEvents()}
+
     </div>
   );
 };
