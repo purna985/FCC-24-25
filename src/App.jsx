@@ -16,12 +16,12 @@ function App() {
     <div className="bg-black" >
       <Navbar/>
       <Routes>
-        <Route path="/FCC-24-25/" element={<Home />} />
-        <Route path="/FCC-24-25/horizon" element={<Horizon />} />
-        <Route path="/FCC-24-25/schedule" element={<Schedule />} />
-        <Route path="/FCC-24-25/sponsors" element={<Sponsors />} />
-        <Route path="/FCC-24-25/team" element={<Team />} />
-        <Route path="/FCC-24-25/resources" element={<Resources />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/horizon" element={<Horizon />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
       <Footer />
     </div>
