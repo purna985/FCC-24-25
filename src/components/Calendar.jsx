@@ -29,7 +29,7 @@ const ReactCalendar = () => {
 
   return (
     <div className="w-full mx-auto flex flex-col items-center mt-6 min-h-screen" >
-      <h1 className="w-[80%] text-2xl md:text-5xl text-center text-wrap mt-5 font-medium mb-8" >No Events Scheduled Currently. <br /> Please Stay Tuned...</h1>
+      <h1 className="w-[80%] text-2xl md:text-5xl text-center text-wrap mt-5 font-normal mb-8" >No Events Scheduled Currently. <br /> Please Stay Tuned...</h1>
       <Calendar
         className="react-calendar md:w-1/2 flex flex-col flex-wrap border-none p-5 mt-6 bg-[#3E3E3A] shadow-md shadow-black text-white"
         onChange={handleDateChange}

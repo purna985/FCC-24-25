@@ -5,6 +5,7 @@ import Horizon from "./pages/Horizon.jsx";
 import Schedule from "./pages/Schedule.jsx";
 import Sponsors from "./pages/Sponsors.jsx";
 import Team from "./pages/Team.jsx";
+import Resources from "./pages/Resources.jsx";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
       <Footer />
     </div>

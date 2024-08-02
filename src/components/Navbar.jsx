@@ -56,10 +56,10 @@ function Navbar() {
           <li><a href='/horizon'
                  className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-2 rounded-[300px]' : '')}>Horizon</a>
           </li>
-          <li><a href=''
-                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/events' ? ' border-solid border-2 rounded-[300px]' : '')}>Events</a>
+          <li><a href='/schedule'
+                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-2 rounded-[300px]' : '')}>Events</a>
           </li>
-          <li><a href=''
+          <li><a href='/resources'
                  className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-2 rounded-[300px]' : '')}>Resources</a>
           </li>
           <li><a href=''
