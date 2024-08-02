@@ -44,27 +44,27 @@ function Navbar() {
 
 
         <div className='pl-4'>
-          <Link to='/'
+          <Link to='/FCC-24-25/'
              className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly'>
             <img src={logo} alt='FCC' width='45' height='45'/>
           </Link>
         </div>
 
         <ul className=' navlinks w-[50%] text-xl hidden lg:flex justify-between items-center pr-5'>
-          <li><a href='/'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Home</a>
+          <li><a href='/FCC-24-25/'
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/FCC-24-25/' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Home</a>
           </li>
-          <li><a href='/horizon'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Horizon</a>
+          <li><a href='/FCC-24-25/horizon'
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/FCC-24-25/horizon' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Horizon</a>
           </li>
-          <li><a href='/schedule'
-                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Events</a>
+          <li><a href='/FCC-24-25/schedule'
+                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/FCC-24-25/schedule' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Events</a>
           </li>
-          <li><a href='/resources'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Resources</a>
+          <li><a href='/FCC-24-25/resources'
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/FCC-24-25/resources' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Resources</a>
           </li>
-          <li><a href='/team'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Team</a>
+          <li><a href='/FCC-24-25/team'
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/FCC-24-25/team' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Team</a>
           </li>
         </ul>
 
@@ -88,16 +88,16 @@ function Navbar() {
             <div>X</div>
           </div>
           <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
-            <a href="/"
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a>
-            <a href="/horizon"
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a>
-            <a href=""
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/events" ? " text-blue-300" : " text-white hover:text-blue-300")}>Events</a>
-            <a href=""
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}>Resources</a>
-            <a href=""
-               className={"text-5xl font-montserrat font-light" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a>
+            <a href="/FCC-24-25/"
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/FCC-24-25/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a>
+            <a href="/FCC-24-25/horizon"
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/FCC-24-25/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a>
+            <a href="/FCC-24-25/events"
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/FCC-24-25/events" ? " text-blue-300" : " text-white hover:text-blue-300")}>Events</a>
+            <a href="/FCC-24-25/resources"
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/FCC-24-25/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}>Resources</a>
+            <a href="/FCC-24-25/team"
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/FCC-24-25/team" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a>
           </div>
         </div>
       </header>
