@@ -1,49 +1,106 @@
-import { useState, useEffect } from "react";
+import {useLocation} from "react-router-dom";
+import {useRef, useState} from "react";
+import {useGSAP} from "@gsap/react";
 
+import gsap from "gsap";
 
-import Logo from '../assets/fcc logo high res.png'
+// import logo from '../assets/fcc-logo-white.png'
+import logo from '../assets/fcc-white.svg'
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [pageState, setPageState] = useState(localStorage.getItem('pageState'))
-  
-  if (localStorage.getItem('pageState') !== window.location.pathname) {
-    localStorage.setItem('pageState', window.location.pathname)
-  }
 
-  useEffect(() => {
-    localStorage.setItem('pageState', pageState);
-  }, [pageState]);
+  const location = useLocation()
 
-  const togglePage = (page) => {
-    setPageState(page)
-  }
+  const menuRef = useRef(null);
+  const [open, changeState] = useState(false);
+
+  useGSAP(() => {
+    if (open === false) {
+      gsap.to(menuRef.current, {
+        left: "100%",
+        duration: 0.3,
+      })
+    }
+    else if (open === true) {
+      gsap.to(menuRef.current, {
+        left: "0%",
+        duration: 0.3,
+      })
+    }
+  }, [open])
+
+
 
 
 
   return (
-    <nav className="sticky w-full h-[12vh] flex justify-between px-[4vw] z-50 bg-transparent ">
-      <div className=" h-full grid items-center">
-        <img src={Logo} alt="FCC Logo" className="h-[3.5vw]" />
-      </div>
-      <ul className="links flex justify-between items-center gap-[2vw] text-[1vw] font-poppins font-light">
-        <li><a onClick={() => togglePage("Home")}
-               className={(pageState === "/" ? "text-blue-300" : "text-white")}
-               href="/">Home</a></li>
-        <li><a onClick={() => togglePage("Horizon")}
-               className={(pageState === "/horizon" ? "text-blue-300" : "text-white")}
-               href="/horizon">Horizon</a></li>
-        <li><a onClick={() => togglePage("Schedule")}
-               className={(pageState === "/schedule" ? "text-blue-300" : "text-white")}
-               href="/schedule">Schedule</a></li>
-        <li><a onClick={() => togglePage("Sponsors")}
-               className={(pageState === "/sponsors" ? "text-blue-300" : "text-white")}
-               href="/sponsors">Sponsors</a></li>
-        <li><a onClick={() => togglePage("Team")}
-               className={(pageState === "/team" ? "text-blue-300" : "text-white")}
-               href="/team">Team</a></li>
-      </ul>
+    <div className="container-fluid header flex font-semibold justify-center p-10">
+      <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-gradient-to-r from-blue-600 to-blue-900 rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] ">
+      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#205398] rounded-[300px] p-3"> */}
+      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#0E3E81] rounded-[300px] p-2"> */}
+      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-2"> */}
 
-    </nav>
+
+        <div className='pl-4'>
+          <Link to='/'
+             className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly'>
+            <img src={logo} alt='FCC' width='35' height='35'/>
+          </Link>
+        </div>
+
+        <ul className=' navlinks w-[50%] text-xl hidden lg:flex justify-between items-center pr-5'>
+          <li><a href='/'
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-2 rounded-[300px]' : '')}>Home</a>
+          </li>
+          <li><a href='/horizon'
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-2 rounded-[300px]' : '')}>Horizon</a>
+          </li>
+          <li><a href=''
+                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/events' ? ' border-solid border-2 rounded-[300px]' : '')}>Events</a>
+          </li>
+          <li><a href=''
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-2 rounded-[300px]' : '')}>Resources</a>
+          </li>
+          <li><a href=''
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/teams' ? ' border-solid border-2 rounded-[300px]' : '')}>Team</a>
+          </li>
+        </ul>
+
+
+        <button className='btn btn-primary lg:hidden' type='button' onClick={() => {
+          changeState(true);
+        }}>
+          <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' className='bi bi-list'
+               viewBox='0 0 16 16'>
+            <path fillRule='evenodd'
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+
+        <div className="fixed top-0 w-screen h-screen bg-black z-10 lg:hidden flex flex-col overflow-hidden left-[100%]"
+             ref={menuRef}>
+          <div className="flex justify-end bg-transparent w-full h-[20%] items-center p-[5%] cursor-pointer"
+               onClick={() => {
+                 changeState(false)
+               }}>
+            <div>X</div>
+          </div>
+          <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
+            <a href="/"
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}>Home</a>
+            <a href="/horizon"
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}>Horizon</a>
+            <a href=""
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/events" ? " text-blue-300" : " text-white hover:text-blue-300")}>Events</a>
+            <a href=""
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}>Resources</a>
+            <a href=""
+               className={"text-5xl font-montserrat font-light" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}>Team</a>
+          </div>
+        </div>
+      </header>
+    </div>
   )
 }
 

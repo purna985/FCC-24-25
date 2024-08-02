@@ -32,6 +32,19 @@ export default {
         roboto: ['Roboto', 'sans-serif'],
         rosario: ['Rosario', 'sans-serif'],
         poppins: ['Poppins' , "sans-serif"],
+        'horizonText':'linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%)',
+      },
+      fontFamily: {
+        ikaros: ['"Ikaros Sans"', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        poppins: ['Poppins' , "sans-serif"],
+        rosario: ['Rosario', 'sans-serif'],
+      },
+      fontWeight: {
+        light: 200,
+        normal: 400,
       },
       fontSize:{
         'vw-2.3': '2.3vw',
@@ -66,8 +79,8 @@ export default {
       zIndex:{
         'one' : '1',
       },
-      
-      lineHeight:{
+      lineHeight: {
+        normal: 'normal',
         '100p': '100%',
       },
       animation:{
