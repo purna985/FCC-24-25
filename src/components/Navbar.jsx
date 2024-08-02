@@ -36,34 +36,35 @@ function Navbar() {
 
   return (
     <div className="container-fluid header flex font-semibold justify-center p-10">
-      <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-gradient-to-r from-blue-600 to-blue-900 rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] ">
+      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-gradient-to-r from-blue-600 to-blue-900 rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] "> */}
+      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] "> */}
       {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#205398] rounded-[300px] p-3"> */}
       {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#0E3E81] rounded-[300px] p-2"> */}
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-2"> */}
+      <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-2">
 
 
         <div className='pl-4'>
           <Link to='/'
              className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly'>
-            <img src={logo} alt='FCC' width='35' height='35'/>
+            <img src={logo} alt='FCC' width='45' height='45'/>
           </Link>
         </div>
 
         <ul className=' navlinks w-[50%] text-xl hidden lg:flex justify-between items-center pr-5'>
           <li><a href='/'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-2 rounded-[300px]' : '')}>Home</a>
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Home</a>
           </li>
           <li><a href='/horizon'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-2 rounded-[300px]' : '')}>Horizon</a>
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Horizon</a>
           </li>
           <li><a href='/schedule'
-                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-2 rounded-[300px]' : '')}>Events</a>
+                 className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Events</a>
           </li>
           <li><a href='/resources'
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-2 rounded-[300px]' : '')}>Resources</a>
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Resources</a>
           </li>
-          <li><a href=''
-                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/teams' ? ' border-solid border-2 rounded-[300px]' : '')}>Team</a>
+          <li><a href='/team'
+                 className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Team</a>
           </li>
         </ul>
 

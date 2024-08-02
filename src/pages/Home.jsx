@@ -18,7 +18,7 @@ function Home() {
                   Hyderabad</p>
               </div>
               <Link to='/horizon'
-                className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-1/2 mt-20 text-[2.2rem] text-white bg-[#172eff] rounded-[1.5625rem] flex justify-center items-center"
+                className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-1/2 mt-20 text-[2.2rem] text-white bg-[#172EFF] rounded-[1.5625rem] flex justify-center items-center"
               >
                 Horizon 25&apos; <img src="src/assets/home/Double Alt Arrow Right.png" height={"30"} alt="" />
               </Link>
