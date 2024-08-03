@@ -1,5 +1,6 @@
 import React from 'react'
 import Speakers from '../components/Speakers'
+import rupeeBlur from "/src/assets/home/rupeeblur.svg"
 
 import image1 from '../assets/horizon-about/p1.png'
 import image2 from '../assets/horizon-about/p2.png'
@@ -40,16 +41,23 @@ function Horizon() {
   ]
 
   return (
-    <div className='text-white font-roboto'>
+    <div className='text-white font-rosario'>
       {/* Landing part Horizon */}
-      <div className='h-auto px-6 py-12 my-12 text-center  '>
-        <p className='text-vw-2.3 font-light font-rosario text-white pb-6 md-1:pb-4 md-1:text-xl'>
-          FCC IIT-HYDERABAD Presents
+      <div className='md:min-h-screen px-6 py-12 mt-12 text-center  '>
+      <div className='absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
+      <div className='absolute right-0 top-[90vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
+
+        <p className='text-vw-2.3 font-light font-rosario text-white pb-6 md-1:pb-4 md-1:text-lg'>
+          FCC IIT-HYDERABAD <br /> Presents
         </p>
         <div className='mx-auto w-full flex-col gap-0 m-6 md-1:mb-6 mt-0'>
-          <p className='w-full font-normal text-vw-10 text-custom-blue md:text-vw-10 md-1:text-6xl md-1:leading-normal'>HORIZON 25&apos;</p>
+          <p className='w-full font-normal text-[4rem] text-custom-blue md:text-vw-10 md-1:leading-normal'>HORIZON 25&apos;</p>
         </div>
-
+            <img className="absolute top-[20vh] left-[50vw] rotate-[60deg] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+            <img className="absolute top-[80vh] right-[10vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+            <img className="absolute top-[20vh] left-[20vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+            <img className="absolute top-[80vh] left-[10vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+            <img className="absolute top-[20vh] right-[10vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
         {/* Schedule Button */}
         {/* <div className="gap-2 flex justify-center py-8 md-1:py-2">
           <button className="font-rosario bg-custom-blue font-bold rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block">
@@ -59,7 +67,7 @@ function Horizon() {
 
       {/* Horizon glimpse video */}
       <div className="m-auto py-[2vw] my-5 z-10">
-        <video className="h-[95vh] w-[95vw]" autoPlay muted loop>
+        <video className=" md:h-[90vh] w-[80%] mx-auto md:w-[90vw]" autoPlay muted loop draggable="false">
           <source src={glimpseVideo} />
           ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
         </video>

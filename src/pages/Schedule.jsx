@@ -3,7 +3,7 @@ import ReactCalendar from '../components/Calendar'
 
 export default function Schedule() {
   return (
-    <div>
+    <div className='min-h-screen'>
         <ReactCalendar />
     </div>
   )

@@ -14,7 +14,8 @@ function App() {
 
   return (
     <div className="bg-black" >
-      <Navbar/>
+      <Navbar />
+
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
