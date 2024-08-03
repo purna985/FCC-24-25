@@ -1,3 +1,7 @@
+import grp31 from "/src/assets/Group_31.svg"
+import msg201SVG from "/src/assets/home/messgae_1.svg"
+
+
 function Footer() {
   return (
     <div className="footer m-auto font-ikaros relative overflow-hidden container-fluid  " id="footer">
@@ -6,7 +10,7 @@ function Footer() {
       <footer className="flex flex-wrap pt-[4%] px-[4%] pb-[2%]" style={{backgroundColor: "rgb(15, 70, 144)"}}>
         <div className="w-full md:w-1/5 flex-col flex justify-between py-7">
           <a href="index.html" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <img src="src/assets/Group_31.svg" width="60%" height="60%" alt=""/>
+            <img src={grp31} width="60%" height="60%" alt=""/>
           </a>
           <p className="">© 2024 Copyright: FCC IIT Hyderabad</p>
         </div>
@@ -60,7 +64,7 @@ function Footer() {
               Telangana, India - 502285</p></li>
             <li className="nav-item mb-2">
               <a href="https://google.com" className="nav-link p-0 text-body-light flex items-center">
-                <img src="src/assets/home/messgae%201.svg" alt=""/>&nbsp;
+                <img src={msg201SVG} alt=""/>&nbsp;
                 fcc@gymkhana.iith.ac.in
               </a>
             </li>

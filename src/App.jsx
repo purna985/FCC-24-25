@@ -16,7 +16,7 @@ function App() {
     <div className="bg-black" >
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/sponsors" element={<Sponsors />} />
