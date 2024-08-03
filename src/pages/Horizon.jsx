@@ -7,11 +7,6 @@ import image3 from '../assets/horizon-about/p3.png'
 import image4 from '../assets/horizon-about/p4.png'
 
 
-import psimg1 from '../assets/pastspeakers/akhilsharma.svg'
-import psimg2 from '../assets/pastspeakers/gauravmahindra.svg'
-import psimg3 from '../assets/pastspeakers/rishabhjain.svg'
-import psimg4 from '../assets/pastspeakers/subbaperepa.svg'
-
 
 import simg1 from '../assets/sponsors/abhibus-min.png'
 import simg2 from '../assets/sponsors/decathalon-min.png'
@@ -28,6 +23,7 @@ import simg12 from '../assets/sponsors/sid farm-min.png'
 import simg13 from '../assets/sponsors/startupnews-min.png'
 import simg14 from '../assets/sponsors/stockgro-min.png'
 
+import glimpseVideo from "/src/assets/home/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4"
 
 function Horizon() {
 
@@ -59,8 +55,17 @@ function Horizon() {
           <button className="font-rosario bg-custom-blue font-bold rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block">
             TODAY'S SCHEDULE </button>
         </div> */}
-
       </div>
+
+      {/* Horizon glimpse video */}
+      <div className="m-auto py-[2vw] my-5 z-10">
+        <video className="h-[95vh] w-[95vw]" autoPlay muted loop>
+          <source src={glimpseVideo} />
+          ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
+        </video>
+      </div>
+
+
 
 
       {/* About the Event */}
@@ -78,8 +83,8 @@ function Horizon() {
           </div>
           <div className="w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p
             md-1:text-vw-5 md-1:text-center">Horizon 2025, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
-                                             and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
-                                             Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
+            and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
+            Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
           </div>
 
           <div className='w-full h-auto flex justify-evenly items-center flex-wrap my-4'>
@@ -110,7 +115,7 @@ function Horizon() {
 
       {/* Past Speakers */}
 
-      <Speakers/>
+      <Speakers />
 
       {/* Sponsers */}
       <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
@@ -119,8 +124,8 @@ function Horizon() {
         </div>
         <div className='flex w-full gap-3p animate-scroll-1'>
           <div className='flex basis-1/5 md-1:flex md-1:basis-1/4 gap-3p'>
-            {s_images.map((image, index)=>(
-              <img src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
+            {s_images.map((image, index) => (
+              <img src={image.img_id} key={index} alt={`Image ${index + 1}`}></img>
             ))}
           </div>
         </div>

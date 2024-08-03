@@ -1,18 +1,23 @@
 import React, {useState} from 'react'
 
 import psimg from '../assets/pastspeakers/s1.png'
-import psimg1 from '../assets/pastspeakers/gauravmahindra.svg'
+
+import psimg1 from '../assets/pastspeakers/akhilsharma.svg'
+import psimg2 from '../assets/pastspeakers/gauravmahindra.svg'
+import psimg3 from '../assets/pastspeakers/rishabhjain.svg'
+import psimg4 from '../assets/pastspeakers/subbaperepa.svg'
+
 import YearTile from './YearTile.jsx';
 
 function Speakers() {
   const ps_images_2022 = [
-    { img_id: psimg }, { img_id: psimg },{ img_id: psimg },{ img_id: psimg },
+    { img_id: psimg1 }, { img_id: psimg2 },{ img_id: psimg3 },{ img_id: psimg4 },
   ];
   const ps_images_2023 = [
-    { img_id: psimg1 }, { img_id: psimg },{ img_id: psimg },
+    { img_id: psimg2 }, { img_id: psimg3 },{ img_id: psimg4 },{ img_id: psimg1 },
   ];
   const ps_images_2024 = [
-    { img_id: psimg }, { img_id: psimg1 },{ img_id: psimg },{ img_id: psimg },{ img_id: psimg },
+    { img_id: psimg3 }, { img_id: psimg4 },{ img_id: psimg1 },{ img_id: psimg2 }
   ];
 
   const [year, setYear] = useState(localStorage.getItem("year") || "2024");
