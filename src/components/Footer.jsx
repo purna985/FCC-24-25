@@ -1,5 +1,6 @@
 import grp31 from "/src/assets/Group_31.svg"
 import msg201SVG from "/src/assets/home/messgae_1.svg"
+import logo from '../assets/fcc-white.svg'
 
 
 function Footer() {
@@ -10,7 +11,7 @@ function Footer() {
       <footer className="flex flex-wrap pt-[4%] px-[4%] pb-[2%]" style={{backgroundColor: "rgb(15, 70, 144)"}}>
         <div className="w-full md:w-1/5 flex-col flex justify-between py-7">
           <a href="index.html" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <img src={grp31} width="60%" height="60%" alt=""/>
+            <img src={logo} className="w-20 h-20 md:w-28 md:h-28" alt=""/>
           </a>
           <p className="">© 2024 Copyright: FCC IIT Hyderabad</p>
         </div>

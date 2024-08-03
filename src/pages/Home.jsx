@@ -8,13 +8,13 @@ import aboutSVG from "/src/assets/home/Vector.svg"
 import financeSVG from "/src/assets/home/finance.svg"
 import consultingSVG from "/src/assets/home/consulting.svg"
 import prodmanSVG from "/src/assets/home/prodman.svg"
-
+import horizonLogo from '../assets/home/HoRiZoN-logo-second-draft.png'
 
 function Home() {
   return (
     <div className=" overflow-x-hidden ">
 
-      <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center">
+      <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%]">
 
         {/* Bg elements */}
         <div className='absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
@@ -48,7 +48,7 @@ function Home() {
           >
             <div className="heading h-fit w-full flex items-center justify-between">
               <div className="fs-4 text-[#acababad] md:text-2xl ">FCC IIT Hyderabad</div>
-              <img className="horizon-logo w-15 h-10 md:w-20 md:h-10 " src="src/assets/home/HoRiZoN-logo-second-draft.png" alt="" />
+              <img className="horizon-logo w-15 h-10 md:w-16 md:h-12 " src={horizonLogo} alt="" />
             </div>
             <div className="horizon-title h-fit w-fit flex items-center justify-between">
               <div className="md:text-[5rem] text-[2.2rem] bg-clip-text text-[#1270ED] t">Horizon</div>
@@ -77,6 +77,20 @@ function Home() {
       <img className="absolute right-[-4%] top-[60%] -z-10" width="200" height="200" src={glowBlockSmall}
         alt="" /> */}
 
+      {/* Our Mission */}
+      <div className="w-full h-auto mt-5 mx-auto hidden md:flex flex-col py-[3%]">
+        <div className="w-full absolute right-0 ">
+          <img className="arrowsvg" src={aboutSVG} alt="" height="90%" width="100%" />
+        </div>
+        <p className=" text-left text-white font-rosario text-xl md:text-[2.5rem] leading-normal pl-[3%]">Our mission</p>
+        <div className="w-auto h-auto  text-[10vw] leading-[80%] pl-[5%] col-lg-6  ">
+          <p className="font-lato q1">TO PROVE</p>
+          <p className="font-lato q2">THAT <br /></p>
+          <p className="font-lato q3">ENGINEERS <br /></p>
+          <p className="font-lato q4">CAN DO</p>
+          <p className="font-lato q5" style={{ color: "#1507E8" }}>NUMBERS</p>
+        </div>
+      </div>
 
       {/* Who are we/ About us section */}
       <div
@@ -103,20 +117,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Our Mission */}
-      <div className="w-full h-auto mt-5 mx-auto hidden md:flex flex-col py-[3%]">
-        <div className="w-full absolute right-0 ">
-          <img className="arrowsvg" src={aboutSVG} alt="" height="90%" width="100%" />
-        </div>
-        <p className=" text-left text-white font-rosario text-xl md:text-[2.5rem] leading-normal pl-[3%]">Our mission</p>
-        <div className="w-auto h-auto  text-[10vw] leading-[80%] pl-[5%] col-lg-6  ">
-          <p className="font-lato q1">TO PROVE</p>
-          <p className="font-lato q2">THAT <br /></p>
-          <p className="font-lato q3">ENGINEERS <br /></p>
-          <p className="font-lato q4">CAN DO</p>
-          <p className="font-lato q5" style={{ color: "#1507E8" }}>NUMBERS</p>
-        </div>
-      </div>
 
 
       {/* Horizon glimpse video */}
