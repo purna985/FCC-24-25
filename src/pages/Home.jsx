@@ -1,4 +1,15 @@
 import {Link} from 'react-router-dom'
+
+import rupeeBlur from "/src/assets/home/rupeeblur.svg"
+import rightArrow from "/src/assets/home/Double Alt Arrow Right.png"
+import glowBlockSmall from "/src/assets/home/glowblocksmall.png"
+import aboutSVG from "/src/assets/home/Vector.svg"
+import glimpseVideo from "/src/assets/home/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4"
+import financeSVG from "/src/assets/home/finance.svg"
+import consultingSVG from "/src/assets/home/consulting.svg"
+import prodmanSVG from "/src/assets/home/prodman.svg"
+
+
 function Home() {
   return (
     <div className=" overflow-x-hidden ">
@@ -20,7 +31,7 @@ function Home() {
               <Link to='/horizon'
                 className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-1/2 mt-20 text-[2.2rem] text-white bg-[#172EFF] rounded-[1.5625rem] flex justify-center items-center"
               >
-                Horizon 25&apos; <img src="src/assets/home/Double Alt Arrow Right.png" height={"30"} alt="" />
+                Horizon 25&apos; <img src={rightArrow} height={"30"} alt="" />
               </Link>
             </div>
 
@@ -51,23 +62,23 @@ function Home() {
         </div>
       </div>
 
-      <img className="fixed left-[30vw] -z-10" src="src/assets/home/rupeeblur.svg" alt="" height="50" width="50"
+      <img className="fixed left-[30vw] -z-10" src={rupeeBlur} alt="" height="50" width="50"
            title="svg" />
-      <img className="fixed top-[50vh] right-[20vw] rotate-[60deg]" src="src/assets/home/rupeeblur.svg" alt="" height="70"
+      <img className="fixed top-[50vh] right-[20vw] rotate-[60deg]" src={rupeeBlur} alt="" height="70"
            width="70" title="svg" />
-      <img className="fixed right-[15vw] rotate-[20deg] -z-20" src="src/assets/home/rupeeblur.svg" alt="" height="40"
+      <img className="fixed right-[15vw] rotate-[20deg] -z-20" src={rupeeBlur} alt="" height="40"
            width="40" title="svg" />
       <div className="w-[60vw] h-[60vh] absolute top-[20%] left-[-10%] rounded-[100%] blur-[250px] z-[-1]"
         style={{ background: "rgba(126, 71, 241, 0.4)" }}></div>
-      <img className="absolute right-0 top-[80%] lg:right-1/2 lg:top-[80%] -z-10" src="src/assets/home/glowblocksmall.png"
+      <img className="absolute right-0 top-[80%] lg:right-1/2 lg:top-[80%] -z-10" src={glowBlockSmall}
         alt="" />
-      <img className="absolute right-[-4%] top-[60%] -z-10" width="200" height="200" src="src/assets/home/glowblocksmall.png"
+      <img className="absolute right-[-4%] top-[60%] -z-10" width="200" height="200" src={glowBlockSmall}
         alt="" />
 
 
       <div className="w-full h-auto mt-[15%] ml-auto mr-auto flex flex-col quote-span col-lg-6 py-[3%]">
         <div className="flex items-center justify-end w-[80%] absolute right-0 z-[-5]">
-          <img className="arrowsvg" src="src/assets/home/Vector.svg" alt="" height="90%" width="90%" />
+          <img className="arrowsvg" src={aboutSVG} alt="" height="90%" width="90%" />
         </div>
         <p className=" text-left text-white font-ikaros text-[2.5rem] leading-normal pl-[2%]">Our mission</p>
         <div className="w-auto h-auto text-[10vw] leading-[80%] pl-[2%] col-lg-6  ">
@@ -81,7 +92,7 @@ function Home() {
 
         <div className="m-auto py-[2vw] my-5 z-10">
           <video className="h-[95vh] w-[95vw]" autoPlay muted loop>
-            <source src="src/assets/home/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4" />
+            <source src={glimpseVideo} />
             ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
           </video>
         </div>
@@ -123,13 +134,13 @@ function Home() {
         </div>
         <div className="what-cards md:w-[95%] w-[90%] h-auto flex md:justify-center md:flex-wrap md:flex-row flex-col justify-between items-center md:gap-0 gap-[30px]">
           <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto p-8" id="card1">
-            <img src="src/assets/home/finance.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt="" />
+            <img src={financeSVG} className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt="" />
           </div>
           <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto p-8" id="card2">
-            <img src="src/assets/home/consulting.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt="" />
+            <img src={consultingSVG} className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt="" />
           </div>
           <div className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto p-8" id="card3">
-            <img src="src/assets/home/prodman.svg" className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt="" />
+            <img src={prodmanSVG} className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]" width="100%" height="100%" alt="" />
           </div>
         </div>
       </div>
