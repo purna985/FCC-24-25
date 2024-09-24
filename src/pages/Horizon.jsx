@@ -90,7 +90,7 @@ function Horizon() {
             About the Event
           </div>
           <div className="w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p
-            md-1:text-vw-5 md-1:text-center">Horizon 2025, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
+            md-1:text-[1.3rem] ">Horizon 2025, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
             and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
             Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
           </div>
@@ -98,7 +98,7 @@ function Horizon() {
           <div className='w-full h-auto flex justify-evenly items-center flex-wrap my-4'>
             <div className='w-full flex flex-wrap justify-between'>
               {images.map((image, index) => (
-                <img className='md-1:w-1/2 md-2:w-23p' key={index} src={image.img_id} alt={`Image ${index + 1}`} />
+                <img className='md-1:w-1/4 md-2:w-23p' key={index} src={image.img_id} alt={`Image ${index + 1}`} />
               ))}
             </div>
           </div>
@@ -113,7 +113,7 @@ function Horizon() {
           </div>
 
           <div className='w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p
-              md-1:text-vw-5 md-1:text-center'>
+              md-1:text-[1.2rem]'>
             In 2024-25,  Horizon aims to expand its influence to students community by inviting industry, academia, and government experts to share insights on Finance, Consulting,
             and Product Management.
             <p className='mt-0 mb-4'>We will introduce new competitions and workshops solidifying its status as the go-to platform for Finance, Consulting, and Product Management enthusiasts.</p>

@@ -15,7 +15,7 @@ function Footer() {
           </a>
           <p className="">© 2024 Copyright: FCC IIT Hyderabad</p>
         </div>
-        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3">
+        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3 md-1:hidden ">
           <h3 className="text-[1.5rem] md:text-[1.5vw]">About Us</h3>
           <ul className="flex flex-col gap-1 text-[1rem]">
             <li className="nav-item mb-2"><a href="pages/Comingsoon.html" className="nav-link p-0 text-body-light"
@@ -44,7 +44,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3">
+        <div className="w-1/2 md:w-1/5 flex-col flex justify-between gap-3 md-1:hidden ">
           <h3 className="text-[1.5rem] md:text-[1.5vw]">Socials</h3>
           <ul className="flex flex-col gap-1 text-[1rem]">
             <li className="nav-item mb-2"><a href="https://www.instagram.com/fcc_iith/" className="nav-link p-0 text-body-light"

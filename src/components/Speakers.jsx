@@ -30,7 +30,7 @@ function Speakers() {
 
   return (
     <div>
-      <div className='flex flex-col h-auto w-full items-center justify-center my-6'>
+      <div className='flex flex-col w-full items-center justify-center my-6'>
         <div className='flex items-center justify-center w-90p my-6'>
           <p className='font-rosario mt-0 mb-4 text-7xl md-1:text-5xl md-1:w-full md-1:text-center'>Speakers</p>
         </div>
@@ -44,9 +44,9 @@ function Speakers() {
           </div>
           {year === "2022" && (
             <div className='w-3/4'>
-              <div className='flex justify-evenly flex-wrap gap-3 md-1:gap-3'>
+              <div className='flex justify-evenly flex-wrap gap-3p md-1:gap-3'>
                 {ps_images_2022.map((image,index)=>(
-                  <img className='h-auto p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
+                  <img className='h-auto md:p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
                 ))}
               </div>
             </div>
@@ -55,7 +55,7 @@ function Speakers() {
             <div className='w-3/4'>
               <div className='flex justify-evenly flex-wrap gap-3 md-1:gap-3'>
                 {ps_images_2023.map((image,index)=>(
-                  <img className=' h-auto p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
+                  <img className='h-auto md:p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
                 ))}
               </div>
             </div>
@@ -64,7 +64,7 @@ function Speakers() {
             <div className='w-3/4'>
               <div className='flex justify-evenly flex-wrap gap-3 md-1:gap-3'>
                 {ps_images_2024.map((image,index)=>(
-                  <img className=' h-auto p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
+                  <img className='h-auto md:p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap  ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
                 ))}
               </div>
             </div>

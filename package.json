@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "axios": "^1.7.2",
+    "fcc-24-25": "file:",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-calendar": "^5.0.0",
