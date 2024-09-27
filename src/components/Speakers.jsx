@@ -5,16 +5,16 @@ import psimg2 from '../assets/pastspeakers/gauravmahindra.svg'
 import psimg3 from '../assets/pastspeakers/rishabhjain.svg'
 import psimg4 from '../assets/pastspeakers/subbaperepa.svg'
 
-import ps24_1 from '../assets/pastspeakers/Abhishek_Kar.png'
-import ps24_2 from '../assets/pastspeakers/Arjun_Beri.png'
-import ps24_3 from '../assets/pastspeakers/Ashwini_Bajaj.png'
-import ps24_4 from '../assets/pastspeakers/Kadam_Aggarwal.png'
-import ps24_5 from '../assets/pastspeakers/Mohit_Choudary.png'
-import ps24_6 from '../assets/pastspeakers/Mrityunjay_Kumar.png'
-import ps24_7 from '../assets/pastspeakers/Paresh_Gupta.png'
-import ps24_8 from '../assets/pastspeakers/Pratik_Dhoot.png'
-import ps24_9 from '../assets/pastspeakers/Raghavendra_Sai_Bhaskar_Tuta.png'
-import ps24_10 from '../assets/pastspeakers/Subhankar_Murar.png'
+import ps_2024_1 from '../assets/pastspeakers/Abhishek_Kar.png'
+import ps_2024_2 from '../assets/pastspeakers/Arjun_Beri.png'
+import ps_2024_3 from '../assets/pastspeakers/Ashwini_Bajaj.png'
+import ps_2024_4 from '../assets/pastspeakers/Kadam_Aggarwal.png'
+import ps_2024_5 from '../assets/pastspeakers/Mohit_Choudary.png'
+import ps_2024_6 from '../assets/pastspeakers/Mrityunjay_Kumar.png'
+import ps_2024_7 from '../assets/pastspeakers/Paresh_Gupta.png'
+import ps_2024_8 from '../assets/pastspeakers/Pratik_Dhoot.png'
+import ps_2024_9 from '../assets/pastspeakers/Raghavendra_Sai_Bhaskar_Tuta.png'
+import ps_2024_10 from '../assets/pastspeakers/Subhankar_Murar.png'
 
 import YearTile from './YearTile.jsx';
 
@@ -26,9 +26,9 @@ function Speakers() {
     { img_id: psimg2 }, { img_id: psimg3 },{ img_id: psimg4 },{ img_id: psimg1 },
   ];
   const ps_images_2024 = [
-    { img_id: ps24_1 }, { img_id: ps24_2 },{ img_id: ps24_3 },{ img_id: ps24_4 },
-    { img_id: ps24_5 }, { img_id: ps24_6 },{ img_id: ps24_7 },{ img_id: ps24_8 },
-    { img_id: ps24_9 }, { img_id: ps24_10 }
+    { img_id: ps_2024_1 }, { img_id: ps_2024_2 },{ img_id: ps_2024_3 },{ img_id: ps_2024_4 },
+    { img_id: ps_2024_5 }, { img_id: ps_2024_6 },{ img_id: ps_2024_7 },{ img_id: ps_2024_8 },
+    { img_id: ps_2024_9 }, { img_id: ps_2024_10 }
   ];
 
   const [year, setYear] = useState(localStorage.getItem("year") || "2024");
@@ -75,7 +75,7 @@ function Speakers() {
             <div className='w-3/4'>
               <div className='flex justify-evenly flex-wrap gap-3 md-1:gap-3'>
                 {ps_images_2024.map((image,index)=>(
-                  <img className='h-auto md:p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
+                  <img className='h-auto md:p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap  ' src= {image.img_id} key={index} alt={`Image ${index + 1}`}></img>
                 ))}
               </div>
             </div>
