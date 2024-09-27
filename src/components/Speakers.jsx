@@ -47,9 +47,9 @@ function Speakers() {
         </div>
         <div className='px-5 my-6 flex flex-row w-full'>
           <div className='w-1/4 h-full mr-8 flex flex-col items-center justify-between gap-3'>
-            <YearTile year= "2022" setYearChange={handleYearChange}/>
-            <YearTile year= "2023" setYearChange={handleYearChange}/>
             <YearTile year= "2024" setYearChange={handleYearChange}/>
+            <YearTile year= "2023" setYearChange={handleYearChange}/>
+            {/* <YearTile year= "2022" setYearChange={handleYearChange}/> */}
             {/* <YearTile />
 						<YearTile /> */}
           </div>
