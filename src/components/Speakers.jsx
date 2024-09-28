@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 
-import psimg1 from '../assets/pastspeakers/akhilsharma.svg'
-import psimg2 from '../assets/pastspeakers/gauravmahindra.svg'
-import psimg3 from '../assets/pastspeakers/rishabhjain.svg'
-import psimg4 from '../assets/pastspeakers/subbaperepa.svg'
+import ps_2023_1 from '../assets/pastspeakers/Akhil_Sharma.png'
+import ps_2023_2 from '../assets/pastspeakers/Gaurav_Mahindra.png'
+import ps_2023_3 from '../assets/pastspeakers/Rishabh_Jain.png'
+import ps_2023_4 from '../assets/pastspeakers/Subba_Perepa.png'
 
 import ps_2024_1 from '../assets/pastspeakers/Abhishek_Kar.png'
 import ps_2024_2 from '../assets/pastspeakers/Arjun_Beri.png'
@@ -20,10 +20,10 @@ import YearTile from './YearTile.jsx';
 
 function Speakers() {
   const ps_images_2022 = [
-    { img_id: psimg1 }, { img_id: psimg2 },{ img_id: psimg3 },{ img_id: psimg4 },
+    { img_id: ps_2023_1 }, { img_id: ps_2023_1 },{ img_id: ps_2023_1 },{ img_id: ps_2023_1 },
   ];
   const ps_images_2023 = [
-    { img_id: psimg2 }, { img_id: psimg3 },{ img_id: psimg4 },{ img_id: psimg1 },
+    { img_id: ps_2023_1 }, { img_id: ps_2023_2 },{ img_id: ps_2023_3 },{ img_id: ps_2023_4 },
   ];
   const ps_images_2024 = [
     { img_id: ps_2024_1 }, { img_id: ps_2024_2 },{ img_id: ps_2024_3 },{ img_id: ps_2024_4 },
@@ -47,9 +47,9 @@ function Speakers() {
         </div>
         <div className='px-5 my-6 flex flex-row w-full'>
           <div className='w-1/4 h-full mr-8 flex flex-col items-center justify-between gap-3'>
-            <YearTile year= "2024" setYearChange={handleYearChange}/>
+            <YearTile year= "2022" setYearChange={handleYearChange}/>
             <YearTile year= "2023" setYearChange={handleYearChange}/>
-            {/* <YearTile year= "2022" setYearChange={handleYearChange}/> */}
+            <YearTile year= "2024" setYearChange={handleYearChange}/>
             {/* <YearTile />
 						<YearTile /> */}
           </div>
