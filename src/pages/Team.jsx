@@ -123,11 +123,11 @@ TeamPic.propTypes = {
 function Team() {
   const consHead = {
     name: "Pritesh Singh",
-    photo: "",
+    photo: "src/assets/team/consulting/Pritesh_Singh.jpeg",
   };
   const finHead = {
     name: "Samuel John",
-    photo: "",
+    photo: "src/assets/team/finance/1.jpg",
   };
   const multHead = {
     name: "Snehil Singh",
@@ -142,12 +142,12 @@ function Team() {
     photo: "src/assets/team/pr/1.jpg",
   };
   const webHead = {
-    name: "",
+    name: "Anand Kasyup",
     photo: "src/assets/team/web/1.jpeg",
   };
   const designHead={
     name: "Radhika Bondre",
-    photo: "src/assets/team/design/1.jpg",
+    photo: "src/assets/team/design/Radhika_Rajesh_Bondre.jpg",
   }
   const cpgHead = {
     name: "Raghav Gupta",
@@ -216,7 +216,7 @@ function Team() {
     { name: "Coordinator 1", photo: "src/assets/team/design/2.jpg" },
     { name: "Coordinator 2", photo: "src/assets/team/design/3.jpg" },
     { name: "Coordinator 3", photo: "src/assets/team/design/4.jpg" },
-    { name: "Coordinator 3", photo: "src/assets/team/design/5.jpg" },
+    { name: "Coordinator 3", photo: "src/assets/team/design/5.jpeg" },
   ];
 
 
@@ -330,8 +330,8 @@ function Team() {
       />
       <TeamPic
         title="Design"
-        head={cpgHead}
-        coordinators={cpgCoords}
+        head={designHead}
+        coordinators={designCoords}
       />
       <TeamPic
         title="Web Development"
