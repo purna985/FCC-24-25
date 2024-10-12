@@ -121,6 +121,9 @@ TeamPic.propTypes = {
   ).isRequired,
 };
 
+import Head1 from "/src/assets/team/1.jpeg";
+import Head2 from "/src/assets/team/2.jpg";
+
 import PriteshSingh from "/src/assets/team/consulting/Pritesh_Singh.jpeg";
 import Samuel from "/src/assets/team/finance/1.jpg";
 import Snehil from "/src/assets/team/multimedia/1.jpg";
@@ -309,7 +312,7 @@ function Team() {
           }}
         >
           <img
-            src="src/assets/team/1.jpeg"
+            src={Head1}
             alt="overall head"
             className="w-45 h-45 rounded-full object-cover mb-2"
             style={{ height: "180px", width: "180px", objectFit: "cover" }}
@@ -342,7 +345,7 @@ function Team() {
           }}
           >
           <img
-            src="src/assets/team/2.jpg"
+            src={Head2}
             alt="overall head"
             className="w-45 h-45 rounded-full object-cover mb-2"
             style={{ height: "180px", width: "180px", objectFit: "cover" }}
