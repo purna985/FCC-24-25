@@ -51,20 +51,20 @@ function Navbar() {
         </div>
 
         <ul className=' navlinks w-[50%] text-xl hidden lg:flex justify-between items-center pr-5'>
-          <li><a href='/'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Home</a>
+          <li><Link to='/'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Home</Link>
           </li>
-          <li><a href='/horizon'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Horizon</a>
+          <li><Link to='/horizon'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Horizon</Link>
           </li>
-          <li><a href='/schedule'
-            className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Events</a>
+          <li><Link to='/schedule'
+            className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Events</Link>
           </li>
-          <li><a href='/resources'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Resources</a>
+          <li><Link to='/resources'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Resources</Link>
           </li>
-          <li><a href='/team'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Team</a>
+          <li><Link to='/team'
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#1270ED] border-2 rounded-[300px] text-[#1270ED] ' : '')}>Team</Link>
           </li>
         </ul>
 
@@ -89,36 +89,36 @@ function Navbar() {
             >X</div>
           </div>
           <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
-            <a href="/"
+            <Link to="/"
               className={"text-4xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
-            >Home</a>
-            <a href="/horizon"
+            >Home</Link>
+            <Link to="/horizon"
               className={"text-4xl font-montserrat font-light" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
-            >Horizon</a>
-            <a href="/schedule"
+            >Horizon</Link>
+            <Link to="/schedule"
               className={"text-4xl font-montserrat font-light" + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
-            >Events</a>
-            <a href="/resources"
+            >Events</Link>
+            <Link to="/resources"
               className={"text-4xl font-montserrat font-light" + (location.pathname === "/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
-            >Resources</a>
-            <a href="/team"
+            >Resources</Link>
+            <Link to="/team"
               className={"text-4xl font-montserrat font-light" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
-            >Team</a>
+            >Team</Link>
           </div>
         </div>
       </header>

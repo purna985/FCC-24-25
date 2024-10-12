@@ -3,7 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import  {FaInstagram, FaLinkedin} from 'react-icons/fa';
 
-import img1 from "../assets/team/consulting/5.jpg";
+
+
 
 function TeamPic({ title, head, coordinators }) {
   const responsive = {
@@ -120,22 +121,86 @@ TeamPic.propTypes = {
   ).isRequired,
 };
 
+import PriteshSingh from "/src/assets/team/consulting/Pritesh_Singh.jpeg";
+import Samuel from "/src/assets/team/finance/1.jpg";
+import Snehil from "/src/assets/team/multimedia/1.jpg";
+import Nishant from "/src/assets/team/operations/1.jpg";
+import Anand from "/src/assets/team/web/1.jpeg";
+import Radhika from "/src/assets/team/design/Radhika_Rajesh_Bondre.jpg";
+import Raghav from "/src/assets/team/CP_and_growth/1.jpg";
+
+import Garvit from "/src/assets/team/finance/2.jpg";
+import Ankita from "/src/assets/team/finance/3.jpg";
+import Disha from "/src/assets/team/finance/4.jpg";
+import Soham from "/src/assets/team/finance/5.jpg";
+import Faheem from "/src/assets/team/finance/6.jpg";
+import Shravan from "/src/assets/team/finance/7.jpeg";
+import Parth from "/src/assets/team/finance/8.jpg";
+
+import Ayaan from "/src/assets/team/consulting/2.jpeg";
+import Surya from "/src/assets/team/consulting/3.jpg";
+import Gaurang from "/src/assets/team/consulting/4.jpg";
+import Hiba from "/src/assets/team/consulting/5.jpg";
+import Harsha from "/src/assets/team/consulting/6.jpeg";
+import Malakar from "/src/assets/team/consulting/7.jpg";
+import Sidhartha from "/src/assets/team/consulting/8.jpeg";
+
+import Coordinator1 from "/src/assets/team/multimedia/2.jpg";
+import Coordinator2 from "/src/assets/team/multimedia/3.jpg";
+import Coordinator3 from "/src/assets/team/multimedia/4.jpg";
+
+import Harshita from "/src/assets/team/operations/2.jpg";
+import Kartik from "/src/assets/team/operations/3.jpg";
+import Shubham from "/src/assets/team/operations/4.jpg";
+import Krishna from "/src/assets/team/operations/5.jpg";
+import Yogesh from "/src/assets/team/operations/6.jpg";
+
+import Aashi from "/src/assets/team/pr/2.jpg";
+import Atharv from "/src/assets/team/pr/3.jpg";
+import Abhignya from "/src/assets/team/pr/4.jpg";
+import Pranay from "/src/assets/team/pr/5.jpg";
+import Aakarsh from "/src/assets/team/pr/6.jpg";
+import Labdhi from "/src/assets/team/pr/7.jpeg";
+import Rohan from "/src/assets/team/pr/8.jpg";
+import Panshul from "/src/assets/team/pr/9.jpg";
+
+import Coordinator4 from "/src/assets/team/web/5.jpg";
+import Coordinator5 from "/src/assets/team/web/3.jpg";
+import Coordinator6 from "/src/assets/team/web/4.png";
+import Coordinator7 from "/src/assets/team/web/2.jpg";
+
+import Ananya from "/src/assets/team/CP_and_growth/2.jpg";
+import Dheeraj from "/src/assets/team/CP_and_growth/3.jpg";
+import Harshit from "/src/assets/team/CP_and_growth/4.jpg";
+import Manav from "/src/assets/team/CP_and_growth/5.jpeg";
+import Meghana from "/src/assets/team/CP_and_growth/6.jpg";
+import Jayant from "/src/assets/team/CP_and_growth/7.jpg";
+import Sai from "/src/assets/team/CP_and_growth/8.jpg";
+import Suniras from "/src/assets/team/CP_and_growth/9.png";
+
+import Coordinator8 from "/src/assets/team/design/2.jpg";
+import Coordinator9 from "/src/assets/team/design/3.jpg";
+import Coordinator10 from "/src/assets/team/design/4.jpg";
+import Coordinator11 from "/src/assets/team/design/5.jpeg";
+
+
+
 function Team() {
   const consHead = {
     name: "Pritesh Singh",
-    photo: "src/assets/team/consulting/Pritesh_Singh.jpeg",
+    photo: PriteshSingh,
   };
   const finHead = {
     name: "Samuel John",
-    photo: "src/assets/team/finance/1.jpg",
+    photo: Samuel,
   };
   const multHead = {
     name: "Snehil Singh",
-    photo: "src/assets/team/multimedia/1.jpg",
+    photo: Snehil,
   };
   const opraHead = {
     name: "Nishant",
-    photo: "src/assets/team/operations/1.jpg",
+    photo: Nishant,
   };
   const prHead = {
     name: "Arsh Arora",
@@ -143,80 +208,80 @@ function Team() {
   };
   const webHead = {
     name: "Anand Kasyup",
-    photo: "src/assets/team/web/1.jpeg",
+    photo: Anand,
   };
   const designHead={
     name: "Radhika Bondre",
-    photo: "src/assets/team/design/Radhika_Rajesh_Bondre.jpg",
+    photo: Radhika,
   }
   const cpgHead = {
     name: "Raghav Gupta",
-    photo: "src/assets/team/CP_and_growth/1.jpg",
+    photo: Raghav,
   };
 
   const coordinators = [
-    { name: "Garvit Khedar", photo: "src/assets/team/finance/2.jpg" },
-    { name: "Ankita Sri", photo: "src/assets/team/finance/3.jpg" },
-    { name: "Disha Daga", photo: "src/assets/team/finance/4.jpg" },
-    { name: "Soham Mapara", photo: "src/assets/team/finance/5.jpg" },
-    { name: "Faheem Arif", photo: "src/assets/team/finance/6.jpg" },
-    { name: "Shravan", photo: "src/assets/team/finance/7.jpeg" },
-    { name: "Parth Dawar", photo: "src/assets/team/finance/8.jpg" },
+    { name: "Garvit Khedar", photo: Garvit },
+    { name: "Ankita Sri", photo: Ankita },
+    { name: "Disha Daga", photo: Disha },
+    { name: "Soham Mapara", photo: Soham },
+    { name: "Faheem Arif", photo: Faheem },
+    { name: "Shravan", photo: Shravan },
+    { name: "Parth Dawar", photo: Parth },
   ];
   const consCoords = [
-    { name: "Ayaan Ashraf", photo: "src/assets/team/consulting/2.jpeg" },
-    { name: "Surya Tarun", photo: "src/assets/team/consulting/3.JPG" },
-    { name: "Gaurang Joshi", photo: "src/assets/team/consulting/4.jpg" },
-    { name: "Hiba Muhammed", photo: "src/assets/team/consulting/5.jpg" },
-    { name: "Harsha Vardhan", photo: "src/assets/team/consulting/6.jpeg" },
-    { name: "Malakar", photo: "src/assets/team/consulting/7.jpg" },
-    { name: "Sidhartha", photo: "src/assets/team/consulting/8.jpeg" },
+    { name: "Ayaan Ashraf", photo: Ayaan },
+    { name: "Surya Tarun", photo: Surya },
+    { name: "Gaurang Joshi", photo: Gaurang },
+    { name: "Hiba Muhammed", photo: Hiba },
+    { name: "Harsha Vardhan", photo: Harsha },
+    { name: "Malakar", photo: Malakar },
+    { name: "Sidhartha", photo: Sidhartha },
     // Add more coordinators as needed
   ];
   const multCoords = [
-    { name: "Coordinator 1", photo: "src/assets/team/multimedia/2.jpg" },
-    { name: "Coordinator 2", photo: "src/assets/team/multimedia/3.jpg" },
-    { name: "Coordinator 3", photo: "src/assets/team/multimedia/4.jpg" },
+    { name: "Coordinator 1", photo: Coordinator1 },
+    { name: "Coordinator 2", photo: Coordinator2 },
+    { name: "Coordinator 3", photo: Coordinator3 },
     // Add more coordinators as needed
   ];
   const opraCoords = [
-    { name: "Harshita", photo: "src/assets/team/operations/2.jpg" },
-    { name: "Kartik Kumar", photo: "src/assets/team/operations/3.jpg" },
-    { name: "Shubham Nare", photo: "src/assets/team/operations/4.jpg" },
-    { name: "Krishna", photo: "src/assets/team/operations/5.jpg" },
-    { name: "Yogesh Kumar", photo: "src/assets/team/operations/6.jpg" },
+    { name: "Harshita", photo: Harshita },
+    { name: "Kartik Kumar", photo: Kartik },
+    { name: "Shubham Nare", photo: Shubham },
+    { name: "Krishna", photo: Krishna },
+    { name: "Yogesh Kumar", photo: Yogesh },
   ];
   const prCoords = [
-    { name: "Aashi Ranja", photo: "src/assets/team/pr/2.jpg" },
-    { name: "Atharv Lohare", photo: "src/assets/team/pr/3.jpg" },
-    { name: "Abhignya Gogula", photo: "src/assets/team/pr/4.jpg" },
-    { name: "Pranay Ragi", photo: "src/assets/team/pr/5.jpg" },
-    { name: "Aakarsh Varshney", photo: "src/assets/team/pr/6.jpg" },
-    { name: "Labdhi Anand", photo: "src/assets/team/pr/7.jpeg" },
-    { name: "Rohan Holikatti", photo: "src/assets/team/pr/8.jpg" },
-    { name: "Panshul Jindal", photo: "src/assets/team/pr/9.jpg" },
+    { name: "Aashi Ranja", photo: Aashi },
+    { name: "Atharv Lohare", photo: Atharv },
+    { name: "Abhignya Gogula", photo: Abhignya },
+    { name: "Pranay Ragi", photo: Pranay },
+    { name: "Aakarsh Varshney", photo: Aakarsh },
+    { name: "Labdhi Anand", photo: Labdhi },
+    { name: "Rohan Holikatti", photo: Rohan },
+    { name: "Panshul Jindal", photo: Panshul },
   ];
   const webCoords = [
-    { name: "Coordinator 1", photo: "src/assets/team/web/5.jpg" },
-    { name: "Coordinator 2", photo: "src/assets/team/web/3.JPG" },
-    { name: "Coordinator 3", photo: "src/assets/team/web/4.png" },
-    { name: "Coordinator 3", photo: "src/assets/team/web/2.jpg" },
+    { name: "Coordinator 1", photo: Coordinator4 },
+    { name: "Coordinator 2", photo: Coordinator5 },
+    { name: "Coordinator 3", photo: Coordinator6 },
+    { name: "Coordinator 3", photo: Coordinator7 },
   ];
   const cpgCoords = [
-    { name: "Ananya Dutpal", photo: "src/assets/team/CP_and_growth/2.jpg" },
-    { name: "Dheeraj Kurapati", photo: "src/assets/team/CP_and_growth/3.jpg" },
-    { name: "Harshit", photo: "src/assets/team/CP_and_growth/4.jpg" },
-    { name: "Manav Rathi", photo: "src/assets/team/CP_and_growth/5.jpeg" },
-    { name: "Meghana", photo: "src/assets/team/CP_and_growth/6.jpg" },
-    { name: "Jayant Kumar", photo: "src/assets/team/CP_and_growth/7.jpg" },
-    { name: "Sai Charan", photo: "src/assets/team/CP_and_growth/8.jpg" },
-    { name: "Suniras", photo: "src/assets/team/CP_and_growth/9.png" },
+    { name: "Ananya Dutpal", photo: Ananya },
+    { name: "Dheeraj Kurapati", photo: Dheeraj },
+    { name: "Harshit", photo: Harshit },
+    { name: "Manav Rathi", photo: Manav },
+    { name: "Meghana", photo: Meghana },
+    { name: "Jayant Kumar", photo: Jayant },
+    { name: "Sai Charan", photo: Sai },
+    { name: "Suniras", photo: Suniras },
   ];
   const designCoords = [
-    { name: "Coordinator 1", photo: "src/assets/team/design/2.jpg" },
-    { name: "Coordinator 2", photo: "src/assets/team/design/3.jpg" },
-    { name: "Coordinator 3", photo: "src/assets/team/design/4.jpg" },
-    { name: "Coordinator 3", photo: "src/assets/team/design/5.jpeg" },
+    { name: "Coordinator 1", photo: Coordinator8 },
+    { name: "Coordinator 2", photo: Coordinator9 },
+    { name: "Coordinator 3", photo: Coordinator10 },
+    { name: "Coordinator 3", photo: Coordinator11 },
   ];
 
 
