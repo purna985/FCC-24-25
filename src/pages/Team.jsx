@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import  {FaInstagram, FaLinkedin} from 'react-icons/fa';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 
 
@@ -29,7 +29,7 @@ function TeamPic({ title, head, coordinators }) {
   return (
     <div className="overflow-x-hidden p-6 mb-20">
       <h1 className="text-5xl font-semibold text-center mb-10 mt-20">{title}</h1>
-      <h1 className="text-5xl font-semibold text-center mt-20 mb-10">Head</h1>
+      <h1 className="text-4xl font-semibold text-center mt-20 mb-10">Domain Head</h1>
       {head && (
         <div className="flex flex-col items-center mb-8">
           <div
@@ -64,7 +64,7 @@ function TeamPic({ title, head, coordinators }) {
           </div>
         </div>
       )}
-      <h1 className="text-5xl font-semibold text-center mt-20 mb-10">Coordinators</h1>
+      <h1 className="text-4xl font-semibold text-center mt-20 mb-10">Coordinators</h1>
       <div className="mt-8">
         <Carousel responsive={responsive}
         >
@@ -130,7 +130,7 @@ import Snehil from "/src/assets/team/multimedia/1.jpg";
 import Nishant from "/src/assets/team/operations/1.jpg";
 import Anand from "/src/assets/team/web/1.jpeg";
 import Radhika from "/src/assets/team/design/Radhika_Rajesh_Bondre.jpg";
-import Raghav from "/src/assets/team/CP_and_growth/1.jpg";
+import Arin from "/src/assets/team/CP_and_growth/1.jpg";
 
 import Garvit from "/src/assets/team/finance/2.jpg";
 import Ankita from "/src/assets/team/finance/3.jpg";
@@ -148,9 +148,9 @@ import Harsha from "/src/assets/team/consulting/6.jpeg";
 import Malakar from "/src/assets/team/consulting/7.jpg";
 import Sidhartha from "/src/assets/team/consulting/8.jpeg";
 
-import Coordinator1 from "/src/assets/team/multimedia/2.jpg";
-import Coordinator2 from "/src/assets/team/multimedia/3.jpg";
-import Coordinator3 from "/src/assets/team/multimedia/4.jpg";
+import Adil_multi from "/src/assets/team/multimedia/2.jpg";
+import Praful_multi from "/src/assets/team/multimedia/3.jpg";
+import Vedant_multi from "/src/assets/team/multimedia/4.jpg";
 
 import Harshita from "/src/assets/team/operations/2.jpg";
 import Kartik from "/src/assets/team/operations/3.jpg";
@@ -167,10 +167,10 @@ import Labdhi from "/src/assets/team/pr/7.jpeg";
 import Rohan from "/src/assets/team/pr/8.jpg";
 import Panshul from "/src/assets/team/pr/9.jpg";
 
-import Coordinator4 from "/src/assets/team/web/5.jpg";
-import Coordinator5 from "/src/assets/team/web/3.jpg";
-import Coordinator6 from "/src/assets/team/web/4.png";
-import Coordinator7 from "/src/assets/team/web/2.jpg";
+import Vishank from "/src/assets/team/web/5.jpg";
+import Dhawal from "/src/assets/team/web/3.jpg";
+import Rithvik from "/src/assets/team/web/4.png";
+import Mahesh from "/src/assets/team/web/2.jpg";
 
 import Ananya from "/src/assets/team/CP_and_growth/2.jpg";
 import Dheeraj from "/src/assets/team/CP_and_growth/3.jpg";
@@ -181,10 +181,10 @@ import Jayant from "/src/assets/team/CP_and_growth/7.jpg";
 import Sai from "/src/assets/team/CP_and_growth/8.jpg";
 import Suniras from "/src/assets/team/CP_and_growth/9.png";
 
-import Coordinator8 from "/src/assets/team/design/2.jpg";
-import Coordinator9 from "/src/assets/team/design/3.jpg";
-import Coordinator10 from "/src/assets/team/design/4.jpg";
-import Coordinator11 from "/src/assets/team/design/5.jpeg";
+import Anay from "/src/assets/team/design/2.jpg";
+import Bhumi from "/src/assets/team/design/3.jpg";
+import Adhyant from "/src/assets/team/design/4.jpg";
+import Azeem from "/src/assets/team/design/5.jpeg";
 
 
 
@@ -198,7 +198,7 @@ function Team() {
     photo: Samuel,
   };
   const multHead = {
-    name: "Snehil Singh",
+    name: "Snehil",
     photo: Snehil,
   };
   const opraHead = {
@@ -210,16 +210,16 @@ function Team() {
     photo: "src/assets/team/pr/1.jpg",
   };
   const webHead = {
-    name: "Anand Kasyup",
+    name: "Anand",
     photo: Anand,
   };
-  const designHead={
-    name: "Radhika Bondre",
+  const designHead = {
+    name: "Radhika",
     photo: Radhika,
   }
   const cpgHead = {
-    name: "Raghav Gupta",
-    photo: Raghav,
+    name: "Arin",
+    photo: Arin,
   };
 
   const coordinators = [
@@ -242,9 +242,9 @@ function Team() {
     // Add more coordinators as needed
   ];
   const multCoords = [
-    { name: "Coordinator 1", photo: Coordinator1 },
-    { name: "Coordinator 2", photo: Coordinator2 },
-    { name: "Coordinator 3", photo: Coordinator3 },
+    { name: "Adil Anwar", photo: Adil_multi },
+    { name: "Praful", photo: Praful_multi },
+    { name: "Vedant", photo: Vedant_multi },
     // Add more coordinators as needed
   ];
   const opraCoords = [
@@ -255,7 +255,7 @@ function Team() {
     { name: "Yogesh Kumar", photo: Yogesh },
   ];
   const prCoords = [
-    { name: "Aashi Ranja", photo: Aashi },
+    { name: "Aashi Ranjan", photo: Aashi },
     { name: "Atharv Lohare", photo: Atharv },
     { name: "Abhignya Gogula", photo: Abhignya },
     { name: "Pranay Ragi", photo: Pranay },
@@ -265,10 +265,10 @@ function Team() {
     { name: "Panshul Jindal", photo: Panshul },
   ];
   const webCoords = [
-    { name: "Coordinator 1", photo: Coordinator4 },
-    { name: "Coordinator 2", photo: Coordinator5 },
-    { name: "Coordinator 3", photo: Coordinator6 },
-    { name: "Coordinator 3", photo: Coordinator7 },
+    { name: "Vishank", photo: Vishank },
+    { name: "Dhawal", photo: Dhawal },
+    { name: "Rithvik", photo: Rithvik },
+    { name: "Mahesh", photo: Mahesh },
   ];
   const cpgCoords = [
     { name: "Ananya Dutpal", photo: Ananya },
@@ -281,10 +281,10 @@ function Team() {
     { name: "Suniras", photo: Suniras },
   ];
   const designCoords = [
-    { name: "Coordinator 1", photo: Coordinator8 },
-    { name: "Coordinator 2", photo: Coordinator9 },
-    { name: "Coordinator 3", photo: Coordinator10 },
-    { name: "Coordinator 3", photo: Coordinator11 },
+    { name: "Anay", photo: Anay },
+    { name: "Bhumi", photo: Bhumi },
+    { name: "Adhyant", photo: Adhyant },
+    { name: "Azeem", photo: Azeem },
   ];
 
 
@@ -299,87 +299,87 @@ function Team() {
       <h2 className="text-5xl font-semibold text-center mb-10 mt-20">Overall Coordinators</h2>
 
       <div className="flex flex-row justify-evenly items-center mb-20 mt-20">
-        
-      <div className="flex flex-col items-center mb-8">
-        <div
-          className="flex flex-col items-center p-6 relative group"
-          style={{
-            backgroundColor: "#153556",
-            borderRadius: "12px",
-            width: "264px",
-            height: "319px",
-            transition: "background-color 0.3s ease",
-          }}
-        >
-          <img
-            src={Head1}
-            alt="overall head"
-            className="w-45 h-45 rounded-full object-cover mb-2"
-            style={{ height: "180px", width: "180px", objectFit: "cover" }}
-          />
-          <h2 className="text-3xl font-normal text-white mt-5">Aryan Bhubna</h2>
-          <div
-            className="absolute inset-0 flex items-center justify-center bg-[#153556] bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300"
-          >
-            <div className="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-white text-4xl" />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-white text-4xl" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="flex flex-col items-center mb-8">
-        <div
-          className="flex flex-col items-center p-6 relative group"
-          style={{
-            backgroundColor: "#153556",
-            borderRadius: "12px",
-            width: "264px",
-            height: "319px",
-            transition: "background-color 0.3s ease",
-          }}
-          >
-          <img
-            src={Head2}
-            alt="overall head"
-            className="w-45 h-45 rounded-full object-cover mb-2"
-            style={{ height: "180px", width: "180px", objectFit: "cover" }}
-          />
-          <h2 className="text-3xl font-normal text-white mt-5">Omkar Nikanth</h2>
+        <div className="flex flex-col items-center mb-8">
           <div
-            className="absolute inset-0 flex items-center justify-center bg-[#153556] bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300"
+            className="flex flex-col items-center p-6 relative group"
+            style={{
+              backgroundColor: "#153556",
+              borderRadius: "12px",
+              width: "264px",
+              height: "319px",
+              transition: "background-color 0.3s ease",
+            }}
           >
-            <div className="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-white text-4xl" />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-white text-4xl" />
-              </a>
+            <img
+              src={Head1}
+              alt="overall head"
+              className="w-45 h-45 rounded-full object-cover mb-2"
+              style={{ height: "180px", width: "180px", objectFit: "cover" }}
+            />
+            <h2 className="text-3xl font-normal text-white mt-5">Aryan Bubna</h2>
+            <div
+              className="absolute inset-0 flex items-center justify-center bg-[#153556] bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300"
+            >
+              <div className="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram className="text-white text-4xl" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin className="text-white text-4xl" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center mb-8">
+          <div
+            className="flex flex-col items-center p-6 relative group"
+            style={{
+              backgroundColor: "#153556",
+              borderRadius: "12px",
+              width: "264px",
+              height: "319px",
+              transition: "background-color 0.3s ease",
+            }}
+          >
+            <img
+              src={Head2}
+              alt="overall head"
+              className="w-45 h-45 rounded-full object-cover mb-2"
+              style={{ height: "180px", width: "180px", objectFit: "cover" }}
+            />
+            <h2 className="text-3xl font-normal text-white mt-5">Omkar Nilkanth</h2>
+            <div
+              className="absolute inset-0 flex items-center justify-center bg-[#153556] bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300"
+            >
+              <div className="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram className="text-white text-4xl" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin className="text-white text-4xl" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      <TeamPic
-        title="Consulting"
-        head={consHead}
-        coordinators={consCoords}
-      />
       <TeamPic
         title="Finance"
         head={finHead}
         coordinators={coordinators}
       />
       <TeamPic
-        title="Multimedia"
-        head={multHead}
-        coordinators={multCoords}
+        title="Consulting"
+        head={consHead}
+        coordinators={consCoords}
+      />
+      <TeamPic
+        title="Corporate Partnership and Growth"
+        head={cpgHead}
+        coordinators={cpgCoords}
       />
       <TeamPic
         title="Operations"
@@ -392,9 +392,9 @@ function Team() {
         coordinators={prCoords}
       />
       <TeamPic
-        title="Corporate Partnership and Growth"
-        head={cpgHead}
-        coordinators={cpgCoords}
+        title="Web"
+        head={webHead}
+        coordinators={webCoords}
       />
       <TeamPic
         title="Design"
@@ -402,9 +402,9 @@ function Team() {
         coordinators={designCoords}
       />
       <TeamPic
-        title="Web Development"
-        head={webHead}
-        coordinators={webCoords}
+        title="Multimedia"
+        head={multHead}
+        coordinators={multCoords}
       />
     </div>
   );
