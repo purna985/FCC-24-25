@@ -10,6 +10,8 @@ import consultingSVG from "/src/assets/home/consulting.svg"
 import prodmanSVG from "/src/assets/home/prodman.svg"
 import horizonLogo from '../assets/home/HoRiZoN-logo-second-draft.png'
 
+import Newsletter from '../components/Newsletter'
+
 function Home() {
   return (
     <div className=" overflow-x-hidden ">
@@ -148,8 +150,8 @@ function Home() {
           </div>
         </div>
       </div>
-
-
+      <Newsletter/>
+      
     </div>
   )
 }
