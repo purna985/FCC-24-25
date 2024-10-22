@@ -13,7 +13,7 @@ function Newsletter() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const scriptURL = "https://script.google.com/macros/s/AKfycbwJ9KuTx9CrQz4Kyt21vQ8G-e6Emb1lVnONf3hqD3TSa1qDnlblkZH-i81ocUNuYkAMhQ/exec";
-      
+
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
@@ -22,8 +22,9 @@ function Newsletter() {
         mode: "no-cors",
       });
 
-      const result = await response.json(); 
+      const result = await response.json();
       if (result.status === "success") {
+
         console.log("Data sent successfully!");
       } else {
         console.error("Error:", result.message);
@@ -33,6 +34,9 @@ function Newsletter() {
       console.error("Error:", error);
       console.log("An error occurred.");
     }
+
+    const nullData = { name: "", email: "", mobile: "" };
+    setUserData(nullData);
   };
   return (
     <div>
@@ -83,7 +87,7 @@ function Newsletter() {
       <div className="flex flex-col md-5:hidden">
         <div className="m-10">
           <p className="flex justify-center text-5xl py-1">FCC Newsroom</p>
-          <br/>
+          <br />
           <p className="text-xl">
             Stay up-to-date with our latest events and activities by subscribing
             to our newsletter.
