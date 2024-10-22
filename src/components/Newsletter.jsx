@@ -12,25 +12,26 @@ function Newsletter() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwH4CCwFo4Qh5Lnple6tfl7QJK9llkXdgov6WJ96WsYSPU4iLXZo0dy3ImKZctF3Ae1/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwJ9KuTx9CrQz4Kyt21vQ8G-e6Emb1lVnONf3hqD3TSa1qDnlblkZH-i81ocUNuYkAMhQ/exec";
       
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
         body: JSON.stringify(userData),
         headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
       });
 
       const result = await response.json(); 
       if (result.status === "success") {
-        alert("Data sent successfully!");
+        console.log("Data sent successfully!");
       } else {
         console.error("Error:", result.message);
         alert("Failed to send data.");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred.");
+      console.log("An error occurred.");
     }
   };
   return (
