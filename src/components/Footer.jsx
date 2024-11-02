@@ -21,7 +21,7 @@ function Footer() {
           >
             <img src={logo} className="w-20 h-20 md:w-28 md:h-28" alt="" />
           </a>
-          <p className="">© 2024 Copyright: FCC IIT Hyderabad</p>
+          <p className="text-[0.7rem]">© 2024 Copyright: FCC IIT Hyderabad</p>
         </div>
         <div className="w-1/2 md:w-1/5 flex-col flex gap-3 md-1:hidden ">
           <h3 className="text-[1.5rem] md:text-[1.5vw] font-semibold">

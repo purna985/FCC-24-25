@@ -142,7 +142,7 @@ function Home() {
             width="100%"
           />
         </div>
-        <p className=" text-left text-white font-rosario text-xl md:text-[4.5vw] leading-normal pl-[5%] my-3 font-semibold">
+        <p className=" text-left text-white font-rosario text-xl md:text-[4.5vw] leading-normal pl-[5%] my-3 font-medium">
           Our mission :
         </p>
         <div className="w-auto h-auto  text-[9vw] leading-[80%] pl-[5%] col-lg-6 ">
