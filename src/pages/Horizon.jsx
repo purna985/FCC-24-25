@@ -127,7 +127,7 @@ function Horizon() {
 
       {/* Sponsers */}
       <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center mb-6'>
           <p className='font-rosario text-center mb-5 text-7xl md-1:text-5xl'>Sponsors</p>
         </div>
         <div className='flex w-full gap-3p animate-scroll-1'>
