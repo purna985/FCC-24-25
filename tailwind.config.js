@@ -97,6 +97,8 @@ export default {
         'md-3' : {'max': '1000px'},
         'md-1' : {'max': '800px'},
         'md-2' : {'min': '800px'},
+        'md-4' : {'max': '600px'},
+        'md-5' : {'min': '601px'},
       },
     },
   },
