@@ -10,12 +10,13 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from '../components/ui/carousel';
+import ComingSoon from '../components/ComingSoon'
 
 function Team() {
     return (
         <div className="overflow-x-hidden min-h-screen">
             {/* Team Components */}
-            <h1 className="text-3xl font-semibold text-center w-full mx-auto" >Coming Soon...</h1>
+            <ComingSoon />
         </div>
     );
 }
