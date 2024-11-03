@@ -14,7 +14,7 @@ import Newsletter from "../components/Newsletter";
 
 function Home() {
   return (
-    <div className=" overflow-x-hidden ">
+    <div className="overflow-x-hidden ">
       <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%]">
         {/* Bg elements */}
         <div className="absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] "></div>
@@ -120,16 +120,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Bg Elements */}
-      {/*
-      <img className="fixed right-[15vw] rotate-[20deg] -z-20" src={rupeeBlur} alt="" height="40"
-        width="40" title="svg" />
-      <div className="w-[60vw] h-[60vh] absolute top-[20%] left-[-10%] rounded-[100%] blur-[250px] z-[-1]"
-        style={{ background: "rgba(126, 71, 241, 0.4)" }}></div>
-      <img className="absolute right-0 top-[80%] lg:right-1/2 lg:top-[80%] -z-10" src={glowBlockSmall}
-        alt="" />
-      <img className="absolute right-[-4%] top-[60%] -z-10" width="200" height="200" src={glowBlockSmall}
-        alt="" /> */}
+
 
       {/* Our Mission */}
       <div className="w-full h-auto mt-5 mx-auto hidden md:flex flex-col py-[3%]">
@@ -162,33 +153,24 @@ function Home() {
 
       {/* Who are we/ About us section */}
       <div
-        className="relative w-full h-auto md:h-auto md:p-[1%] flex items-center justify-center flex-col overflow-hidden mix-blend-exclusion"
+        className="relative w-full h-auto py-10  px-4 md:p-[1%] flex items-center justify-center flex-col overflow-hidden"
         style={{ background: "linear-gradient(#0f4693e5, #0f489399)" }}
       >
         {/* bg gradients */}
-        <div className="absolute top-[-30px] right-[-50px] bg-white w-1/4 h-1/4 rounded-[100%] blur-[200px]"></div>
-        <div className="absolute bottom-[-30px] left-0 bg-white w-1/4 h-1/4 rounded-[100%] blur-[200px]"></div>
-
-        <div className="flex font-rosario md:w-[90%] md:px-[2%] text-[3rem] md:text-[5rem] text-center md:text-start w-full mt-3 mx-auto md:mx-none h-auto">
-          <p className="mx-auto md:mx-0">
-            So, <br className="hidden md:flex" /> Who are we?
-          </p>
-        </div>
-        <div className="w-[90%] h-auto text-[f2f2f2] md:text-[2.2rem] text-lg font-rosario font-light leading-normal p-[2%] tracking-[200%]">
-          <p className="text-left pb-5">
-            The Finance and Consulting Club at IIT Hyderabad is a student-led
+        <h1 className=" text-3xl md:text-5xl md:my-10" >So, Who Are We ?</h1>
+        <div className="w-[80%] md:w-[70%] md:text-3xl md:my-10" >
+          <p className="w-full text-start p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
             organization fostering finance and consulting interests. At FCC
             IITH, students are driven by their passion for finance, consulting,
-            product management and continual progress.
-          </p>
-          <p className="text-left pb-5">
-            Our dedicated team plans a variety of events, such as stimulating
+            product management and continual progress.</p>
+          <p className="w-full p-2" >Our dedicated team plans a variety of events, such as stimulating
             lectures, engaging workshops, impactful projects, rigorous
             competitions, and more, all geared toward achieving their mission of
             equipping students with useful skills and real-world knowledge in
-            the finance, consulting, and product management domains.
-          </p>
+            the finance, consulting, and product management domains.</p>
         </div>
+        <div className='w-24 h-24 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
+        <div className='w-24 h-24 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div>
       </div>
 
       {/* Horizon glimpse video */}
