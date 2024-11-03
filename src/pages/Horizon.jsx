@@ -41,17 +41,17 @@ function Horizon() {
   ]
 
   return (
-    <div className='text-white font-rosario'>
+    <div className='text-white font-rosario z-30'>
       {/* Landing part Horizon */}
       <div className='md:min-h-screen px-6 py-12 mt-12 text-center  '>
       <div className='absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
       <div className='absolute right-0 top-[90vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
 
-        <p className='text-vw-2.3 font-light font-rosario text-white pb-6 md-1:pb-4 md-1:text-lg'>
-          FCC IIT-HYDERABAD <br /> Presents
+        <p className=' text-lg md:text-[2.2vw] font-light font-rosario text-custom-blue pb-6 md-1:pb-4 '>
+          FCC IIT-HYDERABAD  Presents
         </p>
         <div className='mx-auto w-full flex-col gap-0 m-6 md-1:mb-6 mt-0'>
-          <p className='w-full font-normal text-[4rem] text-custom-blue md:text-vw-10 md-1:leading-normal'>HORIZON 25&apos;</p>
+          <p className='w-full font-semibold text-6xl md:text-[7rem] text-white  md-1:leading-normal'>HORIZON 25&apos;</p>
         </div>
             <img className="absolute top-[20vh] left-[50vw] rotate-[60deg] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
             <img className="absolute top-[80vh] right-[10vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
@@ -66,8 +66,9 @@ function Horizon() {
       </div>
 
       {/* Horizon glimpse video */}
-      <div className="m-auto py-[2vw] my-5 z-10">
-        <video className=" md:h-[90vh] w-[80%] mx-auto md:w-[90vw]" autoPlay muted loop draggable="false">
+      <div className="relative m-auto py-[2vw] my-5">
+        {/* <div className='w-full h-full bg-black opacity-70 absolute z-100 ' ></div> */}
+        <video className=" p-2 mx-auto md:w-full z-10" autoPlay muted loop draggable="false">
           <source src={glimpseVideo} />
           ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
         </video>
@@ -78,13 +79,13 @@ function Horizon() {
 
       {/* About the Event */}
       <div className="relative mt-10p mx-auto w-full h-auto flex flex-col items-center p-1p
-        justify-center bg-gradient-to-r from-custom-gradient-2 to-custom-gradient-1 z-1 overflow-hidden">
+        justify-center bg-gradient-to-[#000D71] from-custom-gradient-2 to-custom-gradient-1 z-1 ">
         <div className='m-auto w-90p my-4 z-10'>
           <div className="font-rosario w-full flex items-baseline h-50p text-4xl md:text-6xl pt-2p pl-2p text-left leading-100p
             font-medium">
             About the Event
           </div>
-          <div className="w-full h-auto text-custom-white text-2xl md:text-4xl font-extralight leading-normal p-2p
+          <div className="w-full h-auto text-custom-white text-2xl font-extralight leading-normal p-2p
             md-1:text-[1.3rem] ">Horizon 2025, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
             and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
             Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
@@ -98,20 +99,20 @@ function Horizon() {
             </div>
           </div>
 
-          <div className='font-rosario flex items-baseline h-1/2 leading-100p text-left font-medium text-4xl md:text-6xl pt-2p pl-2p'>
+          <div className='font-rosario flex items-baseline h-1/2 leading-100p text-left font-medium text-4xl pt-2p pl-2p'>
             Our Vision for 2025
           </div>
 
 
-          <div className='w-full h-auto text-custom-white text-2xl md:text-4xl font-extralight leading-normal p-2p
+          <div className='w-full h-auto text-custom-white text-2xl font-extralight leading-normal p-2p
               md-1:text-[1.2rem]'>
             In 2024-25,  Horizon aims to expand its influence to students community by inviting industry, academia, and government experts to share insights on Finance, Consulting,
             and Product Management.
             <p className='mt-0 mb-4'>We will introduce new competitions and workshops solidifying its status as the go-to platform for Finance, Consulting, and Product Management enthusiasts.</p>
           </div>
         </div>
-        <div className='w-48 h-48 bg-white absolute top-0 right-0 blur-[8rem] z-5' ></div>
-        <div className='w-48 h-48 bg-white absolute left-0 bottom-0 blur-[8rem] z-5' ></div>
+        <div className='w-48 h-48 bg-blue-500 absolute top-0 right-0 blur-[8rem] z-10' ></div>
+        <div className='w-48 h-48 bg-blue-500 absolute left-0 bottom-0 blur-[8rem] z-10' ></div>
       </div>
 
       {/* Past Speakers */}

@@ -15,6 +15,7 @@ import Newsletter from "../components/Newsletter";
 function Home() {
   return (
     <div className="overflow-hidden ">
+      
       <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%]">
         {/* Bg elements */}
         <div className="absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] "></div>
@@ -52,23 +53,25 @@ function Home() {
         />
 
         {/* Landing titles */}
-        <div className="font-rosario  md-1:w-auto lg:w-1/2 w-full text-center self-center h-1/2 justify-between items-center">
-          <div className="titles pl-5 ">
-            <p className="text-[#1270ed] text-6xl md-1:text-[4rem] sm:text-[2.5rem] leading-100p text-start  mb-5">
+        <div className="md-1:w-auto lg:w-1/2 w-full flex flex-col text-center r justify-evenly">
+          <div className="titles  w-[80%] mx-auto">
+            <p className="text-[#1270ed] md:text-6xl text-5xl leading-100p md:text-start text-center  mb-5">
               Finance & Consulting Club
             </p>
-            <p className="font-rosario font-light  text-[2.5rem] leading-normal text-start">
+            <p className="font-light text-xl md:text-[2.5rem] leading-normal  text-center md:text-start">
               IIT Hyderabad
             </p>
           </div>
-          <Link
-            to="/horizon"
-            className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-fit md:w-1/2 my-10 text-3xl  md:text-[2.2rem] text-white bg-[#172EFF] rounded-md flex justify-center items-center px-5 mx-auto"
-          >
-            Horizon 25&apos;{" "}
-            <img src={rightArrow} className=" md:w-20 md:h-20" alt="" />
-          </Link>
-          {/* <img className="absolute top-[80vh] left-0 rotate-[60deg]" src={glowBlockSmall} alt="" height="70" width="70" title="svg" /> */}
+          <div className="md:w-4/5 mx-auto" >
+            <Link
+              to="/horizon"
+              className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-fit md:w-1/2 my-10 text-3xl  md:text-[2.2rem] text-white bg-[#1228ed] rounded-md flex justify-center items-center px-5 "
+            >
+              Horizon 25&apos;{" "}
+              <img src={rightArrow} className=" md:w-20 md:h-20" alt="" />
+            </Link>
+          </div>
+
         </div>
 
         {/* Horizon Timer Card */}
@@ -82,7 +85,7 @@ function Home() {
             }}
           >
             <div className="heading h-fit w-full flex items-center justify-between">
-              <div className="fs-4 text-[#acababad] md:text-2xl ">
+              <div className="fs-4 text-[#acababad] md:text-lg ">
                 FCC IIT Hyderabad
               </div>
               <img
@@ -92,25 +95,25 @@ function Home() {
               />
             </div>
             <div className="horizon-title h-fit w-fit flex items-center justify-between">
-              <div className="md:text-[5rem] text-[2.2rem] bg-clip-text text-[#1270ED] t">
+              <div className="md:text-[4rem] text-[2rem] bg-clip-text text-[#1270ED] t">
                 Horizon
               </div>
             </div>
             <div className="timer h-fit w-full">
               <div className="countdown-container flex justify-between w-full p-[2%]">
-                <div className="days font-roboto text-[#acababad]">
+                <div className="days text-[#acababad]">
                   <span id="days"> 00</span> <br />
                   <span>days</span>
                 </div>
-                <div className="hours font-roboto text-[#acababad]">
+                <div className="hours text-[#acababad]">
                   <span id="hours"> 00</span> <br />
                   <span>hrs</span>
                 </div>
-                <div className="minutes font-roboto text-[#acababad]">
+                <div className="minutes text-[#acababad]">
                   <span id="minutes"> 00</span>
                   <br /> <span>min</span>
                 </div>
-                <div className="seconds font-roboto text-[#acababad]">
+                <div className="seconds text-[#acababad]">
                   <span id="seconds"> 00</span> <br />
                   <span>sec</span>
                 </div>
@@ -118,6 +121,7 @@ function Home() {
             </div>
           </div>
         </div>
+
       </div>
 
 
