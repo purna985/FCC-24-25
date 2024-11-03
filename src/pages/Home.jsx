@@ -14,7 +14,7 @@ import Newsletter from "../components/Newsletter";
 
 function Home() {
   return (
-    <div className="overflow-x-hidden ">
+    <div className="overflow-hidden ">
       <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%]">
         {/* Bg elements */}
         <div className="absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] "></div>
