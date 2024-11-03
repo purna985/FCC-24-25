@@ -5,13 +5,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 // import logo from '../assets/fcc-logo-white.png'
-import logo from '../assets/fcc-white.svg'
+import logo from '../assets/fcc-logo-blue-nograd.png'
+import logofull from '../assets/fcc-logo-full.png'
 import { Link } from "react-router-dom";
 
 function Navbar() {
 
   const location = useLocation()
-
   const menuRef = useRef(null);
   const [open, changeState] = useState(false);
 
@@ -35,36 +35,32 @@ function Navbar() {
 
 
   return (
-    <div className=" container-fluid header flex font-semibold justify-center p-10">
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-gradient-to-r from-blue-600 to-blue-900 rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] "> */}
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] "> */}
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#205398] rounded-[300px] p-3"> */}
-      {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#0E3E81] rounded-[300px] p-2"> */}
-      <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-2">
+    <div className=" container-fluid header flex font-semibold justify-center mt-4 pt-4 ">
 
-
-        <div className='pl-4'>
+      <header className="flex md:w-[90%] border-gray-700 bg-opacity-35 h-auto overflow-hidden items-center justify-between rounded-full py-3 px-10 md:bg-[#2C2B2B] bg-transparent mb-10"
+      >
+        <div className='md:pl-4 md:w-1/3 '>
           <Link to='/'
-            className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly'>
-            <img src={logo} alt='FCC' width='45' height='45' />
+            className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly w-1/2'>
+            <img src={logofull} alt='FCC' />
           </Link>
         </div>
 
-        <ul className=' navlinks w-[50%] text-xl hidden lg:flex justify-between items-center pr-5'>
+        <ul className=' navlinks w-[50%] text-lg hidden lg:flex justify-between items-center pr-5'>
           <li><Link to='/'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-blue-400 border-2 rounded-[300px] text-blue-400 ' : '')}>Home</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Home</Link>
           </li>
           <li><Link to='/horizon'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-blue-400 border-2 rounded-[300px] text-blue-400 ' : '')}>Horizon</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Horizon</Link>
           </li>
           <li><Link to='/schedule'
-            className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-blue-400 border-2 rounded-[300px] text-blue-400 ' : '')}>Events</Link>
+            className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Events</Link>
           </li>
           <li><Link to='/resources'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-blue-400 border-2 rounded-[300px] text-blue-400 ' : '')}>Resources</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Resources</Link>
           </li>
           <li><Link to='/team'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-blue-400 border-2 rounded-[300px] text-blue-400 ' : '')}>Team</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Team</Link>
           </li>
         </ul>
 
@@ -122,6 +118,7 @@ function Navbar() {
           </div>
         </div>
       </header>
+
     </div>
   )
 }

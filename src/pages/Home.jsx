@@ -53,17 +53,17 @@ function Home() {
 
         {/* Landing titles */}
         <div className="font-rosario  md-1:w-auto lg:w-1/2 w-full text-center self-center h-1/2 justify-between items-center">
-          <div className="titles  ">
-            <p className="text-[#1270ed] text-[5.5rem] md-1:text-[4rem] sm:text-[2.5rem] leading-100p text-center  mb-5">
-              Finance and Consulting Club
+          <div className="titles pl-5 ">
+            <p className="text-[#1270ed] text-6xl md-1:text-[4rem] sm:text-[2.5rem] leading-100p text-start  mb-5">
+              Finance & Consulting Club
             </p>
-            <p className="font-rosario font-light  text-[2.5rem] leading-normal text-center">
+            <p className="font-rosario font-light  text-[2.5rem] leading-normal text-start">
               IIT Hyderabad
             </p>
           </div>
           <Link
             to="/horizon"
-            className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-fit md:w-1/2 my-10 text-3xl  md:text-[2.2rem] text-white bg-[#172EFF] rounded-xl flex justify-center items-center px-5 mx-auto"
+            className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-fit md:w-1/2 my-10 text-3xl  md:text-[2.2rem] text-white bg-[#172EFF] rounded-md flex justify-center items-center px-5 mx-auto"
           >
             Horizon 25&apos;{" "}
             <img src={rightArrow} className=" md:w-20 md:h-20" alt="" />
@@ -74,7 +74,7 @@ function Home() {
         {/* Horizon Timer Card */}
         <div className="cardbox w-full md:w-1/2 h-1/4 md:h-full flex justify-center mx-auto">
           <div
-            className="horizon-card  p-6 md:p-10 md:px-[20px] md:pt-0 md:pb-[20px] flex flex-col justify-center font-rosario w-[70%] md:w-[90%] md:max-w-[420px] md:min-w-[300px] h-auto md:h-[17rem] rounded-[2rem] border border-solid border-[#ffffff41] bg-gray-500 "
+            className="horizon-card  p-6 md:p-10 md:px-[20px] md:pt-0 md:pb-[20px] flex flex-col justify-center font-rosario w-[70%] md:w-[90%] md:max-w-[420px] md:min-w-[300px] h-auto md:h-[17rem] rounded-md border border-solid border-[#ffffff41] bg-gray-500 "
             style={{
               background:
                 "linear-gradient(180deg, rgba(142, 141, 141, 0.5) -36.57%, rgba(217, 217, 217, 0) 141.73%)",
