@@ -35,7 +35,7 @@ function Navbar() {
 
 
   return (
-    <div className="container-fluid header flex font-semibold justify-center p-10">
+    <div className=" container-fluid header flex font-semibold justify-center p-10">
       {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-gradient-to-r from-blue-600 to-blue-900 rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] "> */}
       {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-transparent rounded-[300px] p-3 shadow-[0_0_12px_rgba(69,115,213,0.6)] "> */}
       {/* <header className="flex w-[100%] h-auto overflow-hidden items-center justify-between bg-[#205398] rounded-[300px] p-3"> */}

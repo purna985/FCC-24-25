@@ -138,14 +138,14 @@ function Home() {
             className="arrowsvg"
             src={aboutSVG}
             alt=""
-            height="90%"
+            height="60%"
             width="100%"
           />
         </div>
-        <p className=" text-left text-white font-rosario text-xl md:text-[4.5vw] leading-normal pl-[5%] my-3 font-medium">
+        <p className=" text-left text-white font-rosario text-xl md:text-[3vw] leading-normal pl-[5%] my-3 font-medium">
           Our mission :
         </p>
-        <div className="w-auto h-auto  text-[9vw] leading-[80%] pl-[5%] col-lg-6 ">
+        <div className="w-auto h-auto  text-[7vw] leading-[80%] pl-[5%]">
           <p className="font-lato q1 my-9">TO PROVE</p>
           <p className="font-lato q2 my-9">
             THAT <br />
@@ -205,10 +205,10 @@ function Home() {
         id="what-we-do"
       >
         <div className="absolute right-[0] bg-[#345bd8] h-[26%] w-[45%] rounded-[100%] blur-[300px] "></div>
-        <div className="what-heading w-full text-[3rem] md:text-[6.9vw] leading-[100%] md:pt-[3%] md:pb-[2%] p-[2%] md:text-start text-center">
-          <p className="w-full">What Do We Do?</p>
+        <div className="what-heading w-full text-[3rem] md:text-[5vw] leading-[100%] md:pt-[3%] md:pb-[2%] p-[2%]  text-center">
+          <p className="w-full my-5">What Do We Do?</p>
         </div>
-        <div className="what-cards md:w-[95%] w-[90%] h-auto flex md:justify-center flex-wrap  justify-between items-center ">
+        <div className="what-cards w-[80%] h-auto flex md:justify-center flex-wrap justify-between items-center ">
           <div
             className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto "
             id="card1"

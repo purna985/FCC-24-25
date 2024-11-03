@@ -6,6 +6,9 @@ import Schedule from "./pages/Schedule";
 import Sponsors from "./pages/Sponsors";
 import Team from "./pages/Team";
 import Resources from "./pages/Resources";
+import Newsletters from "./pages/resources-pages/Newsletters";
+import Finance from "./pages/resources-pages/Finance";
+import Consulting from "./pages/resources-pages/Consulting";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,19 +16,26 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <div className="bg-black" >
-      <Navbar />
 
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/horizon" element={<Horizon />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/sponsors" element={<Sponsors />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/resources" element={<Resources />} />
-      </Routes>
-      <Footer />
-    </div>
+
+      <div className="bg-black" >
+
+        <Navbar />
+
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/horizon" element={<Horizon />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/resources/finance-resources" element={<Finance />} />
+          <Route path="/resources/consulting-resources" element={<Consulting />} />
+          <Route path="/resources/newsletters" element={<Newsletters />} />
+        </Routes>
+        <Footer />
+      </div>
+
   )
 }
 
