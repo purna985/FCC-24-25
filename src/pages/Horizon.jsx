@@ -77,19 +77,14 @@ function Horizon() {
 
 
       {/* About the Event */}
-      <div className="mt-10p ml-auto mr-auto w-full h-auto flex flex-col items-center p-1p
-        justify-center bg-gradient-to-r from-custom-gradient-2 to-custom-gradient-1">
-        <div className='m-auto w-90p my-4'>
-          <div className="font-rosario md-1:hidden w-full flex items-baseline h-50p text-vw-7 pt-2p pl-2p text-left leading-100p
+      <div className="relative mt-10p mx-auto w-full h-auto flex flex-col items-center p-1p
+        justify-center bg-gradient-to-r from-custom-gradient-2 to-custom-gradient-1 z-1 overflow-hidden">
+        <div className='m-auto w-90p my-4 z-10'>
+          <div className="font-rosario w-full flex items-baseline h-50p text-4xl md:text-6xl pt-2p pl-2p text-left leading-100p
             font-medium">
-            About,
-            <br></br>
-            the Event
-          </div>
-          <div className='font-rosario md-2:hidden flex justify-center w-full items-baseline h-50p text-vw-7 pt-2p pl-2p pb-4'>
             About the Event
           </div>
-          <div className="w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p
+          <div className="w-full h-auto text-custom-white text-2xl md:text-4xl font-extralight leading-normal p-2p
             md-1:text-[1.3rem] ">Horizon 2025, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
             and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
             Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
@@ -98,27 +93,25 @@ function Horizon() {
           <div className='w-full h-auto flex justify-evenly items-center flex-wrap my-4'>
             <div className='w-full flex flex-wrap justify-between'>
               {images.map((image, index) => (
-                <img className='md-1:w-1/4 md-2:w-23p' key={index} src={image.img_id} alt={`Image ${index + 1}`} />
+                <img className='md-1:w-1/4 md-2:w-20p' key={index} src={image.img_id} alt={`Image ${index + 1}`} />
               ))}
             </div>
           </div>
 
-          <div className='font-rosario md-1:hidden flex items-baseline h-1/2 leading-100p text-left font-medium text-vw-7 pt-2p pl-2p'>
-            Our Vision
-            <br></br>
-            for 2025
-          </div>
-          <div className='font-rosario md-2:hidden flex items-baseline h-1/2 leading-100p justify-center font-medium text-vw-7 pt-2p pl-2p md-1:pb-4'>
+          <div className='font-rosario flex items-baseline h-1/2 leading-100p text-left font-medium text-4xl md:text-6xl pt-2p pl-2p'>
             Our Vision for 2025
           </div>
 
-          <div className='w-full h-auto text-custom-white text-vw-2.75 font-extralight leading-normal p-2p
+
+          <div className='w-full h-auto text-custom-white text-2xl md:text-4xl font-extralight leading-normal p-2p
               md-1:text-[1.2rem]'>
             In 2024-25,  Horizon aims to expand its influence to students community by inviting industry, academia, and government experts to share insights on Finance, Consulting,
             and Product Management.
             <p className='mt-0 mb-4'>We will introduce new competitions and workshops solidifying its status as the go-to platform for Finance, Consulting, and Product Management enthusiasts.</p>
           </div>
         </div>
+        <div className='w-48 h-48 bg-white absolute top-0 right-0 blur-[8rem] z-5' ></div>
+        <div className='w-48 h-48 bg-white absolute left-0 bottom-0 blur-[8rem] z-5' ></div>
       </div>
 
       {/* Past Speakers */}
@@ -128,7 +121,7 @@ function Horizon() {
       {/* Sponsers */}
       <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
         <div className='flex items-center justify-center mb-6'>
-          <p className='font-rosario text-center mb-5 text-7xl md-1:text-5xl'>Sponsors</p>
+          <p className='font-rosario text-center mb-5 text-4xl md:text-6xl'>Sponsors</p>
         </div>
         <div className='flex w-full gap-3p animate-scroll-1'>
           <div className='flex basis-1/5 md-1:flex md-1:basis-1/4 gap-3p'>
