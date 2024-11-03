@@ -14,11 +14,11 @@ import { Button } from '../ui/button'
 const NewsCard = ({id,title,description,date,image}) => {
   return (
     <div className=' relative md:h-[22rem] w-80 lg:w-[50%] mx-auto bg-[#114791] rounded-xl flex-col-reverse md:flex flex md:flex-row  overflow-hidden ' >
-      <Card className="dark border-none h-auto w-full bg-transparent p-4 bg-[#114791]" >
+      <Card className="dark border-none md:h-[22rem] w-full bg-transparent md:p-4 bg-[#114791] flex flex-col justify-evenly " >
 
         <CardHeader>
-          <CardTitle className=" text-xl lg:text-2xl" >{title}</CardTitle>
-          <CardDescription> {description} </CardDescription>
+          <CardTitle className=" text-xl lg:text-2xl md:my-2" >{title}</CardTitle>
+          <CardDescription className='my-2' > {description}... </CardDescription>
         </CardHeader>
 
         {/* <CardContent>
