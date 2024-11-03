@@ -129,7 +129,9 @@ export default {
   			'100p': '100%'
   		},
   		animation: {
-  			'scroll-1': 'scrollH 30s linear infinite'
+  			'scroll-1': 'scrollH 30s linear infinite',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
   		keyframes: {
   			scrollH: {
@@ -138,6 +140,22 @@ export default {
   				},
   				'100%': {
   					transform: 'translateX(100%)'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
   				}
   			}
   		},
