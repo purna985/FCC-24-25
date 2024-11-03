@@ -209,42 +209,45 @@ function Home() {
           <p className="w-full my-5">What Do We Do?</p>
         </div>
         <div className="what-cards w-[80%] h-auto flex md:justify-center flex-wrap justify-between items-center ">
-          <div
+          <Link
+            to="/resources"
             className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto "
             id="card1"
           >
             <img
               src={financeSVG}
-              className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]"
+              className="card-image transition-all duration-500 hover:cursor-pointer hover:scale-105 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-500"
               width="100%"
               height="100%"
               alt=""
             />
-          </div>
-          <div
+          </Link>
+          <Link
+            to="/resources"
             className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto "
             id="card2"
           >
             <img
               src={consultingSVG}
-              className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]"
+              className="card-image transition-all duration-500 hover:cursor-pointer hover:scale-105 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-500"
               width="100%"
               height="100%"
               alt=""
             />
-          </div>
-          <div
+          </Link>
+          <Link
+            to="/resources"
             className="what-card flex justify-center items-center md:w-1/3 w-1/2 h-auto "
             id="card3"
           >
             <img
               src={prodmanSVG}
-              className="card-image duration-[0.4s] hover:cursor-pointer hover:-translate-y-5 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-[0.3s]"
+              className="card-image transition-all duration-500 hover:cursor-pointer hover:scale-105 hover:bg-[rgba(0,0,0,0.221)] hover:rounded-[3rem] hover:duration-500"
               width="100%"
               height="100%"
               alt=""
             />
-          </div>
+          </Link>
         </div>
       </div>
       <Newsletter />

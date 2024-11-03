@@ -12,6 +12,8 @@ import Consulting from "./pages/resources-pages/Consulting";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import News_1 from "./pages/newsletters/newsletters/News_1";
+import News_2 from "./pages/newsletters/newsletters/News_2";
 
 function App() {
 
@@ -32,6 +34,11 @@ function App() {
           <Route path="/resources/finance-resources" element={<Finance />} />
           <Route path="/resources/consulting-resources" element={<Consulting />} />
           <Route path="/resources/newsletters" element={<Newsletters />} />
+
+          {/* Newsletters Routes */}
+          <Route path="/resources/newsletters/1" element={<News_1 />} />
+          <Route path="/resources/newsletters/2" element={<News_2 />} />
+
         </Routes>
         <Footer />
       </div>

@@ -11,7 +11,7 @@ const Newsletters = () => {
         {
           NewsletterCardDisplayData.map((data, index) => {
             return (
-              <NewsCard key={index} title={data.title} description={data.description} date={data.date} image={data.image} />
+              <NewsCard key={index} id={data.id} title={data.title} description={data.description} date={data.date} image={data.image} />
             )
           })
         }

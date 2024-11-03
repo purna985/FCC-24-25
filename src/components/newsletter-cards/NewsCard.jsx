@@ -11,13 +11,13 @@ import { Link } from 'react-router-dom'
 
 import { Button } from '../ui/button'
 
-const NewsCard = ({title,description,date,image}) => {
+const NewsCard = ({id,title,description,date,image}) => {
   return (
-    <div className=' relative w-[80%] md:w-[50%] mx-auto bg-[#114791] rounded-xl flex-col-reverse md:flex flex md:flex-row  overflow-hidden ' >
+    <div className=' relative md:h-[22rem] w-80 lg:w-[50%] mx-auto bg-[#114791] rounded-xl flex-col-reverse md:flex flex md:flex-row  overflow-hidden ' >
       <Card className="dark border-none h-auto w-full bg-transparent p-4 bg-[#114791]" >
 
         <CardHeader>
-          <CardTitle className="text-3xl" >{title}</CardTitle>
+          <CardTitle className=" text-xl lg:text-2xl" >{title}</CardTitle>
           <CardDescription> {description} </CardDescription>
         </CardHeader>
 
@@ -27,7 +27,7 @@ const NewsCard = ({title,description,date,image}) => {
 
         <CardFooter className="flex justify-between">
           <p> {date} </p>
-          <Link to='/newsletters' >
+          <Link to={`${id}`} >
             <Button variant="outline">Read Now</Button>
           </Link>
 
