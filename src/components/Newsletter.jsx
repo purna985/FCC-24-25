@@ -8,7 +8,7 @@ function Newsletter() {
           <p className=" text-3xl md:text-5xl font-semibold mt-2 mb-4 text-center">
             <span className="text-blue-500" >FCC</span> Newsroom
           </p>
-          <p className="text-lg md:text-2xl text-center mt-2 text-gray-400" >Get the latest Market RIZZ at your fingertips .</p>
+          <p className="text-lg md:text-2xl text-center mt-2 text-gray-400" >Get the latest Market RIZZ at your fingertips</p>
         </div>
         <div className=" mb-10 ">
           <a href="https://forms.gle/jvmh7v3KbWeAKjDR8" >
