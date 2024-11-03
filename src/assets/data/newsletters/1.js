@@ -11,6 +11,12 @@ import n2i3 from '../../newsletters/images/2/2.2.png'
 import n2i4 from '../../newsletters/images/2/2.4.png'
 import n2i5 from '../../newsletters/images/2/2.5.png'
 
+import n3i1 from '../../newsletters/images/3/3.1.png'
+import n3i2 from '../../newsletters/images/3/3.2.png'
+import n3i3 from '../../newsletters/images/3/3.3.png'
+import n3i4 from '../../newsletters/images/3/3.4.png'
+import n3i5 from '../../newsletters/images/3/3.5.png'
+
 export const NewsletterCardDisplayData = [
     {
         id: 1,
@@ -28,13 +34,20 @@ export const NewsletterCardDisplayData = [
     },
     {
         id: 3,
+        title: "💥 Financial Fireworks: Middle-Class Tax Cuts 🏦, Rupee Rollercoaster 🎢, and Tech Titans 🌟",
+        description: "Tax breaks 💸 for middle class demanded by India Inc: Will FM yield?",
+        date: "June 25, 2024",
+        image: n3i5
+    },
+    {
+        id: 4,
         title: "SEBI Reforms 🏛️, Mars’ $36B Snack Deal 🍫, and Prosus’ India Bet 🇮🇳: Your Fortnightly Finance Rundown 💸",
         description: "Proposed SEBI Reforms Spooks Brokers: How Will This Affect the Market?",
         date: "August 21, 2024",
         image: image2
     },
     {
-        id: 4,
+        id: 5,
         title: "Fortnightly Finance Flash: HSBC Reshuffles, SpiceJet’s Comeback, and India-China Border Talks",
         description: "HSBC Shakes Things Up: New CFO, New Structure, Same Challenges",
         date: "October 23, 2024",
@@ -68,6 +81,23 @@ export const NewsLetterContentData = [
             "Oyo, one of India’s largest hotel chains, has withdrawn its papers from IPO filing on May 17, as seen in the official SEBI (Securities and Exchange Board of India) website. This is the 2nd time in three years that it has pulled out. 📑 \n \n IPO filing, or initial public offering filing, is the document submitted to SEBI containing the financial details of that company. It is necessary to allow investors (like us, but also the big players) to make a well informed decision. 🧐\n \n Coming back to the topic at hand, why did it withdraw? The reason seems to be that it plans to release bonds aimed at raising 350 to 450 million USD 💵. This is a problem as it could majorly change Oyo’s financial statements and this will mess with their IPO filing. \n\n",
             "Goldman Sachs selling Marcus Invest to Betterment is all about doubling down on what they do best: investment banking and wealth management 💼. This move might seem like a bummer for those interested in consumer Fintech, especially students and beginners, as it could lead to fewer opportunities in that area. However, there is a bright side to this shift! 🌟 \n \n The integration of Betterment’s robo-advising services with Marcus Invest accounts illustrates the increasing role of technology in finance 💻. This integration benefits customers and underscores the growing demand for tech-savvy professionals in finance roles. 📈 \n \n For our community, this shift offers insights into fintech’s evolution. It underscores the need to stay agile and seize growth opportunities. Being open to change and staying flexible are the name of the game in this fast-moving world of finance. 🌍",
             "🖥️ Nvidia overtakes Apple to become the 2nd most valuable company in the world in terms of market cap. \n 🏠 Bajaj Housing Finance Files for IPO \n 🔗 Paystand Strengthens B2B Platform with Teampay Acquisition \n 💰 Saudi Arabia’s Aramco will start a share sale, aiming to raise $12 billion. \n 💳 Barclays is Frontrunner for GM’s Credit Card Program"
+        ],
+        authors: ["Faheem Arif", "Shravan S"]
+    },
+    {
+        id: 3,
+        title: "💥 Financial Fireworks: Middle-Class Tax Cuts 🏦, Rupee Rollercoaster 🎢, and Tech Titans 🌟",
+        date: "June 25, 2024",
+        headings: ["Tax breaks 💸 for middle class demanded by India Inc: Will FM yield?", "🏨 India has the largest volume of F&O trading: Boon or Bane?","🚀 Rupee’s Wild Ride: What It Means for Indian Exports and the Global Economy 📦","🤖 AI-Powered Ascent: Nvidia’s Journey to the Top of the Tech World 🚀" ,"🗞 Short Updates"],
+        images: [n3i1, n3i3, n3i4,n3i5],
+        content: [
+            "In response to the finance ministry requesting industry views on tax rates, major Indian industry groups 🏭 requested tax relief for the middle class, suggesting applying 30% tax only for ₹40 lakh plus income. \n \n In addition, streamlining capital gains tax 💵 by categorizing it in 2 or 3 broad groups based on asset type, holding period, etc., along with lower excise duties on fuel ⛽ and higher pay under MGNREGA (employment scheme for unemployed) is proposed.\n\n Subhrakant Panda, the chamber’s immediate past President believes these proposals aim at maintaining growth momentum 📈, increasing ease of doing business and increasing consumer demand. \n\n ",
+
+            "Futures and Options trading in India has been exploding💥 in popularity for a while now, with a monthly turnover of more than 8000 crore in March 2024 as compared to ₹217 crore in March 2019. Moreover, 78% of options trading done worldwide 🌏 in 2023, were on Indian exchanges.\n\n Futures trading 📊 involves an agreement to buy or sell a specific amount of financial instrument at a specific price in the future. \n\n This has however spooked both RBI and FM officials 😨 as many young traders jump in, influenced by social media posts without understanding the risks involved. In addition, the government wants to safeguard the generational shift that Indian households have done by investing in mutual funds and markets.\n\n It is worthwhile to note that the 2008 financial crisis 📉 was partly caused by excessive speculation in the futures market. \n\n",
+
+            "The Indian Rupee has recently fallen to around 83 to the US Dollar, a drop of over 10% in the past year 📉. This slide is due to high import costs, global uncertainties 🌍, and capital outflows. Despite government and RBI efforts to stabilize the currency 🏦, challenges remain.\n\n However, it’s important to consider a broader perspective 🌐. While much attention is on the USD-INR exchange rate due to the Rupee’s depreciation against the Dollar 💵, it’s noteworthy that the INR has stayed level with, or even appreciated against, the Euro, Japanese Yen, British Pound, Australian Dollar, and the Chinese Yuan 🇪🇺🇯🇵🇬🇧🇦🇺🇨🇳 (which implies that it may just be the US Dollar getting stronger). This trend impacts Indian exports 📦, making them pricier and less competitive in these markets. (But do notice, it could also just mean those currencies are depreciating too 🤷‍♂️).\n\n Nonetheless, there’s a silver lining 🌤️ as a weaker Rupee makes Indian goods cheaper and more competitive abroad, potentially boosting export revenues 📈. For our community, this dynamic landscape underscores the importance of understanding global markets and economic policies 📚. It offers an opportunity for new ideas and research to help deal with and benefit from future economic challenges 💡.",
+            "Nvidia has reached an extraordinary milestone 🌟, becoming the largest company in the world by market capitalization, surpassing $1 trillion 💰. This achievement is driven by its leadership in artificial intelligence (AI) 🤖, with its graphics processing units (GPUs) crucial for AI research, data centers, and high-performance computing.\n\n Recent stock performance has been remarkable 📈, with over 150% growth this year, reflecting strong earnings and future prospects. Nvidia’s advancements in AI, gaming 🎮, and self-driving cars 🚗 highlight its innovative edge, with record-high revenues in its latest earnings report 📊.\n\n This accomplishment is particularly significant for our community, as it underscores the transformative impact of technology and innovation 🔬 — areas of keen interest and research at IITH. Nvidia’s rise challenges traditional leaders like Apple and Microsoft 💻, marking a significant shift in the tech landscape. \n\n For investors, Nvidia’s growth offers exciting opportunities 🌟, despite the inherent risks of high valuations. As Nvidia continues to drive advancements in AI and technology, its success story serves as an inspiration for aspiring tech innovators and researchers at IITH 🌠.\n\n",
+            "GitHub CEO expresses optimism over the job of software developer 🤖 amidst AI concerns 💼 \n\nBroad crypto market sell-off 📉, bitcoin at one month low 💸\n\n Reliance shareholders approve retail unit’s $4 billion 📊 lease to Jio Financial 🏦\n\nAmazon announces expansion of its 🛒 grocery service unit to over 130 cities 🌆\n\n"
         ],
         authors: ["Faheem Arif", "Shravan S"]
     },

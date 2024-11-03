@@ -20,12 +20,16 @@ const NewsletterCard = ({ id }) => {
     const authors = data.authors
     return (
         <div className='min-h-screen my-10 ' >
-            
+
             <div className='w-full flex' >
                 <div className='w-[90%] mx-auto md:w-[80%] p-4' >
                     <h1 className='text-4xl my-4 font-bold text-blue-400 ' >FCC NEWSLETTER</h1>
                     <h1 className='text-3xl mt-4 font-bold ' >{data.title}</h1>
-                    <h1 className='text-xl mb-4 text-gray-500 ' >{data.date}</h1>
+
+                    <div className='flex justify-between' >
+                        <h1 className='text-xl mb-4 text-gray-500 ' >{data.date}</h1>
+                        <h1 className='text-xl mb-4 text-gray-500' > by {authors[0]} and {authors[1]} </h1>
+                    </div>
                     <Accordion type="single" collapsible className="w-full">
                         {
                             data.headings.map((data, key) => {
@@ -53,9 +57,7 @@ const NewsletterCard = ({ id }) => {
                         }
                     </Accordion>
 
-                    <div>
-                        <h1 className='text-xl my-2 font-semibold' >Written by {authors[0]} and {authors[1]} </h1>
-                    </div>
+
                 </div>
 
             </div>

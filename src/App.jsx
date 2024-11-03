@@ -14,6 +14,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import News_1 from "./pages/newsletters/newsletters/News_1";
 import News_2 from "./pages/newsletters/newsletters/News_2";
+import News_3 from "./pages/newsletters/newsletters/News_3";
+import News_4 from "./pages/newsletters/newsletters/News_4";
+import News_5 from "./pages/newsletters/newsletters/News_5";
+import News_6 from "./pages/newsletters/newsletters/News_6";
 
 function App() {
 
@@ -38,6 +42,10 @@ function App() {
           {/* Newsletters Routes */}
           <Route path="/resources/newsletters/1" element={<News_1 />} />
           <Route path="/resources/newsletters/2" element={<News_2 />} />
+          <Route path="/resources/newsletters/3" element={<News_3 />} />
+          <Route path="/resources/newsletters/4" element={<News_4 />} />
+          <Route path="/resources/newsletters/5" element={<News_5 />} />
+          <Route path="/resources/newsletters/6" element={<News_6 />} />
 
         </Routes>
         <Footer />
