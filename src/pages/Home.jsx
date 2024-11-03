@@ -157,8 +157,8 @@ function Home() {
         style={{ background: "linear-gradient(#0f4693e5, #0f489399)" }}
       >
         {/* bg gradients */}
-        <h1 className=" text-3xl md:text-5xl md:my-10" >So, Who Are We ?</h1>
-        <div className="w-[80%] md:w-[70%] md:text-3xl md:my-10" >
+        <h1 className=" text-3xl md:text-6xl mb-4 md:mb-0 md:mt-10 md:w-[80%]" >So, <br className="hidden md:visible" /> Who Are We ?</h1>
+        <div className="w-[80%] md:text-4xl md:my-10" >
           <p className="w-full text-start p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
             organization fostering finance and consulting interests. At FCC
             IITH, students are driven by their passion for finance, consulting,
