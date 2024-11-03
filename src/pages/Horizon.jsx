@@ -43,7 +43,7 @@ function Horizon() {
   return (
     <div className='text-white font-rosario z-30'>
       {/* Landing part Horizon */}
-      <div className='md:min-h-screen px-6 py-12 mt-12 text-center  '>
+      <div className='md:min-h-screen px-6 pt-12 mt-12 text-center  '>
       <div className='absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
       <div className='absolute right-0 top-[90vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
 
@@ -66,9 +66,9 @@ function Horizon() {
       </div>
 
       {/* Horizon glimpse video */}
-      <div className="relative m-auto py-[2vw] my-5">
-        {/* <div className='w-full h-full bg-black opacity-70 absolute z-100 ' ></div> */}
-        <video className=" p-2 mx-auto md:w-full z-10" autoPlay muted loop draggable="false">
+      <div className="relative m-auto py-[2vw] my-5 ">
+        <div className='w-full h-full bg-black opacity-50 absolute z-10 ' ></div>
+        <video className=" p-2 mx-auto md:w-full z-40" autoPlay muted loop draggable="false">
           <source src={glimpseVideo} />
           ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
         </video>
