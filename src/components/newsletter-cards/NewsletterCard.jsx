@@ -36,7 +36,7 @@ const NewsletterCard = ({ id }) => {
                                             <h2 className='text-xl my-2 font-semibold'>{data}</h2>
 
                                         </AccordionTrigger>
-                                        <AccordionContent className='flex flex-col w-[80%] ' >
+                                        <AccordionContent className='flex flex-col md:w-[80%] ' >
                                             {renderContentWithBreaks(content[key])}
                                             \
                                             <div>
