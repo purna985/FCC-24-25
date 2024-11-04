@@ -9,7 +9,7 @@ import {
 
 const HomeCarousel = () => {
     return (
-        <div className="w-full mx-auto my-10 md:my-5 px-4 sm:px-6 lg:px-8">
+        <div className="w-full  mx-auto my-10 md:my-5 px-4 sm:px-6 lg:px-8">
           <p className='className=" text-3xl md:text-6xl my-5 md:my-10 md:pb-10 md:w-[80%]" w-full text-center mx-auto'>Upcoming Sessions</p>
             <Carousel
                 opts={{
@@ -18,7 +18,7 @@ const HomeCarousel = () => {
                     dragFree: true,        // Allows smooth dragging
                     skipSnaps: false,      // Adds snapping points to make it easier to stop
                 }}
-                className="w-full max-w-[90%] mx-auto"
+                className="w-full z-20 max-w-[90%] mx-auto"
             >
                 <CarouselContent className="flex gap-4">
                     <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg">

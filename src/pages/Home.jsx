@@ -13,46 +13,15 @@ import prodmanSVG from "/src/assets/home/prodman.svg";
 import Newsletter from "../components/Newsletter";
 import HorizonCard from "../components/HorizonCard";
 import HomeCarousel from "../components/event-cards/HomeCarousel";
+import HomeInsta from "../components/HomeInsta";
 
 function Home() {
   return (
-    <div className="overflow-hidden ">
+    <div className=" relative overflow-hidden ">
 
-      <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%]">
+      <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%] z-20">
         {/* Bg elements */}
         <div className="absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] "></div>
-        <img
-          className="md-1:hidden md:absolute top-[10vh] md:top-[30vh] md:left-[50vw] rotate-[60deg] "
-          src={rupeeBlur}
-          alt=""
-          height="50"
-          width="50"
-          title="svg"
-        />
-        <img
-          className="md-1:hidden md:absolute md:top-[80vh] md:right-[10vw] "
-          src={rupeeBlur}
-          alt=""
-          height="50"
-          width="50"
-          title="svg"
-        />
-        <img
-          className="md-1:hidden md:absolute md:top-[20vh] md:left-[20vw] "
-          src={rupeeBlur}
-          alt=""
-          height="50"
-          width="50"
-          title="svg"
-        />
-        <img
-          className="md-1:hidden md:absolute md:top-[80vh] md:right-[10vw] "
-          src={rupeeBlur}
-          alt=""
-          height="50"
-          width="50"
-          title="svg"
-        />
 
         {/* Landing titles */}
         <div className="md-1:w-auto lg:w-1/2 w-full flex flex-col text-center r justify-evenly">
@@ -78,7 +47,6 @@ function Home() {
 
         {/* Horizon Timer Card */}
         <HorizonCard />
-
       </div>
 
       {/* Our Mission */}
@@ -185,10 +153,10 @@ function Home() {
       </div> */}
 
       {/* What we do section */}
-      <div className="relative w-full h-auto py-10  px-4  flex items-center justify-center flex-col bg-[#114791] overflow-hidden"
+      <div className="relative w-full h-auto pb-10  px-4  flex items-center justify-center flex-col bg-[#114791] overflow-hidden z-20"
          >
         <div className="w-4/5 " >
-          <h1 className='text-3xl md:text-6xl my-5 md:my-10 md:w-[80%] w-full text-center mx-auto'>What Do We Do ?</h1>
+          <h1 className='text-3xl md:text-6xl mb-5 md:my-10 md:w-[80%] w-full text-center mx-auto'>What Do We Do ?</h1>
           <div>
             <p className="w-full z md:text-xl text-start p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
               organization fostering finance and consulting interests. At FCC
@@ -210,6 +178,16 @@ function Home() {
 
       {/* Newsletter subscriptions  */}
       <Newsletter />
+
+      {/* Insta embed */}
+      <HomeInsta />
+      
+
+      {/* <img className="absolute top-1/2 right-1/3 z-0 rotate-[60deg] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+      <img className="absolute bottom-1/4 left-1/4 z-0 rotate-[-60deg] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+      <img className="absolute left-[10%] top-1/4 z-0 rotate-[60deg] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+      <img className="absolute right-[10%] bottom-[10%] z-0  " src={rupeeBlur} alt="" height="50" width="50" title="svg" /> */}
+
     </div>
   );
 }

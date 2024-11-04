@@ -2,7 +2,7 @@
 
 function Newsletter() {
   return (
-    <div className="md:py-10" >
+    <div className="md:py-10 bg-black z-50" >
       <div className="flex flex-col justify-around items-center md-1:justify-around">
         <div className="m-10">
           <p className=" text-3xl md:text-5xl font-semibold mt-2 mb-4 text-center">
