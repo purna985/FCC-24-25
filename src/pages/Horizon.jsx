@@ -7,8 +7,6 @@ import image2 from '../assets/horizon-about/p2.png'
 import image3 from '../assets/horizon-about/p3.png'
 import image4 from '../assets/horizon-about/p4.png'
 
-
-
 import simg1 from '../assets/sponsors/abhibus-min.png'
 import simg2 from '../assets/sponsors/decathalon-min.png'
 import simg3 from '../assets/sponsors/easemytrip-min.png'
@@ -26,14 +24,13 @@ import simg14 from '../assets/sponsors/stockgro-min.png'
 
 import glimpseVideo from "/src/assets/home/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4"
 
+
 function Horizon() {
 
   const images = [
     { img_id: image1 }, { img_id: image2 }, { img_id: image3 }, { img_id: image4 }
   ];
-
-
-
+  
   const s_images = [
     { img_id: simg1 }, { img_id: simg2 }, { img_id: simg3 }, { img_id: simg4 }, { img_id: simg5 },
     { img_id: simg6 }, { img_id: simg7 }, { img_id: simg8 }, { img_id: simg9 }, { img_id: simg10 },
@@ -73,9 +70,6 @@ function Horizon() {
           ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
         </video>
       </div>
-
-
-
 
       {/* About the Event */}
       <div className="relative mt-10p mx-auto w-full h-auto flex flex-col items-center p-1p
