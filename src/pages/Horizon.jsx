@@ -30,7 +30,7 @@ function Horizon() {
   const images = [
     { img_id: image1 }, { img_id: image2 }, { img_id: image3 }, { img_id: image4 }
   ];
-  
+
   const s_images = [
     { img_id: simg1 }, { img_id: simg2 }, { img_id: simg3 }, { img_id: simg4 }, { img_id: simg5 },
     { img_id: simg6 }, { img_id: simg7 }, { img_id: simg8 }, { img_id: simg9 }, { img_id: simg10 },
@@ -105,18 +105,18 @@ function Horizon() {
             <p className='mt-0 mb-4'>We will introduce new competitions and workshops solidifying its status as the go-to platform for Finance, Consulting, and Product Management enthusiasts.</p>
           </div>
         </div>
-        <div className='w-48 h-48 bg-blue-500 absolute top-0 right-0 blur-[8rem] z-10' ></div>
-        <div className='w-48 h-48 bg-blue-500 absolute left-0 bottom-0 blur-[8rem] z-10' ></div>
+        <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute top-0 right-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
+        <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute left-0 bottom-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
       </div>
 
       {/* Past Speakers */}
 
       <Speakers />
 
-      {/* Sponsers */}
+      {/* Partners */}
       <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
         <div className='flex items-center justify-center mb-6'>
-          <p className='font-rosario text-center mb-5 text-4xl md:text-6xl'>Sponsors</p>
+          <p className='font-rosario text-center mb-5 text-4xl md:text-6xl'>Partners</p>
         </div>
         <div className='flex w-full gap-3p animate-scroll-1'>
           <div className='flex basis-1/5 md-1:flex md-1:basis-1/4 gap-3p'>

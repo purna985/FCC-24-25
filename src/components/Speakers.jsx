@@ -50,7 +50,7 @@ function Speakers() {
 
         <Tabs defaultValue="speakers" className="w-full mx-auto text-center">
           <TabsList className='w-1/2 md:w-1/3 px-6 py-7 bg-[#1e1d1d5c] mb-4 ' >
-            <TabsTrigger className='w-1/2 hover:scale-105 text-lg text-white data-[state=active]:text-white data-[state=active]:bg-[#0B418B] ' value="2023">2023</TabsTrigger>
+            <TabsTrigger className='w-1/2 hover:scale-105 text-lg text-white data-[state=active]:text-white data-[state=active]:bg-[#0B418B] ' value="2023" >2023</TabsTrigger>
             <TabsTrigger className='w-1/2 hover:scale-105 text-lg text-white data-[state=active]:text-white data-[state=active]:bg-[#0B418B] ' value="2024">2024</TabsTrigger>
           </TabsList>
           <TabsContent value="2023" className=' mx-auto' >
@@ -73,8 +73,8 @@ function Speakers() {
           </TabsContent>
         </Tabs>
 
-        <div className='w-48 h-48 bg-blue-500 absolute top-0 left-0 blur-[8rem] z-10' ></div>
-        <div className='w-48 h-48 bg-blue-500 absolute right-0 bottom-0 blur-[8rem] z-10' ></div>
+        <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute top-0 left-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
+        <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute right-0 bottom-0 blur-[4rem] md:blur-[8rem] z-10' ></div>
       </div>
     </div>
   )

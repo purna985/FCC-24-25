@@ -75,7 +75,7 @@ function Navbar() {
           </svg>
         </button>
 
-        <div className="fixed top-0 w-screen h-screen bg-black z-10 lg:hidden flex flex-col overflow-hidden left-[100%]"
+        <div className="fixed top-0 w-screen h-screen bg-black z-[100] lg:hidden flex flex-col overflow-hidden left-[100%]"
           ref={menuRef}>
           <div className="flex justify-end bg-transparent w-full items-center px-[15%] p-[5%] cursor-pointer text-4xl mr-[2rem] ">
             <div
