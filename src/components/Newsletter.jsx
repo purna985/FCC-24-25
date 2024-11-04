@@ -1,3 +1,5 @@
+// import mailsvg from '../assets/mail.svg';
+
 function Newsletter() {
   return (
     <div className="md:py-10" >

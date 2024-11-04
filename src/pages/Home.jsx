@@ -1,21 +1,22 @@
+// Module imports
 import { Link } from "react-router-dom";
 
+// Assets imports
 import rupeeBlur from "/src/assets/home/rupeeblur.svg";
 import rightArrow from "/src/assets/home/Double Alt Arrow Right.png";
-// import glowBlockSmall from "/src/assets/home/glowblocksmall.png"
 import aboutSVG from "/src/assets/home/Vector.svg";
-// import glimpseVideo from "/src/assets/home/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4"
 import financeSVG from "/src/assets/home/finance.svg";
 import consultingSVG from "/src/assets/home/consulting.svg";
 import prodmanSVG from "/src/assets/home/prodman.svg";
-import horizonLogo from "../assets/home/HoRiZoN-logo-second-draft.png";
 
+// Components imports
 import Newsletter from "../components/Newsletter";
+import HorizonCard from "../components/HorizonCard";
 
 function Home() {
   return (
     <div className="overflow-hidden ">
-      
+
       <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%]">
         {/* Bg elements */}
         <div className="absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] "></div>
@@ -75,52 +76,7 @@ function Home() {
         </div>
 
         {/* Horizon Timer Card */}
-        <div className="cardbox w-full md:w-1/2 h-1/4 md:h-full flex justify-center mx-auto">
-          <div
-            className="horizon-card  p-6 md:p-10 md:px-[20px] md:pt-0 md:pb-[20px] flex flex-col justify-center font-rosario w-[70%] md:w-[90%] md:max-w-[420px] md:min-w-[300px] h-auto md:h-[17rem] rounded-md border border-solid border-[#ffffff41] bg-gray-500 "
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(142, 141, 141, 0.5) -36.57%, rgba(217, 217, 217, 0) 141.73%)",
-              backdropFilter: "blur(36px)",
-            }}
-          >
-            <div className="heading h-fit w-full flex items-center justify-between">
-              <div className="fs-4 text-[#acababad] md:text-lg ">
-                FCC IIT Hyderabad
-              </div>
-              <img
-                className="horizon-logo w-15 h-10 md:w-16 md:h-12 "
-                src={horizonLogo}
-                alt=""
-              />
-            </div>
-            <div className="horizon-title h-fit w-fit flex items-center justify-between">
-              <div className="md:text-[4rem] text-[2rem] bg-clip-text text-[#1270ED] t">
-                Horizon
-              </div>
-            </div>
-            <div className="timer h-fit w-full">
-              <div className="countdown-container flex justify-between w-full p-[2%]">
-                <div className="days text-[#acababad]">
-                  <span id="days"> 00</span> <br />
-                  <span>days</span>
-                </div>
-                <div className="hours text-[#acababad]">
-                  <span id="hours"> 00</span> <br />
-                  <span>hrs</span>
-                </div>
-                <div className="minutes text-[#acababad]">
-                  <span id="minutes"> 00</span>
-                  <br /> <span>min</span>
-                </div>
-                <div className="seconds text-[#acababad]">
-                  <span id="seconds"> 00</span> <br />
-                  <span>sec</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <HorizonCard />
 
       </div>
 
@@ -176,14 +132,6 @@ function Home() {
         <div className='w-24 h-24 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
         <div className='w-24 h-24 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div>
       </div>
-
-      {/* Horizon glimpse video */}
-      {/* <div className="m-auto py-[2vw] my-5 z-10">
-        <video className="h-[95vh] w-[95vw]" autoPlay muted loop>
-          <source src={glimpseVideo} />
-          ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
-        </video>
-      </div> */}
 
       {/* What we do cards */}
       <div
