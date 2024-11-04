@@ -21,11 +21,8 @@ export default function Resources() {
     <div className='min-h-screen w-full flex flex-col gap-10 my-10'>
       <h1 className='text-4xl mx-auto text-center' >Resources </h1>
       <div className='w-full flex flex-wrap justify-evenly gap-5 md:gap-2 ' >
-
         {/* Finance Card */}
-        <Card className="relative overflow-hidden dark h-auto w-[22rem] bg-[#114791] p-4 " >
-
-
+        <Card className="relative overflow-hidden dark h-auto w-4/5 max-w-[22rem] bg-[#114791] p-4 " >
           <CardHeader>
             <CardTitle className="text-3xl" >Finance</CardTitle>
             <CardDescription>Finance Related Resources</CardDescription>
@@ -46,7 +43,7 @@ export default function Resources() {
           <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div></Card>
 
         {/* Consulting Card */}
-        <Card className="relative overflow-hidden dark h-auto w-[22rem] bg-[#114791] p-4 " >
+        <Card className="relative overflow-hidden dark h-auto w-4/5 max-w-[22rem] bg-[#114791] p-4 " >
 
           <CardHeader>
             <CardTitle className="text-3xl" >Consulting</CardTitle>
@@ -68,7 +65,7 @@ export default function Resources() {
           <div className='w-20 h-20 bg-white absolute bottom-0 right-0 blur-[5rem]' ></div></Card>
 
         {/* Prod Management Card */}
-        <Card className="relative overflow-hidden dark h-auto w-[22rem] bg-[#114791] p-4 " >
+        <Card className="relative overflow-hidden dark h-auto w-4/5 max-w-[22rem] bg-[#114791] p-4 " >
 
           <CardHeader>
             <CardTitle className="text-3xl" >Product Management</CardTitle>
@@ -88,13 +85,12 @@ export default function Resources() {
 
           <div className='w-20 h-20 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
           <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div></Card>
-
       </div>
 
       <h1 className="text-4xl text-center mt-10">Explore More</h1>
       <div className="flex justify-center mt-10">
 
-        <Card className=" relative overflow-hidden dark h-auto w-[26rem] bg-[#114791] p-4  " >
+        <Card className=" relative overflow-hidden dark h-auto w-4/5 max-w-[26rem] bg-[#114791] p-4  " >
           <CardHeader>
             <CardTitle className="text-3xl" >FCC Newsletters</CardTitle>
             <CardDescription>Fortnightly news digest</CardDescription>
