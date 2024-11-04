@@ -12,6 +12,7 @@ import prodmanSVG from "/src/assets/home/prodman.svg";
 // Components imports
 import Newsletter from "../components/Newsletter";
 import HorizonCard from "../components/HorizonCard";
+import HomeCarousel from "../components/event-cards/HomeCarousel";
 
 function Home() {
   return (
@@ -80,10 +81,8 @@ function Home() {
 
       </div>
 
-
-
       {/* Our Mission */}
-      <div className="w-full h-auto mt-5 mx-auto hidden md:flex flex-col py-[3%]">
+      {/* <div className="w-full h-auto mt-5 mx-auto hidden md:flex flex-col py-[3%]">
         <div className="w-full absolute right-0 ">
           <img
             className="arrowsvg"
@@ -109,14 +108,13 @@ function Home() {
             NUMBERS
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Who are we/ About us section */}
-      <div
+      {/* <div
         className="relative w-full h-auto py-10  px-4 md:p-[1%] flex items-center justify-center flex-col overflow-hidden"
         style={{ background: "linear-gradient(#0f4693e5, #0f489399)" }}
       >
-        {/* bg gradients */}
         <h1 className=" text-3xl md:text-6xl mb-4 md:mb-0 md:mt-10 md:w-[80%]" >So, <br className="hidden md:visible" /> Who Are We ?</h1>
         <div className="w-[80%] md:text-4xl md:my-10" >
           <p className="w-full text-start p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
@@ -131,16 +129,17 @@ function Home() {
         </div>
         <div className='w-24 h-24 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
         <div className='w-24 h-24 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div>
-      </div>
+      </div> */}
 
       {/* What we do cards */}
-      <div
-        className="h-auto w-full flex flex-col items-center justify-center font-rosario  py-4 my-4 container-fluid"
+      {/* <div
+        className="h-auto w-full flex flex-col items-center justify-center font-rosario  py-4    container-fluid"
         id="what-we-do"
       >
         <div className="absolute right-[0] bg-[#345bd8] h-[26%] w-[45%] rounded-[100%] blur-[300px] "></div>
         <div className="what-heading w-full text-[3rem] md:text-[5vw] leading-[100%] md:pt-[3%] md:pb-[2%] p-[2%]  text-center">
-          <p className="w-full my-5">What Do We Do?</p>
+        <p className='className=" text-3xl md:text-6xl my-5 md:my-10 md:pb-10 md:w-[80%]" w-full text-center mx-auto'>What Do We Do ?</p>
+
         </div>
         <div className="what-cards w-[80%] h-auto flex md:justify-center flex-wrap justify-between items-center ">
           <Link
@@ -183,7 +182,31 @@ function Home() {
             />
           </Link>
         </div>
+      </div> */}
+      <div className="relative w-full h-auto py-10  px-4  flex items-center justify-center flex-col bg-[#114791] overflow-hidden"
+         >
+        <div className="w-4/5 " >
+          <h1 className='text-3xl md:text-6xl my-5 md:my-10 md:w-[80%] w-full text-center mx-auto'>What Do We Do ?</h1>
+          <div>
+            <p className="w-full md:text-xl text-start p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
+              organization fostering finance and consulting interests. At FCC
+              IITH, students are driven by their passion for finance, consulting,
+              product management and continual progress.</p>
+            <p className="w-full md:text-xl p-2" >Our dedicated team plans a variety of events, such as stimulating
+              lectures, engaging workshops, impactful projects, rigorous
+              competitions, and more, all geared toward achieving their mission of
+              equipping students with useful skills and real-world knowledge in
+              the finance, consulting, and product management domains.</p>
+          </div>
+        </div>
+        <div className='w-24 h-24 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
+        <div className='w-24 h-24 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div>
       </div>
+
+      {/* Upcoming Events Carousel */}
+      <HomeCarousel />
+
+      {/* Newsletter subscriptions  */}
       <Newsletter />
     </div>
   );

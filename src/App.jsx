@@ -9,6 +9,7 @@ import Resources from "./pages/Resources";
 import Newsletters from "./pages/resources-pages/Newsletters";
 import Finance from "./pages/resources-pages/Finance";
 import Consulting from "./pages/resources-pages/Consulting";
+import ProdMan from "./pages/resources-pages/ProdMan";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -37,6 +38,8 @@ function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/finance-resources" element={<Finance />} />
           <Route path="/resources/consulting-resources" element={<Consulting />} />
+          <Route path="/resources/product-resources" element={<ProdMan />} />
+          
           <Route path="/resources/newsletters" element={<Newsletters />} />
 
           {/* Newsletters Routes */}

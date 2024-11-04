@@ -1,9 +1,19 @@
 import React from 'react'
+import HomeEventCard from '../../components/event-cards/HomeEventCard'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Card, CardContent } from '../../components/ui/card'
+import { ArrowLeft } from 'lucide-react'
 
 const ProdMan = () => {
     return (
-        <div className='min-h-screen' >
-            <h1 className=' text-3xl my-10 text-center' >Coming soon...</h1>
+        <div className="w-full min-h-screen">
+            <h1 className='text-3xl mx-auto text-center' >Coming Soon...</h1>
         </div>
     )
 }

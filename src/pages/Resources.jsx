@@ -77,7 +77,7 @@ export default function Resources() {
           </CardContent>
 
           <CardFooter className="flex justify-between">
-            <Link to='finance-resources' >
+            <Link to='product-resources' >
               <Button variant="outline">Explore</Button>
             </Link>
 
