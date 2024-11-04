@@ -67,10 +67,10 @@ function Home() {
           <div className="md:w-4/5 mx-auto" >
             <Link
               to="/horizon"
-              className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-fit md:w-1/2 my-10 text-3xl  md:text-[2.2rem] text-white bg-[#1228ed] rounded-md flex justify-center items-center px-5 "
+              className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-fit md:w-1/2 my-10 text-lg  md:text-4xl text-white bg-[#1228ed] rounded-md flex justify-center items-center p-2 md:px-5 "
             >
               Horizon 25&apos;{" "}
-              <img src={rightArrow} className=" md:w-20 md:h-20" alt="" />
+              <img src={rightArrow} className="h-10 w-10 md:w-20 md:h-20" alt="" />
             </Link>
           </div>
 
@@ -183,16 +183,18 @@ function Home() {
           </Link>
         </div>
       </div> */}
+
+      {/* What we do section */}
       <div className="relative w-full h-auto py-10  px-4  flex items-center justify-center flex-col bg-[#114791] overflow-hidden"
          >
         <div className="w-4/5 " >
           <h1 className='text-3xl md:text-6xl my-5 md:my-10 md:w-[80%] w-full text-center mx-auto'>What Do We Do ?</h1>
           <div>
-            <p className="w-full md:text-xl text-start p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
+            <p className="w-full z md:text-xl text-start p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
               organization fostering finance and consulting interests. At FCC
               IITH, students are driven by their passion for finance, consulting,
               product management and continual progress.</p>
-            <p className="w-full md:text-xl p-2" >Our dedicated team plans a variety of events, such as stimulating
+            <p className="w-full z md:text-xl p-2" >Our dedicated team plans a variety of events, such as stimulating
               lectures, engaging workshops, impactful projects, rigorous
               competitions, and more, all geared toward achieving their mission of
               equipping students with useful skills and real-world knowledge in
