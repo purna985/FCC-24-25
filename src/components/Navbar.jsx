@@ -37,9 +37,9 @@ function Navbar() {
   return (
     <div className=" container-fluid header flex font-semibold justify-center mt-4 pt-4 ">
 
-      <header className="flex md:w-[90%] border-gray-700 bg-opacity-35 h-auto overflow-hidden items-center justify-between rounded-full py-3 px-10 md:bg-[#2C2B2B] bg-transparent mb-10"
+      <header className="flex md:w-[90%]  bg-opacity-35 h-auto overflow-hidden items-center justify-between rounded-full py-3 px-10  bg-transparent mb-10"
       >
-        <div className='md:pl-4 md:w-1/3 '>
+        <div className='md:pl-4 md:w-[40%] '>
           <Link to='/'
             className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly w-1/2'>
             <img src={logofull} alt='FCC' />
