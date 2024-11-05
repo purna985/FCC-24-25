@@ -40,9 +40,9 @@ function Horizon() {
   return (
     <div className='text-white font-rosario z-30'>
       {/* Landing part Horizon */}
-      <div className='px-6 pt-12 my-12 md:my-[6rem] text-center  '>
-      <div className='absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
-      <div className='absolute right-0 top-[90vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
+      <div className='px-6 pt-12 my-12 md:my-[6rem] text-center  z-50 '>
+        <div className='absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
+        <div className='absolute right-0 top-[90vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
 
         <p className=' text-lg md:text-[2.2vw] font-light font-rosario text-custom-blue pb-6 md-1:pb-4 '>
           FCC IIT-HYDERABAD  Presents
@@ -50,22 +50,19 @@ function Horizon() {
         <div className='mx-auto w-full flex-col gap-0 m-6 md-1:mb-6 mt-0'>
           <p className='w-full font-semibold text-6xl md:text-[7rem] text-white  md-1:leading-normal'>HORIZON 25&apos;</p>
         </div>
-            <img className="absolute top-[20vh] left-[50vw] rotate-[60deg] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
-            <img className="absolute top-[80vh] right-[10vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
-            <img className="absolute top-[20vh] left-[20vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
-            <img className="absolute top-[80vh] left-[10vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
-            <img className="absolute top-[20vh] right-[10vw] " src={rupeeBlur} alt="" height="50" width="50" title="svg" />
+
         {/* Schedule Button */}
         {/* <div className="gap-2 flex justify-center py-8 md-1:py-2">
           <button className="font-rosario bg-custom-blue font-bold rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block">
             TODAY'S SCHEDULE </button>
         </div> */}
+
       </div>
 
       {/* Horizon glimpse video */}
-      <div className="relative m-auto py-[2vw] my-10 ">
+      <div className="sticky m-auto py-[2vw] my-10 z-50 ">
         <div className='w-full h-full opacity-50 absolute z-10 ' ></div>
-        <video className="px-3 mx-auto md:w-4/5 z-40" autoPlay muted loop draggable="false">
+        <video className="px-3 mx-auto md:w-4/5  bg-black" autoPlay muted loop draggable="false">
           <source src={glimpseVideo} />
           ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
         </video>
@@ -107,6 +104,11 @@ function Horizon() {
         </div>
         <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute top-0 right-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
         <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute left-0 bottom-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
+        <img className="fixed w-10 h-10 z-0 bottom-1/4 left-[10%] rotate-[60deg] " src={rupeeBlur} alt="" title="svg" />
+        <img className="fixed w-10 h-10 z-0 md:top-1/2 right-1/4 " src={rupeeBlur} alt="" title="svg" />
+        <img className="fixed w-10 h-10 z-0 top-1/4 md:top-1/3 left-1/3 " src={rupeeBlur} alt="" title="svg" />
+        <img className="fixed w-10 h-10 z-0 top-[40%] md:top-1/4 left-[10%] md:left-[15%] " src={rupeeBlur} alt="" title="svg" />
+        <img className="fixed w-10 h-10 z-0 top-1/3 md:top-1/4 right-[10%] " src={rupeeBlur} alt="" title="svg" />
       </div>
 
       {/* Past Speakers */}
