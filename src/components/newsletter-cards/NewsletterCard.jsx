@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { NewsLetterContentData } from '../../assets/data/newsletters/1'
 import {
     Accordion,
@@ -22,12 +23,14 @@ const NewsletterCard = ({ id }) => {
         <div className='min-h-screen md:my-10 ' >
             <div className='w-full flex' >
                 <div className='w-[90%] mx-auto md:w-[80%] p-4' >
-                    <h1 className='text-2xl md:text-4xl mb-4 md:mb-16 font-bold text-blue-700 underline text-center ' >FCC NEWSLETTER</h1>
+                    <h1 className='mx-auto text-2xl md:text-4xl mb-4 md:mb-16 font-bold text-blue-700 underline text-center' >
+                        <Link to='/resources/newsletters' >FCC NEWSLETTER</Link>
+                    </h1>
                     <h1 className='text-xl md:text-3xl my-2 md:my-4 font-bold ' >{data.title}</h1>
 
                     <div className='flex justify-between' >
                         <h1 className='md:text-lg mb-4 text-gray-500 ' >{data.date}</h1>
-                        <h1 className=' md:text-lg mb-4 text-gray-500' > by {authors[0]} and {authors[1]} </h1>
+                        <h1 className=' md:text-lg mb-4 text-gray-500' > {authors[0] && <> by {authors[0]} </> } {authors[1] && <> and {authors[1]}</>} </h1>
                     </div>
                     <Accordion type="single" collapsible className="w-full">
                         {
