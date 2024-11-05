@@ -1,8 +1,9 @@
 // import mailsvg from '../assets/mail.svg';
+import rupeeBlur from "/src/assets/home/rupeeblur.svg";
 
 function Newsletter() {
   return (
-    <div className="md:py-10 bg-black z-50" >
+    <div className="relative md:py-10 bg-black z-50" >
       <div className="flex flex-col justify-around items-center md-1:justify-around">
         <div className="m-10">
           <p className=" text-3xl md:text-5xl font-semibold mt-2 mb-4 text-center">
@@ -18,7 +19,10 @@ function Newsletter() {
           </a>
         </div>
       </div>
-
+      <img className="fixed h-10 w-10 top-1/2 right-1/4 z-0 rotate-[60deg] " src={rupeeBlur} alt=""  title="svg" />
+      <img className="fixed h-10 w-10 bottom-1/4 left-1/4 z-0 rotate-[-60deg] " src={rupeeBlur} alt=""  title="svg" />
+      <img className="fixed h-10 w-10 left-[10%] top-1/4 z-0 rotate-[60deg] " src={rupeeBlur} alt=""  title="svg" />
+      <img className="fixed h-10 w-10 right-[10%] bottom-[10%] z-0  " src={rupeeBlur} alt=""  title="svg" />
     </div>
   );
 }

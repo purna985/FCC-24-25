@@ -14,7 +14,7 @@ function Footer() {
         className="flex flex-col md:flex-row justify-center items-center px-[4%] pb-[2%]  "
         style={{ backgroundColor: "rgb(15, 70, 144)" }}
       >
-        <div className="w-full md:w-1/2 flex-col flex justify-between items-start mt-7">
+        <div className="w-full md:w-1/2 flex-col flex justify-between   items-center md:items-start mt-7">
           <a
             href="/"
             className="flex items-center mb-3 "

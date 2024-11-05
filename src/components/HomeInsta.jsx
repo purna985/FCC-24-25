@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-
+import instalogo from '../assets/home/instalogo-white.svg'
+import { Link } from "react-router-dom";
 const HomeInsta = () => {
 
   useEffect(() => {
@@ -17,7 +18,12 @@ const HomeInsta = () => {
 
   return (
     <div className="my-10 pb-10 bg-black w-full z-20" >
-      <h1 className=' text-xl md:text-3xl my-5 md:my-10 w-[80%] text-center mx-auto z-20 bg-black '>Follow us on Instagram for more exclusive Content!!</h1>
+      <h1 className=' w-[80%] text-center mx-auto z-20 bg-black font-bold flex justify-center items-center gap-3 md:gap-5'>
+        <p className="text-xl md:text-3xl my-5 md:my-10" >FOLLOW US ON <span className='text-blue-500'>INSTAGRAM</span></p>
+        <a href="https://www.instagram.com/fcc_iith?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" >
+          <img className="w-5 h-5 md:w-8 md:h-8 " src={instalogo} alt="" />
+        </a>
+      </h1>
 
       {/* Laptop insta embed */}
       <div className='md:flex justify-evenly items-center gap-5 hidden  mx-auto w-auto z-20 bg-black' >
