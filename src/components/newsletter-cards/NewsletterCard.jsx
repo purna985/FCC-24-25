@@ -6,7 +6,8 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-
+import { Button } from "@/components/ui/button"
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 const renderContentWithBreaks = (text) => {
     return text.split('\n').map((line, index) => (
         <p className='my-2 text-md' key={index}>{line}</p>
@@ -21,7 +22,7 @@ const NewsletterCard = ({ id }) => {
     const authors = data.authors
     return (
         <div className='min-h-screen md:my-10 ' >
-            <div className='w-full flex' >
+            <div className='w-full flex flex-col' >
                 <div className='w-[90%] mx-auto md:w-[80%] p-4' >
                     <h1 className='mx-auto text-2xl md:text-4xl mb-4 md:mb-16 font-bold text-blue-700 underline text-center' >
                         <Link to='/resources/newsletters' >FCC NEWSLETTER</Link>
@@ -30,7 +31,7 @@ const NewsletterCard = ({ id }) => {
 
                     <div className='flex justify-between' >
                         <h1 className='md:text-lg mb-4 text-gray-500 ' >{data.date}</h1>
-                        <h1 className=' md:text-lg mb-4 text-gray-500' > {authors[0] && <> by {authors[0]} </> } {authors[1] && <> and {authors[1]}</>} </h1>
+                        <h1 className=' md:text-lg mb-4 text-gray-500' > {authors[0] && <> by {authors[0]} </>} {authors[1] && <> and {authors[1]}</>} </h1>
                     </div>
                     <Accordion type="single" collapsible className="w-full">
                         {
@@ -60,6 +61,11 @@ const NewsletterCard = ({ id }) => {
                     </Accordion>
 
 
+                </div>
+
+                <div className='w-[80%] flex justify-between mx-auto mb-10 ' >
+                    <div className='' ><Link to={id > 1 ? `/resources/newsletters/${id-1}` : `/resources/newsletters/${id}`} > <Button variant='secondary' className='dark md:text-md' disabled={id===1}  ><ArrowLeft />Previous </Button></Link></div>
+                    <div className='' ><Link to={id < NewsLetterContentData.length ? `/resources/newsletters/${id + 1}` : `/resources/newsletters/${id}`}  > <Button variant='secondary' className='dark md:text-md' disabled={id===NewsLetterContentData.length}  >Next <ArrowRight /> </Button></Link></div>
                 </div>
 
             </div>
