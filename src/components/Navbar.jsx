@@ -35,7 +35,7 @@ function Navbar() {
 
 
   return (
-    <div className=" container-fluid header flex font-semibold justify-center mt-4 pt-4 ">
+    <div className="relative container-fluid header flex font-semibold justify-center mt-4 pt-4 z-[100]   ">
 
       <header className="flex md:w-[90%]  bg-opacity-35 h-auto overflow-hidden items-center justify-between rounded-full py-3 px-10  bg-transparent mb-10"
       >

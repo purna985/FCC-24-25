@@ -24,8 +24,8 @@ const NewsletterCard = ({ id }) => {
         <div className='min-h-screen md:my-10 ' >
             <div className='w-full flex flex-col' >
                 <div className='w-[90%] mx-auto md:w-[80%] p-4' >
-                    <h1 className='mx-auto text-2xl md:text-4xl mb-4 md:mb-16 font-bold text-blue-700 underline text-center' >
-                        <Link to='/resources/newsletters' >FCC NEWSLETTER</Link>
+                    <h1 id='newsletter-heading' className='mx-auto text-2xl md:text-4xl mb-4 md:mb-16 font-bold text-blue-700 underline text-center' >
+                        <Link to='/resources/newsletters' >FCC NEWSLETTER - {id}</Link>
                     </h1>
                     <h1 className='text-xl md:text-3xl my-2 md:my-4 font-bold ' >{data.title}</h1>
 

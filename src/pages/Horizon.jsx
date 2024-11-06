@@ -1,4 +1,3 @@
-import React from 'react'
 import Speakers from '../components/Speakers'
 import rupeeBlur from "/src/assets/home/rupeeblur.svg"
 
@@ -23,7 +22,7 @@ import simg13 from '../assets/sponsors/startupnews-min.png'
 import simg14 from '../assets/sponsors/stockgro-min.png'
 
 import glimpseVideo from "/src/assets/home/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4"
-
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 function Horizon() {
 
@@ -40,10 +39,11 @@ function Horizon() {
   return (
     <div className='text-white font-rosario z-30'>
       {/* Landing part Horizon */}
-      <div className='px-6 pt-12 my-12 md:my-[6rem] text-center  z-50 '>
+    
+      <div className='relative md:min-h-[80vh] px-6 pt-12 my-12 md:my-[6rem] text-center  z-50 '>
         <div className='absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
         <div className='absolute right-0 top-[90vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] '></div>
-
+      <BackgroundLines className='absolute  md:flex bg-transparent md:right-10 -top-16 right-10 md:-top-48 -z-10' />
         <p className=' text-lg md:text-[2.2vw] font-light font-rosario text-custom-blue pb-6 md-1:pb-4 '>
           FCC IIT-HYDERABAD  Presents
         </p>
@@ -60,9 +60,9 @@ function Horizon() {
       </div>
 
       {/* Horizon glimpse video */}
-      <div className="sticky m-auto py-[2vw] my-10 z-50 ">
+      <div className="sticky m-auto py-12 md:py-2 mt-10 md:mt-2 z-50 ">
         <div className='w-full h-full opacity-50 absolute z-10 ' ></div>
-        <video className="px-3 mx-auto md:w-4/5  bg-black" autoPlay muted loop draggable="false">
+        <video className="px-3 mx-auto md:w-4/5" autoPlay muted loop draggable="false">
           <source src={glimpseVideo} />
           ./images/y2mate.com - Horizon23 Event Highlights FCC IIT Hyderabad _1080p.mp4
         </video>
