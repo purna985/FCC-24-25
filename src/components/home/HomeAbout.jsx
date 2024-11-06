@@ -7,11 +7,11 @@ const HomeAbout = () => {
    <div className="w-4/5 " >
      <h1 className='text-3xl md:text-6xl mb-5 md:my-10 md:w-[80%] w-full text-center mx-auto'>What Do We Do ?</h1>
      <div>
-       <p className="w-full z md:text-xl text-center p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
+       <p className="w-full md:text-xl text-center p-2" >The Finance and Consulting Club at IIT Hyderabad is a student-led
          organization fostering finance and consulting interests. At FCC
          IITH, students are driven by their passion for finance, consulting,
          product management and continual progress.</p>
-       <p className="w-full z md:text-xl text-center p-2" >Our dedicated team is geared toward achieving the mission of
+       <p className="w-full md:text-xl text-center p-2" >Our dedicated team is geared toward achieving the mission of
          equipping students with useful skills and real-world knowledge in
          the finance, consulting, and product management domains.</p>
      </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import horizonLogo from "/src/assets/home/HoRiZoN-logo-second-draft.png";
 const HorizonCard = () => {
     return (

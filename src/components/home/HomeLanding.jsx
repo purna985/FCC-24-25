@@ -5,7 +5,7 @@ import rightArrow from "/src/assets/home/Double Alt Arrow Right.png";
 
 const HomeLanding = () => {
     return (
-        <div className="flex h-auto mb-[10%] md:flex-row flex-col w-full justify-start items-center md:py-[5%] z-20">
+        <div className="flex h-[80vh] md:h-auto mb-[10%] md:flex-row flex-col w-full justify-evenly  md:justify-start items-center md:py-[5%] z-20">
             {/* Bg elements */}
             <div className="absolute left-0 top-[20vh] w-[200px] h-[200px] blur-[250px] bg-[#1270ED] "></div>
 
