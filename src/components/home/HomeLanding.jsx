@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import HorizonCard from "../HorizonCard"
+import HorizonCard from "../horizon/HorizonCard"
 import rightArrow from "/src/assets/home/Double Alt Arrow Right.png";
 
 

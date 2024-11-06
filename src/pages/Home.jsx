@@ -1,7 +1,7 @@
 // Components imports
-import HomeNewsletter from "../components/Newsletter";
+import HomeNewsletter from "../components/home/HomeNewsletter";
 import HomeCarousel from "../components/event-cards/HomeCarousel";
-import HomeInsta from "../components/HomeInsta";
+import HomeInsta from "../components/home/HomeInsta";
 import HomeAbout from "../components/home/HomeAbout";
 import HomeLanding from "../components/home/HomeLanding";
 
