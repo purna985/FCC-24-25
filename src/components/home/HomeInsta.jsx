@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import instalogo from '../assets/home/instalogo-white.svg'
-import { Link } from "react-router-dom";
+import instalogo from '/src/assets/home/instalogo-white.svg'
 const HomeInsta = () => {
 
   useEffect(() => {
