@@ -95,7 +95,7 @@ export const NewsletterCardDisplayData = [
     description:
       "🐂 IMF Bullish on India’s Economy: Increases Growth Forecast to 7%",
     date: "July 24, 2024",
-    image: image2,
+    image: image1,
   },
   {
     id: 10,
@@ -104,7 +104,7 @@ export const NewsletterCardDisplayData = [
     description:
       "HSBC Shakes Things Up: New CFO, New Structure, Same Challenges",
     date: "October 23, 2024",
-    image: image1,
+    image: image2,
   },
 ];
 
