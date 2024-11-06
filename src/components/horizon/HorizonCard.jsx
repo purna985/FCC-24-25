@@ -1,5 +1,4 @@
-import React from 'react'
-import horizonLogo from "../assets/home/HoRiZoN-logo-second-draft.png";
+import horizonLogo from "/src/assets/home/HoRiZoN-logo-second-draft.png";
 const HorizonCard = () => {
     return (
         <div className="cardbox z-20 w-full md:w-1/2 h-1/4 md:h-full hidden md:flex justify-center mx-auto">

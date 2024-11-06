@@ -3,7 +3,6 @@ import './App.css'
 import Home from './pages/Home'
 import Horizon from "./pages/Horizon";
 import Schedule from "./pages/Schedule";
-import Sponsors from "./pages/Sponsors";
 import Team from "./pages/Team";
 import Resources from "./pages/Resources";
 import Newsletters from "./pages/resources-pages/Newsletters";
@@ -33,7 +32,6 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/horizon" element={<Horizon />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/team" element={<Team />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/finance-resources" element={<Finance />} />

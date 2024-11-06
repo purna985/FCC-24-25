@@ -20,7 +20,7 @@ import YearTile from './YearTile.jsx';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-function Speakers() {
+function HorizonSpeakers() {
   const ps_images_2022 = [
     { img_id: ps_2023_1 }, { img_id: ps_2023_1 }, { img_id: ps_2023_1 }, { img_id: ps_2023_1 },
   ];
@@ -80,4 +80,4 @@ function Speakers() {
   )
 }
 
-export default Speakers
+export default HorizonSpeakers
