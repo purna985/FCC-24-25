@@ -1,8 +1,10 @@
-import React from 'react'
-import ComingSoon from '../../../components/ComingSoon'
+import NewsletterCard from '../../../components/newsletter-cards/NewsletterCard'
+
 const News_6 = () => {
   return (
-        <ComingSoon />
+    <div>
+      <NewsletterCard id={6} />
+    </div>
   )
 }
 

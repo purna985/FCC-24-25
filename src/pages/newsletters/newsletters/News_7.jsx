@@ -1,11 +1,11 @@
 import NewsletterCard from '../../../components/newsletter-cards/NewsletterCard'
 
-const News_4 = () => {
+const News_7 = () => {
   return (
     <div>
-      <NewsletterCard id={4} />
+      <NewsletterCard id={7} />
     </div>
   )
 }
 
-export default News_4
+export default News_7

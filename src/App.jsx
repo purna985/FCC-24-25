@@ -18,6 +18,10 @@ import News_3 from "./pages/newsletters/newsletters/News_3";
 import News_4 from "./pages/newsletters/newsletters/News_4";
 import News_5 from "./pages/newsletters/newsletters/News_5";
 import News_6 from "./pages/newsletters/newsletters/News_6";
+import News_7 from "./pages/newsletters/newsletters/News_7";
+import News_8 from "./pages/newsletters/newsletters/News_8";
+import News_9 from "./pages/newsletters/newsletters/News_9";
+import News_10 from "./pages/newsletters/newsletters/News_10";
 import ComingSoon from "./components/ComingSoon";
 
 function App() {
@@ -48,6 +52,10 @@ function App() {
           <Route path="/resources/newsletters/4" element={<News_4 />} />
           <Route path="/resources/newsletters/5" element={<News_5 />} />
           <Route path="/resources/newsletters/6" element={<News_6 />} />
+          <Route path="/resources/newsletters/7" element={<News_7 />} />
+          <Route path="/resources/newsletters/8" element={<News_8 />} />
+          <Route path="/resources/newsletters/9" element={<News_9 />} />
+          <Route path="/resources/newsletters/10" element={<News_10 />} />
 
           <Route path="/coming-soon" element={<ComingSoon />} />
 
