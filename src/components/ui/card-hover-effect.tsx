@@ -23,6 +23,7 @@ export const HoverEffect = ({
         className
       )}
     >
+
       {items.map((item, idx) => (
         <Link
           to={item?.link}
@@ -54,6 +55,7 @@ export const HoverEffect = ({
           </Card>
         </Link>
       ))}
+      
     </div>
   );
 };

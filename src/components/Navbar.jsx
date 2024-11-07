@@ -1,13 +1,10 @@
 import { useLocation } from "react-router-dom";
 import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
-
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-// import logo from '../assets/fcc-logo-white.png'
-import logo from '../assets/fcc-logo-blue-nograd.png'
 import logofull from '../assets/fcc-logo-full.png'
-import { Link } from "react-router-dom";
 
 function Navbar() {
 

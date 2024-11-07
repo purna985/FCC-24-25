@@ -27,8 +27,6 @@ function Home() {
 
       {/* Insta embed */}
       <HomeInsta />
-      
-      
 
     </div>
   );

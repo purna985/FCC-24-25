@@ -1,21 +1,14 @@
 import HorizonSpeakers from '../components/Speakers'
-
-
 import HorizonLanding from '../components/horizon/HorizonLanding'
 import HorizonVideo from '../components/horizon/HorizonVideo'
 import HorizonAbout from '../components/horizon/HorizonAbout'
 import HorizonPartners from '../components/horizon/HorizonPartners'
-
 function Horizon() {
 
-
-
-
-
   return (
-    <div className='text-white font-rosario z-30'>
+    <div className='w-full text-white font-rosario z-30'>
+
       {/* Landing part Horizon */}
-    
       <HorizonLanding />
 
       {/* Horizon glimpse video */}
@@ -29,6 +22,7 @@ function Horizon() {
 
       {/* Partners */}
       <HorizonPartners />
+
     </div>
   )
 }
