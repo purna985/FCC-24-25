@@ -33,8 +33,8 @@ const NewsletterCard = ({ id }) => {
                         <h1 className='md:text-lg mb-4 text-gray-500'>{data.date}</h1>
                         <div className=' mb-4 w-auto flex flex-row'>
                             {authors.map((author, index) => (
-                                <div key={index} className='mr-2 text-sm md:text-lg text-gray-500'>
-                                    {index === 0 ? `by ${author}` : `and ${author}`}
+                                <div key={index} className='mr-1 text-sm md:text-lg text-gray-500'>
+                                    {index === 0 ? `by ${author}` : `, ${author}`}
                                 </div>
                             ))}
                         </div>

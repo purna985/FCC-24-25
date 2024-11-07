@@ -15,6 +15,7 @@ import {
 import { Button } from '../components/ui/button'
 import { Link } from 'react-router-dom'
 import NewsCard from '../components/newsletter-cards/NewsCard'
+import ResourcesCard from '@/components/resources/ResourcesCard.jsx'
 
 export default function Resources() {
   return (
@@ -22,93 +23,20 @@ export default function Resources() {
       <h1 className='text-4xl mx-auto text-center' >Resources </h1>
       <div className='w-full flex flex-wrap justify-evenly gap-5 md:gap-2 ' >
         {/* Finance Card */}
-        <Card className="relative overflow-hidden dark h-auto w-4/5 max-w-[22rem] bg-[#114791] p-4 " >
-          <CardHeader>
-            <CardTitle className="text-3xl" >Finance</CardTitle>
-            <CardDescription>Finance Related Resources</CardDescription>
-          </CardHeader>
-
-          <CardContent>
-            <p>One-stop destination for all resources and content to level up your finance game </p>
-          </CardContent>
-
-          <CardFooter className="flex justify-between">
-            <Link to='finance-resources' >
-              <Button variant="outline">Explore</Button>
-            </Link>
-
-          </CardFooter>
-
-          <div className='w-20 h-20 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
-          <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div></Card>
+        <ResourcesCard title="Finance" description="Finance Related Resources" content="One-stop destination for all resources and content to level up your finance game" link="finance-resources" />
 
         {/* Consulting Card */}
-        <Card className="relative overflow-hidden dark h-auto w-4/5 max-w-[22rem] bg-[#114791] p-4 " >
-
-          <CardHeader>
-            <CardTitle className="text-3xl" >Consulting</CardTitle>
-            <CardDescription>Consulting Related Resources</CardDescription>
-          </CardHeader>
-
-          <CardContent>
-            <p>Unlocking Potential: Your Resource Hub for Consulting Success</p>
-          </CardContent>
-
-          <CardFooter className="flex justify-between">
-            <Link to='consulting-resources' >
-              <Button variant="outline">Explore</Button>
-            </Link>
-
-          </CardFooter>
-
-          <div className='w-20 h-20 bg-white absolute left-0 top-0 blur-[5rem]' ></div>
-          <div className='w-20 h-20 bg-white absolute bottom-0 right-0 blur-[5rem]' ></div></Card>
+        <ResourcesCard title="Consulting" description="Consulting Related Resources" content="Unlocking Potential: Your Resource Hub for Consulting Success" link="consulting-resources" />
 
         {/* Prod Management Card */}
-        <Card className="relative overflow-hidden dark h-auto w-4/5 max-w-[22rem] bg-[#114791] p-4 " >
+        <ResourcesCard title="Product Management" description="Product Management Related Resources" content="Your Gateway to Mastering Product Management: Insights and Strategies" link="product-resources" />
 
-          <CardHeader>
-            <CardTitle className="text-3xl" >Product Management</CardTitle>
-            <CardDescription>Product Management Related Resources</CardDescription>
-          </CardHeader>
-
-          <CardContent>
-            <p>Your Gateway to Mastering Product Management: Insights and Strategies </p>
-          </CardContent>
-
-          <CardFooter className="flex justify-between">
-            <Link to='product-resources' >
-              <Button variant="outline">Explore</Button>
-            </Link>
-
-          </CardFooter>
-
-          <div className='w-20 h-20 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
-          <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div></Card>
       </div>
 
-      <h1 className="text-4xl text-center mt-10">Explore More</h1>
-      <div className="flex justify-center mt-10">
-
-        <Card className=" relative overflow-hidden dark h-auto w-4/5 max-w-[26rem] bg-[#114791] p-4  " >
-          <CardHeader>
-            <CardTitle className="text-3xl" >FCC Newsletters</CardTitle>
-            <CardDescription>Fortnightly news digest</CardDescription>
-          </CardHeader>
-
-          <CardContent>
-            <p> Your Fortnightly one stop for financial news around the world, with a tinge of humor XD </p>
-          </CardContent>
-
-          <CardFooter className="flex justify-between">
-            <Link to='newsletters' >
-              <Button variant="outline">Read Now</Button>
-            </Link>
-
-          </CardFooter>
-          <div className='w-20 h-20 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
-          <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div>
-        </Card>
+      <h1 className="text-4xl text-center mt-10 mx-auto">Explore More</h1>
+      <div className="flex justify-center">
+        {/* Newsletters Card */}
+          <ResourcesCard className='max-w-[25rem]' title="FCC Newsletters" description="Fortnightly news digest" content=" Your Fortnightly one stop for financial news around the world, with a tinge of humor XD" link="newsletters" />
       </div>
 
 
