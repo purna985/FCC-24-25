@@ -24,6 +24,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
         <Route path="/schedule" element={<Schedule />} />

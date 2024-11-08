@@ -1,20 +1,3 @@
-import React from 'react'
-import {
-  SidebarProvider,
-  SidebarTrigger
-} from '../components/ui/sidebar'
-import ResourcesSidebar from '../components/ResourcesSidebar.'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Button } from '../components/ui/button'
-import { Link } from 'react-router-dom'
-import NewsCard from '../components/newsletter-cards/NewsCard'
 import ResourcesCard from '@/components/resources/ResourcesCard.jsx'
 
 export default function Resources() {
@@ -30,7 +13,6 @@ export default function Resources() {
 
         {/* Prod Management Card */}
         <ResourcesCard title="Product Management" description="Product Management Related Resources" content="Your Gateway to Mastering Product Management: Insights and Strategies" link="product-resources" />
-
       </div>
 
       <h1 className="text-4xl text-center mt-10 mx-auto">Explore More</h1>
@@ -38,9 +20,6 @@ export default function Resources() {
         {/* Newsletters Card */}
           <ResourcesCard className='max-w-[25rem]' title="FCC Newsletters" description="Fortnightly news digest" content=" Your Fortnightly one stop for financial news around the world, with a tinge of humor XD" link="newsletters" />
       </div>
-
-
-
     </div>
   )
 }
