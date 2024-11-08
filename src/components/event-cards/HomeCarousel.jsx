@@ -20,14 +20,14 @@ const HomeCarousel = () => {
                 }}
                 className="w-full z-20 max-w-[90%] mx-auto"
             >
-                <CarouselContent className="flex gap-4">
+                <CarouselContent className="flex gap-4 mx-auto">
 
-                    <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
-                        <HomeEventCard title={`Trading 101 : Master the basics of Stock Trading`} subtitle="Join Us and kickstart your trading journey 📈" date="November 9, 2024" time="9:00 PM" venue="Auditorium - A Block" />
+                    <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">
+                        <HomeEventCard title={`Trading 101 : Master the basics of Stock Trading`} subtitle="Join Us and kickstart your trading journey today📈" date="November 9, 2024" time="9:00 PM" venue="Auditorium - A Block" />
                     </CarouselItem>
 
-                    <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
-                        <HomeEventCard title="Intro to Finance and Stock Market" subtitle="Unlocking the secrets of finance and the stock market! 💸 Dive into the world of smart investments and future financial insights." date="October 20, 2024" time="9:00 PM" venue="Auditorium" />
+                    <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">
+                        <HomeEventCard title="Intro to Finance and Stock Market" subtitle="Unlock secrets of finance and the stock market!💸 " date="October 20, 2024" time="9:00 PM" venue="Auditorium" />
                     </CarouselItem>
 
         
