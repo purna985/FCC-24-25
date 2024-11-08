@@ -29,10 +29,6 @@
 2. **Updating Newsletters Content:**
    - Navigate to `src/assets/data/newsletters/1.js`.
    - Update the two exports: one for Newsletter Display Cards Data and another for Newsletter Content Data. Follow the format provided in the file.
-   
-3. **Adding New Newsletter Components:**
-   - After updating the newsletter content, create a new component for each newsletter.
-   - Use the naming convention `src/pages/newsletters/newsletters/News_{id}.jsx`, where `{id}` is the newsletter's unique identifier, as defined in the Newsletter Data.
 
 ### Team Page ("/team")
 1. **Updating Team Member Details:**
