@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import './App.css'
 import Home from './pages/Home'
 import Horizon from "./pages/Horizon";
 import Schedule from "./pages/Schedule";
