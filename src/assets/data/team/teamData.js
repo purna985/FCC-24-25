@@ -71,20 +71,20 @@ export const teamsData = [
         teamHead: [
             {
                 name: "Aryan Bubna",
-                image:Aryan,
-                por:"Overall Head",
-                linkedin:""
+                image: Aryan,
+                por: "Overall Head",
+                linkedin: ""
             },
             {
                 name: "Omkar Nilkanth",
-                image:Omkar,
-                por:"Overall Head",
-                linkedin:""
+                image: Omkar,
+                por: "Overall Head",
+                linkedin: ""
 
             },
         ],
         teamMembers: [
-            
+
         ]
     },
     {
@@ -92,57 +92,61 @@ export const teamsData = [
         teamHead: [
             {
                 name: "Samuel",
-                image:Samuel,
-                por:"Finance Head",
-                linkedin:""
+                image: Samuel,
+                por: "Finance Head",
+                linkedin: ""
             }
         ],
         teamMembers: [
+
             {
-                name:"Garvit",
-                image:Garvit,
-                por:"Finance Coordinator",
-                linkedin:""
+                name: "Ankita",
+                image: Ankita,
+                por: "Finance Coordinator",
+                linkedin: ""
+
             },
             {
-                name:"Ankita",
-                image:Ankita,
-                por:"Finance Coordinator",
-                linkedin:""
-                
+                name: "Faheem",
+                image: Faheem,
+                por: "Finance Coordinator",
+                linkedin: ""
+            },
+
+            {
+                name: "Parth",
+                image: Parth,
+                por: "Finance Coordinator",
+                linkedin: ""
             },
             {
-                name:"Disha",
-                image:Disha,
-                por:"Finance Coordinator",
-                linkedin:""
-                
+                name: "Shravan",
+                image: Shravan,
+                por: "Finance Coordinator",
+                linkedin: ""
             },
             {
-                name:"Soham",
-                image:Soham,
-                por:"Finance Coordinator",
-                linkedin:""
-                
+                name: "Disha",
+                image: Disha,
+                por: "Finance Coordinator",
+                linkedin: ""
+
             },
             {
-                name:"Faheem",
-                image:Faheem,
-                por:"Finance Coordinator",
-                linkedin:""
+                name: "Garvit",
+                image: Garvit,
+                por: "Finance Coordinator",
+                linkedin: ""
             },
             {
-                name:"Shravan",
-                image:Shravan,
-                por:"Finance Coordinator",
-                linkedin:""
+                name: "Soham",
+                image: Soham,
+                por: "Finance Coordinator",
+                linkedin: ""
+
             },
-            {
-                name:"Parth",
-                image:Parth,
-                por:"Finance Coordinator",
-                linkedin:""
-            },
+
+
         ]
     },
     {
@@ -150,9 +154,9 @@ export const teamsData = [
         teamHead: [
             {
                 name: "Pritesh Singh",
-                image:PriteshSingh,
-                por:"Consulting Head",
-                linkedin:""
+                image: PriteshSingh,
+                por: "Consulting Head",
+                linkedin: ""
             }
         ],
         teamMembers: [
@@ -163,10 +167,10 @@ export const teamsData = [
         teamName: "CPG",
         teamHead: [
             {
-                name : "Arin",
-                image : Arin,
-                por:"CPG Head",
-                linkedin:""
+                name: "Arin",
+                image: Arin,
+                por: "CPG Head",
+                linkedin: ""
             }
         ],
         teamMembers: [
@@ -177,10 +181,10 @@ export const teamsData = [
         teamName: "Operations",
         teamHead: [
             {
-                name : "Nishant",
-                image : Nishant,
-                por:"Operations Head",
-                linkedin:""
+                name: "Nishant",
+                image: Nishant,
+                por: "Operations Head",
+                linkedin: ""
             }
         ],
         teamMembers: [
@@ -191,16 +195,16 @@ export const teamsData = [
         teamName: "PR",
         teamHead: [
             {
-                name : "Arsh",
-                image:"",
-                por:"PR Head",
-                linkedin:""
+                name: "Arsh",
+                image: "",
+                por: "PR Head",
+                linkedin: ""
             },
             {
                 name: "Tarun",
-                image:Tarun,
-                por:"PR Head",
-                linkedin:""
+                image: Tarun,
+                por: "PR Head",
+                linkedin: ""
             }
         ],
         teamMembers: [
@@ -211,10 +215,10 @@ export const teamsData = [
         teamName: "Web",
         teamHead: [
             {
-                name : "Anand",
+                name: "Anand",
                 image: Anand,
-                por:"Web Head",
-                linkedin:""
+                por: "Web Head",
+                linkedin: ""
             }
         ],
         teamMembers: [
@@ -225,10 +229,10 @@ export const teamsData = [
         teamName: "Design",
         teamHead: [
             {
-                name : "Radhika",
+                name: "Radhika",
                 image: Radhika,
-                por:"Design Head",
-                linkedin:""
+                por: "Design Head",
+                linkedin: ""
             }
         ],
         teamMembers: [
@@ -239,10 +243,10 @@ export const teamsData = [
         teamName: "Multimedia",
         teamHead: [
             {
-                name : "Snehil Singh",
+                name: "Snehil Singh",
                 image: Snehil,
-                por:"Multimedia Head",
-                linkedin:""
+                por: "Multimedia Head",
+                linkedin: ""
             }
         ],
         teamMembers: [

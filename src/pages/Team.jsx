@@ -1,14 +1,4 @@
-// import PropTypes from "prop-types";
-// import "react-multi-carousel/lib/styles.css";
-// import { FaInstagram, FaLinkedin } from 'react-icons/fa';
-
-
 import { teamsData } from '@/assets/data/team/teamData';
-import TeamMemberCard from '../components/team/TeamMemberCard';
-import TeamCoordCard from "../components/team/TeamCoordCard";
-import TeamHeadCard from "../components/team/TeamHeadCard";
-
-import ComingSoon from '../components/ComingSoon'
 import TeamCarousel from '../components/team/TeamCarousel';
 
 function Team() {
