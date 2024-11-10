@@ -67,15 +67,20 @@ import Azeem from "../../team/design/5.jpeg";
 
 export const teamsData = [
     {
-        teamName: "Overall",
+        teamName: "Overall Heads",
         teamHead: [
             {
                 name: "Aryan Bubna",
-                image:Aryan
+                image:Aryan,
+                por:"Overall Head",
+                linkedin:""
             },
             {
                 name: "Omkar Nilkanth",
-                image:Omkar
+                image:Omkar,
+                por:"Overall Head",
+                linkedin:""
+
             },
         ],
         teamMembers: [
@@ -87,37 +92,56 @@ export const teamsData = [
         teamHead: [
             {
                 name: "Samuel",
-                image:Samuel
+                image:Samuel,
+                por:"Finance Head",
+                linkedin:""
             }
         ],
         teamMembers: [
             {
                 name:"Garvit",
-                image:Garvit
+                image:Garvit,
+                por:"Finance Coordinator",
+                linkedin:""
             },
             {
                 name:"Ankita",
-                image:Ankita
+                image:Ankita,
+                por:"Finance Coordinator",
+                linkedin:""
+                
             },
             {
                 name:"Disha",
-                image:Disha
+                image:Disha,
+                por:"Finance Coordinator",
+                linkedin:""
+                
             },
             {
                 name:"Soham",
-                image:Soham
+                image:Soham,
+                por:"Finance Coordinator",
+                linkedin:""
+                
             },
             {
                 name:"Faheem",
-                image:Faheem
+                image:Faheem,
+                por:"Finance Coordinator",
+                linkedin:""
             },
             {
                 name:"Shravan",
-                image:Shravan
+                image:Shravan,
+                por:"Finance Coordinator",
+                linkedin:""
             },
             {
                 name:"Parth",
-                image:Parth
+                image:Parth,
+                por:"Finance Coordinator",
+                linkedin:""
             },
         ]
     },
@@ -126,7 +150,9 @@ export const teamsData = [
         teamHead: [
             {
                 name: "Pritesh Singh",
-                image:PriteshSingh
+                image:PriteshSingh,
+                por:"Consulting Head",
+                linkedin:""
             }
         ],
         teamMembers: [
@@ -138,7 +164,9 @@ export const teamsData = [
         teamHead: [
             {
                 name : "Arin",
-                image : Arin
+                image : Arin,
+                por:"CPG Head",
+                linkedin:""
             }
         ],
         teamMembers: [
@@ -150,7 +178,9 @@ export const teamsData = [
         teamHead: [
             {
                 name : "Nishant",
-                image : Nishant
+                image : Nishant,
+                por:"Operations Head",
+                linkedin:""
             }
         ],
         teamMembers: [
@@ -162,11 +192,15 @@ export const teamsData = [
         teamHead: [
             {
                 name : "Arsh",
-                image:""
+                image:"",
+                por:"PR Head",
+                linkedin:""
             },
             {
                 name: "Tarun",
-                image:Tarun
+                image:Tarun,
+                por:"PR Head",
+                linkedin:""
             }
         ],
         teamMembers: [
@@ -178,7 +212,9 @@ export const teamsData = [
         teamHead: [
             {
                 name : "Anand",
-                image: Anand
+                image: Anand,
+                por:"Web Head",
+                linkedin:""
             }
         ],
         teamMembers: [
@@ -190,7 +226,9 @@ export const teamsData = [
         teamHead: [
             {
                 name : "Radhika",
-                image: Radhika
+                image: Radhika,
+                por:"Design Head",
+                linkedin:""
             }
         ],
         teamMembers: [
@@ -202,7 +240,9 @@ export const teamsData = [
         teamHead: [
             {
                 name : "Snehil Singh",
-                image: Snehil
+                image: Snehil,
+                por:"Multimedia Head",
+                linkedin:""
             }
         ],
         teamMembers: [
