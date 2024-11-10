@@ -1,9 +1,16 @@
-import React from 'react'
+import ConsultingResourcesPdf from '../../components/resources/consulting/ConsultingResourcesPdf'
+import CaseKnightsPdf from '../../components/resources/consulting/CaseKnightsPdf'
 
 const Consulting = () => {
   return (
     <div className='min-h-screen' >
-        <h1 className=' text-3xl my-10 text-center' >Coming soon...</h1>
+
+      {/* Consulting Resources  */}
+      <ConsultingResourcesPdf />
+
+      {/* Case Knights session pdfs */}
+      <CaseKnightsPdf />
+
     </div>
   )
 }
