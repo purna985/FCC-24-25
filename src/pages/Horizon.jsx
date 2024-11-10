@@ -3,6 +3,7 @@ import HorizonLanding from '../components/horizon/HorizonLanding'
 import HorizonVideo from '../components/horizon/HorizonVideo'
 import HorizonAbout from '../components/horizon/HorizonAbout'
 import HorizonPartners from '../components/horizon/HorizonPartners'
+import ComingSoon from '../components/ComingSoon'
 function Horizon() {
 
   return (
@@ -10,18 +11,19 @@ function Horizon() {
 
       {/* Landing part Horizon */}
       <HorizonLanding />
-
+      
+      <ComingSoon />
       {/* Horizon glimpse video */}
-      <HorizonVideo />
+      {/* <HorizonVideo /> */}
 
       {/* About the Event */}
-      <HorizonAbout />
+      {/* <HorizonAbout /> */}
 
       {/* Past Speakers */}
-      <HorizonSpeakers />
+      {/* <HorizonSpeakers /> */}
 
       {/* Partners */}
-      <HorizonPartners />
+      {/* <HorizonPartners /> */}
 
     </div>
   )
