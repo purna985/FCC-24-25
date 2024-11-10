@@ -12,7 +12,9 @@ const TeamCarousel = ({ teamname, heads, coords }) => {
     return (
         <div  >
             <h1 className=' text-3xl my-10 text-center' >{teamname}</h1>
-            <div className='flex flex-wrap justify-evenly gap-5 md:gap-0' >
+            
+            {/* Domain Heads */}
+            <div className='w-full flex flex-wrap justify-evenly gap-5 md:gap-0' >
                 {
                     heads.map((head, key) => {
                         return (
@@ -21,10 +23,10 @@ const TeamCarousel = ({ teamname, heads, coords }) => {
                     })
                 }
             </div>
-
+            
+            {/* Domain Coords */}
             {
                 coords.length > 0 &&
-
                 <Carousel
                     opts={{
                         align: "start",
@@ -49,8 +51,7 @@ const TeamCarousel = ({ teamname, heads, coords }) => {
                     </CarouselContent>
                     <CarouselPrevious className="h-1/2 text-black bg-[#3361A1] rounded-md flex" > </CarouselPrevious>
                     <CarouselNext className="h-1/2 text-black bg-[#3361A1] rounded-md flex" ></CarouselNext>
-                </Carousel>
-                
+                </Carousel>             
             }
         </div>
     )

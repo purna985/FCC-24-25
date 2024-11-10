@@ -4,9 +4,6 @@ import TeamCarousel from '../components/team/TeamCarousel';
 function Team() {
     return (
         <div className="overflow-x-hidden min-h-screen my-10">
-            {/* Team Components */}
-            {/* <ComingSoon /> */}
-
             {
                 teamsData.map((teamData,key) => {
                     return (
@@ -15,9 +12,6 @@ function Team() {
                 })
 
             }
-
-
-
         </div>
     );
 }
