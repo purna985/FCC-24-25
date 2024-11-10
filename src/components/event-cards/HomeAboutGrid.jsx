@@ -9,39 +9,39 @@ export default function HomeAboutGrid() {
 }
 const data = [
   {
-    title: "Industry Lectures",
-    description:
-      "Gain insights directly from industry leaders and professionals, exploring the latest trends, challenges, and innovations shaping today's industries.",
-    link: "/"
-  },
-  {
     title: "Engaging Workshops",
     description:
-      "Hands-on learning experiences designed to deepen understanding and build practical skills across various technical and non-technical fields.",
+      " Dive into hands-on workshops that give you real skills in technical and non-technical areas alike. These sessions are all about learning by doing.",
     link: "/"
   },
   {
     title: "Impactful Projects",
     description:
-      "Work on real-world projects that address pressing societal and technological issues, allowing you to apply your knowledge to make a tangible difference.",
+      " Put your knowledge to work on projects that matter, tackling current issues in society and technology to make a real impact.",
+    link: "/"
+  },
+  {
+    title: "Industry Lectures",
+    description:
+      "Hear directly from the pros—industry leaders and experts who bring in fresh perspectives on the latest trends, challenges, and innovations that shape the world today.",
     link: "/"
   },
   {
     title: "Rigorous Competitions",
     description:
-      "Challenge your skills and knowledge by competing against peers in national and international competitions, fostering innovation and resilience.",
+      " Push your limits by competing in national and international challenges. Test your skills, spark innovation, and build resilience.",
     link: "/"
   },
   {
     title: "Exciting Sessions",
     description:
-      "Interactive sessions covering a broad range of topics from emerging technologies to professional development, designed to engage and inspire.",
+      "From emerging tech to professional skills, these interactive sessions are designed to keep you inspired, engaged, and ready for what’s next.",
     link: "/"
   },
   {
     title: "Real World Knowledge",
     description:
-      "Learning that bridges the gap between academia and industry, equipping you with the skills and insights needed to thrive in real-world environments.",
+      " Get ready to bridge the gap between classroom learning and the real world. We’ll equip you with the insights and tools to make a difference beyond campus.",
     link: "/"
   },
 ];

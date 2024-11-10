@@ -7,7 +7,8 @@ import image4 from '/src/assets/horizon-about/p4.png'
 
 const images = [
     { img_id: image1 }, { img_id: image2 }, { img_id: image3 }, { img_id: image4 }
-  ];
+];
+
 const HorizonAbout = () => {
     return (
         <div className="relative mt-10p mx-auto w-full h-auto flex flex-col items-center p-1p
@@ -18,9 +19,7 @@ const HorizonAbout = () => {
                     About the Event
                 </div>
                 <div className="w-full h-auto text-custom-white text-2xl font-extralight leading-normal p-2p
-            md-1:text-[1.3rem] ">Horizon 2025, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting,
-                    and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions,
-                    Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
+            md-1:text-[1.3rem] ">Horizon 2025, the flagship event of FCC IITH, brings together top speakers and leaders to share insights on finance, consulting, and product management. Look forward to thought-provoking keynote talks, hands-on workshops, panel discussions, career meetups, networking lobbies, competitions, and, of course, Pronites to keep the energy going!
                 </div>
 
                 <div className='w-full h-auto flex justify-evenly items-center flex-wrap my-4'>
@@ -38,9 +37,8 @@ const HorizonAbout = () => {
 
                 <div className='w-full h-auto text-custom-white text-2xl font-extralight leading-normal p-2p
               md-1:text-[1.2rem]'>
-                    In 2024-25,  Horizon aims to expand its influence to students community by inviting industry, academia, and government experts to share insights on Finance, Consulting,
-                    and Product Management.
-                    <p className='mt-0 mb-4'>We will introduce new competitions and workshops solidifying its status as the go-to platform for Finance, Consulting, and Product Management enthusiasts.</p>
+                    For Horizon 2025, we’re setting out to broaden our reach by connecting students with leaders from industry, academia, and government, diving into the world of Finance, Consulting, and Product Management.
+                    <p className='mt-0 mb-4'>We’re bringing in fresh competitions, interactive workshops, and standout sessions to make Horizon the spot for anyone into these fields. <br /> With theme reveals, laid-back fireside chats, hands-on finance workshops, and fun pronites, we’re aiming to create an event that’s both inspiring and a great time for everyone involved.</p>
                 </div>
             </div>
             <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute top-0 right-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
