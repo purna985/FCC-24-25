@@ -11,7 +11,7 @@ import { FaLinkedin } from 'react-icons/fa';
 const TeamHeadCard = ({ name, image, title, linkedin }) => {
   return (
     <div >
-      <Card className="relative overflow-hidden dark h-[22rem] w-[20rem] max-w-[28rem] bg-[#114791] md:p-4 mx-auto" >
+      <Card className="relative overflow-hidden dark h-[22rem] w-[17rem] max-w-[28rem] bg-[#114791] md:p-4 mx-auto" >
 
         <CardHeader>
           <CardTitle className="text-xl md:text-3xl h-[12rem] z-30">

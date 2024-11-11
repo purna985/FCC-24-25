@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 const TeamCoordCard = ({ name, image, title, linkedin }) => {
   return (
     <div >
-      <Card className="relative overflow-hidden dark h-[22rem] w-[20rem] max-w-[28rem] bg-[#114791] md:p-4 mx-auto" >
+      <Card className="relative overflow-hidden dark h-[22rem] w-[17rem] max-w-[28rem] bg-[#114791] md:p-4 mx-auto" >
         <CardHeader>
           <CardTitle className="text-xl md:text-3xl h-[12rem] z-30">
             <img src={image} alt="" className="w-full h-full object-cover rounded-xl" />

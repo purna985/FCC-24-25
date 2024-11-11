@@ -11,7 +11,7 @@ import TeamCoordCard from './TeamCoordCard';
 const TeamCarousel = ({ teamname, heads, coords }) => {
     return (
         <div  >
-            <h1 className=' text-3xl my-10 text-center' >{teamname}</h1>
+            <h1 className=' text-4xl my-10 text-center' >{teamname}</h1>
             
             {/* Domain Heads */}
             <div className='w-full flex flex-wrap justify-evenly gap-5 md:gap-0' >
@@ -41,7 +41,7 @@ const TeamCarousel = ({ teamname, heads, coords }) => {
                         {
                             coords.map((coord, key) => {
                                 return (
-                                    <CarouselItem key={key} className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">
+                                    <CarouselItem key={key} className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg md:basis-1/4 ">
                                         <TeamCoordCard name={coord.name} image={coord.image} title={coord.por} linkedin={coord.linkedin} />
                                     </CarouselItem>
                                 )
@@ -53,6 +53,7 @@ const TeamCarousel = ({ teamname, heads, coords }) => {
                     <CarouselNext className="h-1/2 text-black bg-[#3361A1] rounded-md flex" ></CarouselNext>
                 </Carousel>             
             }
+            
         </div>
     )
 }
