@@ -21,15 +21,15 @@ const ResourcesCard = ({title, description,content,link}) => {
       <p>{content} </p>
     </CardContent>
 
-    <CardFooter className="flex justify-between">
+    <CardFooter className="flex justify-between z-40">
       <Link to={link} >
-        <Button variant="outline">Explore</Button>
+        <Button className='z-40' variant="outline">Explore</Button>
       </Link>
 
     </CardFooter>
 
-    <div className='w-20 h-20 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
-    <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div></Card>
+    <div className='-z-10 w-20 h-20 bg-white absolute top-0 left-0 blur-[5rem]' ></div>
+    <div className='w-20 h-20 bg-white absolute bottom-0 right-0 blur-[5rem]' ></div></Card>
   )
 }
 
