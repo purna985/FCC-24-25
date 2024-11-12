@@ -11,7 +11,7 @@ const Newsletters = () => {
       <div className='w-[80%] mx-auto' >
         <Link to='/resources' ><Button variant='outline' className='dark md:text-md'  ><ArrowLeft />Back to Resources </Button></Link>
       </div>
-      <h1 className='text-4xl mx-auto text-center' >Newsletters </h1>
+      <h1 className='text-4xl mx-auto text-center' > <span className='text-blue-600' >FCC</span> Newsletters </h1>
       <div className='w-full flex flex-col-reverse justify-evenly gap-10 ' >
         {/* Newsletters Card */}
         {

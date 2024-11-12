@@ -11,7 +11,7 @@ import TeamCoordCard from './TeamCoordCard';
 const TeamCarousel = ({ teamname, heads, coords }) => {
     return (
         <div>
-            <h1 className='text-4xl py-10 md:mt-12 text-center w-[90%] md:w-full mx-auto' >{teamname}</h1>
+            <h1 className='text-3xl md:text-4xl py-10 md:mt-12 text-center w-[90%] md:w-full mx-auto' >{teamname}</h1>
             
             {/* Domain Heads */}
             <div className='w-full flex flex-wrap justify-evenly gap-5 md:gap-0' >
