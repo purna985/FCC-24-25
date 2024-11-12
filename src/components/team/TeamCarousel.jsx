@@ -34,7 +34,7 @@ const TeamCarousel = ({ teamname, heads, coords }) => {
                         dragFree: true,        // Allows smooth dragging
                         skipSnaps: false,      // Adds snapping points to make it easier to stop
                     }}
-                    className="w-full z-20 max-w-[90%] mx-auto my-10"
+                    className="w-[70%] z-20 max-w-[90%] mx-auto my-10"
                 >
                     <CarouselContent className="flex gap-4 mx-auto">
 
