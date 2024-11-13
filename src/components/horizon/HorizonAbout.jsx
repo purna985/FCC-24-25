@@ -19,7 +19,7 @@ const HorizonAbout = () => {
                     About the Event
                 </div>
                 <div className="w-full h-auto text-custom-white text-2xl font-extralight leading-normal p-2p
-            md-1:text-[1.3rem] ">Horizon 2025, the flagship event of FCC IITH, brings together top speakers and leaders to share insights on finance, consulting, and product management. Look forward to thought-provoking keynote talks, hands-on workshops, panel discussions, career meetups, networking lobbies, competitions, and, of course, Pronites to keep the energy going!
+            md-1:text-[1.3rem] ">Horizon 2025, the <b>Management Fest</b> of FCC IITH, brings together top speakers and leaders to share insights on finance, consulting, and product management. Look forward to thought-provoking keynote talks, hands-on workshops, panel discussions, career meetups, networking lobbies, competitions, and, of course, Pronites to keep the energy going!
                 </div>
 
                 <div className='w-full h-auto flex justify-evenly items-center flex-wrap my-4'>
