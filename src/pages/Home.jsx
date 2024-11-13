@@ -208,6 +208,65 @@ function Home() {
         <div className="what-heading w-full text-[3rem] md:text-[5vw] leading-[100%] md:pt-[3%] md:pb-[2%] p-[2%]  text-center">
           <p className="w-full my-5">What Do We Do?</p>
         </div>
+        <div className="flex flex-col w-4/5 justify-center text-3xl md-3:text-xl">
+          <p>
+            At the Finance and Consulting Club (FCC) of IIT Hyderabad, we’re all
+            about bringing finance, consulting, and product management to life.
+            Our student-led community is driven by curiosity and a passion for
+            learning.
+          </p>
+          <br />
+          <p>
+            We’re here to help each other out, learn together, and make the path
+            to careers in finance and consulting a little clearer (and a lot
+            more fun). So, if you’re curious about the world of finance or want
+            to explore what consulting and product management really mean,
+            you’re in the right place.
+          </p>
+          <br />
+          <p>
+            <div className="font-bold py-3">Engaging Workshops</div>
+            Dive into hands-on workshops that give you real skills in technical
+            and non-technical areas alike. These sessions are all about learning
+            by doing.
+          </p>
+          <br />
+          <p>
+            <div className="font-bold py-3">Impactful Projects</div>
+            Put your knowledge to work on projects that matter, tackling current
+            issues in society and technology to make a real impact.
+          </p>
+          <br />
+          <p>
+            <div className="font-bold py-3">Rigorous Competitions</div>
+            Rigorous Competitions Push your limits by competing in national and
+            international challenges. Test your skills, spark innovation, and
+            build resilience
+          </p>
+          <br />
+          <p>
+            <div className="font-bold py-3">Exciting Sessions</div>
+            From emerging tech to professional skills, these interactive
+            sessions are designed to keep you inspired, engaged, and ready for
+            what’s next.
+          </p>
+          <br />
+          <p>
+            <div className="font-bold py-3">Real-World Knowledge</div>
+            Get ready to bridge the gap between classroom learning and the real
+            world. We’ll equip you with the insights and tools to make a
+            difference beyond campus.
+          </p>
+          <br />
+          <p>
+            <div className="font-bold py-3">Industry Lectures</div>
+            Hear directly from the pros—industry leaders and experts who bring
+            in fresh perspectives on the latest trends, challenges, and
+            innovations that shape the world today.
+          </p>
+          <br />
+        </div>
+
         <div className="what-cards w-[80%] h-auto flex md:justify-center flex-wrap justify-between items-center ">
           <Link
             to="/resources"
@@ -256,3 +315,4 @@ function Home() {
 }
 
 export default Home;
+
