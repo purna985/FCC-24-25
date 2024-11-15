@@ -6,7 +6,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 2,
@@ -15,7 +17,9 @@ const data = [
     title: "Cultivating Growth: Financial strategies for budding startups",
     speaker: "Sri Harsha Vandakattu, VP - Finance, Sid's Farm",
     time: "3:30 PM - 4:00 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 3,
@@ -24,7 +28,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 4,
@@ -33,7 +39,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 5,
@@ -42,7 +50,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 6,
@@ -51,7 +61,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 7,
@@ -60,7 +72,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 8,
@@ -69,7 +83,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 9,
@@ -78,7 +94,9 @@ const data = [
     title: "Cultivating Growth: Financial strategies for budding startups",
     speaker: "Sri Harsha Vandakattu, VP - Finance, Sid's Farm",
     time: "3:30 PM - 4:00 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 10,
@@ -87,7 +105,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 11,
@@ -96,7 +116,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 12,
@@ -105,7 +127,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 13,
@@ -114,7 +138,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 14,
@@ -123,7 +149,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 15,
@@ -132,7 +160,9 @@ const data = [
     title: "Cultivating Growth: Financial strategies for budding startups",
     speaker: "Sri Harsha Vandakattu, VP - Finance, Sid's Farm",
     time: "3:30 PM - 4:00 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 16,
@@ -141,7 +171,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 17,
@@ -150,7 +182,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 18,
@@ -159,7 +193,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 19,
@@ -168,7 +204,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
   {
     id: 20,
@@ -177,7 +215,9 @@ const data = [
     title: "Fireside chat with Abhishek Kar: Confessions of a Stock",
     speaker: "Abhishek Kar",
     time: "9:15 PM, IST",
-    location: "Auditorium",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
   },
 ];
 

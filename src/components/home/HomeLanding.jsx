@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import HorizonCard from "../horizon/HorizonCard"
 import rightArrow from "/src/assets/home/Double Alt Arrow Right.png";
+import { Button } from '@/components/ui/button'
 
 
 const HomeLanding = () => {
@@ -22,10 +23,15 @@ const HomeLanding = () => {
                 <div className="md:w-4/5 mx-auto" >
                     <Link
                         to="/horizon"
-                        className="shadow-[0_0_12px_rgba(69,115,213,0.6)] hover:shadow-[0_0_25px_rgba(69,115,213,0.6)] w-fit md:w-1/2 my-10 text-lg  md:text-4xl text-white bg-[#1228ed] rounded-md flex justify-center items-center p-2 md:px-5 "
+                        className="flex items-start my-5"
                     >
-                        Horizon 25&apos;{" "}
-                        <img src={rightArrow} className="h-10 w-10 md:w-20 md:h-20" alt="" />
+                        <Button className='text-xl p-6 relative overflow-hidden' >
+                            Horizon 25&apos;{" "}
+                            <img src={rightArrow} className="h-10 w-10 md:w-15 md:h-15" alt="" />
+                            <div className='w-3 h-3 bg-white absolute top-0 right-0 blur-[0.6rem]' ></div>
+                            <div className='w-3 h-3 bg-white absolute bottom-0 left-0 blur-[0.6rem]' ></div>
+
+                        </Button>
                     </Link>
                 </div>
 
@@ -33,7 +39,7 @@ const HomeLanding = () => {
 
             {/* Horizon Timer Card */}
             <HorizonCard />
-        </div>)
+        </div >)
 }
 
 export default HomeLanding

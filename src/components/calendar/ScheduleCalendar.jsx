@@ -46,6 +46,9 @@ function ScheduleCalendar() {
     <div className="App">
       <MyCalendar onDateChange={handleDateChange} />
       {filteredData.map(createCard)}
+      {filteredData.length === 0 && 
+      <h1 className='text-3xl font-semibold text-center mx-auto' >No events on this day...</h1>
+      }
     </div>
   );
 }
@@ -59,7 +62,9 @@ function createCard(item) {
         title={item.title}
         speaker={item.speaker}
         time={item.time}
-        location={item.location}
+        venue={item.venue}
+        link={item.link}
+        linkText={item.linkText}
       />
     </div>
   );

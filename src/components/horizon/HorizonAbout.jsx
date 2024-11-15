@@ -43,11 +43,6 @@ const HorizonAbout = () => {
             </div>
             <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute top-0 right-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
             <div className='w-20 h-20  md:w-48 md:h-48 bg-blue-500 absolute left-0 bottom-0 blur-[5rem] md:blur-[8rem] z-10' ></div>
-            <img className="fixed w-10 h-10 z-0 bottom-1/4 left-[10%] rotate-[60deg] " src={rupeeBlur} alt="" title="svg" />
-            <img className="fixed w-10 h-10 z-0 md:top-1/2 right-1/4 " src={rupeeBlur} alt="" title="svg" />
-            <img className="fixed w-10 h-10 z-0 top-1/4 md:top-1/3 left-1/3 " src={rupeeBlur} alt="" title="svg" />
-            <img className="fixed w-10 h-10 z-0 top-[40%] md:top-1/4 left-[10%] md:left-[15%] " src={rupeeBlur} alt="" title="svg" />
-            <img className="fixed w-10 h-10 z-0 top-1/3 md:top-1/4 right-[10%] " src={rupeeBlur} alt="" title="svg" />
         </div>)
 }
 
