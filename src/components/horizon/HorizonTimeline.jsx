@@ -45,7 +45,7 @@ export function HorizonTimeline() {
     },
     {
       title: "DAY 2 ",
-      date:'January 3, 2025',
+      date:'January 4, 2025',
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -91,7 +91,7 @@ export function HorizonTimeline() {
     },
     {
       title: "DAY 3",
-      date:'January 3, 2025',
+      date:'January 5, 2025',
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
