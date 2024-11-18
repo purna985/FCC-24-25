@@ -43,13 +43,13 @@ function ScheduleCalendar() {
   );
 
   return (
-    <div className="App md:flex">
+    <div className="App md:flex md:mt-12 ">
       <MyCalendar onDateChange={handleDateChange} />
-      {filteredData.length > 0 && <div className="flex flex-col md:w-1/2 md:h-screen md:overflow-y-scroll " > 
+      {filteredData.length > 0 && <div className="flex flex-col md:w-1/2 md:h-screen md:overflow-y-scroll md:border-l-2 border-slate-800 " > 
         {filteredData.map(createCard)}
       </div>}
       {filteredData.length === 0 &&
-        <h1 className='text-3xl font-semibold text-center mx-auto' >No events on this day...</h1>
+        <h1 className='text-3xl font-semibold text-center mx-auto md:w-1/2  md:border-l-2 border-slate-800' >No events on this day...</h1>
       }
     </div>
   );
