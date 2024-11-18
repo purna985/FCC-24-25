@@ -74,10 +74,10 @@ function Navbar() {
           </svg>
         </button>
 
-        <div className="fixed top-0 w-screen h-screen bg-black z-[120] lg:hidden flex flex-col overflow-hidden left-[100%]"
+        <div className="fixed top-0 w-screen h-screen bg-black z-[120] lg:hidden justify-center flex flex-col overflow-hidden left-[100%]"
           ref={menuRef}>
 
-          <div className="flex justify-end bg-transparent w-full items-center px-[15%] pt-[10%] cursor-pointer text-4xl mr-[2rem] ">
+          <div className="fixed top-0 flex justify-end bg-transparent w-full items-center px-[15%] pt-[10%] cursor-pointer text-4xl mr-[2rem] ">
             <div
               onClick={() => {
                 changeState(false)
@@ -87,7 +87,7 @@ function Navbar() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
+          <div className="flex flex-col items-center justify-center gap-10 w-full h-[60%]  p-[10%] links ">
             <Link to="/"
               className={"text-3xl" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
@@ -121,7 +121,7 @@ function Navbar() {
           </div>
         </div>
       </header>
-
+      
     </div>
   )
 }
