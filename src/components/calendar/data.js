@@ -11,6 +11,28 @@ const data = [
     linkText:"Know More"
   },
   {
+    id: 19,
+    day: "Day 2",
+    date: "29th Oct 2024",
+    title: "Cultivating Growth: Financial strategies for budding startups",
+    speaker: "Sri Harsha Vandakattu, VP - Finance, Sid's Farm",
+    time: "3:30 PM - 4:00 PM, IST",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
+  },
+  {
+    id: 21,
+    day: "Day 2",
+    date: "29th Oct 2024",
+    title: "Cultivating Growth: Financial strategies for budding startups",
+    speaker: "Sri Harsha Vandakattu, VP - Finance, Sid's Farm",
+    time: "3:30 PM - 4:00 PM, IST",
+    venue: "Auditorium",
+    link:"/",
+    linkText:"Know More"
+  },
+  {
     id: 2,
     day: "Day 2",
     date: "29th Oct 2024",

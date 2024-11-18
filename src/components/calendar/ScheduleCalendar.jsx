@@ -43,11 +43,13 @@ function ScheduleCalendar() {
   );
 
   return (
-    <div className="App">
+    <div className="App md:flex">
       <MyCalendar onDateChange={handleDateChange} />
-      {filteredData.map(createCard)}
-      {filteredData.length === 0 && 
-      <h1 className='text-3xl font-semibold text-center mx-auto' >No events on this day...</h1>
+      {filteredData.length > 0 && <div className="flex flex-col md:w-1/2 md:h-screen md:overflow-y-scroll " > 
+        {filteredData.map(createCard)}
+      </div>}
+      {filteredData.length === 0 &&
+        <h1 className='text-3xl font-semibold text-center mx-auto' >No events on this day...</h1>
       }
     </div>
   );
@@ -55,7 +57,7 @@ function ScheduleCalendar() {
 
 function createCard(item) {
   return (
-    <div key={item.id}>
+    <div key={item.id} >
       <CardComponent
         day={item.day}
         date={item.date}

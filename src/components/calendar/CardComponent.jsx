@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 const CardComponent = ({ title, subtitle, date, time, venue, link, linkText, speaker, location }) => {
   return (
-    <div className="w-4/5 mx-auto md-1:my-16 my-8 max-w-[50rem] max-h-[20rem] h-auto  flex items-center">
+    <div className="w-4/5 mx-auto my-8 max-w-[50rem] max-h-[20rem] h-auto flex items-center">
       <Card className="relative overflow-hidden dark w-full bg-[#114791] md:p-4 mx-auto" >
         <CardHeader>
           <CardTitle className="text-xl md:text-3xl" >{title}</CardTitle>

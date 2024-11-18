@@ -27,7 +27,7 @@ const MyCalendar = ({ onDateChange }) => {
   };
 
   return (
-    <div>
+    <div className=" w-4/5 mx-auto md:w-1/2" >
       <Calendar
         formatMonthYear={(locale, date) =>
           date.toLocaleString(locale, { month: "long" })

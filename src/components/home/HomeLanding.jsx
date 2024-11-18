@@ -12,9 +12,9 @@ const HomeLanding = () => {
 
             {/* Landing titles */}
             <div className="md-1:w-auto lg:w-1/2 w-full flex flex-col text-center r justify-evenly">
-                <div className="titles  w-[80%] mx-auto">
-                    <p className="text-[#1270ed] md:text-6xl text-5xl leading-100p md:text-start text-center  mb-5">
-                        Finance & Consulting Club
+                <div className="titles  md:w-[80%] mx-auto">
+                    <p className="text-[#1270ed] md:text-6xl text-5xl leading-100p md:text-start text-center w-full  mb-5">
+                        Finance & <br className="md:hidden" /> Consulting Club 
                     </p>
                     <p className="font-light text-xl md:text-[2.5rem] leading-normal  text-center md:text-start">
                         IIT Hyderabad

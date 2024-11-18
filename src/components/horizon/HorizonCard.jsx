@@ -9,7 +9,7 @@ const HorizonCard = () => {
     const [secs, setSecs] = useState(0)
 
     useEffect(() => {
-        const targetDate = new Date("2025-01-15T00:00:00");
+        const targetDate = new Date("2025-01-31T00:00:00");
 
         const updateCountdown = () => {
             const currentDate = new Date();
