@@ -49,7 +49,7 @@ function ScheduleCalendar() {
         {filteredData.map(createCard)}
       </div>}
       {filteredData.length === 0 &&
-        <h1 className='text-3xl font-semibold text-center mx-auto md:w-1/2  md:border-l-2 border-slate-800' >No events on this day...</h1>
+        <h1 className='text-3xl text-center  md:w-1/2 md:h-screen md:border-l-2 border-slate-800' >No events on this day...</h1>
       }
     </div>
   );
