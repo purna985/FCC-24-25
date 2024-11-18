@@ -1,0 +1,157 @@
+/* Main card container */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.card {
+  background-color: #0066cc; /* Blue background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 75%;
+  color: white;
+  font-family: nunito, "Arial", sans-serif;
+}
+
+/* Date and day styling */
+.card-day {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Card content */
+.card-content {
+  background-color: #004d99; /* Darker blue background */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.card-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Speaker styling */
+.card-speaker {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Location styling */
+.card-location {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+/* Time styling */
+.card-time {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+.card-button {
+  background-color: white;
+  color: #0066cc;
+  padding: 15px 22px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 15px rgba(255, 255, 255, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+    0 0 25px rgba(255, 255, 255, 0.7);
+  background-color: #f2f2f2;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .card {
+    padding: 15px;
+  }
+
+  .card-day {
+    font-size: 1.4em;
+  }
+
+  .card-title {
+    font-size: 1.6em;
+  }
+
+  .card-speaker {
+    font-size: 1.1em;
+  }
+
+  .card-location,
+  .card-time {
+    font-size: 0.9em;
+  }
+
+  .card-button {
+    padding: 10px 18px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 10px;
+    width: 90%; /* Adjust card width */
+  }
+
+  .card-day {
+    font-size: 1.2em;
+  }
+
+  .card-title {
+    font-size: 1.4em;
+  }
+
+  .card-speaker {
+    font-size: 1em;
+  }
+
+  .card-location,
+  .card-time {
+    font-size: 0.8em;
+  }
+
+  .card-button {
+    padding: 8px 15px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 8px;
+  }
+
+  .card-day {
+    font-size: 1em;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  .card-speaker {
+    font-size: 0.9em;
+  }
+
+  .card-location,
+  .card-time {
+    font-size: 0.7em;
+  }
+
+  .card-button {
+    padding: 6px 12px;
+    font-size: 0.7em;
+  }
+}

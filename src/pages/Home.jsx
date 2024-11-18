@@ -11,19 +11,19 @@ function Home() {
 
       {/* Landing Title and Horizon Card Section */}
       <HomeLanding />
-      {/* <hr className="mt-10 w-[90%] opacity-50 mx-auto" /> */}
+      <hr className="mb-10 w-full opacity-10 mx-auto " />
 
       {/* What we do section */}
       <HomeAbout />
-      <hr className="mt-10 w-[90%] opacity-50 mx-auto" />
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
         
       {/* Upcoming Events Carousel */}
       <HomeCarousel />
 
       {/* Newsletter subscriptions  */}
-      <hr className="mt-10 w-[90%] opacity-50 mx-auto" />
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HomeNewsletter />
-      <hr className="mb-10 w-[90%] opacity-50 mx-auto" />
+      <hr className="mb-10 w-full opacity-10 mx-auto " />
 
       {/* Insta embed */}
       <HomeInsta />

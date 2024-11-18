@@ -48,7 +48,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </p>
       </div>
 
-      <div ref={ref} className="relative bg-neutral-900 rounded-xl bg-opacity-30 max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative bg-transparent rounded-xl bg-opacity-30 max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
             key={index}
