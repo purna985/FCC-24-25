@@ -41,7 +41,7 @@ const HorizonCard = () => {
     }, []);
 
     return (
-        <div className="cardbox z-20 w-full md:w-1/2 md:h-1/4 md:h-full flex justify-center mx-auto">
+        <div className="cardbox z-20 w-full md:w-1/2 md:h-full flex justify-center mx-auto">
             <div
                 className="horizon-card  p-6 md:p-10 md:px-[20px] md:pt-0 md:pb-[20px] flex flex-col justify-center font-rosario w-[70%] md:w-[90%] md:max-w-[420px] md:min-w-[300px] h-auto md:h-[17rem] rounded-md border border-solid border-[#ffffff41] bg-gray-500 "
                 style={{
