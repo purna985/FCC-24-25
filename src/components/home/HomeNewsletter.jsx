@@ -18,8 +18,8 @@ function HomeNewsletter() {
           </a>
         </div>
       </div>
-      <div className='w-[150px] h-[150px] blur-[200px] bg-blue-700 absolute top-0 right-0 ' ></div>
-      <div className='w-[150px] h-[150px] blur-[200px] bg-blue-700 absolute bottom-0 left-0 ' ></div>
+      <div className='w-[100px] h-[100px] blur-[100px] bg-blue-700 absolute top-0 left-0 ' ></div>
+      <div className='w-[100px] h-[100px] blur-[100px] bg-blue-700 absolute bottom-0 right-0 ' ></div>
     </div>
   );
 }

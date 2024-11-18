@@ -12,13 +12,13 @@ function Home() {
       {/* Landing Title and Horizon Card Section */}
       <HomeLanding />
       <hr className="mb-10 w-full opacity-10 mx-auto " />
-
-      {/* What we do section */}
-      <HomeAbout />
-      <hr className="mt-10 w-full opacity-10 mx-auto " />
         
       {/* Upcoming Events Carousel */}
       <HomeCarousel />
+
+      {/* What we do section */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
+      <HomeAbout />
 
       {/* Newsletter subscriptions  */}
       <hr className="mt-10 w-full opacity-10 mx-auto " />

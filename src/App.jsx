@@ -16,13 +16,14 @@ import ComingSoon from "./components/ComingSoon";
 
 import { NewsLetterContentData } from './assets/data/newsletters/1'
 import rupeeBlur from "/src/assets/home/rupeeblur.svg";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
     <div className="relative bg-black overflow-x-hidden z-0" >
 
       <Navbar />
-
+      <BackToTop />
       <Routes>
         {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
