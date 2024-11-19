@@ -16,6 +16,7 @@ function Horizon() {
       {/* <ComingSoon /> */}
 
       {/* About the Event */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HorizonAbout />
 
       {/* Horizon glimpse video */}
@@ -25,9 +26,11 @@ function Horizon() {
       {/* <HorizonTimeline /> */}
 
       {/* Past Speakers */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HorizonSpeakers />
 
       {/* Partners */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HorizonPartners />
 
     </div>

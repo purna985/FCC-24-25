@@ -25,7 +25,7 @@ function HorizonSpeakers() {
           </p>
         </div>
 
-        <Tabs defaultValue="speakers" className="w-full mx-auto text-center">
+        <Tabs defaultValue="2024" className="w-full mx-auto text-center">
           <TabsList className="w-1/2 md:w-1/3 px-6 py-7 bg-[#1e1d1d5c] mb-4 ">
             <TabsTrigger
               className="w-1/2 hover:scale-105 text-lg text-white data-[state=active]:text-white data-[state=active]:bg-[#0B418B] "
@@ -41,7 +41,7 @@ function HorizonSpeakers() {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="2023" className=" mx-auto">
-            <div className="w-3/4 mx-auto">
+            <div className="md:w-3/4 mx-auto">
               <div className="flex justify-evenly flex-wrap gap-3 md-1:gap-3 ">
               {SpeakersData_2023.map((data) =>
                   HorizonSpeakerCard({
@@ -54,7 +54,7 @@ function HorizonSpeakers() {
             </div>
           </TabsContent>
           <TabsContent value="2024" className=" mx-auto">
-            <div className="w-3/4 mx-auto">
+            <div className="md:w-3/4 mx-auto">
               <div className="flex justify-evenly flex-wrap gap-3 md-1:gap-3  ">
                 {SpeakersData_2024.map((data) =>
                   HorizonSpeakerCard({

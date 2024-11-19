@@ -65,7 +65,7 @@ export const SpeakersData_2024 = [
   },
   {
     id: 9,
-    name: "Raghavendra Sai Bhaskar Tuta",
+    name: " Sai Bhaskar Tuta",
     image: ps_2024_9,
     description: " ",
   },
