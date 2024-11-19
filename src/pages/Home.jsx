@@ -11,21 +11,21 @@ function Home() {
 
       {/* Landing Title and Horizon Card Section */}
       <HomeLanding />
-      <hr className="mt-10 w-[90%] opacity-50 mx-auto" />
-
-      {/* What we do section */}
-      <HomeAbout />
-      <hr className="mt-10 w-[90%] opacity-50 mx-auto" />
         
       {/* Upcoming Events Carousel */}
+      <hr className="mb-10 w-full opacity-10 mx-auto " />
+      <HomeAbout />
+
+      {/* What we do section */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HomeCarousel />
 
       {/* Newsletter subscriptions  */}
-      <hr className="mt-10 w-[90%] opacity-50 mx-auto" />
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HomeNewsletter />
-      <hr className="mb-10 w-[90%] opacity-50 mx-auto" />
 
       {/* Insta embed */}
+      <hr className="mb-10 w-full opacity-10 mx-auto " />
       <HomeInsta />
 
     </div>

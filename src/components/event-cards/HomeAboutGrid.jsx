@@ -2,7 +2,7 @@ import { HoverEffect } from "../ui/card-hover-effect";
 
 export default function HomeAboutGrid() {
   return (
-    (<div className="max-w-5xl mx-auto px-8 md:flex hidden ">
+    (<div className="max-w-6xl mx-auto px-8 md:flex hidden ">
       <HoverEffect items={data} />
     </div>)
   );

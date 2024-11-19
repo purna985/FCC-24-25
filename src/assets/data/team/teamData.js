@@ -21,6 +21,8 @@ import Shravan from "@/assets/team/finance/7.jpeg";
 import Parth from "@/assets/team/finance/8.jpg";
 
 // Consulting Team
+
+import Aditya from "@/assets/team/consulting/1.jpg";
 import Ayaan from "@/assets/team/consulting/2.jpeg";
 import Gaurang from "@/assets/team/consulting/4.jpg";
 import Hiba from "@/assets/team/consulting/5.jpg";
@@ -169,6 +171,12 @@ export const teamsData = [
             }
         ],
         teamMembers: [
+            {
+                name:"Aditya",
+                image:Aditya,
+                por:"Consulting Coordinator",
+                linkedin:""
+            },
             {
                 name:"Baisham",
                 image:Malakar,

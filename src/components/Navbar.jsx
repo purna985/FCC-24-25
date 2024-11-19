@@ -1,9 +1,10 @@
 import { useLocation } from "react-router-dom";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
+import closeIcon from '@/assets/home/closeIcon.svg'
 import logofull from '../assets/fcc-logo-full.png'
 
 function Navbar() {
@@ -11,6 +12,7 @@ function Navbar() {
   const location = useLocation()
   const menuRef = useRef(null);
   const [open, changeState] = useState(false);
+
 
   useGSAP(() => {
     if (open === false) {
@@ -32,18 +34,18 @@ function Navbar() {
 
 
   return (
-    <div className="relative container-fluid header flex font-semibold justify-center mt-4 pt-4 z-[100]   ">
+    <div className="relative container-fluid header flex justify-center  z-[100]   ">
 
-      <header className="flex md:w-[90%]  bg-opacity-35 h-auto overflow-hidden items-center justify-between rounded-full py-3 px-10  bg-transparent mb-10"
+      <header className="flex w-full bg-opacity-35 h-auto overflow-hidden items-center justify-between py-5 px-10  bg-transparent mb-10  shadow-sm shadow-slate-700 "
       >
         <div className='md:pl-4 md:w-[40%] '>
           <Link to='/'
-            className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly w-1/2'>
+            className='inline-flex link-body-emphasis text-decoration-none items-center justify-evenly w-1/2 md:w-1/3'>
             <img src={logofull} alt='FCC' />
           </Link>
         </div>
 
-        <ul className=' navlinks w-[50%] text-lg hidden lg:flex justify-between items-center pr-5'>
+        <ul className=' navlinks w-[50%] text-md hidden lg:flex justify-between items-center pr-5'>
           <li><Link to='/'
             className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Home</Link>
           </li>
@@ -72,42 +74,46 @@ function Navbar() {
           </svg>
         </button>
 
-        <div className="fixed top-0 w-screen h-screen bg-black z-[100] lg:hidden flex flex-col overflow-hidden left-[100%]"
+        <div className="fixed top-0 w-screen h-screen bg-black z-[120] lg:hidden justify-center flex flex-col overflow-hidden left-[100%]"
           ref={menuRef}>
-          <div className="flex justify-end bg-transparent w-full items-center px-[15%] p-[5%] cursor-pointer text-4xl mr-[2rem] ">
+
+          <div className="fixed top-0 flex justify-end bg-transparent w-full items-center px-[15%] pt-[10%] cursor-pointer text-4xl mr-[2rem] ">
             <div
               onClick={() => {
                 changeState(false)
               }}
-            >X</div>
+            >
+              <img src={closeIcon} alt="" />
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-between w-full h-[80%]  p-[10%] links ">
+
+          <div className="flex flex-col items-center justify-center gap-10 w-full h-[60%]  p-[10%] links ">
             <Link to="/"
-              className={"text-4xl font-montserrat font-light" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              className={"text-3xl" + (location.pathname === "/" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
             >Home</Link>
             <Link to="/horizon"
-              className={"text-4xl font-montserrat font-light" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              className={"text-3xl" + (location.pathname === "/horizon" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
             >Horizon</Link>
             <Link to="/schedule"
-              className={"text-4xl font-montserrat font-light" + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              className={"text-3xl" + (location.pathname === "/schedule" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
             >Events</Link>
             <Link to="/resources"
-              className={"text-4xl font-montserrat font-light" + (location.pathname === "/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              className={"text-3xl" + (location.pathname === "/resources" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
             >Resources</Link>
             <Link to="/team"
-              className={"text-4xl font-montserrat font-light" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}
+              className={"text-3xl" + (location.pathname === "/team" ? " text-blue-300" : " text-white hover:text-blue-300")}
               onClick={() => {
                 changeState(false)
               }}
@@ -115,7 +121,7 @@ function Navbar() {
           </div>
         </div>
       </header>
-
+      
     </div>
   )
 }

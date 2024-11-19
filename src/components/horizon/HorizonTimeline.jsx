@@ -1,13 +1,13 @@
 import { Timeline } from "@/components/ui/timeline";
 
-export function HorizonTimeline() {
+export default function HorizonTimeline() {
   const data = [
     {
       title: "DAY 1",
       date:'January 3, 2025',
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-200 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -45,14 +45,14 @@ export function HorizonTimeline() {
     },
     {
       title: "DAY 2 ",
-      date:'January 3, 2025',
+      date:'January 4, 2025',
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-200 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             I usually run out of copy, but when I see content this big, I try to
             integrate lorem ipsum.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-200 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Lorem ipsum is for people who are too lazy to write copy. But we are
             not. Here are some more example of beautiful designs I built.
           </p>
@@ -91,11 +91,11 @@ export function HorizonTimeline() {
     },
     {
       title: "DAY 3",
-      date:'January 3, 2025',
+      date:'January 5, 2025',
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            Day 3 : Management Day
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">

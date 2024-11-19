@@ -1,5 +1,4 @@
 // import mailsvg from '../assets/mail.svg';
-import rupeeBlur from "/src/assets/home/rupeeblur.svg";
 
 function HomeNewsletter() {
   return (
@@ -19,12 +18,8 @@ function HomeNewsletter() {
           </a>
         </div>
       </div>
-      <div className='w-[150px] h-[150px] blur-[200px] bg-blue-700 absolute top-0 right-0 ' ></div>
-      <div className='w-[150px] h-[150px] blur-[200px] bg-blue-700 absolute bottom-0 left-0 ' ></div>
-      <img className="fixed h-10 w-10 top-1/2 right-1/4 z-0 rotate-[60deg] " src={rupeeBlur} alt="" title="svg" />
-      <img className="fixed h-10 w-10 bottom-1/4 left-1/4 z-0 rotate-[-60deg] " src={rupeeBlur} alt="" title="svg" />
-      <img className="fixed h-10 w-10 left-[10%] top-1/4 z-0 rotate-[60deg] " src={rupeeBlur} alt="" title="svg" />
-      <img className="fixed h-10 w-10 right-[10%] bottom-[10%] z-0  " src={rupeeBlur} alt="" title="svg" />
+      <div className='w-[100px] h-[100px] blur-[100px] bg-blue-700 absolute top-0 left-0 ' ></div>
+      <div className='w-[100px] h-[100px] blur-[100px] bg-blue-700 absolute bottom-0 right-0 ' ></div>
     </div>
   );
 }

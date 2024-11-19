@@ -5,11 +5,11 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-  } from "@/components/ui/card"
-  import { Button } from '@/components/ui/button'
-  import { Link } from 'react-router-dom'
+} from "@/components/ui/card"
+import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom'
 
-  const HomeEventCard = ({title, subtitle, date, time, venue, link, linkText}) => {
+const HomeEventCard = ({ title, subtitle, date, time, venue, link, linkText }) => {
     return (
         <div >
             <Card className="relative overflow-hidden dark h-auto w-4/5 max-w-[28rem] bg-[#114791] md:p-4 mx-auto" >
@@ -32,7 +32,8 @@ import {
                 </CardFooter>
 
                 <div className='w-20 h-20 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
-                <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div></Card>
+                <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div>
+            </Card>
         </div>
     )
 }

@@ -41,14 +41,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl">
-          Horizon 2025 : Timeline of Events
+          Timeline of Events for 2025
         </h2>
         <p className="text-neutral-300 text-md md:text-base max-w-sm">
-          Flagship Event of FCC IIT Hyderabad
+          
         </p>
       </div>
 
-      <div ref={ref} className="relative bg-neutral-900 rounded-xl bg-opacity-30 max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative bg-transparent rounded-xl bg-opacity-30 max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
             key={index}
@@ -60,10 +60,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
               <div>
 
-                <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
+                <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-blue-500 dark:text-blue-500 ">
                   {item.title}
                 </h3>
-                <h3 className="hidden md:block text-lg md:pl-20 md:text-3xl font-bold text-neutral-500 dark:text-neutral-500 ">
+                <h3 className="hidden md:block text-lg md:pl-20 md:text-3xl font-bold text-white dark:text-white ">
                   {item.date}
                 </h3>
               </div>

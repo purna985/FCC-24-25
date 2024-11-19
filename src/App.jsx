@@ -15,13 +15,15 @@ import NewsletterCard from "./components/newsletter-cards/NewsletterCard";
 import ComingSoon from "./components/ComingSoon";
 
 import { NewsLetterContentData } from './assets/data/newsletters/1'
+import rupeeBlur from "/src/assets/home/rupeeblur.svg";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
-    <div className="bg-black overflow-x-hidden" >
+    <div className="relative bg-black overflow-x-hidden z-0" >
 
       <Navbar />
-
+      <BackToTop />
       <Routes>
         {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
@@ -38,15 +40,25 @@ function App() {
 
         {/* Newsletters Routes */}
         {NewsLetterContentData.map((data, index) => {
-          return(
-          <Route key={index} path={`/resources/newsletters/${data.id}`} element={<div> <NewsletterCard id={data.id} /> </div>} />
-        )})}
+          return (
+            <Route key={index} path={`/resources/newsletters/${data.id}`} element={<div> <NewsletterCard id={data.id} /> </div>} />
+          )
+        })}
 
         <Route path="/coming-soon" element={<ComingSoon />} />
 
 
       </Routes>
       <Footer />
+
+      {/* Background elements */}
+      <img className="fixed h-10 w-10 top-1/2 right-1/4 z-0 rotate-[60deg] opacity-50 " src={rupeeBlur} alt="" title="svg" />
+      <img className="fixed h-10 w-10 bottom-1/4 left-1/4 z-0 rotate-[-60deg] opacity-50 " src={rupeeBlur} alt="" title="svg" />
+      <img className="fixed h-10 w-10 left-[10%] top-1/4 z-0 rotate-[60deg] opacity-50" src={rupeeBlur} alt="" title="svg" />
+      <img className="fixed h-10 w-10 right-[10%] bottom-[10%] z-0 opacity-50  " src={rupeeBlur} alt="" title="svg" />
+      <img className="fixed h-10 w-10 right-[30%] bottom-[80%] z-0 opacity-50  " src={rupeeBlur} alt="" title="svg" />
+      <img className="fixed h-10 w-10 left-[30%] bottom-[90%] opacity-50  " src={rupeeBlur} alt="" title="svg" />
+
     </div>
 
   )
