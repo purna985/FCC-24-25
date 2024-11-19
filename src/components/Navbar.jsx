@@ -34,9 +34,9 @@ function Navbar() {
 
 
   return (
-    <div className="relative container-fluid header flex justify-center mt-4 z-[100]   ">
+    <div className="relative container-fluid header flex justify-center  z-[100]   ">
 
-      <header className="flex w-full  bg-opacity-35 h-auto overflow-hidden items-center justify-between py-3 px-10  bg-transparent mb-10  shadow-sm shadow-slate-700 "
+      <header className="flex w-full bg-opacity-35 h-auto overflow-hidden items-center justify-between py-5 px-10  bg-transparent mb-10  shadow-sm shadow-slate-700 "
       >
         <div className='md:pl-4 md:w-[40%] '>
           <Link to='/'
