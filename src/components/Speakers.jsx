@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { SpeakersData_2024 } from "../assets/data/speakers/speakerData.js";
 import { SpeakersData_2023 } from "../assets/data/speakers/speakerData.js";
+import HorizonSpeakerCard from "./horizon/HorizonSpeakerCard.jsx";
 
 function HorizonSpeakers() {
   const [year, setYear] = useState(localStorage.getItem("year") || "2024");
@@ -42,28 +43,26 @@ function HorizonSpeakers() {
           <TabsContent value="2023" className=" mx-auto">
             <div className="w-3/4 mx-auto">
               <div className="flex justify-evenly flex-wrap gap-3 md-1:gap-3 ">
-                {SpeakersData_2023.map((image, index) => (
-                  <img
-                    className="h-auto md:p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap  "
-                    src={image.image}
-                    key={index}
-                    alt={`Image ${index + 1}`}
-                  ></img>
-                ))}
+              {SpeakersData_2023.map((data) =>
+                  HorizonSpeakerCard({
+                    image: data.image,
+                    name: data.name,
+                    description: data.description,
+                  })
+                )}
               </div>
             </div>
           </TabsContent>
           <TabsContent value="2024" className=" mx-auto">
             <div className="w-3/4 mx-auto">
               <div className="flex justify-evenly flex-wrap gap-3 md-1:gap-3  ">
-                {SpeakersData_2024.map((image, index) => (
-                  <img
-                    className="h-auto md:p-4 flex-wrap w-1/4 md-1:w-2/5 md-1:flex-wrap  "
-                    src={image.image}
-                    key={index}
-                    alt={`Image ${index + 1}`}
-                  ></img>
-                ))}
+                {SpeakersData_2024.map((data) =>
+                  HorizonSpeakerCard({
+                    image: data.image,
+                    name: data.name,
+                    description: data.description,
+                  })
+                )}
               </div>
             </div>
           </TabsContent>
@@ -77,4 +76,5 @@ function HorizonSpeakers() {
 }
 
 export default HorizonSpeakers;
+
 
