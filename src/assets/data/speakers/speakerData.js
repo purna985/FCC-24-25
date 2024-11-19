@@ -9,10 +9,10 @@ import ps_2024_8 from "../../pastspeakers/2024/Pratik_Dhoot.jpg";
 import ps_2024_9 from "../../pastspeakers/2024/Raghavendra_Sai_Bhaskar_Tuta.jpg";
 import ps_2024_10 from "../../pastspeakers/2024/Subhankar_Murar.jpg";
 
-import ps_2023_1 from "../../pastspeakers/2023/Akhil_Sharma.png";
-import ps_2023_2 from "../../pastspeakers/2023/Gaurav_Mahindra.png";
-import ps_2023_3 from "../../pastspeakers/2023/Rishabh_Jain.png";
-import ps_2023_4 from "../../pastspeakers/2023/Subba_Perepa.png";
+import ps_2023_1 from "../../pastspeakers/2023/Akhil_Sharma.jpg";
+import ps_2023_2 from "../../pastspeakers/2023/Gaurav_Mahindra.jpg";
+import ps_2023_3 from "../../pastspeakers/2023/Rishabh_Jain.jpg";
+import ps_2023_4 from "../../pastspeakers/2023/Subba_Perepa.jpg";
 
 export const SpeakersData_2024 = [
   {
@@ -103,3 +103,4 @@ export const SpeakersData_2023 = [
     description: " ",
   },
 ];
+
