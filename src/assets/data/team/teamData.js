@@ -90,7 +90,7 @@ export const teamsData = [
                 name: "Omkar Nilkanth",
                 image: Omkar,
                 por: "Overall Head",
-                linkedin: ""
+                linkedin: "http://www.linkedin.com/in/omkar-nilkanth-933186202"
 
             },
         ],
@@ -114,33 +114,33 @@ export const teamsData = [
                 name: "Ankita",
                 image: Ankita,
                 por: "Finance Coordinator",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/ankita-sri-s-p-0348b0314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 
             },
             {
                 name: "Faheem",
                 image: Faheem,
                 por: "Finance Coordinator",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/faheem-arif-414179287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
 
             {
                 name: "Parth",
                 image: Parth,
                 por: "Finance Coordinator",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/parth-dawar/"
             },
             {
                 name: "Shravan",
                 image: Shravan,
                 por: "Finance Coordinator",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/shravan-s-140a84310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name: "Disha",
                 image: Disha,
                 por: "Finance Coordinator",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/disha-daga-7786ab25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 
             },
             {
@@ -153,7 +153,7 @@ export const teamsData = [
                 name: "Soham",
                 image: Soham,
                 por: "Finance Coordinator",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/soham-mapara-ab99a0281"
 
             },
 
@@ -167,7 +167,7 @@ export const teamsData = [
                 name: "Pritesh Singh",
                 image: PriteshSingh,
                 por: "Consulting Head",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/priteshsingh0089"
             }
         ],
         teamMembers: [
@@ -175,7 +175,7 @@ export const teamsData = [
                 name:"Aditya",
                 image:Aditya,
                 por:"Consulting Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/aditya-amodkar"
             },
             {
                 name:"Baisham",
@@ -187,13 +187,13 @@ export const teamsData = [
                 name:"Gaurang",
                 image:Gaurang,
                 por:"Consulting Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/gaurangj94"
             },
             {
                 name:"Hiba",
                 image:Hiba,
                 por:"Consulting Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/hiba-muhammed-2a040a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             },
             {
                 name:"Ayaan",
@@ -205,13 +205,13 @@ export const teamsData = [
                 name:"Harsha",
                 image:Harsha,
                 por:"Consulting Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/harsha-vardhan-pulavarthi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             },
             {
                 name:"Sidhartha",
                 image:Sidhartha,
                 por:"Consulting Coordinator",
-                linkedin:""
+                linkedin:"http://www.linkedin.com/in/sidhartha-shankar-shatapathy-616b292a2"
             },
         ]
     },
@@ -222,7 +222,7 @@ export const teamsData = [
                 name: "Arin",
                 image: Arin,
                 por: "CPG Head",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/arin-kulkarni-232166257/"
             }
         ],
         teamMembers: [
@@ -230,7 +230,7 @@ export const teamsData = [
                 name:"Ananya",
                 image:Ananya,
                 por:"CPG Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/dutpal-ananya-750b75291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Dheeraj",
@@ -248,7 +248,7 @@ export const teamsData = [
                 name:"Manav",
                 image:Manav,
                 por:"CPG Coordinator",
-                linkedin:""
+                linkedin:"http://www.linkedin.com/in/manav-rathi-3a4ba6283"
             },
             {
                 name:"Meghana",
@@ -260,19 +260,19 @@ export const teamsData = [
                 name:"Jayant",
                 image:Jayant,
                 por:"CPG Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/chilukala-jayanth-kumar-reddy-98739b287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Sai",
                 image:Sai,
                 por:"CPG Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/sai-charan-ajjarapu-2a2115288/"
             },
             {
                 name:"Suniras",
                 image:Suniras,
                 por:"CPG Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/suniras-ram-rapelli-2795a528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
         ]
     },
@@ -283,7 +283,7 @@ export const teamsData = [
                 name: "Nishant",
                 image: Nishant,
                 por: "Operations Head",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/nishant-iith"
             }
         ],
         teamMembers: [
@@ -291,7 +291,7 @@ export const teamsData = [
                 name:"Yogesh",
                 image:Yogesh,
                 por:"Operations Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/yogesh-kumar-977579329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Kartik",
@@ -303,7 +303,7 @@ export const teamsData = [
                 name:"Shubham",
                 image:Shubham,
                 por:"Operations Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/shubham-nare-2b2a79221/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bqp%2FYtWtDQImK3oS7QJuGhw%3D%3D"
             },
             {
                 name:"Harshita",
@@ -315,7 +315,7 @@ export const teamsData = [
                 name:"Krishna",
                 image:Krishna,
                 por:"Operations Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/krishna-kaustubh-53837426a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
 
         ]
@@ -327,13 +327,13 @@ export const teamsData = [
                 name: "Arsh",
                 image: arsh,
                 por: "PR Head",
-                linkedin: ""
+                linkedin: "http://linkedin.com/in/arsh-arora"
             },
             {
                 name: "Tarun",
                 image: Tarun,
                 por: "PR Head",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/jagarapu-surya-tarun-0145b6259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
         ],
         teamMembers: [
@@ -347,37 +347,37 @@ export const teamsData = [
                 name:"Atharv",
                 image:Atharv,
                 por:"PR Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/atharva-lohare-4a61292a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Abhignya",
                 image:Abhignya,
                 por:"PR Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/abhignya-gogula-a0a831291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Pranay",
                 image:Pranay,
                 por:"PR Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/pranay-reddy-ragi-162336306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Aakarsh",
                 image:Aakarsh,
                 por:"PR Coordinator",
-                linkedin:""
+                linkedin:"http://www.linkedin.com/in/aakarsh-varshney-049077295"
             },
             {
                 name:"Labdhi",
                 image:Labdhi,
                 por:"PR Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/labdhi-anand-6b1a272a1/"
             },
             {
                 name:"Rohan",
                 image:Rohan,
                 por:"PR Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/rohan-holikatti-418892291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Panshul",
@@ -394,7 +394,7 @@ export const teamsData = [
                 name: "Anand",
                 image: Anand,
                 por: "Web Head",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/anand-kasyup-40216016b/"
             }
         ],
         teamMembers: [
@@ -414,7 +414,7 @@ export const teamsData = [
                 name:"Mahesh",
                 image:Mahesh,
                 por:"Web Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/ruppa-mahesh-292311278/"
             },
         ]
     },
@@ -425,7 +425,7 @@ export const teamsData = [
                 name: "Radhika",
                 image: Radhika,
                 por: "Design Head",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/radhikab11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
         ],
         teamMembers: [
@@ -462,7 +462,7 @@ export const teamsData = [
                 name: "Snehil Singh",
                 image: Snehil,
                 por: "Multimedia Head",
-                linkedin: ""
+                linkedin: "https://www.linkedin.com/in/snehil-singh-2b180726b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
         ],
         teamMembers: [
@@ -470,19 +470,19 @@ export const teamsData = [
                 name:"Adil",
                 image:Adil_multi,
                 por:"Multimedia Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/adil-anwar-sadath-21778a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Praful",
                 image:Praful_multi,
                 por:"Multimedia Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/praful-kesavadas-2338b42a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
             {
                 name:"Vedant",
                 image:Vedant_multi,
                 por:"Multimedia Coordinator",
-                linkedin:""
+                linkedin:"https://www.linkedin.com/in/vedant-gupta-698b07165?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
         ]
     },
