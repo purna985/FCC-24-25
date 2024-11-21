@@ -28,7 +28,7 @@ const TeamCoordCard = ({ name, image, title, linkedin }) => {
           <p className="w-2/3 text-lg" >
           {name}
           </p>
-          <a href={linkedin? linkedin : ""} className="w-1/3 flex items-center justify-end" >
+          <a href={linkedin? linkedin : ""} className="w-1/3 flex items-center justify-end" target={ linkedin? `__blank`:``} >
             <FaLinkedin className="w-10 h-6" />
           </a>
           {/* {date && <p className="text-sm md:text-md" > <b>Date : </b>{date}</p>}
@@ -42,6 +42,7 @@ const TeamCoordCard = ({ name, image, title, linkedin }) => {
           </Link>}
 
         </CardFooter> */}
+        <a href="" target=""></a>
 
         <div className='w-20 h-20 bg-white absolute top-0 right-0 blur-[5rem]' ></div>
         <div className='w-20 h-20 bg-white absolute bottom-0 left-0 blur-[5rem]' ></div></Card>
