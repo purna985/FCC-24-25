@@ -1,4 +1,4 @@
-import { HorizonTimeline } from "./horizon/HorizonTimeline"
+import  HorizonTimeline  from "./horizon/HorizonTimeline"
 import { InfiniteCarousel } from "./InfiniteCarousel"
 import { StickyScrollReveal } from "./StickyScrollReveal"
 
