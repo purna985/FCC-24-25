@@ -28,7 +28,7 @@ const TeamHeadCard = ({ name, image, title, linkedin }) => {
           <p className="w-2/3 text-lg" >
           {name}
           </p>
-          <a href={linkedin? linkedin : ""} className="w-1/3 flex items-center justify-end" >
+          <a href={linkedin? linkedin : ""} className="w-1/3 flex items-center justify-end" target={ linkedin? `__blank`:``} >
             <FaLinkedin className="w-10 h-6" />
           </a>
         </CardContent>

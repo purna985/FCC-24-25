@@ -3,6 +3,7 @@ import HorizonLanding from '../components/horizon/HorizonLanding'
 import HorizonVideo from '../components/horizon/HorizonVideo'
 import HorizonAbout from '../components/horizon/HorizonAbout'
 import HorizonPartners from '../components/horizon/HorizonPartners'
+import HorizonTimeline  from '../components/horizon/HorizonTimeline'
 // import ComingSoon from '../components/ComingSoon'
 function Horizon() {
 
@@ -14,21 +15,28 @@ function Horizon() {
       
       {/* <ComingSoon /> */}
 
+      {/* About the Event */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
+      <HorizonAbout />
+
       {/* Horizon glimpse video */}
       <HorizonVideo />
 
-      {/* About the Event */}
-      <HorizonAbout />
+      {/* Horizon timeline */}
+      {/* <HorizonTimeline /> */}
 
       {/* Past Speakers */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HorizonSpeakers />
 
       {/* Partners */}
+      <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HorizonPartners />
 
     </div>
-  )
+  );
 }
 
-export default Horizon
+export default Horizon;
+
 

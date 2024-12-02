@@ -28,7 +28,7 @@ const HorizonPartners = () => {
       <p className='font-rosario text-center mb-5 text-4xl md:text-6xl'>Partners</p>
     </div>
     <div className='flex w-full gap-3p animate-scroll-1'>
-      <div className='flex basis-1/5 md-1:flex md-1:basis-1/4 gap-3p'>
+      <div className='flex basis-1/6 md-1:flex md-1:basis-1/4 gap-3p'>
         {s_images.map((image, index) => (
           <img src={image.img_id} key={index} alt={`Image ${index + 1}`}></img>
         ))}
