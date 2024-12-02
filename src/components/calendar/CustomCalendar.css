@@ -88,11 +88,15 @@
   margin: 2px;
 }
 
+.react-calendar__tile:hover {
+  border-radius: 12px !important;
+}
+
 /* Styling for Today’s Date */
 .react-calendar__tile--now {
   background: #212121;
   color: #ffffff;
-  border-radius: 10px; /* Square with rounded corners */
+  border-radius: 12px; /* Square with rounded corners */
   border: 1.6px solid #ffffff !important; /* White border for today’s date */
 }
 
