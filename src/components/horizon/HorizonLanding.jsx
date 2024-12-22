@@ -16,12 +16,12 @@ const HorizonLanding = () => {
             </div>
 
             {/* Schedule Button */}
-            <div className="gap-2 flex justify-center py-8 md-1:py-2">
+            <div className="gap-2 flex justify-center py-8 md-1:py-2 ">
                 <Link
-                    to="/horizon-schedule"
+                    to=""
                     className="flex items-start my-5"
                 >
-                    <Button className='text-xl p-6 relative overflow-hidden' >
+                    <Button className='text-xl p-6 relative overflow-hidden' disabled cursor='not-allowed'>
                         VIEW FULL SCHEDULE
                         
                         <div className='w-3 h-3 bg-white absolute top-0 right-0 blur-[1rem]' ></div>

@@ -47,19 +47,19 @@ function Navbar() {
 
         <ul className=' navlinks w-[50%] text-md hidden lg:flex justify-between items-center pr-5'>
           <li><Link to='/'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Home</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Home</Link>
           </li>
           <li><Link to='/horizon'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Horizon</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/horizon' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Horizon</Link>
           </li>
           <li><Link to='/schedule'
-            className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Events</Link>
+            className={'nav-link fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/schedule' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Events</Link>
           </li>
           <li><Link to='/resources'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Resources</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/resources' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Resources</Link>
           </li>
           <li><Link to='/team'
-            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#1270ED] border-2 rounded-md text-[#1270ED] ' : '')}>Team</Link>
+            className={'nav-link  fs-5 head-navlink  cursor-pointer px-3 py-2 fw-light ' + (location.pathname === '/team' ? ' border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2] ' : '')}>Team</Link>
           </li>
         </ul>
 
