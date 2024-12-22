@@ -3,7 +3,7 @@ import { NewsletterCardDisplayData } from '../../assets/data/newsletters/1'
 import NewsCard from '../../components/newsletter-cards/NewsCard'
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowUpRightFromSquare } from 'lucide-react';
 
 const Newsletters = () => {
   return (

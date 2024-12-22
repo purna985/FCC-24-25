@@ -10,7 +10,12 @@ function HomeNewsletter() {
           </p>
           <p className="text-lg md:text-2xl text-center mt-2 text-gray-400" >Get the latest Market RIZZ at your fingertips</p>
         </div>
-        <div className=" mb-10 ">
+        <div className=" mb-10 flex gap-10">
+          <a href="/resources/newsletters" >
+            <button className="w-auto hover:bg-blue-500 hover:text-white text-blue-500 font-semibold px-5 md:px-10 py-3 mx-auto border-solid border-blue-500 border-4 text-xl md:text-3xl rounded-full transform duration-500 ">
+              Read Now
+            </button>
+          </a>
           <a href="https://forms.gle/jvmh7v3KbWeAKjDR8" >
             <button className="w-auto hover:bg-blue-500 hover:text-white text-blue-500 font-semibold px-5 md:px-10 py-3 mx-auto border-solid border-blue-500 border-4 text-xl md:text-3xl rounded-full transform duration-500 ">
               Subscribe
