@@ -130,7 +130,7 @@
   background-color: #1e90ff; /* Color of the event dot */
   border-radius: 50%;
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   left: 50%;
   transform: translateX(-50%);
 }

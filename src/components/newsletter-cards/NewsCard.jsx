@@ -17,7 +17,7 @@ const NewsCard = ({id,title,description,date,image}) => {
 
       <Card className="dark border-none md:h-[22rem] w-auto md:w-1/2 shadow-none bg-transparent md:p-4 bg-[#114791] flex flex-col justify-evenly " >
         <CardHeader>
-          <CardTitle className=" text-lg md:text-2xl md:my-2" >{title}</CardTitle>
+          <CardTitle className=" text-lg md:text-2xl md:my-2" > <span className='text-2xl md:text-4xl' >{id}. </span> {title}</CardTitle>
           <CardDescription className='my-2' > {description}... </CardDescription>
         </CardHeader>
 

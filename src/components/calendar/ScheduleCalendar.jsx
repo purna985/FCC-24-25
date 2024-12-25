@@ -39,7 +39,7 @@ function ScheduleCalendar() {
   };
 
   const filteredData = data.filter((item) =>
-    isWithinDaysRange(item.date, selectedDate, 2)
+    isWithinDaysRange(item.date, selectedDate, 0)
   );
 
   return (
@@ -62,6 +62,7 @@ function createCard(item) {
         day={item.day}
         date={item.date}
         title={item.title}
+        subtitle={item.subtitle}
         speaker={item.speaker}
         time={item.time}
         venue={item.venue}

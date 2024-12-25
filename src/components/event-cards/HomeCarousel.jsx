@@ -10,7 +10,7 @@ import {
 const HomeCarousel = () => {
     return (
         <div className="w-full  mx-auto my-10 md:my-5 px-4 sm:px-6 lg:px-8">
-            <p className='className=" text-3xl md:text-6xl my-5 md:my-10 md:pb-10 md:w-[80%]" w-full text-center mx-auto'>Upcoming Sessions</p>
+            <p className='className=" text-3xl md:text-6xl my-5 md:my-10 md:pb-10 md:w-[80%]" w-full text-center mx-auto'>Upcoming Events</p>
             <Carousel
                 opts={{
                     align: "start",
@@ -21,6 +21,10 @@ const HomeCarousel = () => {
                 className="w-full z-20 max-w-[90%] mx-auto"
             >
                 <CarouselContent className="flex gap-4 mx-auto">
+
+                    <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">
+                        <HomeEventCard title={`SHE Leads: A Panel of Powerhouses`} subtitle="Kickstarting the most exciting Management fest by FCC IITH🔥" date="January 11, 2025" time="9:00 PM" venue="Auditorium - A Block" />
+                    </CarouselItem>
 
                     <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">
                         <HomeEventCard title={`Trading 101 : Master the basics of Stock Trading`} subtitle="Join Us and kickstart your trading journey today📈" date="November 9, 2024" time="9:00 PM" venue="Auditorium - A Block" />
