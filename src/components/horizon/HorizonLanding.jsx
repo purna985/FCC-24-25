@@ -1,3 +1,7 @@
+import { Button } from '@/components/ui/button'
+import { Link } from "react-router-dom"
+import rightArrow from "/src/assets/home/Double Alt Arrow Right.png";
+import { ArrowUpRight } from 'lucide-react';
 
 const HorizonLanding = () => {
     return (
@@ -12,10 +16,20 @@ const HorizonLanding = () => {
             </div>
 
             {/* Schedule Button */}
-            {/* <div className="gap-2 flex justify-center py-8 md-1:py-2">
-      <a className="font-rosario bg-custom-blue font-bold rounded-lg text-xl px-6 py-2 md-1:w-70p md-1:inline-block">
-        TODAY'S SCHEDULE </a>
-    </div> */}
+            <div className="gap-2 flex justify-center py-8 md-1:py-2 ">
+                <Link
+                    to=""
+                    className="flex items-start my-5"
+                >
+                    <Button className='text-xl p-6 relative overflow-hidden' disabled cursor='not-allowed'>
+                        VIEW FULL SCHEDULE
+                        
+                        <div className='w-3 h-3 bg-white absolute top-0 right-0 blur-[1rem]' ></div>
+                        <div className='w-3 h-3 bg-white absolute bottom-0 left-0 blur-[1rem]' ></div>
+
+                    </Button>
+                </Link>
+            </div>
 
         </div>)
 }
