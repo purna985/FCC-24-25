@@ -20,15 +20,15 @@ function Footer() {
       >
         <div className="w-full md:w-1/2 flex-row flex items-center md:items-start mt-7">
           <a href="/" className="flex items-center mb-3 ">
-            <img src={logo} className="w-20 h-20 md:w-28 md:h-28" alt="" />
+            <img src={logo} className="w-16 h-16 md:w-28 md:h-28" alt="" />
           </a>
           <p className="ml-6 font-medium">
-            <p className="text-4xl leading-snug">
+            <p className="text-xl md:text-2xl leading-snug">
               Finance &
               <br />
               Consulting Club
             </p>
-            <p className="text-3xl mt-2">IIT Hyderabad</p>
+            <p className="text-xl md:text-2xl mt-2">IIT Hyderabad</p>
           </p>
         </div>
 
@@ -111,27 +111,6 @@ function Footer() {
                     Workshop
                   </a>
                 </li>
-                {/* <li className="nav-item mb-2 hover:scale-105 transition-all duration-300  ">
-                <a
-                  href="resources"
-                  className="font-light text-md"
-                  target="_blank"
-                >
-                  Resources
-                </a>
-              </li>
-              <li className="nav-item mb-2 hover:scale-105 transition-all duration-300  ">
-                <a
-                  href="/schedule"
-                  className="font-light text-md"
-                  target="_blank"
-                >
-                  Events
-                </a>
-              </li> */}
-                {/* <li className="nav-item mb-2 hover:scale-105 transition-all duration-300  ">
-                <a href="/team" className="font-light text-md">Team</a>
-              </li> */}
               </ul>
             </div>
           </div>
@@ -160,7 +139,7 @@ function Footer() {
         </div>
       </footer>
       <p
-        className="text-[2rem] w-auto flex justify-center font-light font-roboto pb-2"
+        className="text-xl w-auto flex justify-center font-light font-roboto pb-2"
         style={{ backgroundColor: "rgb(15, 70, 144)" }}
       >
         © 2024 Copyright: FCC IIT Hyderabad
