@@ -67,7 +67,7 @@ function Footer() {
                   </a>
                 </li>
                 <li className="nav-item mb-2 hover:scale-105 transition-all duration-300  ">
-                  <a href="/" className="font-medium text-md" target="_blank">
+                  <a href="/resources/newsletters" className="font-medium text-md" target="_blank">
                     FCC Blogs
                   </a>
                 </li>
