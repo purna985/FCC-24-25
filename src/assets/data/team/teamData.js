@@ -27,34 +27,34 @@ import Ayaan from "@/assets/team/consulting/2.jpeg";
 import Gaurang from "@/assets/team/consulting/4.jpg";
 import Hiba from "@/assets/team/consulting/5.jpg";
 import Harsha from "@/assets/team/consulting/6.jpeg";
-import Malakar from "@/assets/team/consulting/7.jpg";
+import Devesh from "@/assets/team/consulting/9.jpg";
 import Sidhartha from "@/assets/team/consulting/8.jpeg";
 
 // Multimedia team
-import Adil_multi from "@/assets/team/multimedia/2.jpg";
+import Adil_multi from "@/assets/team/multimedia/5.jpg";
 import Praful_multi from "@/assets/team/multimedia/3.jpg";
 import Vedant_multi from "@/assets/team/multimedia/4.jpg";
 
 // Ops team
 import Harshita from "@/assets/team/operations/2.jpg";
-import Kartik from "@/assets/team/operations/3.jpg";
+import Manoj from "@/assets/team/operations/8.jpg";
 import Shubham from "@/assets/team/operations/4.jpg";
 import Krishna from "@/assets/team/operations/5.jpg";
 import Yogesh from "@/assets/team/operations/6.jpg";
+import Naitik from "@/assets/team/operations/7.jpg";
+import Harshit from "@/assets/team/operations/9.jpg";
 
 // Pr team
 import Aashi from "@/assets/team/pr/2.jpg";
 import Atharv from "@/assets/team/pr/3.jpg";
-import Abhignya from "@/assets/team/pr/4.jpg";
+import Abhignya from "@/assets/team/pr/10.jpg";
 import Pranay from "@/assets/team/pr/5.jpg";
 import Aakarsh from "@/assets/team/pr/6.jpg";
-import Labdhi from "@/assets/team/pr/7.jpeg";
+import Ojas from "@/assets/team/pr/7.png";
 import Rohan from "@/assets/team/pr/8.jpg";
-import Panshul from "@/assets/team/pr/9.jpg";
 
 // Web Team
 import Vishank from "@/assets/team/web/5.jpg";
-// import Dhawal from "@/assets/team/web/3.jpg";
 import Rithvik from "@/assets/team/web/4.png";
 import Mahesh from "@/assets/team/web/2.jpg";
 import dheeraj from "@/assets/team/web/6.jpg";
@@ -62,18 +62,18 @@ import dheeraj from "@/assets/team/web/6.jpg";
 // CPG Team
 import Ananya from "@/assets/team/CP_and_growth/2.jpg";
 import Dheeraj from "@/assets/team/CP_and_growth/3.jpg";
-import Harshit from "@/assets/team/CP_and_growth/4.jpg";
-import Manav from "@/assets/team/CP_and_growth/5.jpeg";
 import Meghana from "@/assets/team/CP_and_growth/6.jpg";
 import Jayant from "@/assets/team/CP_and_growth/7.jpg";
 import Sai from "@/assets/team/CP_and_growth/8.jpg";
 import Suniras from "@/assets/team/CP_and_growth/9.png";
 
 // Design Team
-import Anay from "@/assets/team/design/2.jpg";
-import Bhumi from "@/assets/team/design/3.jpg";
+import Bhumi from "@/assets/team/design/9.jpeg";
 import Adhyant from "@/assets/team/design/4.jpg";
 import Azeem from "@/assets/team/design/5.jpeg";
+import Vikas from "@/assets/team/design/6.jpg";
+import Deepak from "@/assets/team/design/7.jpg";
+import Varad from "@/assets/team/design/8.jpg";
 
 export const teamsData = [
   {
@@ -101,7 +101,7 @@ export const teamsData = [
         name: "Samuel",
         image: Samuel,
         por: "Finance Head",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/samueljaylak?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       },
     ],
     teamMembers: [
@@ -172,8 +172,8 @@ export const teamsData = [
         linkedin: "https://www.linkedin.com/in/aditya-amodkar",
       },
       {
-        name: "Baisham",
-        image: Malakar,
+        name: "Devesh Gautam",
+        image: Devesh,
         por: "Consulting Coordinator",
         linkedin: "",
       },
@@ -237,22 +237,10 @@ export const teamsData = [
         linkedin: "",
       },
       {
-        name: "Harshit",
-        image: Harshit,
-        por: "CPG Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Manav",
-        image: Manav,
-        por: "CPG Coordinator",
-        linkedin: "http://www.linkedin.com/in/manav-rathi-3a4ba6283",
-      },
-      {
         name: "Meghana",
         image: Meghana,
         por: "CPG Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/meghana-makkapati-4667902a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
         name: "Jayant",
@@ -295,12 +283,6 @@ export const teamsData = [
           "https://www.linkedin.com/in/yogesh-kumar-977579329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
-        name: "Kartik",
-        image: Kartik,
-        por: "Operations Coordinator",
-        linkedin: "",
-      },
-      {
         name: "Shubham",
         image: Shubham,
         por: "Operations Coordinator",
@@ -308,8 +290,20 @@ export const teamsData = [
           "https://www.linkedin.com/in/shubham-nare-2b2a79221/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bqp%2FYtWtDQImK3oS7QJuGhw%3D%3D",
       },
       {
+        name: "Manoj",
+        image: Manoj,
+        por: "Operations Coordinator",
+        linkedin: "",
+      },
+      {
         name: "Harshita",
         image: Harshita,
+        por: "Operations Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Harshit",
+        image: Harshit,
         por: "Operations Coordinator",
         linkedin: "",
       },
@@ -319,6 +313,13 @@ export const teamsData = [
         por: "Operations Coordinator",
         linkedin:
           "https://www.linkedin.com/in/krishna-kaustubh-53837426a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Naitik",
+        image: Naitik,
+        por: "Operations Coordinator",
+        linkedin:
+          "https://www.linkedin.com/in/naitik-patel-612918309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     ],
   },
@@ -374,10 +375,10 @@ export const teamsData = [
         linkedin: "http://www.linkedin.com/in/aakarsh-varshney-049077295",
       },
       {
-        name: "Labdhi",
-        image: Labdhi,
+        name: "Ojas",
+        image: Ojas,
         por: "PR Coordinator",
-        linkedin: "https://www.linkedin.com/in/labdhi-anand-6b1a272a1/",
+        linkedin: "https://www.linkedin.com/in/ojasmadghe/",
       },
       {
         name: "Rohan",
@@ -385,12 +386,6 @@ export const teamsData = [
         por: "PR Coordinator",
         linkedin:
           "https://www.linkedin.com/in/rohan-holikatti-418892291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Panshul",
-        image: Panshul,
-        por: "PR Coordinator",
-        linkedin: "",
       },
     ],
   },
@@ -423,13 +418,6 @@ export const teamsData = [
         por: "Web Coordinator",
         linkedin: "https://www.linkedin.com/in/ruppa-mahesh-292311278/",
       },
-      {
-        name: "Dheeraj",
-        image: dheeraj,
-        por: "Web Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/dheeraj-reddy-d-3b5122316?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BW3%2BtsdOVSaqP0ab4Kn3CGw%3D%3D",
-      },
     ],
   },
   {
@@ -448,7 +436,7 @@ export const teamsData = [
         name: "Bhumi",
         image: Bhumi,
         por: "Design Coordinator",
-        linkedin: "",
+        linkedin: "http://www.linkedin.com/in/bhumi-bagdiya",
       },
       {
         name: "Adhyant",
@@ -463,10 +451,22 @@ export const teamsData = [
         linkedin: "",
       },
       {
-        name: "Anay",
-        image: Anay,
+        name: "Vikas",
+        image: Vikas,
         por: "Design Coordinator",
         linkedin: "",
+      },
+      {
+        name: "Deepak",
+        image: Deepak,
+        por: "Design Coordinator",
+        linkedin: "https://www.linkedin.com/in/sai-deepak-sana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Varad",
+        image: Varad,
+        por: "Design Coordinator",
+        linkedin: "https://www.linkedin.com/in/varad-mallurwar-608624289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     ],
   },
