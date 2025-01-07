@@ -41,17 +41,17 @@ const NewsletterCard = ({ id }) => {
                         </div>
                     </div>
 
-                    <Accordion type="single" collapsible className="w-full">
+                    <Accordion type="single" collapsible className="w-full over">
                         {
                             data.headings.map((data, key) => {
                                 return (
 
                                     <AccordionItem value={`item-${key}`} className='mb-10' key={key}>
                                         <AccordionTrigger>
-                                            <h2 className='text-lg md:text-xl my-2 font-semibold'>{data}</h2>
+                                            <h2 className='text-lg md:text-xl text-start my-2 font-semibold'>{data}</h2>
 
                                         </AccordionTrigger>
-                                        <AccordionContent className='flex flex-col md:w-[80%] ' >
+                                        <AccordionContent className='flex flex-col md:w-auto  ' >
                                             {renderContentWithBreaks(content[key])}
                                             \
                                             <div>

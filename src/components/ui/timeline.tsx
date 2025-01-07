@@ -39,9 +39,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
       id="timeline"
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl">
-          Timeline of Events for 2025
+      <div className="max-w-7xl mx-auto py-3 px-4 md:px-8 lg:px-10">
+        <h2 className="text-3xl md:text-4xl text-white max-w-4xl">
+          Timeline of Events for Horizon 2025
         </h2>
         <p className="text-neutral-300 text-md md:text-base max-w-sm">
           

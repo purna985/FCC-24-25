@@ -17,6 +17,7 @@ import ComingSoon from "./components/ComingSoon";
 import { NewsLetterContentData } from "./assets/data/newsletters/1";
 import rupeeBlur from "/src/assets/home/rupeeblur.svg";
 import BackToTop from "./components/BackToTop";
+import HorizonTimeline from "./components/horizon/HorizonTimeline";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
+        <Route path="/horizon/schedule" element={<HorizonTimeline />} />
+
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/team" element={<Team />} />
         <Route path="/resources" element={<Resources />} />
