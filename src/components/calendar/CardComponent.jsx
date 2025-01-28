@@ -21,6 +21,7 @@ const CardComponent = ({ title, subtitle, date, time, venue, link, linkText, spe
         </CardHeader>
 
         <CardContent>
+          {speaker && <p className="text-sm md:text-md" > <b>Speaker : </b>{speaker}</p>}
           {date && <p className="text-sm md:text-md" > <b>Date : </b>{date}</p>}
           {time && <p className="text-sm md:text-md" > <b>Time : </b>{time}</p>}
           {venue && <p className="text-sm md:text-md" ><b>Venue : </b> {venue}</p>}
