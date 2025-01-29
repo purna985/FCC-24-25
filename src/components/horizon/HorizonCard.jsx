@@ -10,7 +10,7 @@ const HorizonCard = () => {
     const [showConfetti, setShowConfetti] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date("2025-01-28T00:00:00");
+        const targetDate = new Date("2025-01-31T00:00:00");
         const confettiEndDate = new Date(targetDate.getTime() + 3 * 24 * 60 * 60 * 1000);
 
         const updateCountdown = () => {
