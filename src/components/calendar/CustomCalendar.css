@@ -5,6 +5,10 @@
   font-family: Poppins, sans-serif;
 }
 
+.react-calendar__tile {
+  box-sizing: border-box;
+}
+
 /* Container Styling */
 .react-calendar {
   width: 500px;
@@ -74,7 +78,8 @@
 .react-calendar__tile--active {
   background-color: #4d4d4d;
   color: #ffffff;
-  border-radius: 8px; /* Square with rounded corners */
+  border-radius: 12px; /* Square with rounded corners */
+  padding: 15px;
 }
 
 /* Remove Hover Effect */
@@ -84,12 +89,9 @@
   font-size: 15px;
   text-align: center;
   color: #d0d0d0;
-  border-radius: 12px; /* Square with rounded corners */
+  border-radius: 12px !important; /* Square with rounded corners */
   margin: 2px;
-}
-
-.react-calendar__tile:hover {
-  border-radius: 12px !important;
+  border: 1px !important;
 }
 
 /* Styling for Today’s Date */
@@ -117,6 +119,7 @@
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
   background-color: #292727;
+  border-color: #1e90ff;
 }
 
 .react-calendar__navigation__label:hover {

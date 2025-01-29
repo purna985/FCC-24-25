@@ -1,97 +1,131 @@
 import { Timeline } from "@/components/ui/timeline";
+import horizonbanner from "@/assets/horizon-about/horizon-banner-2025.png";
 
 export default function HorizonTimeline() {
   const data = [
     {
       title: "DAY 1",
-      date:'January 31, 2025',
+      date: "January 31, 2025",
       content: (
-        <div>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
-          <div>
-            <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-              Inauguration
-            </p>
-            <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-              All about MBAs...
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <EventCard
+            title="Inauguration"
+            time="5:30 PM"
+            venue="Auditorium - A Block torium - A Block "
+          />
+          <EventCard
+            title="Fireside Chat with Ankur Warikoo"
+            time="5:45 PM"
+            venue="LHC - 5"
+          />
         </div>
       ),
     },
     {
-      title: "DAY 2 ",
-      date: 'February 1, 2025',
+      title: "DAY 2",
+      date: "February 1, 2025",
       content: (
         <div>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Legends Night
-          </p>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Breaking bands
-          </p>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Chai pe charcha
-          </p>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Million dollar ideas
-          </p>
+          <h3 className="text-3xl font-bold text-blue-500 mb-8">PANELS</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <PanelCard
+              title="All About MBAs"
+              time="12:00 PM to 2:00 PM"
+              venue="Auditorium - A Block "
+            />
+            <PanelCard
+              title="Breaking Brands"
+              time="2:30 PM to 5:30 PM"
+              venue="Auditorium - A Block "
+            />
+            <PanelCard
+              title="Million $ Deal Makers"
+              time="6:00 PM to 8:00 PM"
+              venue="Auditorium - A Block "
+            />
+            <PanelCard
+              title="Talk by Dr. A Velumani"
+              time="9:00 PM to 11:00 PM"
+              venue="LHC - 5"
+            />
+          </div>
         </div>
       ),
     },
     {
       title: "DAY 3",
-      date: 'February 2, 2025',
+      date: "February 2, 2025",
       content: (
-        <div>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Finfluencer
-          </p>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Consulting panel
-          </p>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Finance workshop
-          </p>
-          <p className="text-neutral-200 dark:text-neutral-200 text-2xl md:text-3xl font-normal mb-8">
-            Standup
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 className="text-3xl font-bold text-blue-500 mb-8">SESSIONS</h3>
+            <EventCard
+              title="Hands on Finance"
+              time="5:30 PM to 7:30 PM"
+              venue="Auditorium - A Block "
+            />
+          </div>
+          <div>
+            <h3 className="text-3xl font-bold text-blue-500 mb-8">PRONITES</h3>
+            <ProniteCard
+              time="9:00 PM onwards"
+              venue="@ Old Mess Lawns"
+            />
+          </div>
         </div>
       ),
     },
   ];
   return (
-    <div className=" w-full my-10">
+    <div className="w-full my-10">
+      <div className="w-full flex justify-center">
+        <img src={horizonbanner} alt="" className="w-[90%] md:w-1/2" />
+      </div>
       <Timeline data={data} />
     </div>
   );
 }
+
+
+
+const EventCard = ({ title, time, venue }) => {
+  return (
+    <div className="bg-neutral-800/50 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 hover:border-blue-500 transition-all duration-300">
+      <h3 className="text-2xl font-bold text-blue-500 mb-2">{title}</h3>
+      <p className="text-neutral-300 text-lg mb-1">
+        <span className="font-semibold">Time:</span> {time}
+      </p>
+      <p className="text-neutral-300 text-lg">
+        <span className="font-semibold">Venue:</span> {venue}
+      </p>
+    </div>
+  );
+};
+
+const PanelCard = ({ title, time, venue }) => {
+  return (
+    <div className="bg-neutral-800/50 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 hover:border-blue-500 transition-all duration-300">
+      <h3 className="text-2xl font-bold text-blue-500 mb-2">{title}</h3>
+      <p className="text-neutral-300 text-lg mb-1">
+        <span className="font-semibold">Time:</span> {time}
+      </p>
+      <p className="text-neutral-300 text-lg">
+        <span className="font-semibold">Venue:</span> {venue}
+      </p>
+    </div>
+  );
+};
+
+const ProniteCard = ({ time, venue }) => {
+  return (
+    <div className="bg-neutral-800/50 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 hover:border-blue-500 transition-all duration-300">
+      <h3 className="text-2xl font-bold text-blue-500 mb-2">PRONITE</h3>
+      <p className="text-neutral-300 text-lg mb-1">
+        <span className="font-semibold">Time:</span> {time}
+      </p>
+      <p className="text-neutral-300 text-lg">
+        <span className="font-semibold">Venue:</span> {venue}
+      </p>
+    </div>
+  );
+};

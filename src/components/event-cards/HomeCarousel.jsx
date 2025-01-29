@@ -10,7 +10,7 @@ import {
 const HomeCarousel = () => {
     return (
         <div className="w-full  mx-auto my-10 md:my-5 px-4 sm:px-6 lg:px-8">
-            <p className='className=" text-3xl md:text-6xl my-5 md:my-10 md:pb-10 md:w-[80%]" w-full text-center mx-auto'>Upcoming Events</p>
+            <p className='className=" text-3xl md:text-6xl my-5 md:my-10 md:pb-10 md:w-[80%]" w-full text-center mx-auto'>Recent & Upcoming Events</p>
             <Carousel
                 opts={{
                     align: "start",
@@ -23,7 +23,12 @@ const HomeCarousel = () => {
                 <CarouselContent className="flex gap-4 mx-auto">
 
                     <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">
-                        <HomeEventCard title={`SHE Leads: A Panel of Powerhouses`} subtitle="Kickstarting the most exciting Management fest by FCC IITH🔥" date="January 11, 2025" time="9:00 PM" venue="Auditorium - A Block" />
+                        <HomeEventCard title={`Horizon 2025 - Day 1️⃣`} subtitle="The most exciting management fest by FCC IITH is coming back bigger and better this year, loaded with inspiring talks, exciting events and ofcourse, Pronites!!  We're Coming soon..." date="January 31, 2025" time="5:30 PM, IST" venue="Auditorium - A Block" link="/horizon/schedule" linkText="View Full 
+                         Schedule" />
+                    </CarouselItem>
+
+                    <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">
+                        <HomeEventCard title={`Pre - Horizon`} subtitle="Kickstarting the most exciting Management fest by FCC IITH🔥. Join us for aan inspiring talk by renowned Youtuber Mr. Pranjal Kamra and the theme launch for Horizon 2025" date="January 11, 2025" time="8:30 PM" venue="Auditorium - A Block" />
                     </CarouselItem>
 
                     <CarouselItem className="w-full sm:max-w-sm md:max-w-md lg:max-w-lg ">

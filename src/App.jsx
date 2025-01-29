@@ -42,6 +42,8 @@ function App() {
 
         <Route path="/resources/newsletters" element={<Newsletters />} />
 
+        <Route path="/horizon/schedule" element={<HorizonTimeline />} />
+
         {/* Newsletters Routes */}
         {NewsLetterContentData.map((data, index) => {
           return (
