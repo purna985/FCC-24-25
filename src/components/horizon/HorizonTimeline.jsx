@@ -91,7 +91,7 @@ export default function HorizonTimeline() {
 const EventCard = ({ title, time, venue }) => {
   return (
     <div className="bg-neutral-800/50 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 hover:border-blue-500 transition-all duration-300">
-      <h3 className="text-xl font-bold text-blue-500 mb-2">{title}</h3>
+      <h3 className="text-2xl font-bold text-blue-500 mb-2">{title}</h3>
       <p className="text-neutral-300 text-lg mb-1">
         <span className="font-semibold">Time:</span> {time}
       </p>

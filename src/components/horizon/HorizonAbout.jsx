@@ -11,7 +11,7 @@ const images = [
 
 const HorizonAbout = () => {
     return (
-        <div className="relative  mx-auto w-full h-auto flex flex-col items-center p-1p
+        <div id="about" className="relative  mx-auto w-full h-auto flex flex-col items-center p-1p
         justify-center bg-gradient-to-[#000D71] from-custom-gradient-2 to-custom-gradient-1 z-1 ">
             <div className='m-auto w-90p my-4 z-10'>
                 <div className="font-rosario w-full flex items-baseline h-50p text-4xl md:text-6xl pt-2p pl-2p text-left leading-100p
