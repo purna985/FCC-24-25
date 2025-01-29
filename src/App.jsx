@@ -18,6 +18,7 @@ import { NewsLetterContentData } from "./assets/data/newsletters/1";
 import rupeeBlur from "/src/assets/home/rupeeblur.svg";
 import BackToTop from "./components/BackToTop";
 import HorizonTimeline from "./components/horizon/HorizonTimeline";
+import HorizonPartners from "./components/horizon/HorizonPartners";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/resources/newsletters" element={<Newsletters />} />
 
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />
+        <Route path="/horizon/partners" element={<HorizonPartners />} />
 
         {/* Newsletters Routes */}
         {NewsLetterContentData.map((data, index) => {

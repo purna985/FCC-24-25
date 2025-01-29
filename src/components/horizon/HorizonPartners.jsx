@@ -1,40 +1,105 @@
+import React from 'react';
+import campustimes from '@/assets/partners-images/campustimes.png';
+import easemytrip from '@/assets/partners-images/easemytrip.png';
+import fablabs from '@/assets/partners-images/fablabs.png';
+import finlatics from '@/assets/partners-images/finlatics.png';
+import ims from '@/assets/partners-images/ims.png';
+import interviewbuddy from '@/assets/partners-images/interviewbuddy.png';
+import itic from '@/assets/partners-images/itic.png';
+import jamboree from '@/assets/partners-images/jamboree.png';
+import manya from '@/assets/partners-images/manya.png';
+import monster from '@/assets/partners-images/monster.png';
+import oneelement from '@/assets/partners-images/oneelement.png';
+import penguin from '@/assets/partners-images/penguin.png';
+import skilligence from '@/assets/partners-images/skilligence.png';
 
+const carouselData1 = [
+  { image: oneelement, title: 'Platinum Sponsor' },
+  { image: manya, title: 'Platinum Sponsor' },
+  { image: fablabs, title: 'Merchandise Partner' },
+  { image: ims, title: 'Bronze Sponsor' },
+  { image: skilligence, title: 'Workshop Partner' },
+  { image: penguin, title: 'Publishing Partner' },
+];
+const carouselData2 = [
+  { image: itic, title: 'Branding Partner' },
+  { image: monster, title: 'Energy Partner' },
+  { image: campustimes, title: 'Youth Partner' },
+  { image: easemytrip, title: 'Travel Partner' },
+  { image: interviewbuddy, title: 'Learning Partner' },
+  { image: finlatics, title: 'Certification Partner' },
+  { image: jamboree, title: 'Education Partner' },
+];
 
-import simg1 from '/src/assets/sponsors/abhibus-min.png'
-import simg2 from '/src/assets/sponsors/decathalon-min.png'
-import simg3 from '/src/assets/sponsors/easemytrip-min.png'
-import simg4 from '/src/assets/sponsors/edufabrica-min.png'
-import simg5 from '/src/assets/sponsors/elearnmarkets-min.png'
-import simg6 from '/src/assets/sponsors/finlarics-min.png'
-import simg7 from '/src/assets/sponsors/grabon-min.png'
-import simg8 from '/src/assets/sponsors/monster-min.png'
-import simg9 from '/src/assets/sponsors/plum-min.png'
-import simg10 from '/src/assets/sponsors/preplounge-min.png'
-import simg11 from '/src/assets/sponsors/product-min.png'
-import simg12 from '/src/assets/sponsors/sid farm-min.png'
-import simg13 from '/src/assets/sponsors/startupnews-min.png'
-import simg14 from '/src/assets/sponsors/stockgro-min.png'
+// Duplicate images for a seamless loop
+const duplicatedData1 = [...carouselData1, ...carouselData1];
+const duplicatedData2 = [...carouselData2, ...carouselData2];
 
 const HorizonPartners = () => {
-
-    const s_images = [
-        { img_id: simg1 }, { img_id: simg2 }, { img_id: simg3 }, { img_id: simg4 }, { img_id: simg5 },
-        { img_id: simg6 }, { img_id: simg7 }, { img_id: simg8 }, { img_id: simg9 }, { img_id: simg10 },
-        { img_id: simg11 }, { img_id: simg12 }, { img_id: simg13 }, { img_id: simg14 }
-      ]
   return (
-    <div className='flex flex-col justify-center items-center overflow-hidden relative my-6'>
-    <div className='flex items-center justify-center mb-6'>
-      <p className='font-rosario text-center mb-5 text-4xl md:text-6xl'>Partners</p>
-    </div>
-    <div className='flex w-full gap-3p animate-scroll-1'>
-      <div className='flex basis-1/6 md-1:flex md-1:basis-1/4 gap-3p'>
-        {s_images.map((image, index) => (
-          <img src={image.img_id} key={index} alt={`Image ${index + 1}`}></img>
-        ))}
+    <div className="flex flex-col items-center overflow-hidden relative my-20 md:py-10">
+      <h2 className="font-rosario text-center text-4xl md:text-6xl font-bold mb-8">Our Partners</h2>
+      <div className="relative w-full overflow-hidden space-y-6">
+        {/* First Carousel - Left to Right */}
+        <div className="relative w-full overflow-hidden">
+          <div className="flex gap-6 min-w-max animate-scroll-left hover:paused">
+            {duplicatedData1.map((item, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-40 md:w-48 lg:w-56 shadow-md rounded-xl p-3 flex flex-col items-center transition-transform duration-300 hover:scale-105 "
+              >
+                <img src={item.image} alt={item.title} className="w-24 h-24 object-contain" loading="lazy" />
+                <p className="mt-2 md:text-md text-sm font-semibold text-white">{item.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Second Carousel - Right to Left */}
+        <div className="relative w-full overflow-hidden">
+          <div className="flex gap-6 min-w-max animate-scroll-right hover:paused">
+            {duplicatedData2.map((item, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-40 md:w-48 lg:w-56 shadow-md rounded-xl p-3 flex flex-col items-center transition-transform duration-300 hover:scale-105 "
+              >
+                <img src={item.image} alt={item.title} className="w-24 h-24 object-contain" loading="lazy" />
+                <p className="mt-2 md:text-md text-sm  font-semibold text-white">{item.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>  )
-}
+      <style>
+        {`
+          @keyframes scroll-left {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+          }
 
-export default HorizonPartners
+          @keyframes scroll-right {
+            from { transform: translateX(-50%); }
+            to { transform: translateX(0); }
+          }
+
+          .animate-scroll-left {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 40s linear infinite;
+          }
+
+          .animate-scroll-right {
+            display: flex;
+            width: max-content;
+            animation: scroll-right 40s linear infinite;
+          }
+
+          .hover\:paused:hover {
+            animation-play-state: paused;
+          }
+        `}
+      </style>
+    </div>
+  );
+};
+
+export default HorizonPartners;

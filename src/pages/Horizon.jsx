@@ -2,9 +2,7 @@ import HorizonSpeakers from '../components/Speakers'
 import HorizonLanding from '../components/horizon/HorizonLanding'
 import HorizonVideo from '../components/horizon/HorizonVideo'
 import HorizonAbout from '../components/horizon/HorizonAbout'
-import HorizonPartners from '../components/horizon/HorizonPartners'
-import HorizonTimeline  from '../components/horizon/HorizonTimeline'
-// import ComingSoon from '../components/ComingSoon'
+
 function Horizon() {
 
   return (
@@ -12,8 +10,6 @@ function Horizon() {
 
       {/* Landing part Horizon */}
       <HorizonLanding />
-      
-      {/* <ComingSoon /> */}
 
       {/* About the Event */}
       <hr className="mt-10 w-full opacity-10 mx-auto " />
@@ -22,17 +18,9 @@ function Horizon() {
       {/* Horizon glimpse video */}
       <HorizonVideo />
 
-      {/* Horizon timeline */}
-      {/* <HorizonTimeline /> */}
-
       {/* Past Speakers */}
       <hr className="mt-10 w-full opacity-10 mx-auto " />
       <HorizonSpeakers />
-
-      {/* Partners */}
-      <hr className="mt-10 w-full opacity-10 mx-auto " />
-      <HorizonPartners />
-
     </div>
   );
 }
