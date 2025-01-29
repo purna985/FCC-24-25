@@ -401,10 +401,10 @@ export const teamsData = [
     ],
     teamMembers: [
       {
-        name: "Vishank",
-        image: Vishank,
+        name: "Mahesh",
+        image: Mahesh,
         por: "Web Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/ruppa-mahesh-292311278/",
       },
       {
         name: "Rithvik",
@@ -413,10 +413,16 @@ export const teamsData = [
         linkedin: "https://www.linkedin.com/in/manne-rithvik-708iith/",
       },
       {
-        name: "Mahesh",
-        image: Mahesh,
+        name: "Dheeraj",
+        image: dheeraj,
         por: "Web Coordinator",
-        linkedin: "https://www.linkedin.com/in/ruppa-mahesh-292311278/",
+        linkedin: "https://www.linkedin.com/in/",
+      },
+      {
+        name: "Vishank",
+        image: Vishank,
+        por: "Web Coordinator",
+        linkedin: "",
       },
     ],
   },
