@@ -21,13 +21,13 @@ function Footer() {
         <div className="w-full md:w-1/2 flex-row flex items-center md:items-start mt-7">
           <a href="/" className="flex items-center mb-3 ">
             <img src={logo} className="w-16 h-16 md:w-28 md:h-28" alt="" />
-            <p className="ml-6 font-medium">
+            <div className="ml-6 font-medium">
               <p className="text-xl md:text-2xl leading-snug">
                 Finance &
                 Consulting Club
               </p>
               <p className="text-xl md:text-2xl mt-2">IIT Hyderabad</p>
-            </p>
+            </div>
           </a>
         </div>
 
