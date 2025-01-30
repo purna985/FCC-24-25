@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 const renderContentWithBreaks = (text) => {
     return text.split('\n').map((line, index) => (
-        <p className='my-2 text-[1rem]' key={index}>{line}</p>
+        <p className='my-2 w-full text-[1rem]' key={index}>{line}</p>
     ));
 };
 
@@ -41,7 +41,7 @@ const NewsletterCard = ({ id }) => {
                         </div>
                     </div>
 
-                    <Accordion type="single" collapsible className="w-full over">
+                    <Accordion type="single" collapsible className="w-[92vw] lg:w-full over">
                         {
                             data.headings.map((data, key) => {
                                 return (
