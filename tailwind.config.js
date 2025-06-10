@@ -85,7 +85,7 @@ export default {
 				poppins: ['Poppins', "sans-serif"],
 				horizonText: 'linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%)',
 				ikaros: ['Ikaros Sans"', 'sans-serif'],
-				lato: ['Lato', 'sans-serif']
+				lato: ['Lato', 'sans-serif'],
 			},
 			fontWeight: {
 				light: '200',

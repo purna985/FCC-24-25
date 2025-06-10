@@ -233,8 +233,9 @@ const Particles = ({
 
 function Projects(){
   return(
-    <div id="Hero Section" className="w-[1440px] h-[530px] py-[88px] px-[124px] gap-[52px]">
-      <div id="Hero Background Container" className="w-[1557px] h-[1099px] -z-10">
+    <>
+    <div id="Hero Section" className="w-[1440px] h-[530px] py-[88px] px-[124px] gap-[52px] relative">
+      <div id="Hero Background Container" className="w-[1557px] h-[530px] absolute inset-0">
         <Particles
           particleColors={['#ffffff', '#ffffff']}
           particleCount={200}
@@ -245,7 +246,7 @@ function Projects(){
           alphaParticles={false}
           disableRotation={false}
           />
-      </div>
+          </div>
       
         <div id="Hero Container" className="w-[1006px] h-[130px] gap-[52px]">
           <div id="Hero text container" className="w-[981px] h-[130px] gap-[32px]">
@@ -261,6 +262,19 @@ function Projects(){
           </div>
       </div>
     </div>
+
+    <div id="desktop-3" className="w-[1440px] h-[2320px] py-[80px] px-[124px] gap-[62px]">
+      <div id="project header container" className="w-[704px] h-[100px] gap-[20px]">
+        <div id="Section title" className="w-[704px] h-[48px] font-[Title/Title-2/fontFamily] font-bold text-[Title/Title-2/fontSize] 
+                                leading-[Title/Title-2/lineHeight] tracking-[Title/Title-2/letterSpacing] text-center">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4E56D3_25.48%] via-[#A3ACD9_60.58%] to-[#F3FFD8_100%]">Our Projects</span>
+        </div>
+        <div id="Section subtitle" className="w-[704px] h-[32px] font-secondary font-normal text-xl leading-8 tracking-normal text-center">
+          <span className="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Student-led initiatives solving real-world problems in finance and consulting.</span>
+        </div>
+      </div>
+    </div>
+    </>
   )
 }
 
