@@ -233,7 +233,7 @@ const Particles = ({
 
 function Projects(){
   return(
-    <>
+    <div className=" w-[1440px] h-[4003px] gap-[10px]">
     <div id="Hero Section" className="w-[1440px] h-[530px] py-[88px] px-[124px] gap-[52px] relative">
       <div id="Hero Background Container" className="w-[1557px] h-[530px] absolute inset-0">
         <Particles
@@ -255,7 +255,7 @@ function Projects(){
                 Real World Projects
               </span>
             </div>
-            <div id="Hero subtitle" className=" font-[Body/3/fontFamily] font-normal text-[Heading/H3/fontSize] 
+            <div id="Hero subtitle" className=" font-[Body/3/fontFamily] font-normal text-Heading-H3-fontSize] 
                              leading-8 tracking-[Heading/H3/letterSpacing] text-center ">
               <span className="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Consulting and finance projects led by FCC members. Real Impact.</span>
             </div>
@@ -263,10 +263,10 @@ function Projects(){
       </div>
     </div>
 
-    <div id="desktop-3" className="w-[1440px] h-[2320px] py-[80px] px-[124px] gap-[62px]">
-      <div id="project header container" className="w-[704px] h-[100px] gap-[20px]">
-        <div id="Section title" className="w-[704px] h-[48px] font-[Title/Title-2/fontFamily] font-bold text-[Title/Title-2/fontSize] 
-                                leading-[Title/Title-2/lineHeight] tracking-[Title/Title-2/letterSpacing] text-center">
+    <div id="desktop-3" className="w-[1440px] h-[2320px] py-[80px] gap-[62px] flex flex-col">
+      <div id="project header container" className="w-[704px] h-[100px] gap-[20px] flex flex-col items-center mx-[300px]">
+        <div id="Section title" className="w-[704px] h-[48px] font-[Title/Title-2/fontFamily] font-bold text-Title-Title-2-fontSize 
+                                text-center">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4E56D3_25.48%] via-[#A3ACD9_60.58%] to-[#F3FFD8_100%]">Our Projects</span>
         </div>
         <div id="Section subtitle" className="w-[704px] h-[32px] font-secondary font-normal text-xl leading-8 tracking-normal text-center">
@@ -274,7 +274,8 @@ function Projects(){
         </div>
       </div>
     </div>
-    </>
+    {/* Here we have to add project cards. its there in componenets/ProjectCard.jsx (yet to build) */}
+    </div>
   )
 }
 

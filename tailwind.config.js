@@ -86,6 +86,7 @@ export default {
 				horizonText: 'linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%)',
 				ikaros: ['Ikaros Sans"', 'sans-serif'],
 				lato: ['Lato', 'sans-serif'],
+				'Body/3/fontFamily':['sans-serif']
 			},
 			fontWeight: {
 				light: '200',
@@ -97,7 +98,9 @@ export default {
 				'vw-5': '5vw',
 				'vw-7': '7vw',
 				'vw-10': '10vw',
-				'vw-14': '12vw'
+				'vw-14': '12vw',
+				'Heading-H3-fontSize':['24px',{lineHeight:'28px'}],
+				'Title-Title-2-fontSize':['40px',{lineHeight:'48px'}]
 			},
 			spacing: {
 				'1p': '1%',
@@ -128,6 +131,7 @@ export default {
 				normal: 'normal',
 				'100p': '100%'
 			},
+			
 			animation: {
 				'scroll-1': 'scrollH 30s linear infinite',
 				'accordion-down': 'accordion-down 0.2s ease-out',

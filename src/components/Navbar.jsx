@@ -287,7 +287,13 @@ const Navbar = ({
           }
         `}
       </style>
-      <div className="relative" ref={containerRef}>
+      <div className="relative px-2" ref={containerRef}>
+        <div className="flex items-center gap-6">
+          <img src="/fcc-logo-blue.png" alt="Logo" className="h-8 w-auto" />
+          <div>
+               <div>Finance & Consulting Club</div>
+               <div>IIT Hyderabad</div>
+          </div>
         <nav
           className="flex relative"
           style={{ transform: "translate3d(0,0,0.01px)" }}
@@ -318,6 +324,7 @@ const Navbar = ({
             ))}
           </ul>
         </nav>
+        </div>
         <span className="effect filter" ref={filterRef} />
         <span className="effect text" ref={textRef} />
       </div>
