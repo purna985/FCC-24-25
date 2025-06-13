@@ -77,7 +77,7 @@ import Varad from "@/assets/team/design/8.jpg";
 
 export const teamsData = [
   {
-    teamName: "Overall Heads",
+    teamName: "Heads",
     teamHead: [
       {
         name: "Aryan Bubna",
@@ -90,6 +90,63 @@ export const teamsData = [
         image: Omkar,
         por: "Overall Head",
         linkedin: "http://www.linkedin.com/in/omkar-nilkanth-933186202",
+      },
+      {
+        name: "Samuel",
+        image: Samuel,
+        por: "Finance Head",
+        linkedin: "https://www.linkedin.com/in/samueljaylak?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        name: "Pritesh Singh",
+        image: PriteshSingh,
+        por: "Consulting Head",
+        linkedin: "https://www.linkedin.com/in/priteshsingh0089",
+      },
+      {
+        name: "Arin",
+        image: Arin,
+        por: "CPG Head",
+        linkedin: "https://www.linkedin.com/in/arin-kulkarni-232166257/",
+      },
+      {
+        name: "Nishant",
+        image: Nishant,
+        por: "Operations Head",
+        linkedin: "https://www.linkedin.com/in/nishant-iith",
+      },
+      {
+        name: "Arsh",
+        image: arsh,
+        por: "PR Head",
+        linkedin: "http://linkedin.com/in/arsh-arora",
+      },
+      {
+        name: "Tarun",
+        image: Tarun,
+        por: "PR Head",
+        linkedin:
+          "https://www.linkedin.com/in/jagarapu-surya-tarun-0145b6259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Anand",
+        image: Anand,
+        por: "Web Head",
+        linkedin: "https://www.linkedin.com/in/anand-kasyup-40216016b/",
+      },
+      {
+        name: "Radhika",
+        image: Radhika,
+        por: "Design Head",
+        linkedin:
+          "https://www.linkedin.com/in/radhikab11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Snehil Singh",
+        image: Snehil,
+        por: "Multimedia Head",
+        linkedin:
+          "https://www.linkedin.com/in/snehil-singh-2b180726b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     ],
     teamMembers: [],
