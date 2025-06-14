@@ -1,7 +1,11 @@
 const Collaborate = () => {
 
     return(
-        <div className="flex flex-col items-center justify-center text-center px-6 py-16 rounded-xl bg-gradient-to-r from-[#0f172a] to-[#3b5e14] text-white">
+        <div class="flex justify-center w-full px-4 sm:px-6 md:px-8 py-8">
+            <div
+                class="w-full sm:w-11/12 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 flex flex-col items-center justify-center text-center px-6 py-16 rounded-xl bg-gradient-to-r from-[#0f172a] to-[#3b5e14] text-white shadow-lg"
+            >
+
         <h2 className="text-4xl md:text-6xl font-extrabold text-lime-400 mb-4">
             Ready to Collaborate?
         </h2>
@@ -19,6 +23,7 @@ const Collaborate = () => {
         <p className="text-sm text-gray-400 mt-4">
             Join 25+ industry partners already collaborating with FCC
         </p>
+        </div>
         </div>
     )
 }
