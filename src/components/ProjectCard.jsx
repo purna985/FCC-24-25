@@ -1,51 +1,70 @@
+import {AnimatedToolTip} from "../components/AnimatedToolTip"
 
-
-function ProjectCard(props){
+function ProjectCard(props) {
     console.log(props.Image);
-    return(
-        <div className={`w-[1072px] h-[350px] gap-[62px] flex ${props.imageOnLeft?'flex-row':'flex-row-reverse'}`}>
-            <div className="w-[490px] h-[350px] rounded-[10px] bg-[#EBEBEB] border border-[#4E56D3]">
-                <div className="w-[490px] h-[350px] rounded-[10px] border">
-                    <img src={props.Image} alt="Project Image" className=" border border-[#4E56D3] w-full h-full"/>
+
+    const people = props.people || []; 
+
+    return (
+        <div className={`w-full max-w-[1072px] mx-auto p-4 md:p-6 lg:p-8`}>
+            <div className={`flex flex-col md:flex-row ${props.imageOnLeft ? '' : 'md:flex-row-reverse'} gap-8 md:gap-12 lg:gap-[62px] items-center`}>
+                
+                {/* Image Section - Made slightly bigger */}
+                <div className="w-full md:w-1/2 lg:w-[550px] aspect-video md:aspect-auto md:h-[380px] rounded-[10px] bg-[#EBEBEB] border border-[#4E56D3] p-1">
+                    <img src={props.Image} alt="Project Image" className="rounded-[10px] w-full h-full object-cover"/>
                 </div>
-            </div>
-            <div className="border w-[520px] h-[230px] gap-[10px] rounded-[10px] p-[20px] border-[#292929] bg-[#1B1A1A]">
-                <div className="w-[480px] h-[156px] flex-col flex gap-[14px]">
-                    <div className="h-full w-full flex-col flex gap-[20px]">
-                        <div className="w-full h-[136px] flex flex-col gap-[20px]">
-                            <p id="Title" className="w-full h-[28px] text-[#EBEBEB] font-Heading-H3-fontFamily font-Weights-Medium
-  text-Heading-H3-fontSize leading-Heading-H3-lineHeight tracking-Heading-H3-letterSpacing">
-                                {props.Title}
-                            </p>
 
-                            <div id="Topics" className="w-[258px] h-[28px] flex gap-[20px]">
-                                {props.Topics.map((item,index)=>(
-                                    <div key={index} className="h-[28px] gap-[10px] rounded-[10px] border p-[6px] border-[#4E56D3] bg-[#121649]
-                                    flex justify-center items-center">
-                                        <p className=" h-[16px] font-Label-Label-3-fontFamily font-Weights-Medium text-Label-Label-3-fontSize 
-                                        leading-Label-Label-3-lineHeight tracking-Label-Label-3-letterSpacing text-[#F3FFD8]">{item}</p>
-                                    </div>
-                                )
-                                )}
-                            </div>
+                {/* Content Section */}
+                <div className="w-full md:w-1/2 lg:w-[520px] rounded-[10px] p-5 border border-[#292929] bg-[#1B1A1A]">
+                    <div className="flex flex-col gap-4">
+                        
+                        {/* Title - Font size increased */}
+                        <p id="Title" className="text-[#EBEBEB] font-Heading-H3-fontFamily font-Weights-Medium text-2xl leading-tight tracking-normal"> 
+                            {props.Title}
+                        </p>
 
-                            <div id="Description" className="w-full h-[40px] text-[#BBBBBB] font-Label-Label-2-fontFamily 
-                            font-Weights-Regular text-Label-Label-2-fontSize leading-Label-Label-2-lineHeight tracking-Label-Label-2-letterSpacing">
-                                {props.Desc}
-                            </div>
-
-                            <div id="line" className="w-[479px] border border-[#292929]"></div>
-
-                            <button id="view" className="w-[67px] h-[24px] gap-[4px] flex">
-                                <p className="w-[39px] h-[22px] text-[#CDFE64] font-Label-Label-1-fontFamily 
-                            font-Weights-Bold text-Label-Label-1-fontSize leading-Label-Label-1-lineHeight tracking-Label-Label-1-letterSpacing">View</p>
-                            </button>
+                        {/* Topics - Font size increased */}
+                        <div id="Topics" className="flex flex-wrap gap-x-4 gap-y-2">
+                            {props.Topics.map((item, index) => (
+                                <div key={index} className="rounded-[10px] border border-[#4E56D3] bg-[#121649] px-3 py-1.5 flex justify-center items-center">
+                                    <p className="text-[#F3FFD8] font-Label-Label-3-fontFamily font-Weights-Medium text-sm leading-normal tracking-normal whitespace-nowrap">
+                                        {item}
+                                    </p>
+                                </div>
+                            ))}
                         </div>
+
+                        {/* Description - Font size increased */}
+                        <div id="Description" className="text-[#BBBBBB] font-Label-Label-2-fontFamily font-Weights-Regular text-base leading-relaxed tracking-normal">
+                            {props.Desc}
+                        </div>
+                        
+                        {/* Divider */}
+                        <div id="line" className="w-full border-t border-[#292929]"></div>
+
+                        {/* Container for View Button and AnimatedToolTip */}
+                        <div className="flex items-center space-x-4">
+                            {/* View Button - Font size increased */}
+                            <button id="view" className="flex items-center gap-1 w-fit">
+                                <p className="text-[#CDFE64] font-Label-Label-1-fontFamily font-Weights-Bold text-lg leading-normal tracking-normal">
+                                    View
+                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#CDFE64]" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                                </svg>
+                            </button>
+
+                            {/* AnimatedToolTip */}
+                            <div className="flex items-center space-x-3">
+                                <AnimatedToolTip items={people} />
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default ProjectCard;
