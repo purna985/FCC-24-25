@@ -1,14 +1,46 @@
 import ProjectCard from "../components/ProjectCard"
 import Particles from "../components/ParticleBackground"
 import Collaborate from "../components/Collaborate"
-import img1 from "../assets/images/projects/4f9bbc943449768f1d1a3a2b35bacbc73cd1bf16 (1).png"
+import m_and_a from "../assets/images/projects/m_and_a.png"
+import Arima from "../assets/images/projects/Arima.png"
+
+
+import {AnimatedToolTip} from "../components/AnimatedToolTip"
+const people_ = [
+  {
+    id: 1,
+    name: "John Doe",
+    designation: "Software Engineer",
+    image: "https://placehold.co/32x32/3498db/ffffff?text=JD",
+  },
+  {
+    id: 2,
+    name: "Robert Johnson",
+    designation: "Product Manager",
+    image: "https://placehold.co/32x32/2ecc71/ffffff?text=RJ",
+  },
+];
 
 function Projects(){
   let topics1=['Python','Machine Learning','Finance'];
+  let topics2=["Finance","Python","Excel"]
 
   return(
-    <div className=" w-[1440px] h-[4003px] gap-[10px]">
-    <div id="Hero Section" className="w-[1440px] h-[530px] py-[88px] px-[124px] gap-[52px] relative">
+    <div className="w-full min-h-screen mx-auto max-w-screen-2xl flex flex-col gap-2.5"> 
+
+      {/* Hero Section */}
+      {/* This div also uses `w-full` for full width. */}
+      {/* Padding is now responsive: `px-4` for small screens, increasing to `lg:px-24` for larger screens. */}
+      {/* `py-16` provides vertical padding, adjusting on larger screens. */}
+      {/* `flex flex-col items-center justify-center` can be used to center content within this section. */}
+      <div
+        id="Hero Section"
+        className="w-full h-[530px] relative
+                   py-16 md:py-24 lg:py-32
+                   px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24
+                   flex flex-col items-center justify-center
+                   gap-12 rounded-lg shadow-md"
+      >
       <div id="Hero Background Container" className="w-[1557px] h-[530px] absolute inset-0">
         <Particles
           particleColors={['#ffffff', '#ffffff']}
@@ -36,33 +68,53 @@ function Projects(){
         </div>
     </div>
 
-    <div id="desktop-3" className="w-[1440px] h-[2320px] py-[80px] gap-[62px] flex flex-col">
-      <div id="project header container" className="w-[704px] h-[100px] gap-[20px] flex flex-col items-center mx-[300px]">
-        <div id="Section title" className="w-[704px] h-[48px] font-[Title/Title-2/fontFamily] font-bold text-Title-Title-2-fontSize 
-                                text-center">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4E56D3_25.48%] via-[#A3ACD9_60.58%] to-[#F3FFD8_100%]">Our Projects</span>
-        </div>
-        <div id="Section subtitle" className="w-[704px] h-[32px] font-secondary font-normal text-xl leading-8 tracking-normal text-center">
-          <span className="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Student-led initiatives solving real-world problems in finance and consulting.</span>
-        </div>
-      </div>
-    <ProjectCard Title="Portfolio Optimizer" Desc="An AI-powered portfolio optimization tool that helps students and professionals make data-driven investment decisions."
-     Topics={topics1} Image={img1} imageOnLeft={true}/>
-    <ProjectCard Title="Expense Tracker App" Desc="An AI-powered portfolio optimization tool that helps students and professionals make data-driven investment decisions."
-     Topics={topics1} Image={img1} imageOnLeft={false}/>
-    <ProjectCard Title="Market Prediction Model" Desc="An AI-powered portfolio optimization tool that helps students and professionals make data-driven investment decisions."
-     Topics={topics1} Image={img1} imageOnLeft={true}/>
-    <ProjectCard Title="Expense Tracker App" Desc="An AI-powered portfolio optimization tool that helps students and professionals make data-driven investment decisions."
-     Topics={topics1} Image={img1} imageOnLeft={false}/>
-    <ProjectCard Title="Market Prediction Model" Desc="An AI-powered portfolio optimization tool that helps students and professionals make data-driven investment decisions."
-     Topics={topics1} Image={img1} imageOnLeft={true}/>
+<div
+  id="desktop-3"
+  class="w-full min-h-screen py-10 sm:py-16 md:py-20 lg:py-24 flex flex-col items-center justify-start gap-10 sm:gap-12 md:gap-16 lg:gap-20 px-4 sm:px-6 md:px-8 lg:px-12"
+>
+  <div
+    id="project header container"
+    class="w-full max-w-screen-lg flex flex-col items-center text-center gap-4 sm:gap-5 md:gap-6 lg:gap-8"
+  >
+    <div
+      id="Section title"
+      class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
+    >
+      <span
+        class="bg-gradient-to-r from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
+        >Our Projects</span
+      >
     </div>
-    {/* Here we have to add project cards. its there in componenets/ProjectCard.jsx (yet to build) */}
-          <div>
-            <Collaborate></Collaborate>
-          </div>
+    <div
+      id="Section subtitle"
+      class="mt-4 text-center font-normal text-base sm:text-lg md:text-xl leading-relaxed"
+    >
+      <span class="text-[var(--Website-Neutral-3,#BBBBBB)] bg-clip-text text-transparent"
+        >Student-led initiatives solving real-world problems in finance and
+        consulting.</span
+      >
+    </div>
+  </div>
+    <ProjectCard Title="Forecast-Driven Trading" Desc="A data-driven trading strategy leveraging ARIMA and Prophet to forecast stock prices and enhance investment decisions through statistical analysis."
+     Topics={topics1} Image={Arima} imageOnLeft={false} people={[{
+      id: 1,
+      name: "Sreeteja",
+      designation: "Student",
+      image: "https://placehold.co/32x32/3498db/ffffff?text=ST",
+    },]}/>
+    <ProjectCard Title="M&A Case Study" Desc="An analytical study of M&A deals in India, assessing value creation for acquirers and targets through valuation, financial, and event analysis."
+     Topics={topics2} Image={m_and_a} imageOnLeft={true} people={[{
+      id: 1,
+      name: "Tejas Mundada",
+      designation: "Student",
+      image: "https://placehold.co/32x32/3498db/ffffff?text=TM",
+    },]}/>
     </div>
     
+    <div>
+      <Collaborate></Collaborate>
+    </div>
+  </div>
   )
 }
 
