@@ -1,5 +1,6 @@
 import ProjectCard from "../components/ProjectCard"
 import Particles from "../components/ParticleBackground"
+import Collaborate from "../components/Collaborate"
 import img1 from "../assets/images/projects/4f9bbc943449768f1d1a3a2b35bacbc73cd1bf16 (1).png"
 
 function Projects(){
@@ -21,19 +22,18 @@ function Projects(){
           />
           </div>
       
-        <div id="Hero Container" className="w-[1006px] h-[130px] gap-[52px]">
-          <div id="Hero text container" className="w-[981px] h-[130px] gap-[32px]">
-            <div id="Hero title" className="font-Family-primary font-semibold text-[60px] leading-[66px] tracking-normal text-center">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4E56D3_25.48%] via-[#A3ACD9_60.58%] to-[#F3FFD8_100%]">
+        <div id="Hero Container" class="w-full max-w-[1006px] mx-auto px-4 py-8 flex flex-col items-center justify-center gap-8">
+          <div id="Hero text container" class="w-full text-center gap-4">
+            <div id="Hero title" class="font-Family-primary font-semibold text-5xl md:text-6xl leading-tight tracking-normal">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4E56D3_25.48%] via-[#A3ACD9_60.58%] to-[#F3FFD8_100%]">
                 Real World Projects
               </span>
             </div>
-            <div id="Hero subtitle" className=" font-[Body/3/fontFamily] font-normal text-Heading-H3-fontSize] 
-                             leading-8 tracking-[Heading/H3/letterSpacing] text-center ">
-              <span className="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Consulting and finance projects led by FCC members. Real Impact.</span>
+            <div id="Hero subtitle" class="font-[Body/3/fontFamily] font-normal text-lg md:text-xl leading-relaxed tracking-[Heading/H3/letterSpacing] text-center mt-4">
+              <span class="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Consulting and finance projects led by FCC members. Real Impact.</span>
             </div>
           </div>
-      </div>
+        </div>
     </div>
 
     <div id="desktop-3" className="w-[1440px] h-[2320px] py-[80px] gap-[62px] flex flex-col">
@@ -58,8 +58,11 @@ function Projects(){
      Topics={topics1} Image={img1} imageOnLeft={true}/>
     </div>
     {/* Here we have to add project cards. its there in componenets/ProjectCard.jsx (yet to build) */}
-    
+          <div>
+            <Collaborate></Collaborate>
+          </div>
     </div>
+    
   )
 }
 
