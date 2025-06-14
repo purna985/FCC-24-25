@@ -288,42 +288,39 @@ const Navbar = ({
         `}
       </style>
       <div className="relative px-2" ref={containerRef}>
-        <div className="flex items-center gap-6">
-          <img src="/fcc-logo-blue.png" alt="Logo" className="h-8 w-auto" />
-          <div>
-               <div>Finance & Consulting Club</div>
-               <div>IIT Hyderabad</div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+          <div className="flex items-center gap-2">
+            <img src="fcc-logo-white.png" alt="Logo" className="h-8 w-auto" />
+            <div className="text-center md:text-left leading-tight text-white text-sm">
+              <div className="font-semibold">Finance & Consulting Club</div>
+              <div>IIT Hyderabad</div>
+            </div>
           </div>
-        <nav
-          className="flex relative"
-          style={{ transform: "translate3d(0,0,0.01px)" }}
-        >
-          <ul
-            ref={navRef}
-            className="flex gap-8 list-none p-0 px-4 m-0 relative z-[3]"
-            style={{
-              color: "white",
-              textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
-            }}
-          >
-            {items.map((item, index) => (
-              <li
-                key={index}
-                className={`py-[0.6em] px-[1em] rounded-full relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white ${activeIndex === index ? "active" : ""
-                  }`}
-                onClick={(e) => handleClick(e, index)}
-              >
-                <a
-                  href={item.href}
-                  onKeyDown={(e) => handleKeyDown(e, index)}
-                  className="outline-none"
+          <nav className="flex relative mt-2 md:mt-0">
+            <ul
+              ref={navRef}
+              className="flex flex-wrap justify-center gap-4 md:gap-8 list-none p-0 px-4 m-0 relative z-[3] text-white"
+              style={{
+                textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
+              }}
+            >
+              {items.map((item, index) => (
+                <li
+                  key={index}
+                  className={`py-2 px-4 rounded-full relative cursor-pointer transition duration-300 ease text-white ${activeIndex === index ? "active" : ""}`}
+                  onClick={(e) => handleClick(e, index)}
                 >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+                  <a
+                    href={item.href}
+                    onKeyDown={(e) => handleKeyDown(e, index)}
+                    className="outline-none"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
         <span className="effect filter" ref={filterRef} />
         <span className="effect text" ref={textRef} />
