@@ -85,11 +85,21 @@ export default {
 				poppins: ['Poppins', "sans-serif"],
 				horizonText: 'linear-gradient(124deg, #1680e8 2%, #2bc9d3 133.32%)',
 				ikaros: ['Ikaros Sans"', 'sans-serif'],
-				lato: ['Lato', 'sans-serif']
+				lato: ['Lato', 'sans-serif'],
+				'Family-primary':['Schibsted Grotesk'],
+				'Heading-H3-fontFamily':['Schibsted Grotesk'],
+				'Body-3-fontFamily':['Outfit'],
+				'Family-secondary':['Outfit'],
+				'Label-Label-3-fontFamily':['Schibsted Grotesk'],
+				'Label-Label-2-fontFamily':['Schibsted Grotesk'],
+				'Label-Label-1-fontFamily':['Schibsted Grotesk']
 			},
 			fontWeight: {
 				light: '200',
-				normal: '400'
+				normal: '400',
+				'Weights-Regular':'400',
+				'Weights-Medium':'500',
+				'Weights-Bold':'700'
 			},
 			fontSize: {
 				'vw-2.3': '2.3vw',
@@ -97,7 +107,19 @@ export default {
 				'vw-5': '5vw',
 				'vw-7': '7vw',
 				'vw-10': '10vw',
-				'vw-14': '12vw'
+				'vw-14': '12vw',
+				'Heading-H3-fontSize':['24px',{lineHeight:'28px'}],
+				'Title-Title-2-fontSize':['40px',{lineHeight:'48px'}],
+				'Label-Label-3-fontSize':['12px',{lineHeight:'16px'}],
+				'Label-Label-2-fontSize':['14PX',{lineHeight:'20PX'}],
+				'Label-Label-1-fontSize':['16PX',{lineHeight:'22PX'}]
+			},
+			letterSpacing:{
+				'Heading-H3-letterSpacing':'-0.24px',
+				'Title-Title-2-letterSpacing':'-0.64px',
+				'Label-Label-3-letterSpacing':'0px',
+				'Label-Label-2-letterSpacing':'0px',
+				'Label-Label-1-letterSpacing':'-0.18px'
 			},
 			spacing: {
 				'1p': '1%',
@@ -126,8 +148,13 @@ export default {
 			},
 			lineHeight: {
 				normal: 'normal',
-				'100p': '100%'
+				'100p': '100%',
+				'Title-Title-2-lineHeight':'48px',
+				'Heading-H3-lineHeight':'28px',
+				'Label-Label-3-lineHeight':'16px',
+				'Label-Label-2-lineHeight':'20px'
 			},
+			
 			animation: {
 				'scroll-1': 'scrollH 30s linear infinite',
 				'accordion-down': 'accordion-down 0.2s ease-out',

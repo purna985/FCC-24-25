@@ -1,190 +1,332 @@
-import { useLocation } from "react-router-dom";
-import { useRef, useState } from "react";
-import { useGSAP } from "@gsap/react";
-import { Link } from "react-router-dom";
-import gsap from "gsap";
+import { useRef, useEffect, useState } from "react";
 
-import closeIcon from "@/assets/home/closeIcon.svg";
-import logofull from "../assets/fcc-logo-full.png";
-
-function Navbar() {
-  const location = useLocation();
-  const menuRef = useRef(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
-
-  useGSAP(() => {
-    gsap.to(menuRef.current, {
-      left: isMenuOpen ? "0%" : "100%",
-      duration: 0.3,
-      ease: "power2.inOut",
+const Navbar = ({
+  items,
+  animationTime = 600,
+  particleCount = 15,
+  particleDistances = [90, 10],
+  particleR = 100,
+  timeVariance = 300,
+  colors = [1, 2, 3, 1, 2, 3, 1, 4],
+  initialActiveIndex = 0,
+}) => {
+  const containerRef = useRef(null);
+  const navRef = useRef(null);
+  const filterRef = useRef(null);
+  const textRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
+  const noise = (n = 1) => n / 2 - Math.random() * n;
+  const getXY = (
+    distance,
+    pointIndex,
+    totalPoints
+  ) => {
+    const angle =
+      ((360 + noise(8)) / totalPoints) * pointIndex * (Math.PI / 180);
+    return [distance * Math.cos(angle), distance * Math.sin(angle)];
+  };
+  const createParticle = (
+    i,
+    t,
+    d,
+    r
+  ) => {
+    let rotate = noise(r / 10);
+    return {
+      start: getXY(d[0], particleCount - i, particleCount),
+      end: getXY(d[1] + noise(7), particleCount - i, particleCount),
+      time: t,
+      scale: 1 + noise(0.2),
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rotate: rotate > 0 ? (rotate + r / 20) * 10 : (rotate - r / 20) * 10,
+    };
+  };
+  const makeParticles = (element) => {
+    const d = particleDistances;
+    const r = particleR;
+    const bubbleTime = animationTime * 2 + timeVariance;
+    element.style.setProperty("--time", `${bubbleTime}ms`);
+    for (let i = 0; i < particleCount; i++) {
+      const t = animationTime * 2 + noise(timeVariance * 2);
+      const p = createParticle(i, t, d, r);
+      element.classList.remove("active");
+      setTimeout(() => {
+        const particle = document.createElement("span");
+        const point = document.createElement("span");
+        particle.classList.add("particle");
+        particle.style.setProperty("--start-x", `${p.start[0]}px`);
+        particle.style.setProperty("--start-y", `${p.start[1]}px`);
+        particle.style.setProperty("--end-x", `${p.end[0]}px`);
+        particle.style.setProperty("--end-y", `${p.end[1]}px`);
+        particle.style.setProperty("--time", `${p.time}ms`);
+        particle.style.setProperty("--scale", `${p.scale}`);
+        particle.style.setProperty("--color", `var(--color-${p.color}, white)`);
+        particle.style.setProperty("--rotate", `${p.rotate}deg`);
+        point.classList.add("point");
+        particle.appendChild(point);
+        element.appendChild(particle);
+        requestAnimationFrame(() => {
+          element.classList.add("active");
+        });
+        setTimeout(() => {
+          try {
+            element.removeChild(particle);
+          } catch {
+            // do nothing
+          }
+        }, t);
+      }, 30);
+    }
+  };
+  const updateEffectPosition = (element) => {
+    if (!containerRef.current || !filterRef.current || !textRef.current) return;
+    const containerRect = containerRef.current.getBoundingClientRect();
+    const pos = element.getBoundingClientRect();
+    const styles = {
+      left: `${pos.x - containerRect.x}px`,
+      top: `${pos.y - containerRect.y}px`,
+      width: `${pos.width}px`,
+      height: `${pos.height}px`,
+    };
+    Object.assign(filterRef.current.style, styles);
+    Object.assign(textRef.current.style, styles);
+    textRef.current.innerText = element.innerText;
+  };
+  const handleClick = (e, index) => {
+    const liEl = e.currentTarget;
+    if (activeIndex === index) return;
+    setActiveIndex(index);
+    updateEffectPosition(liEl);
+    if (filterRef.current) {
+      const particles = filterRef.current.querySelectorAll(".particle");
+      particles.forEach((p) => filterRef.current.removeChild(p));
+    }
+    if (textRef.current) {
+      textRef.current.classList.remove("active");
+      void textRef.current.offsetWidth;
+      textRef.current.classList.add("active");
+    }
+    if (filterRef.current) {
+      makeParticles(filterRef.current);
+    }
+  };
+  const handleKeyDown = (
+    e,
+    index
+  ) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      const liEl = e.currentTarget.parentElement;
+      if (liEl) {
+        handleClick(
+          { currentTarget: liEl },
+          index
+        );
+      }
+    }
+  };
+  useEffect(() => {
+    if (!navRef.current || !containerRef.current) return;
+    const activeLi = navRef.current.querySelectorAll("li")[
+      activeIndex
+    ];
+    if (activeLi) {
+      updateEffectPosition(activeLi);
+      textRef.current?.classList.add("active");
+    }
+    const resizeObserver = new ResizeObserver(() => {
+      const currentActiveLi = navRef.current?.querySelectorAll("li")[
+        activeIndex
+      ];
+      if (currentActiveLi) {
+        updateEffectPosition(currentActiveLi);
+      }
     });
-  }, [isMenuOpen]);
-
-  const navLinks = [
-    { path: "/", label: "Home" },
-    {
-      path: "/horizon",
-      label: "Horizon",
-      subLinks: [
-        { path: "/horizon/", label: "About" },
-        { path: "/horizon/schedule", label: "Schedule" },
-        { path: "/horizon/partners", label: "Partners" },
-      ],
-    },
-    {
-      path: "/schedule",
-      label: "Events",
-    },
-    {
-      path: "/resources",
-      label: "Resources",
-      subLinks: [
-        { path: "/resources/", label: "All Resources" },
-        { path: "/resources/newsletters", label: "Newsletters" },
-        { path: "/resources/finance-resources", label: "Finance" },
-        { path: "/resources/consulting-resources", label: "Consulting" },
-        { path: "/resources/product-resources", label: "Product Management" },
-      ],
-    },
-    { path: "/team", label: "Team" },
-  ];
-
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-    setOpenDropdown(null);
-  };
-
-  const toggleDropdown = (index) => {
-    setOpenDropdown(openDropdown === index ? null : index);
-  };
-
-  const isActive = (path) => location.pathname === path;
+    resizeObserver.observe(containerRef.current);
+    return () => resizeObserver.disconnect();
+  }, [activeIndex]);
 
   return (
-    <div className="relative container-fluid header flex justify-center z-[100]">
-      <header className="flex w-full bg-opacity-35 h-auto items-center justify-between py-5 px-10 bg-transparent mb-10 shadow-sm shadow-slate-700">
-        {/* Logo */}
-        <div className="md:pl-4 md:w-[40%]">
-          <Link to="/" className="inline-flex items-center justify-evenly w-1/2 md:w-1/3">
-            <img src={logofull} alt="FCC Logo" className="w-full" />
-          </Link>
-        </div>
-
-        {/* Desktop Navigation */}
-        <ul className="navlinks w-[50%] text-md hidden lg:flex justify-between items-center pr-5">
-          {navLinks.map((link, index) => (
-            <li key={link.path} className="relative group">
-              <Link
-                to={link.path}
-                className={`nav-link fs-5 head-navlink cursor-pointer px-3 py-2 fw-light ${
-                  isActive(link.path)
-                    ? "border-solid border-[#21A1F2] border-2 rounded-md text-[#21A1F2]"
-                    : "text-white hover:text-[#21A1F2]"
-                }`}
-                onClick={() => toggleDropdown(index)}
-              >
-                {link.label}
-              </Link>
-              {/* Dropdown for Desktop */}
-              {link.subLinks && (
-                <ul className="absolute w-48 mt-2 top-full left-0 bg-[#131313] p-2 rounded-md shadow-lg hidden group-hover:block border-[1px] border-blue-500">
-                  {link.subLinks.map((subLink) => (
-                    <li key={subLink.path}>
-                      <Link
-                        to={subLink.path}
-                        className="w-full block px-4 py-2 text-white hover:text-[#21A1F2] hover:bg-[#1a1a1a] rounded-md"
-                      >
-                        {subLink.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-
-        {/* Mobile Menu Toggle Button */}
-        <button
-          className="btn btn-primary lg:hidden"
-          type="button"
-          onClick={handleMenuToggle}
-          aria-label="Open Menu"
-          aria-expanded={isMenuOpen}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            className="bi bi-list"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-            </svg>
-        </button>
-
-        {/* Mobile Menu */}
-        <div
-          className="fixed top-0 left-[100%] w-screen h-screen bg-black z-[120] lg:hidden flex flex-col items-center justify-center"
-          ref={menuRef}
-          role="menu"
-          aria-hidden={!isMenuOpen}
-        >
-          {/* Close Button */}
-          <div className="absolute top-5 right-5 cursor-pointer text-4xl">
-            <button onClick={handleMenuToggle} aria-label="Close Menu">
-              <img src={closeIcon} alt="Close Menu" className="w-8 h-8" />
-            </button>
+    <>
+      {/* This effect is quite difficult to recreate faithfully using Tailwind, so a style tag is a necessary workaround */}
+      <style>
+        {`
+          :root {
+            --linear-ease: linear(0, 0.068, 0.19 2.7%, 0.804 8.1%, 1.037, 1.199 13.2%, 1.245, 1.27 15.8%, 1.274, 1.272 17.4%, 1.249 19.1%, 0.996 28%, 0.949, 0.928 33.3%, 0.926, 0.933 36.8%, 1.001 45.6%, 1.013, 1.019 50.8%, 1.018 54.4%, 1 63.1%, 0.995 68%, 1.001 85%, 1);
+          }
+          .effect {
+            position: absolute;
+            opacity: 1;
+            pointer-events: none;
+            display: grid;
+            place-items: center;
+            z-index: 1;
+          }
+          .effect.text {
+            color: white;
+            transition: color 0.3s ease;
+          }
+          .effect.text.active {
+            color: black;
+          }
+          .effect.filter {
+            filter: blur(7px) contrast(100) blur(0);
+            mix-blend-mode: lighten;
+          }
+          .effect.filter::before {
+            content: "";
+            position: absolute;
+            inset: -75px;
+            z-index: -2;
+            background: black;
+          }
+          .effect.filter::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: white;
+            transform: scale(0);
+            opacity: 0;
+            z-index: -1;
+            border-radius: 9999px;
+          }
+          .effect.active::after {
+            animation: pill 0.3s ease both;
+          }
+          @keyframes pill {
+            to {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+          .particle,
+          .point {
+            display: block;
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 9999px;
+            transform-origin: center;
+          }
+          .particle {
+            --time: 5s;
+            position: absolute;
+            top: calc(50% - 8px);
+            left: calc(50% - 8px);
+            animation: particle calc(var(--time)) ease 1 -350ms;
+          }
+          .point {
+            background: var(--color);
+            opacity: 1;
+            animation: point calc(var(--time)) ease 1 -350ms;
+          }
+          @keyframes particle {
+            0% {
+              transform: rotate(0deg) translate(calc(var(--start-x)), calc(var(--start-y)));
+              opacity: 1;
+              animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
+            }
+            70% {
+              transform: rotate(calc(var(--rotate) * 0.5)) translate(calc(var(--end-x) * 1.2), calc(var(--end-y) * 1.2));
+              opacity: 1;
+              animation-timing-function: ease;
+            }
+            85% {
+              transform: rotate(calc(var(--rotate) * 0.66)) translate(calc(var(--end-x)), calc(var(--end-y)));
+              opacity: 1;
+            }
+            100% {
+              transform: rotate(calc(var(--rotate) * 1.2)) translate(calc(var(--end-x) * 0.5), calc(var(--end-y) * 0.5));
+              opacity: 1;
+            }
+          }
+          @keyframes point {
+            0% {
+              transform: scale(0);
+              opacity: 0;
+              animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
+            }
+            25% {
+              transform: scale(calc(var(--scale) * 0.25));
+            }
+            38% {
+              opacity: 1;
+            }
+            65% {
+              transform: scale(var(--scale));
+              opacity: 1;
+              animation-timing-function: ease;
+            }
+            85% {
+              transform: scale(var(--scale));
+              opacity: 1;
+            }
+            100% {
+              transform: scale(0);
+              opacity: 0;
+            }
+          }
+          li.active {
+            color: black;
+            text-shadow: none;
+          }
+          li.active::after {
+            opacity: 1;
+            transform: scale(1);
+          }
+          li::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 8px;
+            background: white;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.3s ease;
+            z-index: -1;
+          }
+        `}
+      </style>
+      <div className="relative px-2" ref={containerRef}>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+          <div className="flex items-center gap-2">
+            <img src="fcc-logo-white.png" alt="Logo" className="h-8 w-auto" />
+            <div className="text-center md:text-left leading-tight text-white text-sm">
+              <div className="font-semibold">Finance & Consulting Club</div>
+              <div>IIT Hyderabad</div>
+            </div>
           </div>
-
-          {/* Mobile Navigation Links */}
-          <div className="flex flex-col items-center justify-center gap-10 w-full h-full">
-            {navLinks.map((link, index) => (
-              <div key={link.path} className="text-center">
-                <Link
-                  to={link.path}
-                  className={`text-3xl ${
-                    isActive(link.path) ? "text-blue-300" : "text-white hover:text-blue-300"
-                  }`}
-                  onClick={() => {
-                    if (!link.subLinks) {
-                      handleMenuToggle();
-                    } else {
-                      toggleDropdown(index);
-                    }
-                  }}
-                  role="menuitem"
+          <nav className="flex relative mt-2 md:mt-0">
+            <ul
+              ref={navRef}
+              className="flex flex-wrap justify-center gap-4 md:gap-8 list-none p-0 px-4 m-0 relative z-[3] text-white"
+              style={{
+                textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
+              }}
+            >
+              {items.map((item, index) => (
+                <li
+                  key={index}
+                  className={`py-2 px-4 rounded-full relative cursor-pointer transition duration-300 ease text-white ${activeIndex === index ? "active" : ""}`}
+                  onClick={(e) => handleClick(e, index)}
                 >
-                  {link.label}
-                </Link>
-                {/* Dropdown for Mobile */}
-                {link.subLinks && openDropdown === index && (
-                  <ul className="mt-2">
-                    {link.subLinks.map((subLink) => (
-                      <li key={subLink.path}>
-                        <Link
-                          to={subLink.path}
-                          className="block text-xl text-white hover:text-blue-300 py-1"
-                          onClick={handleMenuToggle}
-                        >
-                          {subLink.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
+                  <a
+                    href={item.href}
+                    onKeyDown={(e) => handleKeyDown(e, index)}
+                    className="outline-none"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
-      </header>
-    </div>
+        <span className="effect filter" ref={filterRef} />
+        <span className="effect text" ref={textRef} />
+      </div>
+    </>
   );
-}
+};
 
 export default Navbar;
