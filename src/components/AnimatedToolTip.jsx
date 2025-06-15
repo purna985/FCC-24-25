@@ -23,15 +23,18 @@ export const AnimatedToolTip = ({
     const halfWidth = event.target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
   };
-
+  const redirectToLinkedIn=(item)=>{
+    window.open(item.linkedIn,"_blank")
+  }
   return (
     <>
       {items.map((item, idx) => (
         <div
-          className="group relative -mr-4"
+          className="group relative -mr-4 cursor-pointer"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
-          onMouseLeave={() => setHoveredIndex(null)}>
+          onMouseLeave={() => setHoveredIndex(null)}
+          onClick={redirectToLinkedIn(item)}>
           <AnimatePresence mode="popLayout">
             {hoveredIndex === item.id && (
               <motion.div

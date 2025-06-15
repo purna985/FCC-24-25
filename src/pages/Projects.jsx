@@ -61,7 +61,7 @@ function Projects(){
                 Real World Projects
               </span>
             </div>
-            <div id="Hero subtitle" class="font-[Body/3/fontFamily] font-normal text-lg md:text-xl leading-relaxed tracking-[Heading/H3/letterSpacing] text-center mt-4">
+            <div id="Hero subtitle" class="font-Body-3-fontFamily font-normal text-lg md:text-xl leading-relaxed tracking-Heading-H3-letterSpacing text-center mt-4">
               <span class="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Consulting and finance projects led by FCC members. Real Impact.</span>
             </div>
           </div>
@@ -70,7 +70,7 @@ function Projects(){
 
 <div
   id="desktop-3"
-  class="w-full min-h-screen py-10 sm:py-16 md:py-20 lg:py-24 flex flex-col items-center justify-start gap-10 sm:gap-12 md:gap-16 lg:gap-20 px-4 sm:px-6 md:px-8 lg:px-12"
+  class="w-full min-h-screen py-10 sm:py-16 md:py-20 lg:py-24 flex flex-col items-center justify-start gap-8 sm:gap-6 md:gap-8 lg:gap-10 px-4 sm:px-6 md:px-8 lg:px-12"
 >
   <div
     id="project header container"
@@ -101,6 +101,7 @@ function Projects(){
       name: "Sreeteja",
       designation: "Student",
       image: "https://placehold.co/32x32/3498db/ffffff?text=ST",
+      linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
     },]}/>
     <ProjectCard Title="M&A Case Study" Desc="An analytical study of M&A deals in India, assessing value creation for acquirers and targets through valuation, financial, and event analysis."
      Topics={topics2} Image={m_and_a} imageOnLeft={true} people={[{
@@ -108,6 +109,7 @@ function Projects(){
       name: "Tejas Mundada",
       designation: "Student",
       image: "https://placehold.co/32x32/3498db/ffffff?text=TM",
+      linkedIn:"https://www.linkedin.com/in/tejas-mundada-86329536b"
     },]}/>
     </div>
     
