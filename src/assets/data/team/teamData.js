@@ -262,13 +262,13 @@ export const teamsData = [
         name: "Abhinav Raj",
         image: AbhinavRaj,
         por: "Consulting Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/abhinav-raj-2a3618349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       },
       {
         name: "Nimish Wadhwa",
         image: NimishWadhwa,
         por: "Consulting Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/nimish-wadhwa-6568ba311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
         name: "Kumud Jalori",
@@ -349,7 +349,7 @@ export const teamsData = [
         name: "Adheesh Joshi",
         image: AdheeshJoshi,
         por: "Ideation Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/adheeshj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       },
       {
         name: "Vivaswan Rai",
@@ -424,7 +424,7 @@ export const teamsData = [
         name: "Saraangan B",
         image: SaraanganB,
         por: "PR Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/saraangan-boobal-269966291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
         name: "Rishika Shreya Fadi",
@@ -457,7 +457,7 @@ export const teamsData = [
         name: "Karthikay Chandana",
         image: KarthikayChandana,
         por: "CPG Coordinator",
-        linkedin: "",
+        linkedin: "http://linkedin.com/in/karthikay-chandana-b42224228",
       },
       {
         name: "Asit Patel",
@@ -499,7 +499,7 @@ export const teamsData = [
         name: "Rohith S",
         image: RohithS,
         por: "CPG Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/rohith-suresh-b57b03319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     ],
   },
@@ -672,7 +672,7 @@ export const teamsData = [
         name: "K Sai Yashaswini",
         image: KSaiYashaswini,
         por: "Design Coordinator",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/sai-yashaswini-kolla-b763b536b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
         name: "Sujeet Yadav",
