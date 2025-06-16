@@ -9,7 +9,6 @@ const Navbar = ({
   particleR = 100,
   timeVariance = 300,
   colors = [1, 2, 3, 1, 2, 3, 1, 4],
-  // initialActiveIndex = 0,
 }) => {
   const containerRef = useRef(null);
   const navRef = useRef(null);
@@ -17,8 +16,6 @@ const Navbar = ({
   const textRef = useRef(null);
 
   const location = useLocation();
-
-  // const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
 
   const [activeIndex, setActiveIndex] = useState(() => {
   const currentPath = location.pathname;
