@@ -316,13 +316,13 @@ const Navbar = ({
       </style>
       <div className="relative px-2" ref={containerRef}>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 py-4">
-          <div className="flex items-center gap-2">
-            <img src="fcc-logo-white.png" alt="Logo" className="h-8 w-auto" />
+            <Link to="/" className="cursor-pointer flex items-center gap-2">
+              <img src="fcc-logo-new.png" alt="Logo" className="h-8 w-auto" />
             <div className="text-center md:text-left leading-tight text-white text-sm">
-              <div className="font-semibold">Finance & Consulting Club</div>
-              <div>IIT Hyderabad</div>
+              <div className="font-semibold font-Label-Label-3-fontFamily">Finance & Consulting Club</div>
+              <div className="font-Body-3-fontFamily">IIT Hyderabad</div>
             </div>
-          </div>
+            </Link>
           <nav className="flex relative mt-2 md:mt-0">
             <ul
               ref={navRef}
