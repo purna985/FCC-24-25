@@ -1,24 +1,45 @@
-import { useState } from "react";
-import { teamsData } from '@/assets/data/team/teamData';
-import ChromaGrid from '../components/team/ChromaGrid';
+import { useState, useEffect } from "react";
+import { teamsData } from "@/assets/data/team/teamData";
+import ChromaGrid from "../components/team/ChromaGrid";
 
 function Team() {
   const [selectedTeam, setSelectedTeam] = useState(0);
+  const [rows, setRows] = useState([]);
 
-  // Prepare ChromaGrid items for selected team
+  useEffect(() => {
+    function handleResize() {
+      const containerWidth = window.innerWidth - 40; // Account for padding
+      const buttonMinWidth = 150; // Minimum width per button
+      const buttonsPerRow = Math.max(1, Math.floor(containerWidth / buttonMinWidth));
+
+      const newRows = [];
+      teamsData.forEach((team, idx) => {
+        const rowIdx = Math.floor(idx / buttonsPerRow);
+        if (!newRows[rowIdx]) newRows[rowIdx] = [];
+        newRows[rowIdx].push({ ...team, idx });
+      });
+
+      setRows(newRows);
+    }
+
+    handleResize(); // Run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const currentTeam = teamsData[selectedTeam];
-  const items = [
-    ...currentTeam.teamHead,
-    ...currentTeam.teamMembers
-  ].map(member => ({
-    image: member.image,
-    title: member.name,
-    subtitle: member.por,
-    handle: member.handle,
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: member.linkedin || ""
-  }));
+  const items = [...currentTeam.teamHead, ...currentTeam.teamMembers].map(
+    (member) => ({
+      image: member.image,
+      title: member.name,
+      subtitle: member.por,
+      handle: member.handle,
+      borderColor: "#3B82F6",
+      gradient: "linear-gradient(145deg, #3B82F6, #000)",
+      url: member.linkedin || "",
+    })
+  );
+  
 
   return (
     <div
@@ -31,30 +52,34 @@ function Team() {
           Meet Our Team
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-          A dedicated group of professionals driving innovation and excellence. 
+          A dedicated group of professionals driving innovation and excellence.
           Meet the talented individuals who make it all possible.
         </p>
       </div>
+
       {/* Tab Bar */}
-      <div className="w-full flex justify-center py-8">
-        <div className="flex gap-2 bg-[#23232a] rounded-xl p-1">
-          {teamsData.map((team, idx) => (
-            <button
-              key={team.teamName}
-              onClick={() => setSelectedTeam(idx)}
-              className={`px-6 py-2 rounded-lg text-sm font-medium transition-colors
-                ${selectedTeam === idx 
-                  ? "bg-blue-600 text-white shadow-lg" 
-                  : "text-gray-300 hover:bg-white/10"}`}
-            >
-              {team.teamName}
-            </button>
-          ))}
-        </div>
-      </div>
+     <div className="flex flex-wrap justify-center gap-2 bg-[#23232a] rounded-xl p-1 inline-flex self-center">
+  {teamsData.map((team, idx) => (
+    <button
+      key={team.teamName}
+      onClick={() => setSelectedTeam(idx)}
+      className={`px-4 sm:px-6 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors
+        ${
+          selectedTeam === idx
+            ? "bg-blue-600 text-white shadow-lg"
+            : "text-gray-300 hover:bg-white/10"
+        }`}
+    >
+      {team.teamName}
+    </button>
+  ))}
+</div>
+
+
+
       {/* ChromaGrid */}
       <div style={{ flex: "1 0 auto" }}>
-        <ChromaGrid 
+        <ChromaGrid
           items={items}
           radius={320}
           damping={0.4}
@@ -63,7 +88,6 @@ function Team() {
           rows={2}
         />
       </div>
-      
     </div>
   );
 }
