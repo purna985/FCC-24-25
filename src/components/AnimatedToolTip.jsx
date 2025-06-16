@@ -34,7 +34,7 @@ export const AnimatedToolTip = ({
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
-          onClick={redirectToLinkedIn(item)}>
+          onClick={()=>redirectToLinkedIn(item)}>
           <AnimatePresence mode="popLayout">
             {hoveredIndex === item.id && (
               <motion.div

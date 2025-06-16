@@ -6,20 +6,7 @@ import Arima from "../assets/images/projects/Arima.png"
 
 
 import {AnimatedToolTip} from "../components/AnimatedToolTip"
-const people_ = [
-  {
-    id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    image: "https://placehold.co/32x32/3498db/ffffff?text=JD",
-  },
-  {
-    id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
-    image: "https://placehold.co/32x32/2ecc71/ffffff?text=RJ",
-  },
-];
+
 
 function Projects(){
   let topics1=['Python','Machine Learning','Finance'];
