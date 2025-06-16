@@ -315,7 +315,7 @@ const Navbar = ({
         `}
       </style>
       <div className="relative px-2" ref={containerRef}>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 py-4">
           <div className="flex items-center gap-2">
             <img src="fcc-logo-white.png" alt="Logo" className="h-8 w-auto" />
             <div className="text-center md:text-left leading-tight text-white text-sm">
