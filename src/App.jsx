@@ -8,6 +8,7 @@ import Newsletters from "./pages/resources-pages/Newsletters";
 import Finance from "./pages/resources-pages/Finance";
 import Consulting from "./pages/resources-pages/Consulting";
 import ProdMan from "./pages/resources-pages/ProdMan";
+import Projects from "./pages/Projects";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -21,16 +22,34 @@ import HorizonTimeline from "./components/horizon/HorizonTimeline";
 import HorizonPartners from "./components/horizon/HorizonPartners";
 
 function App() {
+  // Items for Navbar
+const items = [
+  { label: "Home", href: "/" },
+  { label: "Events", href: "#" },
+  { label: "Projects", href: "/projects" },
+  { label: "Blogs", href: "#" },
+  { label: "About Us", href: "#" },
+];
+
   return (
-    <div className="relative bg-black overflow-x-hidden z-0">
-      <Navbar />
+    <div className="relative bg-black overflow-x-hidden my-1 z-0">
+      <Navbar
+        items={items}
+        particleCount={15}
+        particleDistances={[90, 10]}
+        particleR={100}
+        initialActiveIndex={0}
+        animationTime={600}
+        timeVariance={300}
+        colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+      />
       <BackToTop />
       <Routes>
         {/* Pages routes */}
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />
-
+        <Route path="/projects" element={<Projects/>}/>
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/team" element={<Team />} />
         <Route path="/resources" element={<Resources />} />
