@@ -27,16 +27,19 @@ export function Timeline({ data }) {
     <div
       ref={containerRef}
       className="w-full bg-[#0a0a0d] font-sans px-4 md:px-10"
-    >
-      <div className="max-w-5xl mx-auto py-20">
-        <h2 className="text-lg md:text-4xl mb-4 text-[#7fa4fa] font-bold">
+    > 
+
+      <div className="text-center mb-8 px-4 mt-20">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#7fa4fa] mb-4">
           Our Journey
-        </h2>
-        <p className="text-gray-400 text-sm md:text-base mb-10">
+        </h1>
+        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
           From a small group of finance enthusiasts to a thriving community of
           future leaders.
         </p>
+      </div>
 
+      <div className="max-w-5xl mx-auto py-20">
         <div ref={ref} className="relative">
           {data.map((item, index) => (
             <div key={index} className="relative flex items-start mb-12">
