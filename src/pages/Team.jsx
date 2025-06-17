@@ -3,6 +3,8 @@ import { teamsData } from "@/assets/data/team/teamData";
 import ChromaGrid from "../components/team/ChromaGrid";
 import Collaborate from "../components/Collaborate"
 import { Timeline } from "../components/home/TimeLine/Timeline";
+import timelineData from "../components/home/TimeLine/timelineData";
+
 
 function Team() {
   const [selectedTeam, setSelectedTeam] = useState(0);
@@ -39,29 +41,6 @@ function Team() {
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
     url: member.linkedin || "",
   }));
-
-  const timelineData = [
-    {
-      title: "2021 Club Formation",
-      content: <p>FCC was established at IIT Hyderabad with 20 founding members.</p>,
-    },
-    {
-      title: "2022 First Event",
-      content: <p>We hosted our first finance workshop with 100+ attendees.</p>,
-    },
-    {
-      title: "2023 Second Event",
-      content: <p>We hosted our second finance workshop with 200+ attendees.</p>,
-    },
-    {
-      title: "2023 Expansion",
-      content: <p>FCC expanded with new chapters across multiple colleges.</p>,
-    },
-    {
-      title: "2024 Third Event",
-      content: <p>We hosted our third finance workshop with 400+ attendees.</p>,
-    },
-  ];
 
   return (
     <div className="min-h-screen w-full bg-[#0a0a0d] flex flex-col">
