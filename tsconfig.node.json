@@ -5,7 +5,7 @@
       "module": "commonjs",
       "outDir": "dist"
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx","src/**/*.jsx", "src/components/home/TimeLine/timelineData.jsx"],
+    "include": ["src/**/*.ts", "src/**/*.tsx","src/**/*.jsx", "src/assets/data/timelineData/timelineData.jsx"],
     "exclude": ["node_modules"]
   }
   
