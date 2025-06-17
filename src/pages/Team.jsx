@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { teamsData } from "@/assets/data/team/teamData";
 import ChromaGrid from "../components/team/ChromaGrid";
+import Collaborate from "../components/Collaborate"
 import { Timeline } from "../components/home/TimeLine/Timeline";
 
 function Team() {
@@ -49,8 +50,16 @@ function Team() {
       content: <p>We hosted our first finance workshop with 100+ attendees.</p>,
     },
     {
+      title: "2023 Second Event",
+      content: <p>We hosted our second finance workshop with 200+ attendees.</p>,
+    },
+    {
       title: "2023 Expansion",
       content: <p>FCC expanded with new chapters across multiple colleges.</p>,
+    },
+    {
+      title: "2024 Third Event",
+      content: <p>We hosted our third finance workshop with 400+ attendees.</p>,
     },
   ];
 
@@ -77,10 +86,9 @@ function Team() {
             key={team.teamName}
             onClick={() => setSelectedTeam(idx)}
             className={`px-4 sm:px-6 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors
-              ${
-                selectedTeam === idx
-                  ? "bg-blue-600 text-white shadow-lg"
-                  : "text-gray-300 hover:bg-white/10"
+              ${selectedTeam === idx
+                ? "bg-blue-600 text-white shadow-lg"
+                : "text-gray-300 hover:bg-white/10"
               }`}
           >
             {team.teamName}
@@ -98,6 +106,9 @@ function Team() {
           columns={3}
           rows={2}
         />
+      </div>
+      <div>
+        <Collaborate></Collaborate>
       </div>
     </div>
   );
