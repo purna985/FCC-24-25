@@ -114,7 +114,8 @@ export default {
 				'Label-Label-3-fontSize':['12px',{lineHeight:'16px'}],
 				'Label-Label-2-fontSize':['14PX',{lineHeight:'20PX'}],
 				'Label-Label-1-fontSize':['16PX',{lineHeight:'22PX'}],
-				'Body-2-fontSize':['18px',{lineHeight:'26px'}]
+				'Body-2-fontSize':['18px',{lineHeight:'26px'}],
+				'Body-1-fontSize':['20px',{lineHeight:'26px'}]
 			},
 			letterSpacing:{
 				'Heading-H3-letterSpacing':'-0.24px',

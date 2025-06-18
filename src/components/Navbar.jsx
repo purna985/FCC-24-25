@@ -339,7 +339,7 @@ const Navbar = ({
                 >
                   <Link
                     to={item.href}
-                    className="outline-none" // Keep your outline-none class for focus styles
+                    className="outline-none font-[Inter] font-Weights-Medium text-[14px] tracking-[0.2px] leading-100p" // Keep your outline-none class for focus styles
                     aria-current={activeIndex === index ? "page" : undefined} // For accessibility
                   >
                     {item.label}

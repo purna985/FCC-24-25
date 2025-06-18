@@ -32,11 +32,20 @@ function Footer() {
           Empowering tomorrow's finance leaders and consultants through hands-on projects, insights, and global exposure.
         </p>
         <div className="flex gap-4">
-          {[FaLinkedin, FaInstagram, FaYoutube, FaMedium].map((Icon, i) => (
-            <a key={i} href="#" className="bg-white border-2 border-[#EBEBEB] rounded-full w-7 h-7 flex items-center justify-center">
-              <Icon style={{fill:'#000000'}}  className="text-black w-5 h-5" />
+          
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/fcc-iith/" className="bg-white border-2 border-[#EBEBEB] rounded-full w-7 h-7 flex items-center justify-center">
+              <FaLinkedin style={{fill:'#000000'}}  className="text-black w-5 h-5" />
             </a>
-          ))}
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fcc_iith" className="bg-white border-2 border-[#EBEBEB] rounded-full w-7 h-7 flex items-center justify-center">
+              <FaInstagram style={{fill:'#000000'}}  className="text-black w-5 h-5" />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@fcciith" className="bg-white border-2 border-[#EBEBEB] rounded-full w-7 h-7 flex items-center justify-center">
+              <FaYoutube style={{fill:'#000000'}}  className="text-black w-5 h-5" />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://fcc-iith.medium.com/" className="bg-white border-2 border-[#EBEBEB] rounded-full w-7 h-7 flex items-center justify-center">
+              <FaMedium style={{fill:'#000000'}}  className="text-black w-5 h-5" />
+            </a>
+          
         </div>
       </div>
 
