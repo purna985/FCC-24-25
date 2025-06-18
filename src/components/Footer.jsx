@@ -9,7 +9,7 @@ import { FaMedium } from "react-icons/fa6";
 function Footer() {
   return (
     <div
-  className="flex flex-col w-full min-h-screen max-w-screen-2xl font-ikaros relative overflow-hidden
+  className="flex flex-col justify-center w-full min-h-screen max-w-screen-2xl font-ikaros relative overflow-hidden
     pt-20 pb-20 px-[10%] gap-16 border-t-2 border-t-[#292929]
     sm:px-6 sm:pt-14 sm:pb-14"
   id="footer"
