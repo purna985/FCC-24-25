@@ -6,6 +6,7 @@ import Arima from "../assets/images/projects/Arima.png"
 import {SlideIn,RotateZoom} from "../components/ui/Animations"
 
 import {AnimatedToolTip} from "../components/AnimatedToolTip"
+import { Minimize } from "lucide-react"
 
 
 function Projects(){
@@ -84,7 +85,8 @@ function Projects(){
     </div>
   </div>
         </SlideIn>
-    <SlideIn x_hidden={500} y_hidden={0} duration={1.2}>
+        {console.log(window.innerWidth)}
+    <SlideIn x_hidden={typeof window!==undefined?Math.min(500,window.innerWidth*0.5):0} y_hidden={0} duration={1.2}>
 
     <ProjectCard Title="Forecast-Driven Trading" Desc="A data-driven trading strategy leveraging ARIMA and Prophet to forecast stock prices and enhance investment decisions through statistical analysis."
      Topics={topics1} Image={Arima} imageOnLeft={false} people={[{
@@ -95,7 +97,7 @@ function Projects(){
        linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
       },]}/>
       </SlideIn>
-    <SlideIn x_hidden={-500} y_hidden={0} duration={1.2}>
+    <SlideIn x_hidden={typeof window!==undefined?-1*Math.min(500,window.innerWidth*0.5):0} y_hidden={0} duration={1.2}>
 
     <ProjectCard Title="M&A Case Study" Desc="An analytical study of M&A deals in India, assessing value creation for acquirers and targets through valuation, financial, and event analysis."
      Topics={topics2} Image={m_and_a} imageOnLeft={true} people={[{
