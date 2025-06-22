@@ -1,20 +1,28 @@
 import { useRef, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({
   items,
   animationTime = 600,
-  particleCount = 15,
-  particleDistances = [90, 10],
+  particleCount = 20,
+  particleDistances = [120, 10],
   particleR = 100,
   timeVariance = 300,
   colors = [1, 2, 3, 1, 2, 3, 1, 4],
-  initialActiveIndex = 0,
 }) => {
   const containerRef = useRef(null);
   const navRef = useRef(null);
   const filterRef = useRef(null);
   const textRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
+
+  const location = useLocation();
+
+  const [activeIndex, setActiveIndex] = useState(() => {
+  const currentPath = location.pathname;
+  const foundIndex = items.findIndex((item) => item.href === currentPath);
+  return foundIndex !== -1 ? foundIndex : 0;
+  });
+
   const noise = (n = 1) => n / 2 - Math.random() * n;
   const getXY = (
     distance,
@@ -125,26 +133,40 @@ const Navbar = ({
       }
     }
   };
+  // This useEffect will react to changes in the React Router location.pathname
   useEffect(() => {
+    // Recalculate active index whenever the route changes
+    const currentPath = location.pathname;
+    const newActiveIndex = items.findIndex((item) => item.href === currentPath);
+
+    // Only update if the new index is different from the current activeIndex
+    // This prevents unnecessary re-renders or animation re-triggers if the route hasn't genuinely changed active item
+    if (newActiveIndex !== -1 && newActiveIndex !== activeIndex) {
+      setActiveIndex(newActiveIndex);
+    } else if (newActiveIndex === -1 && currentPath === "/" && activeIndex !== 0) {
+      // Special case for root path if it's not explicitly in items or doesn't match exactly
+      setActiveIndex(0);
+    }
+
+    // --- Existing logic for positioning the active indicator ---
     if (!navRef.current || !containerRef.current) return;
-    const activeLi = navRef.current.querySelectorAll("li")[
-      activeIndex
-    ];
+    const activeLi = navRef.current.querySelectorAll("li")[activeIndex]; // Use activeIndex from state
     if (activeLi) {
       updateEffectPosition(activeLi);
       textRef.current?.classList.add("active");
     }
+
+    // Resize Observer for responsive positioning
     const resizeObserver = new ResizeObserver(() => {
-      const currentActiveLi = navRef.current?.querySelectorAll("li")[
-        activeIndex
-      ];
+      const currentActiveLi = navRef.current?.querySelectorAll("li")[activeIndex];
       if (currentActiveLi) {
         updateEffectPosition(currentActiveLi);
       }
     });
     resizeObserver.observe(containerRef.current);
+
     return () => resizeObserver.disconnect();
-  }, [activeIndex]);
+  }, [activeIndex, location.pathname, items]); // Dependencies: activeIndex for visual updates, location.pathname for route changes, items if they can change dynamically
 
   return (
     <>
@@ -152,6 +174,11 @@ const Navbar = ({
       <style>
         {`
           :root {
+            --color-1: #2A2A72; 
+            --color-2: #6A05A1; 
+            --color-3: #9966CC; 
+            --color-4: #ffffff; 
+
             --linear-ease: linear(0, 0.068, 0.19 2.7%, 0.804 8.1%, 1.037, 1.199 13.2%, 1.245, 1.27 15.8%, 1.274, 1.272 17.4%, 1.249 19.1%, 0.996 28%, 0.949, 0.928 33.3%, 0.926, 0.933 36.8%, 1.001 45.6%, 1.013, 1.019 50.8%, 1.018 54.4%, 1 63.1%, 0.995 68%, 1.001 85%, 1);
           }
           .effect {
@@ -288,14 +315,14 @@ const Navbar = ({
         `}
       </style>
       <div className="relative px-2" ref={containerRef}>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
-          <div className="flex items-center gap-2">
-            <img src="fcc-logo-white.png" alt="Logo" className="h-8 w-auto" />
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 py-4">
+            <Link to="/" className="cursor-pointer flex items-center gap-2">
+              <img src="fcc-logo-new.png" alt="Logo" className="h-8 w-auto" />
             <div className="text-center md:text-left leading-tight text-white text-sm">
-              <div className="font-semibold">Finance & Consulting Club</div>
-              <div>IIT Hyderabad</div>
+              <div className="font-semibold font-Label-Label-3-fontFamily">Finance & Consulting Club</div>
+              <div className="font-Body-3-fontFamily">IIT Hyderabad</div>
             </div>
-          </div>
+            </Link>
           <nav className="flex relative mt-2 md:mt-0">
             <ul
               ref={navRef}
@@ -306,18 +333,18 @@ const Navbar = ({
             >
               {items.map((item, index) => (
                 <li
-                  key={index}
+                  key={index} // Using index as key is generally okay for static lists, but a unique ID from `item` would be better if available.
                   className={`py-2 px-4 rounded-full relative cursor-pointer transition duration-300 ease text-white ${activeIndex === index ? "active" : ""}`}
-                  onClick={(e) => handleClick(e, index)}
+                  onClick={(e) => handleClick(e, index)} // This triggers your visual animations
                 >
-                  <a
-                    href={item.href}
-                    onKeyDown={(e) => handleKeyDown(e, index)}
-                    className="outline-none"
+                  <Link
+                    to={item.href}
+                    className="outline-none font-[Inter] font-Weights-Medium text-[14px] tracking-[0.2px] leading-100p" // Keep your outline-none class for focus styles
+                    aria-current={activeIndex === index ? "page" : undefined} // For accessibility
                   >
                     {item.label}
-                  </a>
-                </li>
+                  </Link>
+            </li>
               ))}
             </ul>
           </nav>

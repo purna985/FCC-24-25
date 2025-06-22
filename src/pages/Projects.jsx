@@ -3,23 +3,11 @@ import Particles from "../components/ParticleBackground"
 import Collaborate from "../components/Collaborate"
 import m_and_a from "../assets/images/projects/m_and_a.png"
 import Arima from "../assets/images/projects/Arima.png"
-
+import {SlideIn,RotateZoom} from "../components/ui/Animations"
 
 import {AnimatedToolTip} from "../components/AnimatedToolTip"
-const people_ = [
-  {
-    id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    image: "https://placehold.co/32x32/3498db/ffffff?text=JD",
-  },
-  {
-    id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
-    image: "https://placehold.co/32x32/2ecc71/ffffff?text=RJ",
-  },
-];
+import { Minimize } from "lucide-react"
+
 
 function Projects(){
   let topics1=['Python','Machine Learning','Finance'];
@@ -53,66 +41,80 @@ function Projects(){
           disableRotation={false}
           />
           </div>
-      
+        <SlideIn y_hidden={100} duration={1.2}>
+
         <div id="Hero Container" class="w-full max-w-[1006px] mx-auto px-4 py-8 flex flex-col items-center justify-center gap-8">
           <div id="Hero text container" class="w-full text-center gap-4">
             <div id="Hero title" class="font-Family-primary font-semibold text-5xl md:text-6xl leading-tight tracking-normal">
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4E56D3_25.48%] via-[#A3ACD9_60.58%] to-[#F3FFD8_100%]">
+              <span class="text-transparent text-[60px] font-Family-primary bg-clip-text bg-gradient-to-r from-[#4E56D3_25.48%] via-[#A3ACD9_60.58%] to-[#F3FFD8_100%]">
                 Real World Projects
               </span>
             </div>
-            <div id="Hero subtitle" class="font-[Body/3/fontFamily] font-normal text-lg md:text-xl leading-relaxed tracking-[Heading/H3/letterSpacing] text-center mt-4">
-              <span class="text-transparent bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Consulting and finance projects led by FCC members. Real Impact.</span>
+            <div id="Hero subtitle" class="font-Body-3-fontFamily font-normal text-lg md:text-xl leading-relaxed tracking-Heading-H3-letterSpacing text-center mt-4">
+              <span class="text-transparent font-Body-3-fontFamily text-Heading-H3-fontSize bg-clip-text bg-[var(--Website-Neutral-3,#BBBBBB)]">Consulting and finance projects led by FCC members. Real Impact.</span>
             </div>
           </div>
         </div>
+        </SlideIn>
     </div>
 
 <div
   id="desktop-3"
-  class="w-full min-h-screen py-10 sm:py-16 md:py-20 lg:py-24 flex flex-col items-center justify-start gap-10 sm:gap-12 md:gap-16 lg:gap-20 px-4 sm:px-6 md:px-8 lg:px-12"
+  class="w-full min-h-screen py-10 sm:py-16 md:py-20 lg:py-24 flex flex-col items-center justify-start gap-8 sm:gap-6 md:gap-8 lg:gap-10 px-4 sm:px-6 md:px-8 lg:px-12"
 >
+  <SlideIn x_hidden={200} y_hidden={100} duration={1.2}>
   <div
     id="project header container"
     class="w-full max-w-screen-lg flex flex-col items-center text-center gap-4 sm:gap-5 md:gap-6 lg:gap-8"
-  >
+    >
     <div
       id="Section title"
       class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
-    >
-      <span
-        class="bg-gradient-to-r from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
-        >Our Projects</span
       >
+      <span
+        class="bg-gradient-to-r text-Title-Title-2-fontSize from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
+        >Our Projects</span>
     </div>
     <div
       id="Section subtitle"
       class="mt-4 text-center font-normal text-base sm:text-lg md:text-xl leading-relaxed"
-    >
-      <span class="text-[var(--Website-Neutral-3,#BBBBBB)] bg-clip-text text-transparent"
-        >Student-led initiatives solving real-world problems in finance and
-        consulting.</span
       >
+      <span class="text-[var(--Website-Neutral-3,#BBBBBB)] font-Family-secondary bg-clip-text "
+        >Student-led initiatives solving real-world problems in finance and
+        consulting.</span>
     </div>
   </div>
+        </SlideIn>
+        {console.log(window.innerWidth)}
+    <SlideIn x_hidden={typeof window!==undefined?Math.min(500,window.innerWidth*0.5):0} y_hidden={0} duration={1.2}>
+
     <ProjectCard Title="Forecast-Driven Trading" Desc="A data-driven trading strategy leveraging ARIMA and Prophet to forecast stock prices and enhance investment decisions through statistical analysis."
      Topics={topics1} Image={Arima} imageOnLeft={false} people={[{
-      id: 1,
-      name: "Sreeteja",
-      designation: "Student",
-      image: "https://placehold.co/32x32/3498db/ffffff?text=ST",
-    },]}/>
+       id: 1,
+       name: "Sreeteja",
+       designation: "Student",
+       image: "https://placehold.co/32x32/3498db/ffffff?text=ST",
+       linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
+      },]}/>
+      </SlideIn>
+    <SlideIn x_hidden={typeof window!==undefined?-1*Math.min(500,window.innerWidth*0.5):0} y_hidden={0} duration={1.2}>
+
     <ProjectCard Title="M&A Case Study" Desc="An analytical study of M&A deals in India, assessing value creation for acquirers and targets through valuation, financial, and event analysis."
      Topics={topics2} Image={m_and_a} imageOnLeft={true} people={[{
-      id: 1,
-      name: "Tejas Mundada",
-      designation: "Student",
-      image: "https://placehold.co/32x32/3498db/ffffff?text=TM",
-    },]}/>
+       id: 1,
+       name: "Tejas Mundada",
+       designation: "Student",
+       image: "https://placehold.co/32x32/3498db/ffffff?text=TM",
+       linkedIn:"https://www.linkedin.com/in/tejas-mundada-86329536b"
+      },]}/>
+      </SlideIn>
     </div>
     
     <div>
-      <Collaborate></Collaborate>
+      <RotateZoom threshold={0.7}>
+        <Collaborate></Collaborate>
+      </RotateZoom>
+      
     </div>
   </div>
   )
