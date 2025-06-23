@@ -165,7 +165,9 @@ const HomeCarousel = () => {
   );
 
   return (
-    <div className="flex items-center justify-center py-0 px-4 sm:px-6 lg:px-8 font-inter">
+    <div className="flex h-[80vh] md:h-auto flex-col w-full justify-center items-center md:py-[5%] z-20">
+
+    <div className="flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8 font-inter">
       <div className="flex flex-col relative w-full max-w-7xl mx-auto overflow-hidden">
         {/* Main carousel track container */}
         <div
@@ -173,7 +175,7 @@ const HomeCarousel = () => {
           class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
           >
           <span
-            class="bg-gradient-to-r text-Title-Title-2-fontSize text-3xl mb-[2%] from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
+            class="bg-gradient-to-r text-Title-Title-2-fontSize text-3xl from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
             >Glimpses of Excellence</span>
         </div>
         <div
@@ -185,8 +187,6 @@ const HomeCarousel = () => {
         </div>
         <div
           ref={carouselTrackRef}
-          // `flex` for horizontal layout, `gap-x-6` for spacing between items.
-          // `transition-transform duration-500 ease-in-out` for smooth sliding animation.
           className="flex gap-x-6 transition-transform duration-500 ease-in-out"
           // Inline style for dynamic `translateX` based on `currentIndex` and `itemWidth`.
           style={{ transform: `translateX(-${currentIndex * itemWidth}px)` }}
@@ -204,6 +204,11 @@ const HomeCarousel = () => {
           ))}
         </div>
       </div>
+    </div>
+        <button className="flex items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
+          View All Events
+        <span className="text-[#1F2E01]">→</span>
+        </button>
     </div>
   );
 };

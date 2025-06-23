@@ -1,9 +1,6 @@
 // Components imports
-import HomeNewsletter from "../components/home/HomeNewsletter";
-import HomeInsta from "../components/home/HomeInsta";
-import HomeAbout from "../components/home/HomeCarousel";
+import HomeArticles from "../components/home/HomeArticles"
 import HomeLanding from "../components/home/HomeLanding";
-import HorizonCard from "../components/HorizonCard";
 import HomeProjects from "../components/home/HomeProjects";
 import HomeCarousel from "../components/home/HomeCarousel"
 
@@ -24,7 +21,7 @@ function Home() {
 
       {/* Insta embed */}
       <hr className="mb-10 w-full opacity-10 mx-auto " />
-      <HomeInsta />
+      <HomeArticles />
 
     </div>
   );

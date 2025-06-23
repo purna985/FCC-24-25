@@ -49,6 +49,7 @@ const HomeProjects = () => {
        image: "https://placehold.co/32x32/3498db/ffffff?text=TM",
        linkedIn:"https://www.linkedin.com/in/tejas-mundada-86329536b"
       },]}/>
+      
 </div>
 
   )
