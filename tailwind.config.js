@@ -79,6 +79,7 @@ export default {
 				'blur-250': '250px'
 			},
 			fontFamily: {
+				title: ['Schibsted Grotesk', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 				roboto: ['Roboto', 'sans-serif'],
 				rosario: ['Rosario', 'sans-serif'],

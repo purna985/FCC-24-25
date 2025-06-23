@@ -4,6 +4,7 @@ import HomeCarousel from "../components/event-cards/HomeCarousel";
 import HomeInsta from "../components/home/HomeInsta";
 import HomeAbout from "../components/home/HomeAbout";
 import HomeLanding from "../components/home/HomeLanding";
+import HorizonCard from "../components/HorizonCard";
 
 function Home() {
   return (
@@ -11,7 +12,6 @@ function Home() {
 
       {/* Landing Title and Horizon Card Section */}
       <HomeLanding />
-        
       {/* Upcoming Events Carousel */}
       <hr className="mb-10 w-full opacity-10 mx-auto " />
       <HomeAbout />
