@@ -5,7 +5,7 @@ const ArticleCardVertical = ({ article }) => {
     const people = article.people || []; 
 
   return (
-    <div className="bg-[#1B1A1A] text-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
+    <div className="bg-[#1B1A1A] font-schibsted text-[#EBEBEB] rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto">
       {/* Article Image Section */}
       <div className="relative">
         <img
@@ -26,7 +26,7 @@ const ArticleCardVertical = ({ article }) => {
       {/* Article Content Section */}
       <div className="p-4">
         {/* Tags and Date */}
-        <div className="flex items-center justify-between text-sm text-gray-400 mb-2">
+        <div className="flex items-center justify-between text-sm font-schibsted text-[#EBEBEB] mb-2">
           <div className="flex space-x-2">
             {article.tags.map((tag, index) => (
               <span key={index} className="bg-blue-800 px-2 py-0.5 rounded-full text-base font-medium">
@@ -55,10 +55,10 @@ const ArticleCardVertical = ({ article }) => {
         </div>
 
         {/* Article Title */}
-        <h3 className="text-xl font-title font-semibold text-gray-100 mb-2">{article.title}</h3>
+        <h3 className="text-xl font-title font-semibold font-schibsted text-[#EBEBEB] mb-2">{article.title}</h3>
 
         {/* Article Description */}
-        <p className="text-gray-300 text-sm mb-4 line-clamp-3">{article.description}</p>
+        <p className="font-schibsted text-[#EBEBEB] text-sm mb-4 line-clamp-3">{article.description}</p>
 
         {/* Author Information */}
         <div className="flex items-center space-x-3">
@@ -68,7 +68,7 @@ const ArticleCardVertical = ({ article }) => {
         {/* Read More Link */}
         <a
           href="#"
-          className="inline-flex items-center gap-2 text-[#CDFE64] hover:text-green-400 font-semibold transition-colors duration-200"
+          className="inline-flex items-center gap-2 font-schibsted text-[#CDFE64] hover:text-green-400 font-semibold transition-colors duration-200 py-4"
         >
           Read More 
           {/* Right Arrow Icon */}

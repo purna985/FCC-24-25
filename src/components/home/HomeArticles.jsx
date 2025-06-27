@@ -11,19 +11,13 @@ const article1 = {
           id: 1,
           name: "John Doe",
           designation: "Student",
-          image: "https://placehold.co/32x32/3498db/ffffff?text=JD",
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQehxjnm80tSeH-wmTrUhlfnxRcvozMT-S7e7maEyPVHNFRNUHxZFW_Vh9f5c4_9ExnQtM&usqp=CAU",
           linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
           },{
           id: 2,
           name: "Singh",
           designation: "Student",
-          image: "https://placehold.co/32x32/3498db/ffffff?text=S",
-          linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
-          },{
-          id: 3,
-          name: "Klean",
-          designation: "Student",
-          image: "https://placehold.co/32x32/3498db/ffffff?text=K",
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCztyHUUFCyz7WZZcppjMp79QJLxzXik02unhfr4GuFd1hW31uQnvjV19CtkHB0D1f6sw&usqp=CAU",
           linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
           },]
   };
@@ -39,19 +33,13 @@ const article2 = {
           id: 1,
           name: "John Doe",
           designation: "Student",
-          image: "https://placehold.co/32x32/3498db/ffffff?text=JD",
+          image: "https://www.shutterstock.com/image-photo/confident-smiling-middle-aged-business-600nw-2451544833.jpg",
           linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
           },{
           id: 2,
           name: "Singh",
           designation: "Student",
-          image: "https://placehold.co/32x32/3498db/ffffff?text=S",
-          linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
-          },{
-          id: 3,
-          name: "Klean",
-          designation: "Student",
-          image: "https://placehold.co/32x32/3498db/ffffff?text=K",
+          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMaljahFqlmPrJsv663xiZyxcc20lQ6O7uA&s",
           linkedIn:"https://www.linkedin.com/in/guddeti-sreeteja"
           },]
   };
@@ -62,17 +50,17 @@ const HomeArticles = () => {
 
       <div
           id="Section title"
-          class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
+          class="text-center font-schibsted text-[#EBEBEB] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
           >
           <span
-            class="bg-gradient-to-r text-Title-Title-2-fontSize text-3xl mb-[2%] from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
+            class="bg-gradient-to-r font-schibsted text-[#EBEBEB] text-5xl mb-[2%] from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
             >Latest Articles</span>
         </div>
         <div
           id="Section subtitle"
           class="mt-4 text-center font-normal text-base sm:text-lg mb-[3%] md:text-2xl leading-relaxed max-w-3xl mx-auto"
           >
-          <span class="text-white font-Family-secondary "
+          <span class="font-schibsted text-[#EBEBEB] "
             >Lorem ipsum duis pellentesque amet ut imperdiet lorem et commodo a nulla diam.</span>
         </div>
         <div className="flex h-[80vh] md:h-auto mb-[4%] md:flex-row flex-col w-full justify-center items-center md:py-[5%] z-20">

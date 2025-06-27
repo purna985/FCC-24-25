@@ -21,14 +21,14 @@ const HomeProjects = () => {
           class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
           >
           <span
-            class="bg-gradient-to-r text-Title-Title-2-fontSize text-3xl from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
+            class="bg-gradient-to-r font-schibsted text-[#EBEBEB] text-5xl from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
             >Featured Projects</span>
         </div>
         <div
           id="Section subtitle"
-          class="mt-4 text-center font-normal text-base sm:text-lg md:text-2xl leading-relaxed"
+          class="mt-4 text-center font-schibsted text-[#EBEBEB] text-base sm:text-lg md:text-2xl leading-relaxed"
           >
-          <span class="text-[var(--Website-Neutral-3,#BBBBBB)] font-Family-secondary bg-clip-text "
+          <span class="text-[var(--Website-Neutral-3,#BBBBBB)] font-schibsted text-[#EBEBEB] bg-clip-text "
             >Student-led initiatives solving real-world problems in finance and
             consulting.</span>
         </div>

@@ -120,7 +120,7 @@ const HomeCarousel = () => {
   const CarouselCard = ({ item, innerRef }) => (
     <div
       ref={innerRef} // Attach this ref only to the first item for width measurement.
-      className="flex-shrink-0 w-96 bg-gray-800 rounded-xl shadow-lg p-1 border border-gray-700 font-inter"
+      className="flex-shrink-0 w-96 bg-gray-800 rounded-xl shadow-lg p-1 border border-gray-700 font-schibsted"
     >
       {/* Image section */}
       <div className="relative rounded-lg overflow-hidden h-48 mb-4">
@@ -132,7 +132,7 @@ const HomeCarousel = () => {
           onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x400/400/fff?text=Image+Error'; }}
         />
         {/* Date tag overlay */}
-        <div className="absolute top-3 right-3 bg-green-600 text-white text-xs px-2 py-1 rounded-full flex items-center shadow-md">
+        <div className="absolute top-3 right-3 bg-green-600 font-schibsted text-[#EBEBEB] text-xs px-2 py-1 rounded-full flex items-center shadow-md">
           {/* Calendar icon (SVG) */}
           <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -141,19 +141,19 @@ const HomeCarousel = () => {
         </div>
       </div>
       {/* Content section */}
-      <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+      <h3 className="text-xl font-semibold font-schibsted text-[#EBEBEB] mb-2 px-1">{item.title}</h3>
       {/* `line-clamp-2` truncates description to 2 lines for consistent card height */}
-      <p className="text-gray-400 text-sm mb-4 line-clamp-2">{item.description}</p>
+      <p className="font-schibsted text-[#EBEBEB] text-sm mb-4 line-clamp-2 px-1">{item.description}</p>
       {/* Buttons section */}
       <div className="flex flex-wrap gap-2 justify-start">
-        <button className="flex items-center px-4 py-2 bg-[#121649] text-white text-sm rounded-full shadow-md hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+        <button className="flex items-center px-4 py-2 bg-[#121649] font-schibsted text-[#EBEBEB] text-sm rounded-full shadow-md hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
           {/* Attendees icon (SVG) */}
           <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
           </svg>
           {item.attendees}
         </button>
-        <button className="flex items-center px-4 py-2 bg-[#121649] text-white text-sm rounded-full shadow-md hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+        <button className="flex items-center px-4 py-2 bg-[#121649] font-schibsted text-[#EBEBEB] text-sm rounded-full shadow-md hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
           {/* Location icon (SVG) */}
           <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 100-4 2 2 000 4z" clipRule="evenodd" />
@@ -175,7 +175,7 @@ const HomeCarousel = () => {
           class="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
           >
           <span
-            class="bg-gradient-to-r text-Title-Title-2-fontSize text-3xl from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
+            class="bg-gradient-to-r text-schibsted text-5xl from-[#4E56D3] via-[#A3ACD9] to-[#F3FFD8] bg-clip-text text-transparent"
             >Glimpses of Excellence</span>
         </div>
         <div
@@ -205,7 +205,7 @@ const HomeCarousel = () => {
         </div>
       </div>
     </div>
-        <button className="flex items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
+        <button className="flex font-schibsted items-center py-10 gap-2 bg-[#CDFE64] hover:bg-blue-500 text-[#1F2E01] font-semibold font-roboto text-Body-2-fontSize px-6 py-3 rounded-md transition duration-300">
           View All Events
         <span className="text-[#1F2E01]">→</span>
         </button>

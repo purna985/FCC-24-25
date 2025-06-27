@@ -15,11 +15,11 @@ function ProjectCard(props) {
                 </div>
 
                 {/* Content Section */}
-                <div className="w-full md:w-1/2 lg:w-[520px] rounded-[10px] p-5 border border-[#292929] bg-[#1B1A1A]">
+                <div className="w-full md:w-1/2 lg:w-[520px] rounded-[10px] p-5 border border-[#292929] bg-[#1B1A1A] font-schibsted text-[#EBEBEB]">
                     <div className="flex flex-col gap-4">
                         
                         {/* Title - Font size increased */}
-                        <p id="Title" className="text-[#EBEBEB] font-Heading-H3-fontFamily font-Weights-Medium text-2xl leading-tight tracking-normal"> 
+                        <p id="Title" className="font-schibsted text-[#EBEBEB] font-Weights-Medium text-2xl leading-tight tracking-normal"> 
                             {props.Title}
                         </p>
 
@@ -27,7 +27,7 @@ function ProjectCard(props) {
                         <div id="Topics" className="flex flex-wrap gap-x-4 gap-y-2">
                             {props.Topics.map((item, index) => (
                                 <div key={index} className="rounded-[10px] border border-[#4E56D3] bg-[#121649] px-3 py-1.5 flex justify-center items-center">
-                                    <p className="text-[#F3FFD8] font-Label-Label-3-fontFamily font-Weights-Medium text-sm leading-normal tracking-normal whitespace-nowrap">
+                                    <p className="font-schibsted text-[#EBEBEB] font-Weights-Medium text-sm leading-normal tracking-normal whitespace-nowrap">
                                         {item}
                                     </p>
                                 </div>
