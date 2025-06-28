@@ -109,13 +109,17 @@ export default {
 				'vw-10': '10vw',
 				'vw-14': '12vw',
 				'Heading-H3-fontSize':['24px',{lineHeight:'28px'}],
+				'Heading-H4-fontSize':['20px',{lineHeight:'24px'}],
 				'Title-Title-2-fontSize':['40px',{lineHeight:'48px'}],
 				'Label-Label-3-fontSize':['12px',{lineHeight:'16px'}],
 				'Label-Label-2-fontSize':['14PX',{lineHeight:'20PX'}],
-				'Label-Label-1-fontSize':['16PX',{lineHeight:'22PX'}]
+				'Label-Label-1-fontSize':['16PX',{lineHeight:'22PX'}],
+				'Body-2-fontSize':['18px',{lineHeight:'26px'}],
+				'Body-1-fontSize':['20px',{lineHeight:'26px'}]
 			},
 			letterSpacing:{
 				'Heading-H3-letterSpacing':'-0.24px',
+				'Heading-H4-letterSpacing':'-0.2px',
 				'Title-Title-2-letterSpacing':'-0.64px',
 				'Label-Label-3-letterSpacing':'0px',
 				'Label-Label-2-letterSpacing':'0px',
