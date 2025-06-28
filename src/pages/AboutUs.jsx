@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { teamsData } from "@/assets/data/team/teamData";
 import ChromaGrid from "../components/team/ChromaGrid";
-import { Timeline } from "../components;/TimeLine/Timeline";
+import { Timeline } from "../components/TimeLine/Timeline";
 import timelineData from "../assets/data/timelineData/timelineData";
 
 
