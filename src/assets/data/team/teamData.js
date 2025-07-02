@@ -1,513 +1,741 @@
 // Heads Images
-import Aryan from "@/assets/team/1.jpeg";
-import Omkar from "@/assets/team/2.jpg";
-import PriteshSingh from "@/assets/team/consulting/Pritesh_Singh.jpeg";
-import Samuel from "@/assets/team/finance/1.jpg";
-import Snehil from "@/assets/team/multimedia/1.jpg";
-import Nishant from "@/assets/team/operations/1.jpg";
-import Anand from "@/assets/team/web/1.jpeg";
-import Radhika from "@/assets/team/design/Radhika_Rajesh_Bondre.jpg";
-import Arin from "@/assets/team/CP_and_growth/1.jpg";
-import Tarun from "@/assets/team/pr/tarun.jpg";
-import arsh from "@/assets/team/pr/arsh.jpg";
+import ShubhamNare from "@/assets/team/01.jpg";
+import SidharthaShatapathy from "@/assets/team/02.jpg";
+import ParthDawar from "@/assets/team/web/01.jpg";
+import AdityaAmodkar from "@/assets/team/consulting/01.jpg";
+import OjasMadghe from "@/assets/team/ideation/01.jpg";
+import AbhignyaGogula from "@/assets/team/pro/01.jpg";
+import AnanyaDutpal from "@/assets/team/cpg/01.jpg";
+import AdilAnwar from "@/assets/team/multimedia/01.jpg";
+import YogeshKumar from "@/assets/team/operations/01.jpg";
+import BhumiBagdiya from "@/assets/team/design/01.jpg";
 
 // Finance team
-import Garvit from "@/assets/team/finance/2.jpg";
-import Ankita from "@/assets/team/finance/3.jpg";
-import Disha from "@/assets/team/finance/4.jpg";
-import Soham from "@/assets/team/finance/5.jpg";
-import Faheem from "@/assets/team/finance/6.jpg";
-import Shravan from "@/assets/team/finance/7.jpeg";
-import Parth from "@/assets/team/finance/8.jpg";
+import TejasMundala from "@/assets/team/finance/02.jpg";
+import AryanMehta from "@/assets/team/finance/03.jpg";
+import TanishVerma from "@/assets/team/finance/04.jpg";
+import ArnavMaloo from "@/assets/team/finance/05.jpg";
+import GuddetiSreeteja from "@/assets/team/finance/06.jpg";
+import AtharvBang from "@/assets/team/finance/07.jpg";
+import VasisthaKrishna from "@/assets/team/finance/08.jpg";
+import AdityaNarayan from "@/assets/team/finance/09.jpg";
+import AkaankshMAdarsh from "@/assets/team/finance/10.jpg";
+import AtharvKochar from "@/assets/team/finance/11.jpeg";
 
 // Consulting Team
+import AbhinavRaj from "@/assets/team/consulting/03.jpg";
+import NimishWadhwa from "@/assets/team/consulting/02.jpg";
+import KumudJalori from "@/assets/team/consulting/04.jpg";
+import Aaron from "@/assets/team/consulting/05.jpg";
+import PrabhavPradeep from "@/assets/team/consulting/06.jpg";
+import NavyaPopuri from "@/assets/team/consulting/07.jpg";
+import DhawalSaini from "@/assets/team/consulting/08.jpg";
+import BhaskarPareek from "@/assets/team/consulting/09.jpg";
 
-import Aditya from "@/assets/team/consulting/1.jpg";
-import Ayaan from "@/assets/team/consulting/2.jpeg";
-import Gaurang from "@/assets/team/consulting/4.jpg";
-import Hiba from "@/assets/team/consulting/5.jpg";
-import Harsha from "@/assets/team/consulting/6.jpeg";
-import Devesh from "@/assets/team/consulting/9.jpg";
-import Sidhartha from "@/assets/team/consulting/8.jpeg";
+// Ideation Team
+import Devananda from "@/assets/team/ideation/02.jpg";
+import ArpitMakheja from "@/assets/team/ideation/03.jpg";
+import SrijithSai from "@/assets/team/ideation/04.jpg";
+import SrihithSai from "@/assets/team/ideation/05.jpg";
+import AdheeshJoshi from "@/assets/team/ideation/06.jpg";
+import Vivaswan from "@/assets/team/ideation/07.jpg";
+import HimanshuLonare from "@/assets/team/ideation/08.jpg";
 
-// Multimedia team
-import Adil_multi from "@/assets/team/multimedia/5.jpg";
-import Praful_multi from "@/assets/team/multimedia/3.jpg";
-import Vedant_multi from "@/assets/team/multimedia/4.jpg";
-
-// Ops team
-import Harshita from "@/assets/team/operations/2.jpg";
-import Manoj from "@/assets/team/operations/8.jpg";
-import Shubham from "@/assets/team/operations/4.jpg";
-import Krishna from "@/assets/team/operations/5.jpg";
-import Yogesh from "@/assets/team/operations/6.jpg";
-import Naitik from "@/assets/team/operations/7.jpg";
-import Harshit from "@/assets/team/operations/9.jpg";
-
-// Pr team
-import Aashi from "@/assets/team/pr/2.jpg";
-import Atharv from "@/assets/team/pr/3.jpg";
-import Abhignya from "@/assets/team/pr/10.jpg";
-import Pranay from "@/assets/team/pr/5.jpg";
-import Aakarsh from "@/assets/team/pr/6.jpg";
-import Ojas from "@/assets/team/pr/7.png";
-import Rohan from "@/assets/team/pr/8.jpg";
-
-// Web Team
-import Vishank from "@/assets/team/web/5.jpg";
-import Rithvik from "@/assets/team/web/4.png";
-import Mahesh from "@/assets/team/web/2.jpg";
-import dheeraj from "@/assets/team/web/6.jpg";
+// PRO team
+import Merwyn from "@/assets/team/pro/02.jpg";
+import SreeDhanvi from "@/assets/team/pro/03.jpg";
+import AdhvaithVemula from "@/assets/team/pro/04.jpg";
+import GoureshDusa from "@/assets/team/pro/05.jpg";
+import RivaMohta from "@/assets/team/pro/06.jpg";
+import KrishnaBahetra from "@/assets/team/pro/07.jpg";
+import RitamBasu from "@/assets/team/pro/08.jpg";
+import SaraanganB from "@/assets/team/pro/09.jpg";
+import RishikaShreyaFadi from "@/assets/team/pro/10.jpg";
 
 // CPG Team
-import Ananya from "@/assets/team/CP_and_growth/2.jpg";
-import Dheeraj from "@/assets/team/CP_and_growth/3.jpg";
-import Meghana from "@/assets/team/CP_and_growth/6.jpg";
-import Jayant from "@/assets/team/CP_and_growth/7.jpg";
-import Sai from "@/assets/team/CP_and_growth/8.jpg";
-import Suniras from "@/assets/team/CP_and_growth/9.png";
+import KarthikayChandana from "@/assets/team/cpg/02.jpg";
+import AsitPatel from "@/assets/team/cpg/03.jpg";
+import Naman from "@/assets/team/cpg/04.jpg";
+import PranjanElango from "@/assets/team/cpg/05.jpg";
+import Laasya from "@/assets/team/cpg/06.jpg";
+import AilaVaishnavi from "@/assets/team/cpg/07.jpg";
+import Shanjai from "@/assets/team/cpg/08.jpg";
+import RohithS from "@/assets/team/cpg/09.jpg";
+import SuryaTeja from "@/assets/team/cpg/10.jpg";
+
+// Multimedia team
+import AnveshChandra from "@/assets/team/multimedia/02.jpg";
+import SubhasisBasa from "@/assets/team/multimedia/03.jpg";
+import AnushikPS from "@/assets/team/multimedia/04.jpg";
+import AbhinabaDas from "@/assets/team/multimedia/05.jpg";
+import AnaswarJ from "@/assets/team/multimedia/06.jpg";
+import SubhadeepMondal from "@/assets/team/multimedia/07.jpg";
+
+
+// Ops team
+import Viraj from "@/assets/team/operations/02.jpg";
+import AkshayKadam from "@/assets/team/operations/03.jpg";
+import PrabhatAnand from "@/assets/team/operations/04.jpg";
+import VaradGadekar from "@/assets/team/operations/05.jpg";
+import Nisha from "@/assets/team/operations/06.jpg";
+import Srisanth from "@/assets/team/operations/07.jpg";
+import AnshulKumar from "@/assets/team/operations/08.jpg";
+import PSiddartha from "@/assets/team/operations/09.jpg";
+import TanmayPawar from "@/assets/team/operations/10.jpg";
 
 // Design Team
-import Bhumi from "@/assets/team/design/9.jpeg";
-import Adhyant from "@/assets/team/design/4.jpg";
-import Azeem from "@/assets/team/design/5.jpeg";
-import Vikas from "@/assets/team/design/6.jpg";
-import Deepak from "@/assets/team/design/7.jpg";
-import Varad from "@/assets/team/design/8.jpg";
+import Tejaswi from "@/assets/team/design/02.jpg";
+import Lalit from "@/assets/team/design/03.jpg";
+import Mihika from "@/assets/team/design/04.jpg";
+import Snigdha from "@/assets/team/design/05.jpg";
+import Namitha from "@/assets/team/design/06.jpg";
+import KSaiYashaswini from "@/assets/team/design/07.jpg";
+import SujeetYadav from "@/assets/team/design/08.jpg";
+import NidhiBattini from "@/assets/team/design/09.jpg";
+import DhruvParate from "@/assets/team/design/10.jpg";
+
+// Web Team
+import Purna from "@/assets/team/web/02.jpg";
+import PushkarRaj from "@/assets/team/web/03.jpg";
+import RajatHegde from "@/assets/team/web/04.jpg";
+import AkshatBanzal from "@/assets/team/web/05.jpg";
+import SyedImamAli from "@/assets/team/web/06.jpg";
 
 export const teamsData = [
   {
-    teamName: "Overall Heads",
+    teamName: "Heads",
     teamHead: [
       {
-        name: "Aryan Bubna",
-        image: Aryan,
+        name: "Shubham Nare",
+        image: ShubhamNare,
         por: "Overall Head",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/shubham-nare-2b2a79221/",
       },
       {
-        name: "Omkar Nilkanth",
-        image: Omkar,
+        name: "Sidhartha Shatapathy",
+        image: SidharthaShatapathy,
         por: "Overall Head",
-        linkedin: "http://www.linkedin.com/in/omkar-nilkanth-933186202",
+        linkedin: "https://www.linkedin.com/in/sidhartha-shankar-shatapathy-616b292a2/",
+      },
+      {
+        name: "Parth Dawar",
+        image: ParthDawar,
+        por: "Finance & Web Head",
+        linkedin: "https://www.linkedin.com/in/parth-dawar",
+      },
+      {
+        name: "Aditya Amodkar",
+        image: AdityaAmodkar,
+        por: "Consulting Head",
+        linkedin: "https://www.linkedin.com/in/aditya-amodkar",
+      },
+      {
+        name: "Ojas Madghe",
+        image: OjasMadghe,
+        por: "Ideation Head",
+        linkedin: "https://www.linkedin.com/in/ojasmadghe/",
+      },
+      {
+        name: "Abhignya Gogula",
+        image: AbhignyaGogula,
+        por: "PRO Head",
+        linkedin: "https://www.linkedin.com/in/abhignya-gogula-a0a831291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Ananya Dutpal",
+        image: AnanyaDutpal,
+        por: "CPG Head",
+        linkedin: "https://www.linkedin.com/in/dutpal-ananya-750b75291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Adil Anwar Sadath",
+        image: AdilAnwar,
+        por: "Multimedia Head",
+        linkedin:
+          "https://www.linkedin.com/in/adil-anwar-sadath-21778a162",
+      },
+      {
+        name: "Yogesh Kumar",
+        image: YogeshKumar,
+        por: "Operations Head",
+        linkedin: "https://www.linkedin.com/in/yogesh-kumar-977579329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Bhumi Bagdiya",
+        image: BhumiBagdiya,
+        por: "Design Head",
+        linkedin:
+          "http://www.linkedin.com/in/bhumi-bagdiya",
       },
     ],
     teamMembers: [],
   },
+
+  // ------------------------------------Finance-------------------------------------------------------
   {
     teamName: "Finance",
     teamHead: [
       {
-        name: "Samuel",
-        image: Samuel,
-        por: "Finance Head",
-        linkedin: "https://www.linkedin.com/in/samueljaylak?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        name: "Parth Dawar",
+        image: ParthDawar,
+        por: "Finance & Web Head",
+        linkedin: "https://www.linkedin.com/in/parth-dawar",
       },
     ],
     teamMembers: [
       {
-        name: "Ankita",
-        image: Ankita,
+        name: "Tejas Mundala",
+        image: TejasMundala,
         por: "Finance Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/ankita-sri-s-p-0348b0314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin: "https://www.linkedin.com/in/tejas-mundada-86329536b",
       },
       {
-        name: "Faheem",
-        image: Faheem,
+        name: "Aryan Mehta",
+        image: AryanMehta,
         por: "Finance Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/faheem-arif-414179287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-
-      {
-        name: "Parth",
-        image: Parth,
-        por: "Finance Coordinator",
-        linkedin: "https://www.linkedin.com/in/parth-dawar/",
+        linkedin: "https://www.linkedin.com/in/aryan-mehta-08651b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
-        name: "Shravan",
-        image: Shravan,
+        name: "Tanish Verma",
+        image: TanishVerma,
         por: "Finance Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/shravan-s-140a84310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin: "https://www.linkedin.com/in/tanish-verma-363193327/",
       },
       {
-        name: "Disha",
-        image: Disha,
+        name: "Arnav Maloo",
+        image: ArnavMaloo,
         por: "Finance Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/disha-daga-7786ab25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin: "https://www.linkedin.com/in/arnav-maloo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
-        name: "Garvit",
-        image: Garvit,
+        name: "Guddeti Sreeteja",
+        image: GuddetiSreeteja,
+        por: "Finance Coordinator",
+        linkedin: "http://www.linkedin.com/in/guddeti-sreeteja",
+      },
+      {
+        name: "Atharv Bang",
+        image: AtharvBang,
+        por: "Finance Coordinator",
+        linkedin: "https://www.linkedin.com/in/atharv-bang-15b336242/",
+      },
+      {
+        name: "Vasistha Krishna",
+        image: VasisthaKrishna,
+        por: "Finance Coordinator",
+        linkedin: "https://www.linkedin.com/in/vasishta9999/",
+      },
+      {
+        name: "Aditya Narayan",
+        image: AdityaNarayan,
+        por: "Finance Coordinator",
+        linkedin: "https://www.linkedin.com/in/adityanarayan01/",
+      },
+      {
+        name: "Akaanksh M Adarsh",
+        image: AkaankshMAdarsh,
+        por: "Finance Coordinator",
+        linkedin: "http://linkedin.com/in/akaanksh/",
+      },
+      {
+        name: "Atharv Kochar",
+        image: AtharvKochar,
         por: "Finance Coordinator",
         linkedin: "",
       },
-      {
-        name: "Soham",
-        image: Soham,
-        por: "Finance Coordinator",
-        linkedin: "https://www.linkedin.com/in/soham-mapara-ab99a0281",
-      },
     ],
   },
+
+  // ----------------------------------Consulting--------------------------------------------------
   {
     teamName: "Consulting",
     teamHead: [
       {
-        name: "Pritesh Singh",
-        image: PriteshSingh,
+        name: "Aditya Amodkar",
+        image: AdityaAmodkar,
         por: "Consulting Head",
-        linkedin: "https://www.linkedin.com/in/priteshsingh0089",
-      },
-    ],
-    teamMembers: [
-      {
-        name: "Aditya",
-        image: Aditya,
-        por: "Consulting Coordinator",
         linkedin: "https://www.linkedin.com/in/aditya-amodkar",
       },
-      {
-        name: "Devesh Gautam",
-        image: Devesh,
-        por: "Consulting Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Gaurang",
-        image: Gaurang,
-        por: "Consulting Coordinator",
-        linkedin: "https://www.linkedin.com/in/gaurangj94",
-      },
-      {
-        name: "Hiba",
-        image: Hiba,
-        por: "Consulting Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/hiba-muhammed-2a040a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      },
-      {
-        name: "Ayaan",
-        image: Ayaan,
-        por: "Consulting Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Harsha",
-        image: Harsha,
-        por: "Consulting Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/harsha-vardhan-pulavarthi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      },
-      {
-        name: "Sidhartha",
-        image: Sidhartha,
-        por: "Consulting Coordinator",
-        linkedin:
-          "http://www.linkedin.com/in/sidhartha-shankar-shatapathy-616b292a2",
-      },
-    ],
-  },
-  {
-    teamName: "Corporate Partnerships & Growth",
-    teamHead: [
-      {
-        name: "Arin",
-        image: Arin,
-        por: "CPG Head",
-        linkedin: "https://www.linkedin.com/in/arin-kulkarni-232166257/",
-      },
     ],
     teamMembers: [
       {
-        name: "Ananya",
-        image: Ananya,
-        por: "CPG Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/dutpal-ananya-750b75291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Abhinav Raj",
+        image: AbhinavRaj,
+        por: "Consulting Coordinator",
+        linkedin: "https://www.linkedin.com/in/abhinav-raj-2a3618349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       },
       {
-        name: "Dheeraj",
-        image: Dheeraj,
-        por: "CPG Coordinator",
+        name: "Nimish Wadhwa",
+        image: NimishWadhwa,
+        por: "Consulting Coordinator",
+        linkedin: "https://www.linkedin.com/in/nimish-wadhwa-6568ba311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Kumud Jalori",
+        image: KumudJalori,
+        por: "Consulting Coordinator",
         linkedin: "",
       },
       {
-        name: "Meghana",
-        image: Meghana,
-        por: "CPG Coordinator",
-        linkedin: "https://www.linkedin.com/in/meghana-makkapati-4667902a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Aaron Advait Anish",
+        image: Aaron,
+        por: "Consulting Coordinator",
+        linkedin: "https://www.linkedin.com/in/aaron-advait-anish-7990951b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
-        name: "Jayant",
-        image: Jayant,
-        por: "CPG Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/chilukala-jayanth-kumar-reddy-98739b287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Prabhav Pradeep",
+        image: PrabhavPradeep,
+        por: "Consulting Coordinator",
+        linkedin: "http://www.linkedin.com/in/prabhav-pradeep",
       },
       {
-        name: "Sai",
-        image: Sai,
-        por: "CPG Coordinator",
-        linkedin: "https://www.linkedin.com/in/sai-charan-ajjarapu-2a2115288/",
+        name: "Navya Popuri",
+        image: NavyaPopuri,
+        por: "Consulting Coordinator",
+        linkedin: "https://www.linkedin.com/in/navya-popuri?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
       {
-        name: "Suniras",
-        image: Suniras,
-        por: "CPG Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/suniras-ram-rapelli-2795a528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        name: "Dhawal Saini",
+        image: DhawalSaini,
+        por: "Consulting Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Bhaskar Pareek",
+        image: BhaskarPareek,
+        por: "Consulting Coordinator",
+        linkedin: "",
       },
     ],
   },
+
+  // -----------------------------------------Ideation------------------------------------------------
   {
-    teamName: "Operations",
+    teamName: "Ideation",
     teamHead: [
       {
-        name: "Nishant",
-        image: Nishant,
-        por: "Operations Head",
-        linkedin: "https://www.linkedin.com/in/nishant-iith",
-      },
-    ],
-    teamMembers: [
-      {
-        name: "Yogesh",
-        image: Yogesh,
-        por: "Operations Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/yogesh-kumar-977579329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Shubham",
-        image: Shubham,
-        por: "Operations Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/shubham-nare-2b2a79221/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bqp%2FYtWtDQImK3oS7QJuGhw%3D%3D",
-      },
-      {
-        name: "Manoj",
-        image: Manoj,
-        por: "Operations Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Harshita",
-        image: Harshita,
-        por: "Operations Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Harshit",
-        image: Harshit,
-        por: "Operations Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Krishna",
-        image: Krishna,
-        por: "Operations Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/krishna-kaustubh-53837426a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Naitik",
-        image: Naitik,
-        por: "Operations Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/naitik-patel-612918309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-  },
-  {
-    teamName: "Public Relations & Outreach (PR)",
-    teamHead: [
-      {
-        name: "Arsh",
-        image: arsh,
-        por: "PR Head",
-        linkedin: "http://linkedin.com/in/arsh-arora",
-      },
-      {
-        name: "Tarun",
-        image: Tarun,
-        por: "PR Head",
-        linkedin:
-          "https://www.linkedin.com/in/jagarapu-surya-tarun-0145b6259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-    teamMembers: [
-      {
-        name: "Aashi",
-        image: Aashi,
-        por: "PR Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Atharv",
-        image: Atharv,
-        por: "PR Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/atharva-lohare-4a61292a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Abhignya",
-        image: Abhignya,
-        por: "PR Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/abhignya-gogula-a0a831291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Pranay",
-        image: Pranay,
-        por: "PR Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/pranay-reddy-ragi-162336306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Aakarsh",
-        image: Aakarsh,
-        por: "PR Coordinator",
-        linkedin: "http://www.linkedin.com/in/aakarsh-varshney-049077295",
-      },
-      {
-        name: "Ojas",
-        image: Ojas,
-        por: "PR Coordinator",
+        name: "Ojas Madghe",
+        image: OjasMadghe,
+        por: "Ideation Head",
         linkedin: "https://www.linkedin.com/in/ojasmadghe/",
       },
+    ],
+    teamMembers: [
       {
-        name: "Rohan",
-        image: Rohan,
+        name: "Devananda Ashokan",
+        image: Devananda,
+        por: "Ideation Coordinator",
+        linkedin: "https://www.linkedin.com/in/devananda-ashokan-08b5a5321",
+      },
+      {
+        name: "Arpit Makheja",
+        image: ArpitMakheja,
+        por: "Ideation Coordinator",
+        linkedin: "https://www.linkedin.com/in/arpit-makheja-23a888324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Srijith Sai Kurelli",
+        image: SrijithSai,
+        por: "Ideation Coordinator",
+        linkedin: "http://linkedin.com/in/srijith-sai-kurelli-a56a96321",
+      },
+      {
+        name: "Srihith Sai Kurelli",
+        image: SrihithSai,
+        por: "Ideation Coordinator",
+        linkedin: "http://linkedin.com/in/srihith-sai-kurelli-28ba93321",
+      },
+      {
+        name: "Adheesh Joshi",
+        image: AdheeshJoshi,
+        por: "Ideation Coordinator",
+        linkedin: "https://www.linkedin.com/in/adheeshj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        name: "Vivaswan Rai",
+        image: Vivaswan,
+        por: "Ideation Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Himanshu Lonare",
+        image: HimanshuLonare,
+        por: "Ideation Coordinator",
+        linkedin: "https://www.linkedin.com/in/himanshu-lonare-2bbb93332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    ],
+  },
+
+  // ----------------------------------PRO-------------------------------------------------
+  {
+    teamName: "Public Relations & Outreach (PRO)",
+    teamHead: [
+      {
+        name: "Abhignya Gogula",
+        image: AbhignyaGogula,
+        por: "PR Head",
+        linkedin: "https://www.linkedin.com/in/abhignya-gogula-a0a831291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    ],
+    teamMembers: [
+      {
+        name: "Merwyn",
+        image: Merwyn,
         por: "PR Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/rohan-holikatti-418892291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin: "https://www.linkedin.com/in/merwyn-kollabathula-240286321",
+      },
+      {
+        name: "Shreedhanvi Y",
+        image: SreeDhanvi,
+        por: "PR Coordinator",
+        linkedin: "https://www.linkedin.com/in/shreedhanvi-yadlapally-561647314/",
+      },
+      {
+        name: "Adhvaith Vemula",
+        image: AdhvaithVemula,
+        por: "PR Coordinator",
+        linkedin: "https://www.linkedin.com/in/adhvaith-vemula-5b8b68368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        name: "Gouresh Dusa",
+        image: GoureshDusa,
+        por: "PR Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Riva Mohta",
+        image: RivaMohta,
+        por: "PR Coordinator",
+        linkedin: "https://www.linkedin.com/in/riva-mohta-060451316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Krishna Bahetra",
+        image: KrishnaBahetra,
+        por: "PR Coordinator",
+        linkedin: "https://www.linkedin.com/in/krishna-bahetra-02432b314?trk=contact-info",
+      },
+      {
+        name: "Ritam Basu",
+        image: RitamBasu,
+        por: "PR Coordinator",
+        linkedin: "https://www.linkedin.com/in/ritam-basu-8a8345323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Saraangan B",
+        image: SaraanganB,
+        por: "PR Coordinator",
+        linkedin: "https://www.linkedin.com/in/saraangan-boobal-269966291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Rishika Shreya Fadi",
+        image: RishikaShreyaFadi,
+        por: "PR Coordinator",
+        linkedin: "",
       },
     ],
   },
+
+  // --------------------------------------CPG-----------------------------------------------------
   {
-    teamName: "Web",
+    teamName: "Corporate Partnerships & Growth (CPG)",
     teamHead: [
       {
-        name: "Anand",
-        image: Anand,
-        por: "Web Head",
-        linkedin: "https://www.linkedin.com/in/anand-kasyup-40216016b/",
+        name: "Ananya Dutpal",
+        image: AnanyaDutpal,
+        por: "CPG Head",
+        linkedin: "https://www.linkedin.com/in/dutpal-ananya-750b75291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     ],
     teamMembers: [
       {
-        name: "Mahesh",
-        image: Mahesh,
-        por: "Web Coordinator",
-        linkedin: "https://www.linkedin.com/in/ruppa-mahesh-292311278/",
+        name: "Surya Teja Uppala",
+        image: SuryaTeja,
+        por: "CPG Coordinator",
+        linkedin: "http://www.linkedin.com/in/suryatejauppala",
       },
       {
-        name: "Rithvik",
-        image: Rithvik,
-        por: "Web Coordinator",
-        linkedin: "https://www.linkedin.com/in/manne-rithvik-708iith/",
+        name: "Karthikay Chandana",
+        image: KarthikayChandana,
+        por: "CPG Coordinator",
+        linkedin: "http://linkedin.com/in/karthikay-chandana-b42224228",
       },
       {
-        name: "Dheeraj",
-        image: dheeraj,
-        por: "Web Coordinator",
-        linkedin: "https://www.linkedin.com/in/",
-      },
-      {
-        name: "Vishank",
-        image: Vishank,
-        por: "Web Coordinator",
+        name: "Asit Patel",
+        image: AsitPatel,
+        por: "CPG Coordinator",
         linkedin: "",
+      },
+      {
+        name: "Naman",
+        image: Naman,
+        por: "CPG Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Pranjan Elango",
+        image: PranjanElango,
+        por: "CPG Coordinator",
+        linkedin: "https://www.linkedin.com/in/prajan-elango-341974322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Laasya",
+        image: Laasya,
+        por: "CPG Coordinator",
+        linkedin: "https://www.linkedin.com/in/laasya-lakshmipuram-2a894632a/",
+      },
+      {
+        name: "Aila Vaishnavi",
+        image: AilaVaishnavi,
+        por: "CPG Coordinator",
+        linkedin: "https://www.linkedin.com/in/aila-vaishnavi-44958236b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Shanjai",
+        image: Shanjai,
+        por: "CPG Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Rohith S",
+        image: RohithS,
+        por: "CPG Coordinator",
+        linkedin: "https://www.linkedin.com/in/rohith-suresh-b57b03319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     ],
   },
-  {
-    teamName: "Design",
-    teamHead: [
-      {
-        name: "Radhika",
-        image: Radhika,
-        por: "Design Head",
-        linkedin:
-          "https://www.linkedin.com/in/radhikab11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-    teamMembers: [
-      {
-        name: "Bhumi",
-        image: Bhumi,
-        por: "Design Coordinator",
-        linkedin: "http://www.linkedin.com/in/bhumi-bagdiya",
-      },
-      {
-        name: "Adhyant",
-        image: Adhyant,
-        por: "Design Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Azeem",
-        image: Azeem,
-        por: "Design Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Vikas",
-        image: Vikas,
-        por: "Design Coordinator",
-        linkedin: "",
-      },
-      {
-        name: "Deepak",
-        image: Deepak,
-        por: "Design Coordinator",
-        linkedin: "https://www.linkedin.com/in/sai-deepak-sana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Varad",
-        image: Varad,
-        por: "Design Coordinator",
-        linkedin: "https://www.linkedin.com/in/varad-mallurwar-608624289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-  },
+
+  // -----------------------------------------Multimedia---------------------------------------------
   {
     teamName: "Multimedia",
     teamHead: [
       {
-        name: "Snehil Singh",
-        image: Snehil,
+        name: "Adil Anwar Sadath",
+        image: AdilAnwar,
         por: "Multimedia Head",
         linkedin:
-          "https://www.linkedin.com/in/snehil-singh-2b180726b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/adil-anwar-sadath-21778a162",
       },
     ],
     teamMembers: [
       {
-        name: "Adil",
-        image: Adil_multi,
+        name: "Anvesh Chandra",
+        image: AnveshChandra,
         por: "Multimedia Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/adil-anwar-sadath-21778a162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin: "https://www.linkedin.com/in/anveshchandra-bavikadi-97411636b/",
       },
       {
-        name: "Praful",
-        image: Praful_multi,
+        name: "Subhasis Basa",
+        image: SubhasisBasa,
         por: "Multimedia Coordinator",
-        linkedin:
-          "https://www.linkedin.com/in/praful-kesavadas-2338b42a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin: "http://www.linkedin.com/in/subhasisbasa",
       },
       {
-        name: "Vedant",
-        image: Vedant_multi,
+        name: "Anushik PS",
+        image: AnushikPS,
         por: "Multimedia Coordinator",
+        linkedin: "https://www.linkedin.com/in/anushik-ps-007127313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=andro",
+      },
+      {
+        name: "Abhinaba Das",
+        image: AbhinabaDas,
+        por: "Multimedia Coordinator",
+        linkedin: "https://www.linkedin.com/in/abhinaba--das",
+      },
+      {
+        name: "Anaswar J",
+        image: AnaswarJ,
+        por: "Multimedia Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Subhadeep Mondal",
+        image: SubhadeepMondal,
+        por: "Multimedia Coordinator",
+        linkedin: "",
+      },
+    ],
+  },
+
+  // --------------------------------------Operations-----------------------------------------
+  {
+    teamName: "Operations",
+    teamHead: [
+      {
+        name: "Yogesh Kumar",
+        image: YogeshKumar,
+        por: "Operations Head",
+        linkedin: "https://www.linkedin.com/in/yogesh-kumar-977579329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    ],
+    teamMembers: [
+      {
+        name: "Viraj Rajpure",
+        image: Viraj,
+        por: "Operations Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Akshay Kadam",
+        image: AkshayKadam,
+        por: "Operations Coordinator",
+        linkedin: "https://www.linkedin.com/in/akshay-kadam-3ab50431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Prabhat Anand",
+        image: PrabhatAnand,
+        por: "Operations Coordinator",
+        linkedin: "https://www.linkedin.com/in/prabhat-anand-76125a328?fromQR=1",
+      },
+      {
+        name: "Varad Gadekar",
+        image: VaradGadekar,
+        por: "Operations Coordinator",
+        linkedin: "https://www.linkedin.com/in/varad-gadekar-709452313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Nisha",
+        image: Nisha,
+        por: "Operations Coordinator",
+        linkedin: "https://www.linkedin.com/in/nisha-srinivas-12b608332",
+      },
+      {
+        name: "Srisanth",
+        image: Srisanth,
+        por: "Operations Coordinator",
+        linkedin: "http://linkedin.com/in/srisanth-bonigi-40845436a",
+      },
+      {
+        name: "Anshul Kumar",
+        image: AnshulKumar,
+        por: "Operations Coordinator",
+        linkedin: "https://www.linkedin.com/in/anshul-kumar-2b1420324",
+      },
+      {
+        name: "P Siddartha",
+        image: PSiddartha,
+        por: "Operations Coordinator",
+        linkedin: "https://www.linkedin.com/in/pole-siddartha-568779322/",
+      },
+      {
+        name: "Tanmay Pawar",
+        image: TanmayPawar,
+        por: "Operations Coordinator",
+        linkedin: "https://www.linkedin.com/in/tanmay-pawar-585b9631b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    ],
+  },
+
+  // ----------------------------------------------Design-------------------------------------------
+  {
+    teamName: "Design",
+    teamHead: [
+      {
+        name: "Bhumi Bagdiya",
+        image: BhumiBagdiya,
+        por: "Design Head",
         linkedin:
-          "https://www.linkedin.com/in/vedant-gupta-698b07165?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "http://www.linkedin.com/in/bhumi-bagdiya",
+      },
+    ],
+    teamMembers: [
+      {
+        name: "Tejaswi Thumma",
+        image: Tejaswi,
+        por: "Design Coordinator",
+        linkedin: "http://www.linkedin.com/in/tejaswi-thumma-979583348",
+      },
+      {
+        name: "Lalit Choudhary",
+        image: Lalit,
+        por: "Design Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Mihika Sahasrabuddhe",
+        image: Mihika,
+        por: "Design Coordinator",
+        linkedin: "https://www.linkedin.com/in/mihika-sahasrabuddhe-a44b70365",
+      },
+      {
+        name: "Snigdha Indupalli",
+        image: Snigdha,
+        por: "Design Coordinator",
+        linkedin: "https://www.linkedin.com/in/snigdha-indupalli-16391531b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Namitha Vuppala",
+        image: Namitha,
+        por: "Design Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "K Sai Yashaswini",
+        image: KSaiYashaswini,
+        por: "Design Coordinator",
+        linkedin: "https://www.linkedin.com/in/sai-yashaswini-kolla-b763b536b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Sujeet Yadav",
+        image: SujeetYadav,
+        por: "Design Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Nidhi Battini",
+        image: NidhiBattini,
+        por: "Design Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Dhruv Parate",
+        image: DhruvParate,
+        por: "Design Coordinator",
+        linkedin: "https://www.linkedin.com/in/dhruv-parate-941ab3258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    ],
+  },
+
+  // --------------------------------------------Web-----------------------------------------------
+  {
+    teamName: "Web",
+    teamHead: [
+      {
+        name: "Parth Dawar",
+        image: ParthDawar,
+        por: "Web & Finance Head",
+        linkedin: "https://www.linkedin.com/in/parth-dawar",
+      },
+    ],
+    teamMembers: [
+      {
+        name: "Purna",
+        image: Purna,
+        por: "Web Coordinator",
+        linkedin: "https://www.linkedin.com/in/purna-nanda-reddy-chinthapally-479025366/",
+      },
+      {
+        name: "Pushkar Raj Wadhawan",
+        image: PushkarRaj,
+        por: "Web Coordinator",
+        linkedin: "https://www.linkedin.com/in/pushkar-raj-wadhawan/",
+      },
+      {
+        name: "Rajat Hegde",
+        image: RajatHegde,
+        por: "Web Coordinator",
+        linkedin: "https://www.linkedin.com/in/rajat-hegde-b94864311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        name: "Akshat Banzal",
+        image: AkshatBanzal,
+        por: "Web Coordinator",
+        linkedin: "",
+      },
+      {
+        name: "Syed Imam Ali",
+        image: SyedImamAli,
+        por: "Web Coordinator",
+        linkedin: "https://www.linkedin.com/in/syed-imam-ali-1671071a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       },
     ],
   },
