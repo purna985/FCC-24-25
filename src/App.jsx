@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Horizon from "./pages/Horizon";
 import Schedule from "./pages/Schedule";
-import Team from "./pages/Team";
+import AboutUs from "./pages/AboutUs";
 import Resources from "./pages/Resources";
 import Newsletters from "./pages/resources-pages/Newsletters";
 import Finance from "./pages/resources-pages/Finance";
@@ -28,7 +28,7 @@ const items = [
   { label: "Events", href: "#" },
   { label: "Projects", href: "/projects" },
   { label: "Blogs", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "About Us", href: "/aboutus" },
 ];
 
   return (
@@ -51,7 +51,7 @@ const items = [
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/schedule" element={<Schedule />} />
-        <Route path="/team" element={<Team />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/resources/finance-resources" element={<Finance />} />
         <Route
