@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Horizon from "./pages/Horizon";
+import Events from "./pages/Events"
 import Schedule from "./pages/Schedule";
 import AboutUs from "./pages/AboutUs";
 import Resources from "./pages/Resources";
@@ -25,7 +26,7 @@ function App() {
   // Items for Navbar
 const items = [
   { label: "Home", href: "/" },
-  { label: "Events", href: "#" },
+  { label: "Events", href: "/events" },
   { label: "Projects", href: "/projects" },
   { label: "Blogs", href: "#" },
   { label: "About Us", href: "/aboutus" },
@@ -49,6 +50,7 @@ const items = [
         <Route exact path="/" element={<Home />} />
         <Route path="/horizon" element={<Horizon />} />
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />
+        <Route path="/events" element={<Events />}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/AboutUs" element={<AboutUs />} />
