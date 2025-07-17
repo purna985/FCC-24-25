@@ -10,6 +10,7 @@ import Finance from "./pages/resources-pages/Finance";
 import Consulting from "./pages/resources-pages/Consulting";
 import ProdMan from "./pages/resources-pages/ProdMan";
 import Projects from "./pages/Projects";
+import PortfolioOptimizer from "./pages/PortfolioOptimizer";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -52,6 +53,7 @@ const items = [
         <Route path="/horizon/schedule" element={<HorizonTimeline />} />
         <Route path="/events" element={<Events />}/>
         <Route path="/projects" element={<Projects/>}/>
+        <Route path="/projects/portfolio-optimizer" element={<PortfolioOptimizer />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/resources" element={<Resources />} />

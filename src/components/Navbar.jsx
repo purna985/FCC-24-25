@@ -19,7 +19,7 @@ const Navbar = ({
 
   const [activeIndex, setActiveIndex] = useState(() => {
   const currentPath = location.pathname;
-  const foundIndex = items.findIndex((item) => item.href === currentPath);
+  const foundIndex = items.findIndex((item) => item.href === currentPath||(item.href !== "/" && currentPath.startsWith(item.href)));
   return foundIndex !== -1 ? foundIndex : 0;
   });
 
@@ -317,7 +317,7 @@ const Navbar = ({
       <div className="relative px-2" ref={containerRef}>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 py-4">
             <Link to="/" className="cursor-pointer flex items-center gap-2">
-              <img src="fcc-logo-new.png" alt="Logo" className="h-8 w-auto" />
+              <img src="/fcc-logo-new.png" alt="Logo" className="h-8 w-auto" />
             <div className="text-center md:text-left leading-tight text-white text-sm">
               <div className="font-semibold font-Label-Label-3-fontFamily">Finance & Consulting Club</div>
               <div className="font-Body-3-fontFamily">IIT Hyderabad</div>
