@@ -1,9 +1,22 @@
 import {AnimatedToolTip} from "../components/AnimatedToolTip"
+import { useNavigate } from "react-router-dom";
 
 function ProjectCard(props) {
     console.log(props.Image);
 
+    const navigate = useNavigate();
+
     const people = props.people || []; 
+    const goToStaticPage=()=>{
+        if(props.staticPage){
+            navigate(props.staticPage);
+        }
+    }
+    const viewProject=()=>{
+        if(props.link){
+            window.open(props.link, "_blank");
+        }
+    }
 
     return (
         <div className={`w-full max-w-[1072px] mx-auto p-4 md:p-6 lg:p-8`}>
@@ -15,19 +28,19 @@ function ProjectCard(props) {
                 </div>
 
                 {/* Content Section */}
-                <div className="w-full md:w-1/2 lg:w-[520px] rounded-[10px] p-5 border border-[#292929] bg-[#1B1A1A]">
-                    <div className="flex flex-col gap-4">
+                <div className="w-full md:w-1/2 lg:w-[520px] rounded-[10px] p-5 border border-[#292929] bg-[#1B1A1A] font-schibsted text-[#EBEBEB]">
+                    <div className="flex flex-col items-start gap-4">
                         
                         {/* Title - Font size increased */}
-                        <p id="Title" className="text-[#EBEBEB] font-Heading-H3-fontFamily font-Weights-Medium text-2xl leading-tight tracking-normal"> 
+                        <button onClick={()=>{goToStaticPage()}} id="Title" className="font-schibsted text-[#EBEBEB] font-Weights-Medium text-2xl leading-tight tracking-normal"> 
                             {props.Title}
-                        </p>
+                        </button>
 
                         {/* Topics - Font size increased */}
                         <div id="Topics" className="flex flex-wrap gap-x-4 gap-y-2">
                             {props.Topics.map((item, index) => (
                                 <div key={index} className="rounded-[10px] border border-[#4E56D3] bg-[#121649] px-3 py-1.5 flex justify-center items-center">
-                                    <p className="text-[#F3FFD8] font-Label-Label-3-fontFamily font-Weights-Medium text-sm leading-normal tracking-normal whitespace-nowrap">
+                                    <p className="font-schibsted text-[#EBEBEB] font-Weights-Medium text-sm leading-normal tracking-normal whitespace-nowrap">
                                         {item}
                                     </p>
                                 </div>
@@ -45,7 +58,7 @@ function ProjectCard(props) {
                         {/* Container for View Button and AnimatedToolTip */}
                         <div className="flex items-center space-x-4">
                             {/* View Button - Font size increased */}
-                            <button id="view" className="flex items-center gap-1 w-fit">
+                            <button id="view" onClick={()=>{viewProject()}} className="flex items-center gap-1 w-fit">
                                 <p className="text-[#CDFE64] font-Label-Label-1-fontFamily font-Weights-Bold text-lg leading-normal tracking-normal">
                                     View
                                 </p>

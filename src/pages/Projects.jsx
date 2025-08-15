@@ -2,6 +2,7 @@ import ProjectCard from "../components/ProjectCard"
 import Particles from "../components/ParticleBackground"
 import Collaborate from "../components/Collaborate"
 import m_and_a from "../assets/images/projects/m_and_a.png"
+import portfolio_optimizer from "../assets/images/projects/portfolio_optimizer.png"
 import Arima from "../assets/images/projects/Arima.png"
 import {SlideIn,RotateZoom} from "../components/ui/Animations"
 
@@ -12,7 +13,7 @@ import { Minimize } from "lucide-react"
 function Projects(){
   let topics1=['Python','Machine Learning','Finance'];
   let topics2=["Finance","Python","Excel"]
-
+  let topics3=["Python","Finance","Modern Portfolio Theory"]
   return(
     <div className="w-full min-h-screen mx-auto max-w-screen-2xl flex flex-col gap-2.5"> 
 
@@ -86,7 +87,7 @@ function Projects(){
   </div>
         </SlideIn>
         {console.log(window.innerWidth)}
-    <SlideIn x_hidden={typeof window!==undefined?Math.min(500,window.innerWidth*0.5):0} y_hidden={0} duration={1.2}>
+    <SlideIn x_hidden={typeof window!==undefined?Math.min(500,window.innerWidth*0.25):0} y_hidden={0} duration={1.2}>
 
     <ProjectCard Title="Forecast-Driven Trading" Desc="A data-driven trading strategy leveraging ARIMA and Prophet to forecast stock prices and enhance investment decisions through statistical analysis."
      Topics={topics1} Image={Arima} imageOnLeft={false} people={[{
@@ -107,6 +108,22 @@ function Projects(){
        image: "https://placehold.co/32x32/3498db/ffffff?text=TM",
        linkedIn:"https://www.linkedin.com/in/tejas-mundada-86329536b"
       },]}/>
+      </SlideIn>
+      
+      <SlideIn x_hidden={typeof window!==undefined?Math.min(500,window.innerWidth*0.5):0} y_hidden={0} duration={1.2}>
+         <ProjectCard Title="Portfolio Optimization Tool" Desc="A web-based portfolio optimization tool tailored for the Indian stock market,
+built using the Markowitz Mean-Variance framework."
+         Topics={topics3} Image={portfolio_optimizer} 
+         imageOnLeft={false} link="https://tanish-verma-portfolio-optimization-india-appapp-qt5s7u.streamlit.app/" 
+         staticPage="/projects/portfolio-optimizer"
+         people={[{
+        id: 1,
+        name:"Tanish Verma",
+        designation: "Student",
+        image: "https://placehold.co/32x32/3498db/ffffff?text=TV",
+        linkedIn:"https://www.linkedin.com/in/tanish-verma-363193327/",
+        
+         }]}></ProjectCard>
       </SlideIn>
     </div>
     
