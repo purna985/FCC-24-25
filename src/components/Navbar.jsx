@@ -1,20 +1,34 @@
 import { useRef, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { FileText, Link as LinkIcon, Lightbulb, BriefcaseBusiness, Brain, Sparkles, BookMarkedIcon, BookHeadphones } from "lucide-react";
+import { FaCircleDollarToSlot } from "react-icons/fa6";
+import { ChevronDown } from "lucide-react"; // add this with your other imports
+
 
 const Navbar = ({
   items,
   animationTime = 600,
-  particleCount = 15,
-  particleDistances = [90, 10],
+  particleCount = 20,
+  particleDistances = [120, 10],
   particleR = 100,
   timeVariance = 300,
   colors = [1, 2, 3, 1, 2, 3, 1, 4],
-  initialActiveIndex = 0,
 }) => {
   const containerRef = useRef(null);
   const navRef = useRef(null);
+  const [dropdownCloseTimeout, setDropdownCloseTimeout] = useState(null);
+
   const filterRef = useRef(null);
   const textRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
+  const [hoveredDropdown, setHoveredDropdown] = useState(null);
+  const location = useLocation();
+
+  const [activeIndex, setActiveIndex] = useState(() => {
+    const currentPath = location.pathname;
+    const foundIndex = items.findIndex((item) => item.href === currentPath);
+    return foundIndex !== -1 ? foundIndex : 0;
+  });
+
   const noise = (n = 1) => n / 2 - Math.random() * n;
   const getXY = (
     distance,
@@ -92,6 +106,11 @@ const Navbar = ({
     Object.assign(textRef.current.style, styles);
     textRef.current.innerText = element.innerText;
   };
+  const handleDropdownClick = (e, index, subItem) => {
+    e.stopPropagation();
+    if (subItem.href === "#") return;
+    setActiveIndex(index);
+  };
   const handleClick = (e, index) => {
     const liEl = e.currentTarget;
     if (activeIndex === index) return;
@@ -125,26 +144,39 @@ const Navbar = ({
       }
     }
   };
+  // This useEffect will react to changes in the React Router location.pathname
   useEffect(() => {
+    // Recalculate active index whenever the route changes
+    const currentPath = location.pathname;
+    const newActiveIndex = items.findIndex((item) => item.href === currentPath);
+
+    // Only update if the new index is different from the current activeIndex
+    // This prevents unnecessary re-renders or animation re-triggers if the route hasn't genuinely changed active item
+    if (newActiveIndex !== -1 && newActiveIndex !== activeIndex) {
+      setActiveIndex(newActiveIndex);
+    } else if (newActiveIndex === -1 && currentPath === "/" && activeIndex !== 0) {
+      // Special case for root path if it's not explicitly in items or doesn't match exactly
+      setActiveIndex(0);
+    }
+
+    // --- Existing logic for positioning the active indicator ---
     if (!navRef.current || !containerRef.current) return;
-    const activeLi = navRef.current.querySelectorAll("li")[
-      activeIndex
-    ];
+    const activeLi = navRef.current.querySelectorAll("li")[activeIndex]; // Use activeIndex from state
     if (activeLi) {
       updateEffectPosition(activeLi);
       textRef.current?.classList.add("active");
     }
+
+    // Resize Observer for responsive positioning
     const resizeObserver = new ResizeObserver(() => {
-      const currentActiveLi = navRef.current?.querySelectorAll("li")[
-        activeIndex
-      ];
+      const currentActiveLi = navRef.current?.querySelectorAll("li")[activeIndex];
       if (currentActiveLi) {
         updateEffectPosition(currentActiveLi);
       }
     });
     resizeObserver.observe(containerRef.current);
     return () => resizeObserver.disconnect();
-  }, [activeIndex]);
+  }, [activeIndex, location.pathname, items]); // Dependencies: activeIndex for visual updates, location.pathname for route changes, items if they can change dynamically
 
   return (
     <>
@@ -152,6 +184,11 @@ const Navbar = ({
       <style>
         {`
           :root {
+            --color-1: #2A2A72; 
+            --color-2: #6A05A1; 
+            --color-3: #9966CC; 
+            --color-4: #ffffff; 
+
             --linear-ease: linear(0, 0.068, 0.19 2.7%, 0.804 8.1%, 1.037, 1.199 13.2%, 1.245, 1.27 15.8%, 1.274, 1.272 17.4%, 1.249 19.1%, 0.996 28%, 0.949, 0.928 33.3%, 0.926, 0.933 36.8%, 1.001 45.6%, 1.013, 1.019 50.8%, 1.018 54.4%, 1 63.1%, 0.995 68%, 1.001 85%, 1);
           }
           .effect {
@@ -288,35 +325,105 @@ const Navbar = ({
         `}
       </style>
       <div className="relative px-2" ref={containerRef}>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
-          <div className="flex items-center gap-2">
-            <img src="fcc-logo-white.png" alt="Logo" className="h-8 w-auto" />
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 py-4">
+          <Link to="/" className="cursor-pointer flex items-center gap-2">
+            <img src="fcc-logo-new.png" alt="Logo" className="h-8 w-auto" />
             <div className="text-center md:text-left leading-tight text-white text-sm">
-              <div className="font-semibold">Finance & Consulting Club</div>
-              <div>IIT Hyderabad</div>
+              <div className="font-semibold font-Label-Label-3-fontFamily">Finance & Consulting Club</div>
+              <div className="font-Body-3-fontFamily">IIT Hyderabad</div>
             </div>
-          </div>
+          </Link>
+
           <nav className="flex relative mt-2 md:mt-0">
             <ul
               ref={navRef}
-              className="flex flex-wrap justify-center gap-4 md:gap-8 list-none p-0 px-4 m-0 relative z-[3] text-white"
-              style={{
-                textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
-              }}
+              className="flex flex-wrap justify-center gap-4 md:gap-8 list-none p-0 px-4 m-0 relative z-[3] text-white font-schibsted"
+              style={{ textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)" }}
             >
               {items.map((item, index) => (
                 <li
                   key={index}
                   className={`py-2 px-4 rounded-full relative cursor-pointer transition duration-300 ease text-white ${activeIndex === index ? "active" : ""}`}
-                  onClick={(e) => handleClick(e, index)}
+                  onClick={(e) => !item.subItems && handleClick(e, index)}
+                  onMouseEnter={() => {
+                    if (item.subItems) {
+                      // Clear any pending close timeout
+                      if (dropdownCloseTimeout) {
+                        clearTimeout(dropdownCloseTimeout);
+                        setDropdownCloseTimeout(null);
+                      }
+                      setHoveredDropdown(index);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    if (item.subItems) {
+                      // Set a timeout before closing
+                      const timeout = setTimeout(() => {
+                        setHoveredDropdown(null);
+                      }, 300); // 300ms delay before closing
+                      setDropdownCloseTimeout(timeout);
+                    }
+                  }}
                 >
-                  <a
-                    href={item.href}
-                    onKeyDown={(e) => handleKeyDown(e, index)}
-                    className="outline-none"
-                  >
-                    {item.label}
-                  </a>
+                  {item.subItems ? (
+                    <div className="relative flex items-center">
+                      <span
+                        className={`font-schibsted font-semibold text-[14px] tracking-[0.2px] leading-100p px-2 py-1 rounded-full transition-colors duration-200 ${activeIndex === index ? "text-[#4e56d3]" : "text-white"
+                          }`}
+                      >
+                        {item.label}
+                      </span>
+                      <ChevronDown
+                        size={20}
+                        className={`ml-1 cursor-pointer bg-transparent-800 px-1 py-1 rounded-full transition-all duration-300 ease-in-out transform ${hoveredDropdown === index ? "rotate-180" : "rotate-0"
+                          } ${(activeIndex === index || hoveredDropdown === index) ? "text-[#4e56d3]" : "text-white"
+                          } hover:bg-gray-800`}
+                        onMouseEnter={() => setHoveredDropdown(index)}
+                        onMouseLeave={() => setHoveredDropdown(null)}
+                      />
+
+                      {hoveredDropdown === index && (
+                        <div
+                          className="absolute left-0 top-full mt-3 min-w-[200px] bg-black/95 border border-gray-800 rounded-xl shadow-xl overflow-hidden z-50 backdrop-blur-sm"
+                          onMouseEnter={() => {
+                            // Keep open when mouse enters dropdown
+                            if (dropdownCloseTimeout) {
+                              clearTimeout(dropdownCloseTimeout);
+                              setDropdownCloseTimeout(null);
+                            }
+                          }}
+                          onMouseLeave={() => {
+                            // Close when mouse leaves dropdown
+                            const timeout = setTimeout(() => {
+                              setHoveredDropdown(null);
+                            }, 200);
+                            setDropdownCloseTimeout(timeout);
+                          }}
+                        >
+                          {item.subItems.map((subItem, subIndex) => (
+                            <Link
+                              key={subIndex}
+                              to={subItem.href}
+                              className={`block px-5 py-3 font-schibsted text-sm text-gray-300 transition-all duration-200 ease-out hover:bg-gray-800 hover:text-white ${location.pathname === subItem.href ? "bg-gray-800 text-white" : ""
+                                }`}
+                              onClick={(e) => handleDropdownClick(e, index, subItem)}
+                            >
+                              {subItem.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className={`font-schibsted font-semibold outline-none  text-[14px] tracking-[0.2px] leading-100p px-2 py-1 rounded-full transition-colors duration-200 ${activeIndex === index ? "text-[#4e56d3]" : "text-white"
+                        }`}
+                      aria-current={activeIndex === index ? "page" : undefined}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
