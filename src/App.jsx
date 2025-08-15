@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Horizon from "./pages/Horizon";
 import Schedule from "./pages/Schedule";
-import AboutUs from "./pages/Team";
+import AboutUs from "./pages/AboutUs";
 import Resources from "./pages/Resources";
 import Newsletters from "./pages/resources-pages/Newsletters";
 import Finance from "./pages/resources-pages/Finance";
@@ -27,8 +27,14 @@ const items = [
   { label: "Home", href: "/" },
   { label: "Events", href: "#" },
   { label: "Projects", href: "/projects" },
-  { label: "Blogs", href: "#" },
-  { label: "About Us", href: "/aboutus" },
+  { 
+    label: "Resources",
+    href: "/resources",
+    subItems: [
+      { label: "Resources", href: "/resources" },
+      { label: "Blogs", href: "#" },
+    ]
+  },  { label: "About Us", href: "/aboutus" },
 ];
 
   return (
