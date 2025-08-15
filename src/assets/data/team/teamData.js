@@ -2,7 +2,7 @@
 import ShubhamNare from "@/assets/team/01.jpg";
 import SidharthaShatapathy from "@/assets/team/02.jpg";
 import ParthDawar from "@/assets/team/web/01.jpg";
-import AdityaAmodkar from "@/assets/team/Consulting/01.jpg";
+import AdityaAmodkar from "@/assets/team/consulting/01.jpg";
 import OjasMadghe from "@/assets/team/ideation/01.jpg";
 import AbhignyaGogula from "@/assets/team/pro/01.jpg";
 import AnanyaDutpal from "@/assets/team/cpg/01.jpg";
@@ -23,8 +23,8 @@ import AkaankshMAdarsh from "@/assets/team/finance/10.jpg";
 import AtharvKochar from "@/assets/team/finance/11.jpeg";
 
 // Consulting Team
-import AbhinavRaj from "@/assets/team/consulting/02.jpg";
-import NimishWadhwa from "@/assets/team/consulting/03.jpg";
+import AbhinavRaj from "@/assets/team/consulting/03.jpg";
+import NimishWadhwa from "@/assets/team/consulting/02.jpg";
 import KumudJalori from "@/assets/team/consulting/04.jpg";
 import Aaron from "@/assets/team/consulting/05.jpg";
 import PrabhavPradeep from "@/assets/team/consulting/06.jpg";

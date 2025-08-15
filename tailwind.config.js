@@ -79,6 +79,8 @@ export default {
 				'blur-250': '250px'
 			},
 			fontFamily: {
+				outfit: ['Outfit', 'sans-serif'],
+				schibsted: ['"Schibsted Grotesk"', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 				roboto: ['Roboto', 'sans-serif'],
 				rosario: ['Rosario', 'sans-serif'],
@@ -108,14 +110,20 @@ export default {
 				'vw-7': '7vw',
 				'vw-10': '10vw',
 				'vw-14': '12vw',
+				'Heading-H1-fontSize':['28px',{lineHeight:'32px'}],
 				'Heading-H3-fontSize':['24px',{lineHeight:'28px'}],
+				'Heading-H4-fontSize':['20px',{lineHeight:'24px'}],
 				'Title-Title-2-fontSize':['40px',{lineHeight:'48px'}],
+				'Title-Title-3-fontSize':['32px',{lineHeight:'36px'}],
 				'Label-Label-3-fontSize':['12px',{lineHeight:'16px'}],
 				'Label-Label-2-fontSize':['14PX',{lineHeight:'20PX'}],
-				'Label-Label-1-fontSize':['16PX',{lineHeight:'22PX'}]
+				'Label-Label-1-fontSize':['16PX',{lineHeight:'22PX'}],
+				'Body-2-fontSize':['18px',{lineHeight:'26px'}],
+				'Body-1-fontSize':['20px',{lineHeight:'26px'}]
 			},
 			letterSpacing:{
 				'Heading-H3-letterSpacing':'-0.24px',
+				'Heading-H4-letterSpacing':'-0.2px',
 				'Title-Title-2-letterSpacing':'-0.64px',
 				'Label-Label-3-letterSpacing':'0px',
 				'Label-Label-2-letterSpacing':'0px',
