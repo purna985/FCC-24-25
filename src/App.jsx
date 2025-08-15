@@ -29,14 +29,8 @@ const items = [
   { label: "Home", href: "/" },
   { label: "Events", href: "/events" },
   { label: "Projects", href: "/projects" },
-  { 
-    label: "Resources",
-    href: "/resources",
-    subItems: [
-      { label: "Resources", href: "/resources" },
-      { label: "Blogs", href: "#" },
-    ]
-  },  { label: "About Us", href: "/aboutus" },
+  { label: "Blogs", href: "#" },
+  { label: "About Us", href: "/aboutus" },
 ];
 
   return (
